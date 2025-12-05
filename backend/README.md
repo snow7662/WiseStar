@@ -17,7 +17,7 @@ pip install -r requirements.txt
 cp .env.example .env
 ```
 
-编辑 `.env` 文件：
+编辑 `.env` 文件（默认基于公共可用的 DeepSeek 端点，如网络受限可替换为镜像或代理）：
 ```
 LLM_API_KEY=your_deepseek_api_key
 LLM_BASE_URL=https://api.deepseek.com/v1
