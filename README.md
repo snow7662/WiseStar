@@ -85,8 +85,9 @@ pip install -r requirements.txt
 2. 配置环境变量（创建 `.env` 文件）：
 
 ```bash
-IDEALAB_API_KEY=your_api_key_here
-MODEL_NAME=qwen2.5-max
+DEEPSEEK_API_KEY=your_deepseek_api_key
+DEEPSEEK_MODEL=deepseek-chat
+DEEPSEEK_BASE_URL=https://api.deepseek.com/v1
 MAX_RETRY=3
 CONCURRENCY_LIMIT=5
 TIMEOUT=30
@@ -219,7 +220,7 @@ for i, q in enumerate(recommendations, 1):
 ## 🔧 技术架构
 
 - **工作流引擎**: PocketFlow（节点式工作流）
-- **LLM平台**: 阿里云IdeaLab（Qwen系列模型）
+- **LLM平台**: 兼容 OpenAI 接口的公共推理服务（默认使用 OpenAI GPT 模型）
 - **数学计算**: NumPy、Pandas、SymPy
 - **异步处理**: asyncio、aiohttp
 
@@ -287,4 +288,4 @@ WiseStar Team - 智多星项目组
 
 ---
 
-**注意**: 本项目使用阿里云IdeaLab平台的API，需要配置相应的API Key才能使用。
+**注意**: 本项目默认使用公开的 OpenAI API，需要配置相应的 API Key 或其他兼容 OpenAI 协议的推理服务。
