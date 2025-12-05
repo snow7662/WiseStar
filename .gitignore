@@ -1,0 +1,12 @@
+# 环境变量文件
+.env
+output/git
+*.pyc
+__pycache__/
+.idea/
+my_tools
+/output/output_extract/
+output/rag_db
+.vscode/
+**/db/
+**/log/

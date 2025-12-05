@@ -1,0 +1,357 @@
+
+id,problem,answer,truth,final
+1,"$(1+5 \mathrm{i}) \mathrm{i}$ 的虚部为
+A．-1
+B． 0
+C． 1
+D． 6",C,C,一致
+2,"设全集 $U=\{x \mid x$ 是小于 9 的正整数 $\}$ ，集合 $A=\{1,3,5\}$ ，则 $\complement_{U} A$ 中元素个数为
+A． 2
+B． 3
+C． 5
+D． 8",C．5,C,一致
+3,"若双曲线 $C$ 的虚轴长为实轴长的 $\sqrt{7}$ 倍，则 $C$ 的离心率为
+A．$\sqrt{2}$
+B． 2
+C．$\sqrt{7}$
+D． $2 \sqrt{2}$",D．$2 \sqrt{2}$,D,一致
+4,"若点 $(a, 0)(a>0)$ 是函数 $y=2 \tan \left(x-\frac{\pi}{3}\right)$ 的图象的一个对称中心，则 $a$ 的最小值为
+A．$\frac{\pi}{4}$
+B．$\frac{\pi}{2}$
+C．$\frac{\pi}{3}$
+D．$\frac{4 \pi}{3}$",C,C,一致
+5,"设 $f(x)$ 是定义在 $R$ 上且周期为 2 的偶函数，当 $2 \leqslant x \leqslant 3$ 时，$f(x)=5-2 x$ ，则 $f\left(-\frac{3}{4}\right)=$
+A．$-\frac{1}{2}$
+B．$-\frac{1}{4}$
+C．$\frac{1}{4}$
+D．$\frac{1}{2}$",A．$-\frac{1}{2}$,A,一致
+6,"若圆 $x^{2}+(y+2)^{2}=r^{2}(r>0)$ 上到直线 $y=\sqrt{3} x+2$ 的距离为 1 的点有且仅有 2 个，则 $r$ 的取值范围是
+
+A．$(0,1)$
+B．$(1,3)$
+C．$(3,+\infty)$
+D．$(0,+\infty)$","B．$(1,3)$",B,一致
+7,"若实数 $x, y, z$ 满足 $2+\log _{2} x=3+\log _{3} y=5+\log _{5} z$ ，则 $x, y, z$ 的大小关系不可能是 
+A．$x>y>z$
+B．$x>z>y$
+C．$y>x>z$
+D．$y>z>x$","$$
+\boxed{B}
+$$",B,一致
+8,若直线 $y=2 x+5$ 是曲线 $y=\mathrm{e}^{x}+x+a$ 的切线，则 $a=$ $\qquad$。,"$$
+\boxed{4}
+$$",4,一致
+9,若一个等比数列的前 4 项和为 4 ，前 8 项和为 68 ，则该等比数列的公比为 $\qquad$。,"$$
+\boxed{2}
+$$",2，-2,不一致
+10,一个箱子里有 5 个相同的球，分别以 $1 \sim 5$ 标号，从中有放回地取三次，记至少取出一次的球的个数 $X$ ，则数学期望 $E(X)=$ $\qquad$。,"$$
+\boxed{\dfrac{61}{25}}
+$$",61/25,一致
+11,"为研究某乘病与超声波检查结果的关系，从做过超声波检查的人群中随机调查了 1000 人，得到如下列联表：
+\begin{tabular}{|l|l|l|l|}
+\hline \backslashbox{组别}{超声波检查结果} & 正常 & 不正常 & 合计 \\
+\hline 患该疾病 & 20 & 180 & 200 \\
+\hline 未患该疾病 & 780 & 20 & 800 \\
+\hline 合计 & 800 & 200 & 1000 \\
+\hline
+\end{tabular}
+（1）记超声波检查结果不正常者患该疾病的概率为 $P$ ，求 $P$ 的估计值；
+（2）根据小概率值 $\alpha=0.001$ 的独立性检验，分析超声波检查结果是否与患该疾病有关。
+
+附：$\chi^{2}=\frac{n(a d-b c)^{2}}{(a+b)(c+d)(a+c)(b+d)}$ ，
+\begin{tabular}{|c|l|c|c|}
+\hline$P\left(\chi^{2} \geqslant k\right)$ & 0.005 & 0.010 & 0.001 \\
+\hline$k$ & 3.841 & 6.635 & 10.828 \\
+\hline
+\end{tabular}","（1）$ P $ 的估计值为 **0.9**；  
+（2）**超声波检查结果与患该疾病有关**。",（1）P = 0.9 （2）765.625 > 10.828，有关,一致
+
+12,"设数列 $\left\{a_{n}\right\}$ 满足 $a_{1}=3, \frac{a_{n+1}}{n}=\frac{a_{n}}{n+1}+\frac{1}{n(n+1)}$ ．
+（1）证明：$\left\{n a_{n}\right\}$ 为等差数列；
+（2）设 $f(x)=a_{1} x+a_{2} x^{2}+\cdots+a_{m} x^{m}$ ，求 $f^{\prime}(-2)$ ．","$$
+\boxed{\dfrac{7 - (3m + 7)(-2)^m}{9}}
+$$",（1）na_n = n+2 （2）7/9 - (1/2 + (m+2)/3)*(-2)^m,不一致
+13,"如图所示的四棱雉 $P-A B C D$ 中，$P A \perp$ 平面 $A B C D, B C / / A D, A B \perp A D$ ．
+（1）证明：平面 $P A B \perp$ 平面 $P A D$ ；
+（2）若 $P A=A B=\sqrt{2}, A D=\sqrt{3}+1, B C=2, P, B, C, D$ 在同一个球面上，设该球面的球心为 $O$ ．
+（i）证明：$O$ 在平面 $A B C D$ 上；
+（ii）求直线 $A C$ 与直线 $P O$ 所成角的余弦值．",$\boxed{\dfrac{\sqrt{2}}{3}}$,(2)\sqrt{2}/3,一致
+14,"设椭圆 $C: \frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}=1(a>b>0)$ 的离心率为 $\frac{2 \sqrt{2}}{3}$ ，下顶点为 $A$ ，右顶点为 $B,|A B|=\sqrt{10}$ ．
+（1）求椭圆的标准方程；
+（2）已知动点 $P$ 不在 $y$ 轴上，点 $R$ 在射线 $A P$ 上，且满足 $|A R| \cdot|A P|=3$ ．
+（i）设 $P(m, n)$ ，求点 $R$ 的坐标（用 $m, n$ 表示）；
+（ii）设 $O$ 为坐标原点，$Q$ 是 $C$ 上的动点，直线 $O R$ 的斜率为直线 $O P$ 的斜率的 3 倍，求 $|P Q|$ 的最大值．","（1）$\frac{x^2}{9} + y^2 = 1$；  
+（2）（i）$\left( \frac{3m}{m^2 + (n+1)^2}, \frac{-m^2 - (n+1)^2 + 3(n+1)}{m^2 + (n+1)^2} \right)$；  
+（ii）$3(\sqrt{3} + \sqrt{2})$","（1）x^2/9 + y^2 = 1 （2）（i）R(3m/(m^2 + (n+1)^2) , 3(n+1)/(m^2 + (n+1)^2) - 1) （ii）3\sqrt{3} + 3\sqrt{2}",一致
+
+15,"设函数 $f(x)=5 \cos x-\cos 5 x$ ．
+（1）求 $f(x)$ 在 $\left[0, \frac{\pi}{4}\right]$ 的最大值；
+（2）给定 $\theta \in(0, \pi)$ ，设 $a$ 为实数，证明：存在 $y \in[a-\theta, a+\theta]$ ，使得 $\cos y \leqslant \cos \theta$ ；
+（3）若存在 $\varphi$ 使得对任意 $x$ ，都有 $5 \cos x-\cos (5 x+\varphi) \leqslant b$ ，求 $b$ 的最小值．",$\boxed{3\sqrt{3}}$,（1）3\sqrt{3} （3）3\sqrt{3},一致
+16,"样本数据 $2, 8, 14, 16, 20$ 的平均数为 ( )
+    \begin{multicols}{4}
+        A. 8 \quad B. 9 \quad C. 12 \quad D. 18
+    \end{multicols}",C. 12,C,一致
+17,"已知 $z = 1 + i$，$\frac{1}{z - 1} = ( )$
+    \begin{multicols}{4}
+        A. $-i$ \quad B. $i$ \quad C. $-1$ \quad D. $1$
+    \end{multicols}",A. $-i$,A,一致
+18,"已知 $A = \{-4, 0, 1, 2, 8\}, B = \{x \mid x^3 = x\}$，则 $A \cap B = ( )$
+    \begin{multicols}{4}
+        A. $\{0, 1, 2\}$ \quad B. $\{1, 2, 8\}$ \quad C. $\{2, 8\}$ \quad D. $\{0, 1\}$
+    \end{multicols}","D. $\\{0, 1\\}$",D,一致
+19,"不等式 $\frac{x - 4}{x - 1} \geq 2$ 的解集是 ( )\\
+
+        A. $\{x \mid -2 \leq x \leq 1\}$ \\ 
+        B. $\{x \mid x \leq -2\}$ \\
+        C. $\{x \mid -2 \leq x < 1\}$ \\ 
+        D. $\{x \mid x > 1\}$",C,C,一致
+20,"在 $\triangle ABC$ 中，$BC = 2$, $AC = 1 + \sqrt{3}$, $AB = \sqrt{6}$，则角 $A = ( )$
+    \begin{multicols}{4}
+        A. $45^\circ$ \quad B. $60^\circ$ \quad C. $120^\circ$ \quad D. $135^\circ$
+    \end{multicols}",A. $45^{\circ}$,A,一致
+21,"设抛物线 $C: y^2 = 2px$ ($p > 0$) 的焦点为 $F$，点 $A$ 在 $C$ 上，过 $A$ 作 $C$ 准线的垂线，垂足为 $B$。若直线 $BF$ 的方程为 $y = -2x + 2$，则 $|AF| = ( )$
+    \begin{multicols}{4}
+        A. 3 \quad B. 4 \quad C. 5 \quad D. 6
+    \end{multicols}",C. 5,C,一致
+22,"记 $S_n$ 为等差数列 $\{a_n\}$ 的前 $n$ 项和，若 $S_3 = 6$, $S_5 = -5$，则 $S_6 = ( )$
+    \begin{multicols}{4}
+        A. $-20$ \quad B. $-15$ \quad C. $-10$ \quad D. $-5$
+    \end{multicols}",B,B,一致
+23,"已知 $0 < \alpha < \pi$, $\cos \frac{\alpha}{2} = \frac{\sqrt{5}}{5}$，则 $\sin \left(\alpha - \frac{\pi}{4}\right) = ( )$
+    \begin{multicols}{4}
+        A. $\frac{\sqrt{2}}{10}$ \quad B. $\frac{\sqrt{2}}{5}$ \quad C. $\frac{3\sqrt{2}}{10}$ \quad D. $\frac{7\sqrt{2}}{10}$
+    \end{multicols}
+\end{enumerate}",D. $\frac{7\sqrt{2}}{10}$,D,一致
+24,"记 $S_n$ 为等比数列 $\{a_n\}$ 的前 $n$ 项和，$q$ 为 $\{a_n\}$ 的公比，$q > 0$。若 $S_3 = 7$, $a_3 = 1$，则 ( )
+    \begin{multicols}{4}
+        A. $q = \frac{1}{2}$ \quad B. $a_5 = \frac{1}{9}$ \quad C. $S_3 = 8$ \quad D. $a_n + S_n = 8$
+    \end{multicols}","$$
+\boxed{AD}
+$$",AD,一致
+25,"已知 $f(x)$ 是定义在 $\mathbb{R}$ 上的奇函数，且当 $x > 0$ 时，$f(x) = (x^2 - 3)e^x + 2$，则 ( )\\
+
+        A. $f(0) = 0$ \\
+        B. 当 $x < 0$ 时，$f(x) = -x^2 - 3e^{-x} - 2$ \\
+        C. $f(x) \geq 2$，当且仅当 $x \geq \sqrt{3}$ \\
+        D. $x = -1$ 是 $f(x)$ 的极大值点",A和D,ABD,不一致
+26,"双曲线 $C: \frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$ ($a > 0$, $b > 0$) 的左、右焦点为 $F_1, F_2$，左、右顶点分别为 $A_1, A_2$，以 $F_1F_2$ 为直径的圆与曲线 $C$ 的一条渐近线交于 $M, N$ 两点，且 $\angle NA_1M = \frac{5\pi}{6}$，则 ( )\\
+
+        A. $\angle A_1MA_2 = \frac{\pi}{6}$ \\
+        B. $|MA_1| = 2|MA_2|$ \\
+        C. $C$ 的离心率为 $\sqrt{13}$ \\
+        D. 当 $a = \sqrt{2}$ 时，四边形 $NA_1MA_2$ 的面积为 $8\sqrt{3}$
+
+\end{enumerate}",A、C、D,ACD,一致
+27,"已知平面向量 $\vec{a} = (x, 1), \vec{b} = (x - 1, 2x)$，若 $\vec{a} \perp (\vec{a} - \vec{b})$，则 $|\vec{a}| = $ \rule{2cm}{0.15mm}.",\boxed{\sqrt{2}},\sqrt{2},一致
+28,若 $x = 2$ 是函数 $f(x) = (x - 1)(x - 2)(x - a)$ 的极值点，则 $f(0) = $ \rule{2cm}{0.15mm}.,\boxed{-4},-4,一致
+29,一个底面半径为 4 cm，高为 9 cm 的封闭柱形容器（容器壁厚度忽略不计）内有两个半径相等的铁球，铁球半径的最大值为 \rule{2cm}{0.15mm} cm.,4 cm,5/2,不一致
+30,"已知函数 $f(x) = \cos(2x + \varphi)$ ($0 \leq \varphi < \pi$)，$f(0) = \frac{1}{2}$.
+    \begin{enumerate}[label=\arabic*\intertext{.}]
+        1. 求 $\varphi$；\\
+        2. 设函数 $g(x) = f(x) + f\left(x - \frac{\pi}{6}\right)$，求 $g(x)$ 的值域及单调区间。\\
+    \end{enumerate}","1. $\boxed{\dfrac{\pi}{3}}$  
+2. 值域为 $\boxed{[-\sqrt{3}, \sqrt{3}]}$，单调递增区间为 $\left(\dfrac{5\pi}{12} + k\pi, \dfrac{11\pi}{12} + k\pi\right)$，单调递减区间为 $\left(-\dfrac{\pi}{12} + k\pi, \dfrac{5\pi}{12} + k\pi\right)$（$k \in \mathbb{Z}$）。","1.$\varphi = \frac{\pi}{3}$
+2. - 单调递减区间：$\boxed{\left(-\dfrac{\pi}{12}, \dfrac{5\pi}{12}\right)}$
+   - 单调递增区间：$\boxed{\left(\dfrac{5\pi}{12}, \dfrac{11\pi}{12}\right)}$",一致
+31,"已知椭圆 $C: \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ ($a > b > 0$) 的离心率为 $\frac{\sqrt{2}}{2}$，长轴长为 4，\\
+
+        1. 求椭圆 $C$ 的方程；\\
+        2. 过点 $(0, -2)$ 的直线 $l$ 与 $C$ 交于 $A$、$B$ 两点，$O$ 为坐标原点。若 $\triangle OAB$ 的面积为 $\sqrt{2}$，求 $|AB|$。","1. $\boxed{\dfrac{x^2}{4} + \dfrac{y^2}{2} = 1}$  
+2. $\boxed{\sqrt{5}}$","1.$\frac{x^2}{4} + \frac{y^2}{2} = 1$
+2.\sqrt{5}",一致
+32,"如图，四边形 $ABCD$ 中，$AB \parallel CD$, $\angle DAB = 90^\circ$，$F$ 为 $CD$ 中点，$E$ 在 $AB$ 上，$EF \parallel AD$，$AB = 3AD$, $CD = 2AD$，将四边形 $EFDA$ 沿 $EF$ 翻折至四边形 $EFD'A'$，使得 $EFD'A'$ 与 $EFCB$ 所成的二面角为 $60^\circ$。\\
+        1. 证明：$A'B \perp CD'F$；\\
+        2. 求 $BCD'$ 与 $EFD'A'$ 所成二面角的正弦值。\\","$$
+\boxed{\dfrac{\sqrt{10}}{5}}
+$$",2.$\frac{\sqrt{42}}{7}$,不一致
+33,"已知函数 $f(x) = \ln(1 + x) - x + \frac{1}{2}x^2 - kx^3$，其中 $0 < k < \frac{1}{3}$。\\
+        1. 证明：$f(x)$ 在区间 $(0, +\infty)$ 存在唯一的极值点和唯一的零点；\\
+        2. 设 $x_1, x_2$ 为 $f(x)$ 在区间 $(0, +\infty)$ 的极值点和零点。\\
+            i. 设函数 $g(t) = f(x_1 + t) - f(x_1 - t)$，证明：$g(t)$ 在区间 $(0, x_1)$ 上单调递减；\\
+            ii. 比较 $2x_1$ 与 $x_2$ 的大小，并证明你的结论。",ERROR,3.$$2x_1 > x_2$$,处理失败: The read operation timed out
+34,"甲、乙两人进行乒乓球练习，每个球胜者得 1 分，负者得 0 分。设每个球甲胜的概率为 $p$ ($\frac{1}{2} < p < 1$)，乙胜的概率为 $q$，$p + q = 1$，且各球胜负相互独立。对正整数 $k \geq 2$，记 $p_k$ 为打完 $k$ 个球后甲比乙至少多得 2 分的概率，$q_k$ 为打完 $k$ 个球后乙比甲至少多得 2 分的概率。\\
+        1. 求 $p_3, p_4$（用 $p$ 表示）；\\
+        2.若 $\frac{p_4 - p_3}{q_4 - q_3} = 4$，求 $p$；\\
+        3. 证明：对任意正整数 $m, p_{2 m+1}-q_{2 m+1}<p_{2 m}-q_{2 m}<p_{2 m+2}-q_{2 m+2}$  ",$\boxed{\dfrac{2}{3}}$,"1.$p_4 = p^4 + 4p^3q$
+2.$\frac{2}{3}$",一致
+35,"集合 $U=1,2,3,4,5 A=1,3 B=2,3,5$ ，则 $C_{U}(A \cup B)=$
+A．$\{1,2,3,4\}$
+B．$\{2,3,4\}$
+C．$\{2,4\}$
+D．$\{4\}$",D．$\\{4\\}$,D,一致
+36,"＂$x=0$＂是＂ $\sin 2 x=0$＂的
+A．充分不必要条件
+B．必要不充分条件
+C．充要条件
+D．既不充分也不必要条件",A,A,一致
+37,"已知函数 $y=f(x)$ 的图像如下，则 $f(x)$ 的解析式可能为
+A．$f(x)=\frac{x}{1-|x|}$
+B．$f(x)=\frac{x}{|x|-1}$
+C．$f(x)=\frac{|x|}{1-x^{2}}$
+D．$f(x)=\frac{|x|}{x^{2}-1}$",B,D,不一致
+38,"若 $ m $ 为直线，$ \alpha, \beta $ 为两个平面，则下列结论中正确的是（）
+A. 若 $ m \parallel \alpha $，$ n \subseteq \alpha $，则 $ m \parallel n $
+B. 若 $ m \perp \alpha $，$ m \perp \beta $，则 $ \alpha \perp \beta $
+C. 若 $ m \parallel \alpha $，$ m \perp \beta $，则 $ \alpha \perp \beta $
+D. 若 $ m \subseteq \alpha $，$ \alpha \perp \beta $，则 $ m \perp \beta $",C,C,一致
+39,"下列说法错误的是
+A．$X \sim N\left(\mu, \sigma^{2}\right)$ ，若 $P(X \leqslant \mu-\sigma)=P(X \geqslant \mu+\sigma)$
+B．$X \sim N\left(1,2^{2}\right), Y \sim N\left(2,2^{2}\right)$ ，则 $P(X<1)<P(Y<2)$
+C．$|r|$ 越接近于 1 ，线性相关程度越强
+D．$|r|$ 越接近于 0 ，线性相关程度越弱",B,B,一致
+40,"$S_{n}=-n^{2}+8 n$ ．则 $\left|a_{n}\right|$ 前 12 项和
+A. 112
+B. 48
+C. 80
+D. 64",C. 80,C,一致
+41,"$f(x)=0.3^{x}-\sqrt{x}$ 的零点在
+A．$(0,0.3)$
+B．$(0.3,0.5)$
+C．$(0.5,1)$
+D．$(1,2)$",B,B,一致
+42,"$f(x)=\sin (\omega x+\varphi)(\omega>0,-\pi<\varphi<\pi)$ ，在 $\left[-\frac{\pi}{12}, \frac{\pi}{12}\right]$ 上单调递增，且 $x=\frac{\pi}{12}$ 为它的一条对称轴， $\left(\frac{\pi}{3}, 0\right)$ 是它的一个对称中心，当 $x \in\left[0, \frac{\pi}{2}\right]$ 时，$f(x)$ 的最小值为
+A．$-\frac{\sqrt{3}}{2}$
+B．$-\frac{1}{2}$
+C． 1
+D． 0",A．$-\frac{\sqrt{3}}{2}$,A,一致
+43,"双曲线 $\frac{x^{2}}{a^{2}}-\frac{y^{2}}{b^{2}}=1(a>0, b>0)$ 的左、右焦点分别为 $F_{1}, F_{2}$ ，以右焦点 $F_{2}$ 为焦点的抛物线 $y^{2}=2 p x(p>$ $0)$ 与双曲线在第一象限的交点为 $P$ ，若 $\left|P F_{1}\right|+\left|P F_{2}\right|=3\left|F_{1} F_{2}\right|$ ，则双曲线的离心率 $e=$
+A． 2
+B． 5
+C．$\frac{\sqrt{2}+1}{2}$
+D．$\frac{\sqrt{5}+1}{2}$",A． 2,A,一致
+44,已知 $i$ 是虚数单位，则 $\left|\frac{3+i}{i}\right|=$ $\qquad$。,$\sqrt{10}$,\sqrt{10},一致
+45,在 $(x-1)^{6}$ 的展开式中，$x^{3}$ 项的系数为 $\qquad$。,$\boxed{-20}$,-20,一致
+46,"$l_{1}: x-y+6=0$ 与 $x$ 轴交于点 $A$ ，与 $y$ 轴交于点 $B$ ，与圆 $(x+1)^{2}+(y-3)^{2}=r^{2}$ 交于 $C, D$ 两点，$|A B|=$ $3|C D|$ ，则 $r=$ $\qquad$。",r = \boxed{2},2,一致
+47,"小桐操场跑圈，一周 2 次，一次 5 圈或 6 圈．第一次跑 5 圈或 6 圈的概率均为 0.5 ，若第一次跑 5 圈，则第二次跑 5 圈的概率为 $0.4,6$ 圈的概率为 0.6 ；若第一次跑 6 圈，则第二次跑 5 圈的概率为 $0.6,4$ 圈子的概率为 0.4 ．小桐一周跑 11 圈的概率为 $\qquad$ ；若一周至少跑 11 圈为动量达标，则连结跑 4 财，记合格周数为 $X$ ，则期望 $E(X)=$ $\qquad$。",0.6；3.2,0.6；3.2,一致
+48,"$\triangle A B C$ 中，$D$ 为 $A B$ 边中点， $\overrightarrow{C E}=\frac{1}{3} \overrightarrow{C D}, \overrightarrow{A B}=a, \overrightarrow{A C}=b$ ，则 $\overrightarrow{A E}=$ $\qquad$ ；若 $|\overrightarrow{A E}|=5, A E \perp C B$ ，则 $\overrightarrow{A E} \cdot \overrightarrow{C D}=$ $\qquad$。",$\boxed{-15}$,$\frac{1}{6}a + \frac{2}{3}b$; $-15$,一致
+49,"若 $a, b \in \mathbb{R}$ ，对 $\forall x \in[-2,2]$ ，均有 $(2 a+b) x^{2}+b x-a-1 \leqslant 0$ 恒成立，则 $2 a+b$ 的最小值为 $\qquad$ ．",\boxed{-4},-4,一致
+50,"在 $\triangle A B C$ 中，$a \sin B=\sqrt{3} b \cos A, c-2 b=1, a=\sqrt{7}$ ．
+（1）求角 $A$ ；
+（2）求边 $c$ ；
+（3）求 $\sin (A+2 B)$ ．",ERROR,"(1) \ A = \frac{\pi}{3} \\
+(2) \ c=3 \\
+(3) \ \sin(A + 2B) = \frac{4\sqrt{3}}{7}",处理失败: The read operation timed out
+51,"正方体 $A B C D-A_{1} B_{1} C_{1} D_{1}$ 的棱长为 $4, E, F$ 分别为 $A_{1}, D_{1}, C_{1} B_{1}$ 中点，$C G=3 C_{1} G$ ．
+（1）求证：$G F \perp$ 平面 $E B F$ ；
+（2）求平面 $E B F$ 与平面 $E B G$ 夹角的余弦值；
+（3）求三棱一 $D-B E F$ 的体积．",ERROR,"(2) $\frac{\sqrt{5}}{3}$
+
+(3) $\frac{32}{3}$",处理失败: The read operation timed out
+52,"已知椭圆 $\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}=1(a>b>0)$ 的左焦点为 $F$ ，右顶点为 $A, P$ 为 $x=a$ 上一点，且直线 $P F$ 的斜率为 $\frac{1}{3}, \triangle P F A$ 的面积为 $\frac{3}{2}$ ，离心率为 $\frac{1}{2}$ ．
+（1）求梢圆的方程；
+（2）过点 $P$ 的直线与椭圆有唯一交点 $B$（异于点 $A$ ），求证：$P F$ 平分 $\angle A F B$ ．",$\boxed{\dfrac{x^2}{4} + \dfrac{y^2}{3} = 1}$,(1)\quad\frac{x}^2}{4}+\frac{y}^2}{3}=1,一致
+53,"$\left\{a_{n}\right\}$ 是等差数列，$\left\{b_{n}\right\}$ 是等比数列，$a_{1}=b_{1}=2, a_{2}=b_{2}+1, a_{3}=b_{3}$ ．
+（1）求 $\left\{a_{n}\right\},\left\{b_{n}\right\}$ 的通顶公式；
+（2）$\forall n \in \mathbb{N}^{*}$ 有 $T_{n}=\left\{p_{1} a_{1} b_{1}+p_{2} a_{2} b_{2}+\cdots+p_{n} a_{n} b_{n} \mid p_{1}, p_{2}, \cdots, p_{n} \in I\right\}, I=\{0,1\}$ ．
+（i）求证：$\forall t \in T_{n}$ ，均有 $t<a_{n+1} b_{n+1}$ ；
+（ii）求 $T_{n}$ 所有元元之和。","（1）$a_n = \boxed{3n - 1}$，$b_n = \boxed{2^n}$；  
+（2）$T_n$所有元之和为$\boxed{(3n-4) \cdot 4^n + 2^{n+2}}$。","(1) \quad a_n=3n-1 \qquad b_n=2^n \\
+(2) \\
+\text{(i)} 证明
+\\
+\text{(ii)} \ 2^{n-1}[(3n-4) \cdot 2^{n-1} + 8]",（1）一致，（2）不一致
+54,"己知函数 $f(x)=a x-(\ln x)^{2}$ ．
+（1）$a=1$ 时，求 $f(x)$ 在点 $(1, f(1))$ 处的切线方程；
+（2）$f(x)$ 有 3 个零点 $x_{1}, x_{2}, x_{3}$ ，且 $\left(x_{1}<x_{2}<x_{3}\right)$ 。
+（i）求 $a$ 的取值范围；
+（ii）证明：$\left(\ln x_{2}-\ln x_{1}\right) \cdot \ln x_{3}<\frac{4 \mathrm{e}}{\mathrm{e}-1}$ ．","y = x  
+$\boxed{\left(0, \dfrac{4}{e^2}\right)}$","(1) $y = (x-1) + 1$，即$x - y = 0$。
+
+(2) //（i）$\left(0, \frac{4}{e^2}\right)$
+//（ii）证明",一致
+55,"已知复数 $z$ 满足 $\mathrm{i} \cdot z+2=2 \mathrm{i}$ ，则 $|z|=$
+（A）$\sqrt{2}$
+（B） $2 \sqrt{2}$
+（C） 4
+（D） 8",B） $2 \sqrt{2}$,B,一致
+56,"双曲线 $x^{2}-4 y^{2}=4$ 的离心率为
+（A）$\frac{\sqrt{3}}{2}$
+（B）$\frac{\sqrt{5}}{2}$
+（C）$\frac{5}{4}$
+（D）$\sqrt{5}$",(B) $\frac{\sqrt{5}}{2}$,B,一致
+57,"为得到函数 $y=9^{x}$ 的图像，只需把函数 $y=3^{x}$ 的图像上的所有点
+（A）横坐标变成原来的 $\frac{1}{2}$ 倍，纵坐标不变
+（B）横坐标变成原来的 2 倍，纵坐标不变
+（C）纵坐标变成原来的 $\frac{1}{3}$ 倍，横坐标不变
+（D）纵坐标变成原来的 3 倍，横坐标不变",（A）,A,一致
+58,"已知 $\left\{a_{n}\right\}$ 是公差不为 0 的等差数列，$a_{1}=-2$ ，若 $a_{3}, a_{4}, a_{6}$ 成等比数列，则 $a_{10}=$
+（A）-20
+（B）-18
+（C） 16
+（D） 18",C,C,一致
+59,"已知 $a>0, b>0$ ，则
+（A）$a^{2}+b^{2}>2 a b$
+（B）$\frac{1}{a}+\frac{1}{b} \geq \frac{1}{a b}$
+（C）$a+b>\sqrt{a b}$
+（D）$\frac{1}{a}+\frac{1}{b} \geq \frac{2}{\sqrt{a b}}$",C和D,C,一致
+60,"已知函数 $f(x)$ 的定义域为 $D$ ，则＂函数 $f(x)$ 的值域为 $\mathbf{R}$＂是＂对任意 $M \in \mathbf{R}$ ，存在 $x_{0} \in D$ ，使得 $\left|f\left(x_{0}\right)\right|>M^{\prime \prime}$ 的
+（A）充分不必要条件
+（B）必要不充分条件
+（C）充分必要条件
+（D）既不充分也不必要条件",选项（A）充分不必要条件,A,一致
+61,"设函数 $f(x)=\sin (\omega x)+\cos (\omega x)(\omega>0)$ ，若 $f(x+\pi)=f(x)$ 恒成立，且 $f(x)$ 在 $\left[0, \frac{\pi}{4}\right]$ 上存在零点，则 $\omega$ 的最小值为
+（A） 8
+（B） 6
+（C） 4
+（D） 3",C,C,一致
+62,"在一定条件下，某人工智能大语言模型训练 $N$ 个单位的数据量所需要时间 $T=k \log _{2} N$（单位：小时），其中 $k$ 为常数．在此条件下，已知训练数据量 $N$ 从 106 个单位增加到 $1.024 \times 10^{9}$ 个单位时，训练时间增加 20 小时；当训练数据量 $N$ 从 $1.024 \times 10^{8}$ 个单位增加到 $4.096 \times 10^{8}$ 个单位时，训练时间增加（单位：小时）
+（A） 2
+（B） 4
+（C） 20
+（D） 40",B,B,一致
+63,"已知平面直角坐标系 $x O y$ 中，$|\overrightarrow{O A}|=|\overrightarrow{O B}|=\sqrt{2},|\overrightarrow{A B}|=2$ ，设 $C(3,4)$ ，则 $|2 \overrightarrow{C A}+\overrightarrow{A B}|$ 的取值范围是
+（A）$[6,14]$
+（B）$[6,12]$
+（C）$[8,14]$
+（D）$[8,12]$","D）[8,12]",D,一致
+64,抛物线 $y^{2}=2 p x(p>0)$ 的顶点到焦点的距离为 3 ，则 $p=$ $\qquad$ ．,p = 6,6,一致
+65,已知 $(1-2 x)^{4}=a_{0}-2 a_{1} x+4 a_{2} x^{2}-8 a_{3} x^{3}+16 a_{4} x^{4}$ ，则 $a_{0}=$ $\qquad$ ；$a_{1}+a_{2}+a_{3}+a_{4}=$ $\qquad$。,a₀=1，a₁+a₂+a₃+a₄=15,"1,15",一致
+66,"已知 $\alpha, \beta \in[0,2 \pi]$ ，且 $\sin (\alpha+\beta)=\sin (\alpha-\beta), \cos (\alpha+\beta) \neq \cos (\alpha-\beta)$ ，写出满足条件的一组 $(\alpha, \beta)=$ $\qquad$。","$(\frac{\pi}{2}, \frac{\pi}{2})$",pi/2，pi/6 (答案不唯一),不一致
+67,"某科技兴趣小组通过 3D 打印机的一个零件可以抽象为如图所示的多面体，其中 $A B C D E F$ 是一个平行多边形，平面 $A R F \perp$ 平面 $A B C$ ，平面 $T C D \perp$ 平面 $A B C, A B \perp B C, A B / / R S / / E F / / C D$ ， $A F / / S T / / B C / / E D$ ．若 $A B=B C=8, A F=C D=4, A R=R F=T C=T D=\frac{5}{2}$ ，则该多面体的体积为 $\qquad$。",ERROR,60,处理失败: The read operation timed out
+68,"已知函数 $f(x)$ 的定义域为 $\mathbf{R}$ ，则下列说法正确的有 $\qquad$。
+（1）存在在 $\mathbf{R}$ 上单调递增的函数 $f(x)$ 使得 $f(x)+f(2 x)=-x$ 恒成立；
+（2）存在在 $\mathbf{R}$ 上单调递减的函数 $f(x)$ 使得 $f(x)-f(2 x)=-x$ 恒成立；
+（3）使得 $f(x)+f(-x)=\cos x$ 恒成立的函数 $f(x)$ 存在且有无穷多个；
+（4）使得 $f(x)-f(-x)=\cos x$ 恒成立的函数 $f(x)$ 存在且有无穷多个．",ERROR,2，3,处理失败: [Errno 54] Connection reset by peer
+69,"在 $\triangle A B C$ 中， $\cos A=-\frac{1}{3}, a \sin C=4 \sqrt{2}$ ．
+（1）求 $c$ ；
+（2）再从条件（1）、条件（2）、条件（3）这三个条件中选择一个作为已知，使得 $\triangle A B C$ 存在，求 $B C$ 的高条件（1）：$a=6$ ；
+条件（2）：$b \sin C=\frac{10 \sqrt{2}}{3}$ ；
+条件（3）：$S_{\triangle A B C}=10 \sqrt{2}$ ．
+注：如果选择的条件不符合要求，第（2）问得 0 分；如果选择多个符合要求的条件分别解答，按第一个解答得分．",ERROR,"(1)6 （2）1）由平方关系、正弦定理即可求解；
+（2）若选（1），可得 $A, C$ 都是钝角，矛盾；若选（2），由正弦定理、平方关系求得， $\sin B, \cos B$ ，进一步由 $A D=c \sin B$ 求得高，并说明此时三角形 $A B C$ 存在即可；若选（3），首先根据三角形面积公式求得 $b$ ，再根据余弦定理可求得 $a$ ，由此可说明三角形 $A B C$ 存在，且可由等面积法求解 $A D$ ．",处理失败: The read operation timed out
+70,"有一道选择题考查了一个知识点．甲、乙两校各随机抽取 100 人，甲校有 80 人答对，乙校有 75 人答对，用频率估计概率．
+（1）从甲校随机抽取 1 人，求这个人做对该题目的概率；
+（2）从甲、乙两校各随机抽取 1 人，设 $X$ 为做对的人数，求恰有 1 人做对的概率以及 $X$ 的数学期望；
+（3）若甲校同学掌握这个知识点则有 $100 \%$ 的概率做对该题目，乙校同学掌握这个知识点则有 $85 \%$的概率做对该题目，未掌握该知识点的同学都是从四个选项里面随机选择一个，设甲校学生掌握该知识点的概率为 $p_{1}$ ，乙校学生掌握该知识点的概率为 $p_{2}$ ，试比较 $p_{1}$ 与 $p_{2}$ 的大小（结论不要求证明）。","（1）$\boxed{0.8}$  
+（2）恰有1人做对的概率为$\boxed{0.35}$，$X$的数学期望为$\boxed{1.55}$；  
+（3）$\boxed{p_1 < p_2}$","（1）$\frac{4}{5}$
+（2） $0.35, E(X)=1.55$
+（3）$p_{1}<p_{2}$",一致
+71,"已知椭圆 $E: \frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}=1(a>b>0)$ ，离心率为 $\frac{\sqrt{2}}{2}$ ．椭圆 $E$ 上的点到两个焦点的距离之和为 4 ．
+（1）求椭圆 $E$ 的方程；
+（2）已知椭圆 $E$ 上一点 $M\left(x_{0}, y_{0}\right)\left(x_{0} \neq 0\right)$ ，直线 $x_{0} x+2 y_{0} y-4=0$ 与 $y=2, y=-2$ 的交点为 $A, B$ ． $\triangle A O M$ 与 $\triangle B O M$ 的面积分别为 $S_{1}, S_{2}$ ．猜想 $\frac{S_{1}}{S_{2}}$ 与 $\frac{|O A|}{|O B|}$ 的数量关系并求证．","（1）椭圆 $ E $ 的方程为 $ \frac{x^2}{4} + \frac{y^2}{2} = 1 $；  
+（2）$ \frac{S_1}{S_2} = \frac{|OA|}{|OB|} $。","（1）$\frac{x^{2}}{4}+\frac{y^{2}}{2}=1$
+（2）$\frac{S_{1}}{S_{2}}=\frac{|O A|}{|O B|}$",一致
+72,"已知全集 $U=\{x \mid 2 \leqslant x \leqslant 5, x \in \mathbf{R}\}$ ，集合 $A=\{x \mid 2 \leqslant x<4, x \in \mathbf{R}\}$ ，则 $\bar{A}=$ $\qquad$","$\bar{A} = \{x \mid 4 \leqslant x \leqslant 5, x \in \mathbf{R}\}$","[4,5]",一致
+73,不等式 $\frac{x-1}{x-3}<0$ 的解集为 $\qquad$,"(1, 3)","(1,3)",一致
+74,已知等差数列 $\left\{a_{n}\right\}$ 的首项 $a_{1}=-3$ ，公差 $d=2$ ，则该数列的前 6 项和为 $\qquad$,$\\boxed{12}$,12,一致
+75,在二项式 $(2 x-1)^{5}$ 的展开式中，$x^{3}$ 的系数为 $\qquad$,\boxed{80},80,一致
+76,"函数 $y=\cos x$ 在 $\left[-\frac{\pi}{2}, \frac{\pi}{4}\right]$ 到的值域为 $\qquad$","$\boxed{[0, 1]}$",[0.1],不一致
+77,已知随机变量 $X$ 的分布为 $\left(\begin{array}{lll}5 & 6 & 7 \\ 0.2 & 0.3 & 0.5\end{array}\right)$ ，则期望 $E[X]=$ $\qquad$,6.3,6.3,一致
+78,"如图，在正四棱柱 $A B C D-A_{1} B_{1} C_{1} D_{1}$ 中，$B D=4 \sqrt{2}, D B_{1}=9$ ，则该正四棱柱的体积为 $\qquad$ ．",112,112,一致
+79,"设 $a, b>0, a+\frac{1}{b}=1$ ，则 $b+\frac{1}{a}$ 的最小值为 $\qquad$",\boxed{4},4,一致
+80,4 个家长和 2 个儿童去爬山． 6 个人需要排成一条队列，要求队列的头和尾均是家长，则不同的排列个数有 $\qquad$种,288,288,一致
+81,"已知复数 $z$ 满足 $z^{2}=(\bar{z})^{2},|z| \leqslant 1$ ，则 $|z-2-3 i|$ 的最小值是 $\qquad$ ",\boxed{2\sqrt{2}},2\sqrt{2},一致
+82,"小申同学观察发现，生活中有些时候影子可以完全投射在斜面上。某斜面上有两根长为 1 米的垂直于水平面放置的杆子，与斜面的接触点分别为 $A, B$ ，它们在阳光的照射下呈现出影子，阳光可视为平行光：其中一根杆子的影子在水平面上，长度为 0.4 米；另一根杆子的影子完全在斜面上，长度为 0.45 米．则斜面的底角 $\theta=$ $\qquad$ （结果用角度制表示，精确到 $0.01^{\circ}$ ）",ERROR,12.58,处理失败: The read operation timed out
+83,"已知函数 $f(x)=\left\{\begin{array}{ll}1 & x>0 \\ 0 & x=0 \\ -1 & x<0\end{array}, \vec{a} 、 \vec{b} 、 \vec{c}\right.$ 是平面内三个不同的单位向量．若 $f(\vec{a} \cdot \vec{b})+f(\vec{b} \cdot \vec{c})+f(\vec{c} \cdot \vec{a})=0$ ，则 $|\vec{a}+\vec{b}+\vec{c}|$ 的取值范围是 $\qquad$。","\boxed{(1, \sqrt{5})}","(1,\sqrt{5})",一致
+84,已知事件 $A 、 B$ 相互独立，事件 $A$ 发生的概率为 $P(A)=\frac{1}{2}$ ，事件 $B$ 发生的概率为 $P(B)=\frac{1}{2}$ ，则事件 $A$ $\cap B$ 发生的概率 $P(A \cap B)$ 为 A．$\frac{1}{8}$ ．B．$\frac{1}{4}$ ．C．$\frac{1}{2}$ ．D． 0,B．$\frac{1}{4}$,B,一致
+85,"设 $a>0, s \in \mathrm{R}$ ．下列各项中，能推出 $a^{s}>a$ 的一项是 A．$a>1$ ，且 $s>0$ ．B．$a>1$ ，且 $s<0$ ．C． $0<a<1$ ，且 $s>0$ ．D． $0<a<1$ ，且 $s<0$",D．$0 < a < 1$，且 $s < 0$。,D,一致
+86,"已知 $A(0,1), B(1,2), C$ 在 $\Gamma: x^{2}-y^{2}=1(x \geqslant 1, y \geqslant 0)$ 上，则 $\triangle A B C$ 的面积 A．有最大值，但没有最小值．B．没有最大值，但有最小值．C．既有最大值，也有最小值．D．既没有最大值，也没有最小值",A,A,一致
+87,"设 $\lambda=[0,1]$ ，数列 $a_{n}=10 n-9$ ，数列 $b_{n}=2^{n}$ 。设 $c_{n}=\lambda a_{n}+(1-\lambda) b_{n}$ 。若对任意 $\lambda \in[0,1]$ ，长为 $a_{n} 、 b_{n} 、 c_{n}$的线段均能构成三角形，则满足条件的 $n$ 有 A． 1 个．B． 3 个．C． 4 个．D．无穷",B,B,一致
+88,2024 年东京奥运会，中国获得了男子 $4 \times 100$ 米混合泳接力金牌。以下是历届奥运会男子 $4 \times 100$ 米混合泳接力项目冠军成绩记录（单位：秒），数据按照升序排列：206．78、207．46、207．95、209．34、209．35、 $210.68 、 213.73 、 214.84 、 216.93 、 216.93$（1）求这组数据的极差与中位（2）从这 10 个数据中任选 3 个，求恰有 2 个数据在 211 以上的概率；（3）若比赛成绩 $y$ 关于年份 $x$ 的回归方程为 $y=-0.311 x+\hat{b}$ ，年份 $x$ 的平均数为 2006 ，预测 2028 年冠军队的成绩（精确到 0.01 秒）。,10.15秒，210.02秒，30%，204.56秒,"(1) 10.15, 210.015 (2) 0.3 (3) y=-0.311x+835.265, x=2028时，y=204.557",一致
+89,"如图，$P$ 是圆锥的顶点，$O$ 是底面圆心，$A B$ 是底面直径，且 $A B=2$ ．（1）若直线 $P A$ 与圆雉底面的所成角为 $\frac{\pi}{3}$ ，求圆雉的侧面积；（2）已知 $Q$ 是母线 $P A$ 的中点，点 $C 、 D$ 在底面圆周上，且弧的长为 $\frac{\pi}{3}, C D / / A B$ ．设点 $M$ 在线段 $O C$ 上，证明：直线 $Q M / /$ 平面 $P B D$ ．![](https://cdn.mathpix.com/cropped/2025_06_09_8dd5cad670dc0d4c1d26g-3.jpg?height=466&width=418&top_left_y=641&top_left_x=1450)",\boxed{2\pi},"(1) 2\pi (2) 因为OQ//BP, OC//BD, 所以平面OQC//平面PBD,直线QM//平面PBD",一致
+90,"已知 $f(x)=x^{2}-(m+2) x+m \ln x, m \in \mathbf{R}$ 。（1）若 $f(1)=0$ ，求不等式 $f(x) \leqslant x^{2}-1$ 的解集；（2）若函数 $y=f(x)$ 满足在 $(0,+\infty)$ 上存在极大值，求 $m$ 的取值范围；","（1）$\boxed{[1, +\infty)}$  
+（2）$\boxed{(0, 2) \cup (2, +\infty)}$","(1) [1,+\infinity) (2) (0,2) U (2,+\infinity)",一致
+91,"已知椭圆 $\Gamma: \frac{x^{2}}{a^{2}}+\frac{y^{2}}{5}=1(a>\sqrt{5}), M(0, m)(m>0), A$ 是 $\Gamma$ 的右顶点。（1）若 $\Gamma$ 的焦点是 $(2,0)$ ，求离心率 $e$ ；（2）若 $a=4$ ，且 $\Gamma$ 上存在一点 $P$ ，满足 $\overrightarrow{P A}=2 \overrightarrow{M P}$ ，求 $m$ ；（3）若 $A M$ 中垂线 $l$ 的斜率为 $2, l$ 与 $\Gamma$ 交于 $C 、 D$ 两点，$\angle C M D$ 为针角，求 $a$ 的取值范围．","（1）$\boxed{\dfrac{2}{3}}$；（2）$\boxed{\sqrt{10}}$；（3）$\boxed{(\sqrt{5}, \sqrt{11})}$","(1) \frac{2}{3} (2) \sqrt{10} (3) (\sqrt{5}, \sqrt{11})",一致

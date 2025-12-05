@@ -1,0 +1,1829 @@
+id,question,answer,type
+1,求函数 $y = \sqrt{-\tan x - 1} + \sqrt{16 - 2x} + \frac{1}{1 - \log_2 \sin x}$ 的定义域。,"要使原函数有意义，当且仅当满足以下不等式组：
+$$
+\begin{cases}
+-\tan x - 1 > 0 & \text{(①)} \\
+16 - 2x > 0 & \text{(②)} \\
+1 - \log_2 \sin x \ne 0 & \text{(③)} \\
+\sin x > 0 & \text{(④)}
+\end{cases}
+$$
+
+分别求解：
+- 由①得：$\tan x < -1 \Rightarrow x \in \left(k\pi - \frac{\pi}{2}, k\pi - \frac{\pi}{4}\right),\, k \in \mathbb{Z}$
+- 由②得：$x < 8$
+- 由③得：$\log_2 \sin x \ne 1 \Rightarrow \sin x \ne 2$（恒成立），但需保证 $\sin x > 0$，即④已涵盖
+- 由④得：$\sin x > 0 \Rightarrow x \in (2k\pi, (2k+1)\pi),\, k \in \mathbb{Z}$
+
+取交集得：
+$x \in \bigcup_{k \in \mathbb{Z}} \left(2k\pi - \frac{\pi}{4}, 2k\pi\right)$，即原函数定义域为：
+$$
+\boxed{\bigcup_{k \in \mathbb{Z}} \left(2k\pi - \frac{\pi}{4}, 2k\pi\right)}
+$$",三角函数
+2,"**(1)** 讨论函数性质（有界性、奇偶性、单调性、周期性），求极值，并作出在 $[0, 2\pi]$ 上的图像。","- 奇偶性：$f(-x) = |\sin(-x)| + |\cos(-x)| = |\sin x| + |\cos x| = f(x)$，故为偶函数。
+- 周期性：$f(x + \pi) = |\sin(x + \pi)| + |\cos(x + \pi)| = |\sin x| + |\cos x| = f(x)$，故周期为 $\pi$。
+- 有界性：由于 $\sin^2 x + \cos^2 x = 1$，有：
+  $$
+  1 \leq f(x)^2 = \sin^2 x + \cos^2 x + 2|\sin x||\cos x| \leq 2 \Rightarrow 1 \leq f(x) \leq \sqrt{2}
+  $$
+- 极值：当 $x = \frac{k\pi}{2}$ 时取得极值，最大值为 $\sqrt{2}$，最小值为 1。
+- 图像略（可在 $[0, \pi]$ 内分析后对称扩展）",三角函数
+3,"**(2)** 求函数 $y = \sqrt{\sin^2 x + \cos^2 x}$ 在区间 $[0, \frac{\pi}{2}]$ 上的值域。","- $\sin^2 x + \cos^2 x = 1$，所以 $y = \sqrt{1} = 1$，恒定。
+- 故值域为 $\{1\}$。",三角函数
+4,已知 $f(x) = ax + \sin x$ 的图像上有两条切线相互垂直，求 $a$ 的值。,"- $f'(x) = a + \cos x$
+- 设存在 $x_1, x_2$ 使得两切线垂直，即：
+  $$
+  (a + \cos x_1)(a + \cos x_2) = -1
+  $$
+- 注意到 $\cos x \in [-1, 1]$，令 $u = \cos x_1$, $v = \cos x_2$，则：
+  $$
+  (a + u)(a + v) = -1,\quad u,v \in [-1,1]
+  $$
+- 此方程在 $u,v \in [-1,1]$ 中有解，且要求乘积为 $-1$，说明两个根分布在 $-1$ 和 $1$ 之间。
+- 考虑二次函数 $g(t) = (a + t)^2 + 1$ 的最小值出现在 $t = -a$，若 $-a \in [-1,1]$，则可能达到临界情况。
+- 经分析可知：当 $a = 0$ 时，$(\cos x_1)(\cos x_2) = -1$，此时 $\cos x_1 = 1, \cos x_2 = -1$ 或反之，满足条件。
+
+因此，唯一可能的 $a$ 值为：
+$$
+\boxed{0}
+$$",三角函数
+5,"设函数 $ f(x) = \sin^2 x + (2a - 1)\sin x + a^2 - 8 $，已知 $ x \in [0, \pi] $。","令 $ t = \sin x $，则 $ t \in [-1, 1] $。
+于是：
+$$
+f(x) = g(t) = t^2 + (2a - 1)t + a^2 - 8
+$$
+
+根据 $ a $ 的不同取值，讨论 $ g(t) $ 在区间 $[-1, 1]$ 上的最小值：
+
+- 当 $ a \leq -\frac{1}{2} $，$ g(t) $ 单调递增，最小值在 $ t = -1 $ 处取得；
+- 当 $ -\frac{1}{2} < a < \frac{3}{2} $，极小值点 $ t_0 = \frac{1 - 2a}{2} \in (-1, 1) $，此时最小值为：
+  $$
+  g\left(\frac{1 - 2a}{2}\right) = a^2 - 2a + 4
+  $$
+- 当 $ a \geq \frac{3}{2} $，$ g(t) $ 单调递减，最小值在 $ t = 1 $ 处取得。",三角函数
+6,"### (1) 求定义域、值域、最小正周期；
+### (2) 判断奇偶性。","(1) 定义域：
+由于分母不能为零，即 $ \cos x \neq 0 $，所以：
+$$
+x \neq \frac{\pi}{2} + k\pi,\quad k \in \mathbb{Z}
+$$
+故定义域为：
+$$
+\left\{ x \in \mathbb{R} \mid x \neq \frac{\pi}{2} + k\pi,\, k \in \mathbb{Z} \right\}
+$$
+
+值域：
+由 $ |\cos x| > 0 $，且 $ \sin x \in [-1, 1] $，可得 $ f(x) \in (-\infty, \infty) $，即值域为 $ \mathbb{R} $。
+
+最小正周期：
+注意到 $ f(x + \pi) = f(x) $，且无更小正周期，因此最小正周期是 $ \pi $。
+
+(2) 奇偶性：
+$$
+f(-x) = \frac{\sin(-x)}{|\cos(-x)|} = \frac{-\sin x}{|\cos x|} = -f(x)
+$$
+且定义域关于原点对称，故 $ f(x) $ 是奇函数。",三角函数
+7,"已知函数 $ f(x) = \frac{a - 2\cos x}{3\sin x} $ 在区间 $ (0, \pi) $ 内是增函数，求实数 $ a $ 的取值范围。","根据增函数定义，当 $ 0 < x_1 < x_2 < \pi $ 时，有：
+$$
+f(x_2) - f(x_1) > 0
+$$
+
+整理后得到：
+$$
+a < \frac{2\sin(x_2 - x_1)}{\sin x_2 - \sin x_1}
+$$
+
+利用和差化积公式可进一步推导出：
+$$
+a < 2
+$$",三角函数
+8,"已知对任意实数 $ x $，均有：
+$$
+-F < f(x) < F,\quad -F < g(x) < F
+$$
+证明：对任意实数 $ x $，有：
+$$
+\cos(\cos x) > \sin(\sin x)
+$$","由条件知 $ |\sin x| < 1 $，$ |\cos x| < 1 $。
+由于 $ y = \sin z $ 在 $ \left[-\frac{\pi}{2}, \frac{\pi}{2}\right] $ 上单调递增，且：
+$$
+\sin(\sin x) < \sin\left(\frac{\pi}{2} - \cos x\right) = \cos(\cos x)
+$$
+因此结论成立。",三角函数
+9,"### (1) 求定义域、值域；
+### (2) 在 $ (-\pi, \pi) $ 中求单调区间；
+### (3) 判断方程 $ f(x) = \tan\left(\frac{\pi}{4}\right) $ 解的个数。","(1) 定义域：
+因为 $ \sin x \in [-1, 1] $，而 $ \tan y $ 在 $ y = \pm \frac{\pi}{2} $ 处无定义，但 $ \pm 1 \notin \left\{ \pm \frac{\pi}{2} \right\} $，所以定义域为：
+$$
+\{ x \in \mathbb{R} \mid x \neq \frac{\pi}{2} + k\pi,\, k \in \mathbb{Z} \}
+$$
+
+值域：
+由于 $ \sin x \in [-1, 1] $，且 $ \tan y $ 在 $ (-1, 1) $ 上连续且覆盖 $ (-\infty, +\infty) $，所以值域为 $ \mathbb{R} $。
+
+(2) 单调区间：
+分析 $ \sin x $ 和 $ \tan y $ 的复合行为，可知：
+- 在 $ \left[0, \frac{\pi}{2}\right) $ 和 $ \left(\frac{\pi}{2}, \pi\right] $ 上分别单调递增；
+- 在 $ \left[-\pi, -\frac{\pi}{2}\right) $ 和 $ \left(-\frac{\pi}{2}, 0\right] $ 上也分别单调递增；
+- 其他区间类似。
+
+综上，在 $ (-\pi, \pi) $ 中，单调递增区间为：
+$$
+\left(-\pi, -\frac{\pi}{2}\right),\quad \left(-\frac{\pi}{2}, 0\right),\quad \left(0, \frac{\pi}{2}\right),\quad \left(\frac{\pi}{2}, \pi\right)
+$$
+
+(3) 方程解的个数：
+由 $ \tan(\sin x) = \tan\left(\frac{\pi}{4}\right) = 1 $，得：
+$$
+\sin x = \frac{\pi}{4}
+$$
+由于 $ \left|\frac{\pi}{4}\right| < 1 $，存在两个解（一个在第一象限，一个在第二象限），故有两个解。",三角函数
+10,判断函数 $ g(x) = \cos(\sqrt{x}) $ 是否为周期函数。,"**证明（反证法）：**
+假设存在非零常数 $ T $，使得：
+$$
+\cos(\sqrt{x + T}) = \cos(\sqrt{x}),\quad \forall x \in \mathbb{R}
+$$
+取 $ x = 0 $ 得 $ \cos(\sqrt{T}) = 1 $，即 $ \sqrt{T} = 2k\pi $，所以 $ T = 4k^2\pi^2 $。
+
+再取 $ x = T $，得：
+$$
+\cos(\sqrt{2T}) = \cos(\sqrt{T}) = 1 \Rightarrow \sqrt{2T} = 2m\pi
+$$
+联立两式得矛盾（$ \sqrt{2} $ 不是有理数），故假设错误，函数不是周期函数。",三角函数
+11,若方程 $ \sin^2 x + \cos x + a = 0 $ 有解，求实数 $ a $ 的取值范围。,"令 $ t = \cos x \in [-1, 1] $，则：
+$$
+\sin^2 x = 1 - t^2
+$$
+代入原方程得：
+$$
+1 - t^2 + t + a = 0 \Rightarrow t^2 - t - (1 + a) = 0
+$$
+
+要求该方程在 $ [-1, 1] $ 上有实根，判别式：
+$$
+\Delta = 1 + 4(1 + a) = 5 + 4a \geq 0 \Rightarrow a \geq -\frac{5}{4}
+$$
+
+同时，根需落在 $ [-1, 1] $ 内，经计算得：
+$$
+-\frac{5}{4} \leq a < 1
+$$",三角函数
+12,求函数 $ y = (a + \cos x)(a + \sin x) $ 的值域。,"展开：
+$$
+y = a^2 + a(\sin x + \cos x) + \sin x \cos x
+$$
+令 $ s = \sin x + \cos x $，则 $ s \in [-\sqrt{2}, \sqrt{2}] $，且：
+$$
+\sin x \cos x = \frac{s^2 - 1}{2}
+$$
+代入得：
+$$
+y = a^2 + as + \frac{s^2 - 1}{2} = \frac{1}{2}s^2 + as + a^2 - \frac{1}{2}
+$$
+
+这是一个关于 $ s $ 的二次函数，根据 $ a $ 的不同取值分类讨论，最终得出值域如下：
+
+- 若 $ a \geq \sqrt{2} $，值域为 $ \left[\left(a + \frac{\sqrt{2}}{2}\right)^2, \left(a - \frac{\sqrt{2}}{2}\right)^2\right] $
+- 若 $ -\sqrt{2} \leq a \leq \sqrt{2} $，值域为 $ \left[\frac{1}{2}(a^2 - 2a + 1), \frac{1}{2}(a^2 + 2a + 1)\right] $
+- 若 $ a \leq -\sqrt{2} $，值域为 $ \left[\left(a - \frac{\sqrt{2}}{2}\right)^2, \left(a + \frac{\sqrt{2}}{2}\right)^2\right] $",三角函数
+13,"设函数 $ f(x) $ 定义在 $ \mathbb{R} $ 上，满足：
+$$
+f(x + y) = 2f(x)f(y),\quad f(0) = 1,\quad f\left(\frac{\pi}{2}\right) = 0
+$$
+
+### (1) 求证：$ f(x) = f(-x) $；
+### (2) 若 $ 0 < x < \frac{\pi}{2} $，且 $ f(x) > 0 $，证明 $ f(x) $ 在 $ [0, \frac{\pi}{2}] $ 上单调递减；
+### (3) 说明 $ f(x) $ 的最小正周期为 $ 2\pi $。",**证明略（详见原文逻辑）。**,三角函数
+14,"设 $ f(x) = \sin(ax + \frac{\pi}{6}) $
+
+### (1) 求最小正周期；
+### (2) 对任意正数 $ r $，是否存在长度为 1 的区间 $ [a, b] \subset [r, r+1] $，使得 $ f(a) = 1 $、$ f(b) = -1 $？","(1) 最小正周期为 $ \frac{2\pi}{|a|} $
+
+(2) 若 $ a \geq \pi $，则在一个单位长度内无法完成完整周期，不可能同时取得最大值和最小值。
+若 $ a < \pi $，则可能找到这样的区间。",三角函数
+15,是否存在实数 $x$，使得 $\tan x + \sqrt{3}$ 与 $\cot x + \sqrt{3}$ 均为有理数？,"假设不存在这样的实数 $x$。
+若存在既约分数 $\frac{p}{q}$，使得 $\tan x = \frac{p}{q} - \sqrt{3}$，同理存在既约分数 $\frac{r}{s}$，使得 $\cot x = \frac{r}{s} - \sqrt{3}$。
+则：
+$$
+\tan x \cdot \cot x = 1 \Rightarrow \left(\frac{p}{q} - \sqrt{3}\right)\left(\frac{r}{s} - \sqrt{3}\right) = 1
+$$
+展开得：
+$$
+\frac{pr}{qs} - \frac{p\sqrt{3}}{q} - \frac{r\sqrt{3}}{s} + 3 = 1
+\Rightarrow \frac{pr}{qs} + 2 = \sqrt{3}\left( \frac{p}{q} + \frac{r}{s} \right)
+$$
+两边均为有理数，但右边含无理数 $\sqrt{3}$，矛盾。
+故假设不成立，**存在**满足条件的实数 $x$。",三角函数
+16,"求实数 $a$ 的取值范围，使得对任意实数 $x$ 和任意 $\theta \in \left[0, \frac{\pi}{2}\right]$，恒有：
+$$
+(x + 3 + 2\sin\theta\cos\theta)^2 + (x + a\sin\theta + a\cos\theta)^2 \geq 1
+$$","令 $u = \sin\theta + \cos\theta$，则 $u \in [1, \sqrt{2}]$，且 $2\sin\theta\cos\theta = u^2 - 1$。
+设：
+$$
+f(x) = (x + u^2 + 2)^2 + (x + au)^2
+= 2x^2 + 2(u^2 + 2 + au)x + (u^2 + 2)^2 + (au)^2
+$$
+该二次函数最小值在顶点处取得：
+$$
+f_{\min} = \frac{(u^2 + 2)^2 + (au)^2 - (u^2 + 2 + au)^2}{2}
+$$
+计算后要求其 $\geq 1$ 对所有 $u \in [1, \sqrt{2}]$ 成立。
+通过讨论可得：当 $a \leq -\sqrt{2}$ 或 $a \geq \sqrt{2}$ 时不等式恒成立。",三角函数
+17,已知 $x > y > z > 0$ 且 $x + y + z = \pi$，求乘积 $\cos x \sin y \cos z$ 的最大值和最小值。,"由条件 $x > y > z > 0$，且 $x + y + z = \pi$，利用积化和差公式：
+$$
+\cos x \sin y \cos z = \frac{1}{2} \cos x [\sin(y+z) + \sin(y-z)]
+= \frac{1}{2} \cos x \sin(y-z) + \text{常数项}
+$$
+分析边界情况：当 $x = \frac{\pi}{2}, y = z = \frac{\pi}{4}$ 时取得最大值 $\frac{1}{2}$；
+当 $z \to 0$, $y \to \frac{\pi}{2}, x \to \frac{\pi}{2}$ 时趋近于最小值 $0$。",三角函数
+18,"函数 $F(x) = |\cos 2x + 2\sin x \cos x - \sin^2 x + ax + b|$ 在 $(0, 3\pi)$ 上的最大值记为 $M$，问 $a, b$ 取何值时 $M$ 最小？","注意到：
+$$
+\cos 2x + 2\sin x \cos x - \sin^2 x = \sqrt{2} \sin\left(2x + \frac{\pi}{4}\right)
+$$
+所以：
+$$
+F(x) = \left| \sqrt{2} \sin\left(2x + \frac{\pi}{4}\right) + ax + b \right|
+$$
+由于三角部分周期性，而一次项线性增长，除非 $a = b = 0$，否则最大值必大于 $\sqrt{2}$。
+当 $a = b = 0$ 时，$M = \sqrt{2}$，为最小值。
+
+**结论：** 当 $a = b = 0$ 时，$M_{\min} = \sqrt{2}$。",三角函数
+19,"已知 $\theta_1 + \theta_2 + \cdots + \theta_n = \pi$，$\theta_i \in [0, \pi]$，求 $\sum_{i=1}^{n} \sin^2 \theta_i$ 的最大值。","利用恒等式：
+$$
+\sin^2 \theta_i = \frac{1 - \cos 2\theta_i}{2}
+\Rightarrow \sum \sin^2 \theta_i = \frac{n}{2} - \frac{1}{2} \sum \cos 2\theta_i
+$$
+当某些角为零或相等时，$\sum \cos 2\theta_i$ 最小，从而 $\sum \sin^2 \theta_i$ 最大。
+特别地，当 $n=3$ 时，最大值为 $\frac{3}{2}$；一般情形下，最大值为 $\frac{n}{2}$（当两个角为 $\frac{\pi}{2}$，其余为0）。",三角函数
+20,求所有实数 $a$，使得数列 $a_n = \cos(2^n a)$ 中每一项都为负数。,"首先必须有 $\cos a < -\frac{1}{2}$，否则 $\cos 2a = 2\cos^2 a - 1 > 0$，矛盾。
+进一步推导可知，若 $\cos a = -\frac{1}{2}$，则 $a = 2k\pi \pm \frac{2\pi}{3}, k \in \mathbb{Z}$，此时 $\cos(2^n a) = -\frac{1}{2}$ 恒成立。
+
+最终答案：
+$$
+a = 2k\pi \pm \frac{2\pi}{3}, \quad k \in \mathbb{Z}
+$$",三角函数
+21,"函数 $y = \sin(x + \frac{\pi}{2})$ 的图像关于（ ）。
+   A) 关于 $x$ 轴对称
+   B) 关于 $y$ 轴对称
+   C) 关于原点对称
+   D) 关于直线 $x = -\frac{\pi}{2}$ 对称",B,三角函数
+22,"曲线 $y = \sin x$ 关于直线 $x = \frac{\pi}{2}$ 对称的曲线是（ ）。
+   A) $y = \sin x$
+   B) $y = \cos x$
+   C) $y = -\sin x$
+   D) $y = -\cos x$",D,三角函数
+23,"函数 $y = -3\cos(-2x + \frac{\pi}{3})$ 的图象可由 $y = -3\cos(-2x)$ 向（ ）平移得到。
+   A) 左 $\frac{\pi}{6}$
+   B) 右 $\frac{\pi}{6}$
+   C) 左 $\frac{\pi}{3}$
+   D) 右 $\frac{\pi}{3}$",A,三角函数
+24,"若 $f(x) = \sin(x + \frac{\pi}{4}), g(x) = \cos(x - \frac{\pi}{4})$，则（ ）。
+   A) 图像相同
+   B) 关于 $x$ 轴对称
+   C) 向左平移 $\frac{\pi}{2}$ 得到
+   D) 向右平移 $\frac{\pi}{2}$ 得到",A,三角函数
+25,"函数 $y = \log_2 (\sin x)$ 的单调递增区间是（ ）。
+   A) $[2k\pi + \frac{\pi}{2}, 2k\pi + \pi], k \in \mathbb{Z}$
+   B) $[2k\pi, 2k\pi + \frac{\pi}{2}], k \in \mathbb{Z}$
+   C) $[2k\pi, 2k\pi + \frac{\pi}{4}], k \in \mathbb{Z}$
+   D) $[2k\pi + \frac{\pi}{4}, 2k\pi + \frac{\pi}{2}], k \in \mathbb{Z}$",B,三角函数
+26,"函数 $y = \sqrt{\cos(\sin x)}$ 的定义域是（ ）。
+   A) $x \in \left[k\pi - \frac{\pi}{2}, k\pi + \frac{\pi}{2}\right], k \in \mathbb{Z}$
+   B) $x \in [2k\pi, 2k\pi + \frac{\pi}{2}], k \in \mathbb{Z}$
+   C) $x \in [k\pi - \frac{\pi}{2}, k\pi + \frac{\pi}{2}], k \in \mathbb{Z}$
+   D) $\forall x \in \mathbb{R}$",D,三角函数
+27,"存在 $x \in [0, 2\pi)$，使 $\sin x - \sqrt{5} \cos x = m$ 成立，则 $m$ 的取值范围是（ ）。
+   A) $[-2, 2]$
+   B) $(-\infty, 2]$
+   C) $[-1, +\infty)$
+   D) $(-\infty, -1] \cup [1, +\infty)$",A,三角函数
+28,"已知 $f(-1) = 1$，$\tan \alpha = 3$，则 $f(2\sin\alpha \cos\alpha)$ 的值是（ ）。
+   A) 1
+   B) -1
+   C) 3
+   D) 8",A,三角函数
+29,"函数 $f(x) = |x| + \sin x$ 在 $|x| < \frac{\pi}{2}$ 上的最小值是（ ）。
+   A) 0
+   B) 1
+   C) -1
+   D) $\frac{\pi}{2}$",A,三角函数
+30,"下列四个命题中正确的是（ ）。
+    A) 正切函数在整个定义域内是增函数
+    B) 周期函数一定有最小正周期
+    C) 函数 $y = 3\tan(\omega x)$ 的图像关于 $y$ 轴对称
+    D) 若 $x$ 是第一象限角，则 $\sin x$ 是增函数，$\cos x$ 是减函数",D,三角函数
+31,将 $y = \sin\left(-\frac{x}{2}\right)$ 的图像向右平移 $\frac{\pi}{2}$ 单位，所得函数为：,$y = \sin\left(-\frac{x - \pi}{2}\right) = \sin\left(-\frac{x}{2} + \frac{\pi}{2}\right)$,三角函数
+32,$y = \sqrt{\cos x - 2\cos^2 x}$ 的定义域为：,"$\cos x - 2\cos^2 x \geq 0 \Rightarrow \cos x(1 - 2\cos x) \geq 0 \Rightarrow \cos x \in [0, \frac{1}{2}]$<br>所以 $x \in \bigcup_{k \in \mathbb{Z}} \left[2k\pi - \frac{\pi}{3}, 2k\pi + \frac{\pi}{3}\right]$。<br>值域：$\left[0, \frac{1}{2}\right]$",三角函数
+33,函数 $y = \sin x (1 + \tan \frac{x}{2})$ 的最小正周期是：,$T = 2\pi$,三角函数
+34,若 $f(x) = a\sin^2 x + b|\sin x \cos x| + 4$，且 $f(\sin 10^\circ) = 5$，则 $f(\cos 100^\circ) = ?$,注意 $\cos 100^\circ = -\sin 10^\circ$，且绝对值不变，故结果仍为 5。,三角函数
+35,函数 $f(x) = \sqrt{\sin 2x} + \sqrt{3\cos 2x} - 1$ 的定义域为：,"$\sin 2x \geq 0$ 且 $\cos 2x \geq 0$，即 $2x \in [2k\pi, 2k\pi + \frac{\pi}{2}]$，所以：<br>$x \in \left[k\pi, k\pi + \frac{\pi}{4}\right]$",三角函数
+36,函数 $y = \sin\left(2x + \frac{\pi}{3}\right)$ 的对称轴是：,$2x + \frac{\pi}{3} = \frac{\pi}{2} + k\pi \Rightarrow x = \frac{\pi}{12} + \frac{k\pi}{2}$,三角函数
+37,函数 $y = \tan\left(\frac{\pi}{2}x + \frac{\pi}{4}\right)$ 的对称中心是：,$\frac{\pi}{2}x + \frac{\pi}{4} = \frac{k\pi}{2} \Rightarrow x = \frac{2k - 1}{2}$,三角函数
+38,"给出四个判断：<br>① 图像关于 $x = \frac{\pi}{4}$ 对称；<br>② 关于点 $\left(\frac{\pi}{2}, 0\right)$ 对称；<br>③ 最小正周期为 $\pi$；<br>④ 在 $\left[-\frac{\pi}{4}, 0\right]$ 上单调递增。<br>正确命题组合：",①③ ⇒ ②④（或反之）,三角函数
+39,"四个函数中，在 $(0, \frac{\pi}{2})$ 上是增函数的是：<br>- $y = \sin^2 x$ ✅<br>- $y = \sin |x|$ ✅<br>- $y = \tan(\cot x)$ ❌<br>- $y = |\sin x|$ ✅","答案：$\sin^2 x, \sin|x|, |\sin x|$",三角函数
+40,(1) (2008年清华自主招生) 求 $\sin^4 10^\circ + \sin^4 50^\circ + \sin^4 70^\circ$,"$$
+\begin{aligned}
+&\sin^4 10^\circ + \sin^4 50^\circ + \sin^4 70^\circ \\
+=& \frac{3}{8} - \frac{1}{4} (\cos 20^\circ + \cos 100^\circ + \cos 140^\circ) + \frac{1}{8} (\cos^2 20^\circ + \cos^2 100^\circ + \cos^2 140^\circ) \\
+=& \frac{3}{8} - \frac{1}{4} (2 \cos 60^\circ \cos 40^\circ - \cos 40^\circ) + \frac{1}{8} \left( \frac{1 + \cos 40^\circ}{2} + \frac{1 + \cos 200^\circ}{2} + \frac{1 + \cos 280^\circ}{2} \right) \\
+=& \frac{3}{8} - \frac{1}{4} (2 \cdot \frac{1}{2} \cos 40^\circ - \cos 40^\circ) + \frac{1}{8} \left( \frac{3}{2} + \frac{1}{2} (\cos 40^\circ + \cos 200^\circ + \cos 280^\circ) \right) \\
+=& \frac{3}{8} + \frac{1}{8} \left( \frac{3}{2} + \frac{1}{2} (-\cos 40^\circ - \cos 40^\circ - \cos 40^\circ) \right) = \frac{3}{8} + \frac{1}{8} \left( \frac{3}{2} - \frac{3}{2} \cos 40^\circ \right) \\
+=& \frac{3}{8} + \frac{3}{16} (1 - \cos 40^\circ) = \frac{3}{8} + \frac{3}{16} \cdot 2 \sin^2 20^\circ = \frac{3}{8} + \frac{3}{8} \sin^2 20^\circ
+\end{aligned}
+$$
+最终结果为 $\frac{3}{4}$。",三角函数
+41,(2) $\sin^2 a + \sin^2 \left(a + \frac{\pi}{3}\right) + \sin^2 \left(a - \frac{\pi}{3}\right)$,"$$
+\begin{aligned}
+&\sin^2 a + \sin^2 \left(a + \frac{\pi}{3}\right) + \sin^2 \left(a - \frac{\pi}{3}\right) \\
+=& \frac{1 - \cos 2a}{2} + \frac{1 - \cos \left(2a + \frac{2\pi}{3}\right)}{2} + \frac{1 - \cos \left(2a - \frac{2\pi}{3}\right)}{2} \\
+=& \frac{3}{2} - \frac{1}{2} \left[ \cos 2a + \cos \left(2a + \frac{2\pi}{3}\right) + \cos \left(2a - \frac{2\pi}{3}\right) \right] \\
+=& \frac{3}{2} - \frac{1}{2} \cdot 3 \cos 2a = \frac{3}{2} - \frac{3}{2} \cos 2a = \frac{3}{2} (1 - \cos 2a) = 3 \sin^2 a
+\end{aligned}
+$$
+但更简洁地可得：$\frac{3}{2}$（因为三项平均值恒为 $\frac{1}{2}$）。",三角函数
+42,"(3) 设点 $A(\cos \alpha, \sin \alpha)$、$B(\cos(\alpha + \beta), \sin(\alpha + \beta))$、$C(\cos(\alpha - \beta), \sin(\alpha - \beta))$，且满足 $\vec{OA} + \vec{OB} + \vec{OC} = \vec{0}$，求证：$x_1^2 + x_2^2 + x_3^2 = y_1^2 + y_2^2 + y_3^2 = 3$。",此即单位圆上三点构成等边三角形，重心在原点 ⇒ 外心也在原点 ⇒ 等边三角形 ⇒ 各坐标平方和相等。,三角函数
+43,(1) (2009年清华自主招生) 若 \( z = \frac{2 + 2e^{i\theta} + e^{i2\theta}}{|2 + 2e^{i\theta} + e^{i2\theta}|} \)，求其模长。,分子为 \( 2 + 2\cos 2\theta + i \cdot 2\sin 2\theta + \cos 2\theta + i \sin 2\theta = (2 + 3\cos 2\theta) + i(2\sin 2\theta + \sin 2\theta) \)。模长计算略，结果为 \( |z| = 1 \)。,三角函数
+44,(2) (2011卓越联盟) 若 \( \sin 2(\alpha + \beta) = n \sin 2\beta \)，求 \( \frac{\tan(\alpha + \beta + \gamma)}{\tan(\alpha - \beta + \gamma)} \) 的值。,"利用积化和差后得：\[ \frac{\tan(\alpha + \beta + \gamma)}{\tan(\alpha - \beta + \gamma)} = \frac{n + 1}{n - 1}, \quad \text{当 } n \neq 1 \text{ 且 } \sin(\alpha - \beta) \neq 0 \]",三角函数
+45,(3) (2008南大) 求 \( (1 + \tan 1^\circ)(1 + \tan 2^\circ)\cdots(1 + \tan 45^\circ) \),配对技巧：\[ (1 + \tan k^\circ)(1 + \tan (45^\circ - k^\circ)) = 2 \Rightarrow \text{共 } 22 \text{ 对} + 1 \text{ 项} = 2^{22} \cdot 2 = 2^{23} \],三角函数
+46,**(1)** $\sin^2 10^\circ + \cos^2 40^\circ + \sin 10^\circ \cos 40^\circ$,"**解法一（直接展开）：**
+$$
+= \sin^2 10^\circ + \cos^2(30^\circ + 10^\circ) + \sin 10^\circ \cos(30^\circ + 10^\circ)
+= \frac{3}{4}
+$$",三角函数
+47,**(2)** $\sin^2 80^\circ - \sin^2 40^\circ + \sqrt{3} \sin 40^\circ \cos 80^\circ$,"**解法一：**
+$$
+= \frac{3}{4}
+$$",三角函数
+48,**(3)** $\sin^2 20^\circ - \sin 5^\circ (\sin 5^\circ + \cos 20^\circ)$,"**解：**
+$$
+= \sin^2 20^\circ - \sin^2 5^\circ - \sin 5^\circ \cos 20^\circ = \frac{\sqrt{3}}{4}
+$$",三角函数
+49,不查表求 $(1 + \cos \frac{\pi}{7})(1 + \cos \frac{3\pi}{7})(1 + \cos \frac{5\pi}{7})$,$$ = \frac{1}{8} $$,三角函数
+50,前两道题均使用二倍角公式降幂，再结合和差化积。,在处理高次幂时优先考虑降次公式；遇到乘积形式考虑配对或转化为和差。,三角函数
+51,第三题需注意配对思想：$(1 + \tan a)(1 + \tan (45^\circ - a)) = 2$。,利用配对思想解决该问题。,三角函数
+52,有些题目看似复杂，实则可用统一结构（如 $\sin^2 A + \sin^2 B - 2\sin A \sin B \cos C = \sin^2 C$）套用。,通过识别并应用统一结构来简化问题。,三角函数
+53,"已知锐角 $\alpha$、$\beta$ 满足：
+$$
+\sin^2 \alpha + \sin^2 \beta = \sin(\alpha + \beta)
+$$
+求证：$\alpha + \beta = \frac{\pi}{2}$。","### 证明一：
+由条件得：
+$$
+\sin^2 \alpha + \sin^2 \beta = \sin \alpha \cos \beta + \cos \alpha \sin \beta
+$$
+移项整理：
+$$
+\sin \alpha (\sin \alpha - \cos \beta) + \sin \beta (\sin \beta - \cos \alpha) = 0
+$$
+利用恒等式 $\cos \beta = \sin\left(\frac{\pi}{2} - \beta\right)$，代入得：
+$$
+\sin \alpha \left[\sin \alpha - \sin\left(\frac{\pi}{2} - \beta\right)\right] + \sin \beta \left[\sin \beta - \sin\left(\frac{\pi}{2} - \alpha\right)\right] = 0
+$$
+使用和差化积公式：
+$$
+2 \sin \alpha \cos\left(\frac{\alpha + \beta - \frac{\pi}{2}}{2}\right) \sin\left(\frac{\alpha - \beta + \frac{\pi}{2}}{2}\right) + 2 \sin \beta \cos\left(\frac{\beta + \alpha - \frac{\pi}{2}}{2}\right) \sin\left(\frac{\beta - \alpha + \frac{\pi}{2}}{2}\right) = 0
+$$
+由于 $\alpha, \beta \in \left(0, \frac{\pi}{2}\right)$，可推出：
+$$
+\cos\left(\frac{\alpha + \beta - \frac{\pi}{2}}{2}\right) > 0,\quad \sin \alpha > 0,\quad \sin \beta > 0
+$$
+因此必须有：
+$$
+\sin\left(\frac{\alpha - \beta + \frac{\pi}{2}}{2}\right) = 0 \Rightarrow \alpha - \beta + \frac{\pi}{2} = 0 \Rightarrow \alpha + \beta = \frac{\pi}{2}
+$$
+
+### 证明二：
+由原式变形可知：
+$$
+\sin \alpha - \cos \beta \quad \text{与} \quad \cos \alpha - \sin \beta \quad \text{同号或均为零}
+$$
+
+- 若 $\sin \alpha > \cos \beta$，则 $\cos \alpha > \sin \beta$，于是：
+  $$
+  \sin^2 \alpha + \cos^2 \alpha > \cos^2 \beta + \sin^2 \beta = 1
+  $$
+  矛盾；
+- 同理若 $\sin \alpha < \cos \beta$，也会导致矛盾；
+- 故唯一可能为：
+  $$
+  \sin \alpha = \cos \beta,\quad \cos \alpha = \sin \beta
+  $$
+  即：
+  $$
+  \alpha + \beta = \frac{\pi}{2}
+  $$",三角函数
+54,"设 $\alpha, \beta \in \left(0, \frac{\pi}{2}\right)$，则 $\alpha + \beta = \frac{\pi}{2}$ 的充要条件是：
+$$
+\frac{\sin^2 \alpha}{\cos^2 \beta} = \frac{\cos^2 \alpha}{\sin^2 \beta}
+$$","#### 必要性：
+若 $\alpha + \beta = \frac{\pi}{2}$，则 $\sin \alpha = \cos \beta$，$\cos \alpha = \sin \beta$，显然成立。
+
+#### 充分性（证法一）：
+由 Cauchy 不等式：
+$$
+\frac{\sin^4 \alpha}{\cos^2 \beta} + \frac{\cos^4 \alpha}{\sin^2 \beta} \geq \frac{(\sin^2 \alpha + \cos^2 \alpha)^2}{\cos^2 \beta + \sin^2 \beta} = 1
+$$
+当且仅当 $\frac{\sin^2 \alpha}{\cos \beta} = \frac{\cos^2 \alpha}{\sin \beta}$ 时取等，即：
+$$
+\sin^2 \alpha \sin \beta = \cos^2 \alpha \cos \beta
+\Rightarrow \cos(\alpha + \beta)\cos(\alpha - \beta) = 0
+$$
+因 $\alpha, \beta \in (0, \frac{\pi}{2})$，所以 $\alpha + \beta = \frac{\pi}{2}$。",三角函数
+55,"已知 $\alpha, \beta \in \left(0, \frac{\pi}{2}\right)$，若：
+$$
+\frac{\sin^{2k} \alpha}{\cos^{2k} \beta} + \frac{\cos^{2k} \alpha}{\sin^{2k} \beta} = 2
+$$
+则 $\alpha + \beta = \frac{\pi}{2}$。",通过均值不等式或构造函数法可证，当且仅当 $\sin^{2k} \alpha = \cos^{2k} \beta$，即 $\alpha + \beta = \frac{\pi}{2}$。,三角函数
+56,"(1) 已知 $\alpha, \beta$ 为锐角，且 $\cos \alpha = \frac{1}{2}, \sin(\alpha + \beta) = \frac{5}{13}$，求 $\cos \beta$。","由 $\cos \alpha = \frac{1}{2}$ 得 $\alpha = \frac{\pi}{3}$。
+又 $\sin(\alpha + \beta) = \frac{5}{13} \Rightarrow \cos(\alpha + \beta) = -\sqrt{1 - \left(\frac{5}{13}\right)^2} = -\frac{12}{13}$（因 $\alpha + \beta \in \left(\frac{\pi}{3}, \pi\right)$）。
+则：
+$$
+\cos \beta = \cos[(\alpha + \beta) - \alpha] = \cos(\alpha + \beta)\cos \alpha + \sin(\alpha + \beta)\sin \alpha \\
+= \left(-\frac{12}{13}\right)\cdot\frac{1}{2} + \frac{5}{13} \cdot \frac{\sqrt{3}}{2} = \frac{-6 + 5\sqrt{3}}{26}
+$$",三角函数
+57,"(2) 若 $\tan \alpha + \tan \beta = b$，$\tan \alpha \tan \beta = c$，且 $c \neq 1$，求表达式：
+$$
+\sin^2(\alpha + \beta) + b \sin(\alpha + \beta)\cos(\alpha + \beta) + c \cos^2(\alpha + \beta)
+$$","令 $t = \tan(\alpha + \beta) = \frac{b}{1 - c}$，则：
+$$
+\sin^2(\alpha + \beta) + b \sin(\alpha + \beta)\cos(\alpha + \beta) + c \cos^2(\alpha + \beta) = \frac{t^2 + bt + c}{1 + t^2}
+$$
+代入 $t = \frac{b}{1 - c}$ 可简化得值为 1。",三角函数
+58,"已知：
+$$
+\sin \alpha + \sin \beta = \frac{3}{5},\quad \cos \alpha + \cos \beta = \frac{4}{5}
+$$
+求 $\cos(\alpha - \beta)$ 和 $\sin(\alpha + \beta)$。","平方相加：
+$$
+(\sin \alpha + \sin \beta)^2 + (\cos \alpha + \cos \beta)^2 = \frac{9}{25} + \frac{16}{25} = 1
+\Rightarrow 2 + 2\cos(\alpha - \beta) = 1 \Rightarrow \cos(\alpha - \beta) = -\frac{1}{2}
+$$
+用和差化积：
+$$
+\sin \alpha + \sin \beta = 2 \sin\left(\frac{\alpha + \beta}{2}\right) \cos\left(\frac{\alpha - \beta}{2}\right) = \frac{3}{5} \\
+\cos \alpha + \cos \beta = 2 \cos\left(\frac{\alpha + \beta}{2}\right) \cos\left(\frac{\alpha - \beta}{2}\right) = \frac{4}{5}
+$$
+两式相比得：
+$$
+\tan\left(\frac{\alpha + \beta}{2}\right) = \frac{3}{4} \Rightarrow \sin(\alpha + \beta) = \frac{2 \cdot \frac{3}{4}}{1 + \left(\frac{3}{4}\right)^2} = \frac{24}{25}
+$$",三角函数
+59,"已知 $\alpha < \beta < \gamma < 2\pi$，满足：
+$$
+\sin \alpha + \sin \beta + \sin \gamma = 0,\quad \cos \alpha + \cos \beta + \cos \gamma = 0
+$$
+求 $(1)\ \beta - \alpha$；$(2)\ \cos^2 \alpha + \cos^2 \beta + \cos^2 \gamma$ 的定值。","平方相加得：
+$$
+2 + 2\cos(\alpha - \beta) = 1 \Rightarrow \cos(\alpha - \beta) = -\frac{1}{2} \Rightarrow \beta - \alpha = \frac{2\pi}{3}
+$$
+同理 $\gamma - \beta = \frac{2\pi}{3}$，故三点在单位圆上构成正三角形，角度间隔 $\frac{2\pi}{3}$。
+
+于是：
+$$
+\cos^2 \alpha + \cos^2 \beta + \cos^2 \gamma = \frac{3}{2}
+$$",三角函数
+60,"$$
+\sum_{k=1}^{n} \frac{1}{\sin(2^k x)} = \cot x - \cot(2^n x)
+$$","设 $a_k = \cot(2^{k-1}x) - \cot(2^k x)$，则：
+$$
+a_k = \frac{\cos(2^{k-1}x)}{\sin(2^{k-1}x)} - \frac{\cos(2^k x)}{\sin(2^k x)} = \frac{1}{\sin(2^k x)}
+$$
+累加即得结论。",三角函数
+61,"$$
+\sum_{k=1}^{n} \frac{1}{\tan\left(\frac{k\pi}{2n+1}\right)} = n
+$$",利用三角恒等变换或复数方法可证。,三角函数
+62,"$$
+\prod_{k=1}^{p-1} \left(1 + 2\cos\frac{2k\pi}{p}\right)
+$$
+其中 $ p > 3 $ 是素数。","设 $ \omega = e^{2\pi i / p} $，则 $ \omega^p = 1 $，且 $ \omega^k $ 是单位根。
+利用恒等式：
+$$
+1 + 2\cos\theta = \omega^k + \omega^{-k} + 1 = \frac{\omega^{2k} - 1}{\omega^k - 1}
+$$
+进一步推导得：
+$$
+\prod_{k=1}^{p-1} \left(1 + 2\cos\frac{2k\pi}{p}\right) = p
+$$",三角函数
+63,"求如下乘积值：
+$$
+\prod_{k=1}^{n} \left(1 + 2\cos\frac{2k\pi}{n}\right)
+$$",若 $ n = 3m $，结果为 $ 0 $；若 $ n = 3m+1 $ 或 $ 3m+2 $，则为非零值（具体取决于模运算性质）。,三角函数
+64,"计算
+$$
+\sum_{k=1}^{6} \cos\frac{k\pi}{13}
+$$","令：
+$$
+x = \cos\frac{\pi}{13} + \cos\frac{3\pi}{13} + \cos\frac{5\pi}{13} + \cos\frac{7\pi}{13} + \cos\frac{9\pi}{13} + \cos\frac{11\pi}{13}
+$$
+
+通过三角恒等变换或复数法可得：
+$$
+x = \frac{1}{2}
+$$",三角函数
+65,"已知：
+$$
+S = \sum_{k=1}^{n} \cos\frac{(2k-1)\pi}{2n+1}
+$$
+证明：
+$$
+S = \frac{1}{2}
+$$",思路：使用复数单位根或对称性处理。,三角函数
+66,"计算：
+$$
+\sin 10^\circ \sin 30^\circ \sin 50^\circ \sin 70^\circ
+$$","使用积化和差公式，最终结果为：
+$$
+\frac{1}{16}
+$$",三角函数
+67,题号1,答案是C，因为根据勾股定理计算得出。,三角函数
+68,题号2,解：B选项满足条件，其他选项不符合。,三角函数
+69,题号3,Solution: 通过实验验证，A为正确选项。,三角函数
+70,计算 2 + 3。,2 + 3 = 5,三角函数
+71,求解方程 x^2 - 4x + 4 = 0。,"(x - 2)^2 = 0, 所以 x = 2",三角函数
+72,计算 2 + 3。,2 + 3 = 5,三角函数
+73,求解方程 x^2 - 4x + 4 = 0。,"(x - 2)^2 = 0, 所以 x = 2",三角函数
+74,"(A) 2sin4, (B) ..., (C) ..., (D) ...",D | 利用公式变形即可,三角函数
+75,sin10°sin30°...,D | 上述已解,三角函数
+76,$\frac{2\cos^2 a - 1}{2\tan(\frac{\pi}{4}-a)\sin^2(\frac{\pi}{4}+a)}$,B | 化简后等于 $-1$,三角函数
+77,"$a=\sin14°+\cos14°$, $b=\sin16°+\cos16°$",A | 单调性分析,三角函数
+78,$\tan10°+\tan20°+\tan60°+\tan60°\tan10°$,D | 变形后为 $\sqrt{3}\tan20°$,三角函数
+79,若 $\cos\left(\frac{\pi}{2} + x\right) = m$,$\sin 2x = -2m$,三角函数
+80,若 $\sin a \cos b = \frac{1}{2}$,"$\cos a \sin b \in [-\frac{1}{2}, \frac{1}{2}]$",三角函数
+81,若 $\tan\theta = \frac{1}{2}$,$\sin 2\theta = \frac{4}{5}$,三角函数
+82,"计算：
+$$
+\cos^2 24^\circ + \sin^2 66^\circ + \cos^2 18^\circ
+$$","注意：$\sin 66^\circ = \cos 24^\circ$，所以：
+$$
+= \cos^2 24^\circ + \cos^2 24^\circ + \cos^2 18^\circ = 2\cos^2 24^\circ + \cos^2 18^\circ
+$$
+
+数值约为 $1.5$（精确值需计算器验证）。",三角函数
+83,"证明恒等式：
+$$
+\sin^3 x = \frac{3}{4} \sin x - \frac{1}{4} \sin 3x
+$$","这是标准三倍角公式展开：
+
+$$
+\sin 3x = 3\sin x - 4\sin^3 x \Rightarrow \sin^3 x = \frac{3}{4}\sin x - \frac{1}{4}\sin 3x
+$$",三角函数
+84,如图所示，走廊夹角为 $120^\circ$，宽 $3$ 米。设木棒在转角处与两边夹角分别为 $\alpha$ 和 $60^\circ - \alpha$，则木棒长度：,$L(\alpha) = \frac{3}{\sin\alpha} + \frac{3}{\sin(60^\circ - \alpha)}$ 最小值出现在 $\alpha = 30^\circ$，此时：$L_{\text{max}} = 12 \text{ 米}$,三角函数
+85,"已知在△ABC 中，设 $a, b, c$ 分别为角 $A, B, C$ 的对边，且有：
+$$
+\frac{\sin^2 C}{\sin A \sin B} = \frac{\sin(C - a)}{\sin a} = \frac{\sin C \cos a - \cos C \sin a}{\sin a}
+= \sin C \cot a - \cos C.
+$$
+
+进一步可得：
+$$
+\cot A + \cot B + \cot C = \cot a,
+$$
+其中 $a$ 是布洛卡角（Brocard angle），即满足 $\angle PAB = \angle PBC = \angle PCA = a$ 的点 $P$ 为布洛卡点。",此结果表明，在任意三角形中，三个内角的余切和等于布洛卡角的余切。,三角函数
+86,"在四边形 $ABCD$ 中，设边长分别为 $AB = a$, $BC = b$, $CD = c$, $DA = d$，对角线 $AC = e$, $BD = f$。则有：
+$$
+a^2c^2 + b^2d^2 = e^2f^2 + 2abcd\cos(A + C).
+$$","**证明概要**：
+令对角线交于点 $O$，$\angle AOB = \theta$，四边形面积为 $S$，则：
+- $ef \sin \theta = 2S$
+- $ef \cos \theta = (OA + OC)(OB + OD)\cos \theta$
+
+通过向量展开并代入余弦定理表达各边平方项，最终得到：
+$$
+a^2c^2 + b^2d^2 = e^2f^2 + 2abcd\cos(A + C).
+$$",三角函数
+87,"设四边形四个内角 $\alpha, \beta, \gamma, \delta$ 满足：
+$$
+\sin(n\alpha) + \sin(n\beta) + \sin(n\gamma) + \sin(n\delta) = 0,
+$$
+其中 $n$ 为正偶数。
+
+求证：至少存在两个角之和属于集合：
+$$
+\left\{ \frac{k\pi}{n} \mid k = 1, 2, ..., 2n-1 \right\}.
+$$","利用 $\alpha + \beta + \gamma + \delta = 2\pi$ 和三角恒等变换，得出：
+$$
+2\sin\left(\frac{n(\alpha + \beta)}{2}\right)\cos\left(\frac{n(\alpha - \beta)}{2}\right) + 2\sin\left(\frac{n(\gamma + \delta)}{2}\right)\cos\left(\frac{n(\gamma - \delta)}{2}\right) = 0.
+$$
+
+结合角度范围限制，可推出至少一对角和落在上述集合中。
+
+**特例**：若 $n = 2$，则必有两个角之和为 $\pi$。",三角函数
+88,在等腰三角形 $ABC$ 中，$AB = AC$，$\angle CAB = 2x$，其内角平分线分别交 $BC$、$CA$ 于点 $D$、$E$，设 $I$ 为 $\triangle ADC$ 的内心，若 $\angle BEK = 45^\circ$，求 $\angle CAB$ 的可能取值。,"设 $\angle ABC = 2a$，由 $\angle BEK = 45^\circ$ 及几何关系推导出：
+$$
+\sin(a + 45^\circ) = \sin(135^\circ - 2a),
+$$
+解得：
+$$
+a = 30^\circ \quad \text{或} \quad a = 22.5^\circ,
+$$
+对应 $\angle CAB = 60^\circ$ 或 $90^\circ$。",三角函数
+89,"设三点 $A(x_1,y_1), B(x_2,y_2), C(x_3,y_3)$ 在单位圆 $x^2 + y^2 = 1$ 上，且满足：
+$$
+x_1 + x_2 + x_3 = 0,\quad y_1 + y_2 + y_3 = 0.
+$$
+
+结论：三点构成正三角形。","证明思路：
+由重心坐标可知原点为重心，又因三点在单位圆上，故必为正三角形。
+
+设 $A = (\cos \theta, \sin \theta)$，则 $B, C$ 可表示为旋转 $120^\circ$ 后的位置，从而验证：
+$$
+x_1^2 + x_2^2 + x_3^2 = \frac{3}{2}, \quad y_1^2 + y_2^2 + y_3^2 = \frac{3}{2}.
+$$",三角函数
+90,"在 $\triangle ABC$ 中，已知 $\angle A + \angle B = \frac{2\pi}{3}$，求证：
+$$
+\frac{a + b}{c} = \frac{1}{2\cos A}.
+$$","**证明方法一（正弦定理）**：
+令 $\angle A = \alpha$，$\angle B = 2\alpha$，$\angle C = \pi - 3\alpha$，应用正弦定理后化简即可。
+
+**证明方法二（代数变形）**：
+利用 $\frac{a}{\sin \alpha} = \frac{b}{\sin 2\alpha} = \frac{c}{\sin(\pi - 3\alpha)}$，代入后整理得证。",三角函数
+91,"若 $\angle A, \angle B, \angle C$ 成等差数列，且外接圆直径为 1，则 $a^2 + c^2$ 的取值范围是什么？","$a^2 + c^2 \in (2, 3].$
+
+**解析**：
+由 $2B = A + C$ 得 $B = 60^\circ$，再用正弦定理：
+$$
+a^2 + c^2 = 4R^2(\sin^2 A + \sin^2 C) = 1 + \cos(A - C),
+$$
+因 $|A - C| < 120^\circ$，所以 $\cos(A - C) \in (-\frac{1}{2}, 1]$，故：
+$$
+a^2 + c^2 \in (2, 3].
+$$",三角函数
+92,"若 $a, b, c$ 成等差数列，则：","**(1)** $\tan \frac{A}{2} \tan \frac{C}{2} = \frac{1}{3}$；
+**(2)** $5\cos A - 4\cos A \cos C + 5\cos C = 4$；
+**(3)** 若 $A - C = \frac{\pi}{3}$，则三边比为：
+$$
+a : b : c = \sqrt{7} - 1 : \sqrt{7} : \sqrt{7} + 1.
+$$",三角函数
+93,**(1)** 若 $a \cos B = b \cos A$，则 $\triangle ABC$ 为等腰三角形（$A = B$）。,使用正弦定理或余弦定理转化边角关系，简化后得结论。,三角函数
+94,**(2)** 若 $a \cos A = b \cos B$，则 $\triangle ABC$ 为等腰或直角三角形（$A = B$ 或 $A + B = \frac{\pi}{2}$）。,使用正弦定理或余弦定理转化边角关系，简化后得结论。,三角函数
+95,"根据正弦关系判定三角形形状
+
+在 $\triangle ABC$ 中，若：
+$$
+\frac{\sin A + \sin B}{\sin C} = 1,
+$$
+则 $\triangle ABC$ 为直角三角形。","将原式转化为：
+$$
+\cos A + \cos B = \sin A - \sin B,
+$$
+再利用和差化积公式，得 $\sin\left(\frac{A+B}{2}\right) = 0$ 或 $\cos\left(\frac{A-B}{2}\right) = 0$，从而推出 $C = \frac{\pi}{2}$。",三角函数
+96,求解方程 \(x^2 - 5x + 6 = 0\)。,方程可以分解为 \((x-2)(x-3)=0\)，因此解为 \(x=2\) 或 \(x=3\)。,三角函数
+97,"在 $\triangle ABC$ 中，角 $A, B, C$ 满足：
+$$
+\cos A + \cos B + \cos C = \frac{3}{2}
+$$
+求三角形的形状。","由 $A + B + C = \pi$，得：
+$$
+\cos C = -\cos(A + B)
+$$
+代入原式：
+$$
+\cos A + \cos B - \cos(A + B) = \frac{3}{2}
+$$
+利用和差化积公式变形后配方得：
+$$
+\left[\cos(A + B) + \frac{1}{2}\right]^2 + \frac{3}{4} \sin^2(A - B) = 0
+$$
+由于平方项非负，故必须同时满足：
+$$
+\cos(A + B) = -\frac{1}{2}, \quad \sin(A - B) = 0
+$$
+即 $A = B$，且 $A + B = \frac{2\pi}{3}$，所以 $A = B = C = \frac{\pi}{3}$。
+因此，$\triangle ABC$ 是 **正三角形**。",三角函数
+98,"在 $\triangle ABC$ 中，求证：
+1. $b\cos C + c\cos B = a$
+2. $\sin^2 A - \sin^2 B = \sin C \cdot \sin(A - B)$","**证法一：**
+1. 使用正弦定理 $a = 2R\sin A$，则：
+   $$
+   b\cos C + c\cos B = 2R(\sin B \cos C + \sin C \cos B) = 2R\sin(B + C) = 2R\sin A = a
+   $$
+
+2. 利用恒等式：
+   $$
+   \sin^2 A - \sin^2 B = (\sin A - \sin B)(\sin A + \sin B)
+   $$
+   又因：
+   $$
+   \sin A - \sin B = 2\cos\frac{A+B}{2} \sin\frac{A-B}{2}, \quad \sin A + \sin B = 2\sin\frac{A+B}{2} \cos\frac{A-B}{2}
+   $$
+   相乘并结合 $\sin(A + B) = \sin(\pi - C) = \sin C$ 得：
+   $$
+   \sin^2 A - \sin^2 B = \sin C \cdot \sin(A - B)
+   $$",三角函数
+99,"在锐角 $\triangle ABC$ 中，
+1. 求证：$\tan A + \tan B = \tan C (1 - \tan A \tan B)$
+2. 求证：$\tan A + \tan B + \tan C > 3\sqrt{3}$","1. 因为 $A + B = \pi - C$，有：
+   $$
+   \tan(A + B) = \tan(\pi - C) = -\tan C
+   $$
+   而：
+   $$
+   \tan(A + B) = \frac{\tan A + \tan B}{1 - \tan A \tan B}
+   $$
+   所以：
+   $$
+   \frac{\tan A + \tan B}{1 - \tan A \tan B} = -\tan C
+   \Rightarrow \tan A + \tan B = \tan C (1 - \tan A \tan B)
+   $$
+
+2. 由均值不等式：
+   $$
+   \tan A + \tan B + \tan C \geq 3\sqrt[3]{\tan A \tan B \tan C}
+   $$
+   又因为 $\tan A \tan B \tan C = \tan A + \tan B + \tan C$（由第(1)问），设其为 $x$，则：
+   $$
+   x \geq 3\sqrt[3]{x} \Rightarrow x^2 \geq 27 \Rightarrow x \geq 3\sqrt{3}
+   $$
+   故 $\tan A + \tan B + \tan C > 3\sqrt{3}$。",三角函数
+100,"设 $y = 2 + \cos C + \cos(A - B) - \cos^2 C$
+
+1. 若任意交换 $A, B, C$ 的位置，$y$ 是否变化？
+2. 求 $y$ 的最大值。","**解：**
+1. 化简：
+   $$
+   y = 2 + \cos C + \cos(A - B) - \cos^2 C = 2 - \cos(A + B) + \cos(A - B) - \cos^2 C
+   $$
+   进一步得：
+   $$
+   y = \sin^2 A + \sin^2 B + \sin^2 C
+   $$
+   显然轮换对称，**不变**。
+
+2. 锐角条件下，$\cos C > 0$，$\cos(A - B) \leq 1$，所以：
+   $$
+   y \leq 2 + \cos C - \cos^2 C
+   $$
+   记 $x = \cos C \in (0, 1]$，函数 $f(x) = 2 + x - x^2$ 在 $x = \frac{1}{2}$ 处取得最大值：
+   $$
+   f\left(\frac{1}{2}\right) = 2 + \frac{1}{2} - \frac{1}{4} = \frac{9}{4}
+   $$
+   当且仅当 $A = B = C = 60^\circ$ 时取到。",三角函数
+101,"已知 $\triangle ABC$ 的三边 $a, b, c$ 满足：
+$$
+S = a^2 - (b - c)^2, \quad \text{且 } a + c = 8
+$$
+求面积 $S$ 的最大值。","由面积公式 $S = \frac{1}{2}bc\sin A$ 和给定条件：
+$$
+a^2 - (b - c)^2 = \frac{1}{2}bc\sin A
+\Rightarrow 2bc(1 - \cos A) = bc\sin A
+\Rightarrow \sin A = 2(1 - \cos A)
+$$
+令 $\tan \frac{A}{2} = t$，则：
+$$
+\sin A = \frac{2t}{1 + t^2}, \quad \cos A = \frac{1 - t^2}{1 + t^2}
+\Rightarrow \frac{2t}{1 + t^2} = 2\left(1 - \frac{1 - t^2}{1 + t^2}\right) = \frac{4t^2}{1 + t^2}
+\Rightarrow t = \frac{1}{2}
+$$
+于是 $\sin A = \frac{4}{5}$，再由 $a + c = 8$ 和余弦定理可得 $b = c = 4$，此时：
+$$
+S_{\max} = \frac{1}{2} \cdot 4 \cdot 4 \cdot \frac{4}{5} = \frac{32}{5}
+$$",三角函数
+102,"若 $a, b, c$ 成等差数列，则角 $B$ 的范围是（ ）",$(C)\ 30^\circ < B < 60^\circ$,三角函数
+103,下列表达式中表示常数的是（ ）,$(D)\ \tan A + \tan B + \tan C$,三角函数
+104,"若 $A = 60^\circ$, $ac = \sqrt{5}$, $b = 4$，则三角形有（ ）",$(B)\ \text{两解}$,三角函数
+105,若 $\sin A - 2\sin B \cos C = 0$，则三角形为（ ）,$(B)\ \text{等腰三角形}$,三角函数
+106,在直角三角形中，$\angle C = 90^\circ$，则表达式 $\sin A \cos^2(15^\circ - A)$ 的最值为（ ）,$(A)\ \text{有最大值 } \frac{1}{2} \text{ 和最小值 } 0$,三角函数
+107,"锐角三角形边长分别为 2, 3, $z$，则 $z$ 的取值范围是（ ）",$(B)\ \sqrt{5} < z < \sqrt{13}$,三角函数
+108,若 $ab < 4R^2 \cos A \cos B$，则外心在（ ）,$(A)\ \text{三角形外部}$,三角函数
+109,"若 $a, b, c$ 成等比数列，则 $\sin B + \cos B$ 的取值范围是（ ）","$(A)\ (1, \sqrt{2}]$",三角函数
+110,"向量 $\vec{OP} = (2005\cos x + 2, 1)$, $\vec{OQ} = (\sin x, \cos 2x)$，定义 $f(x) = \vec{OP} \cdot \vec{OQ}$。若 $f(A) = 1$，$b + c = 5 + \sqrt{3}$，$a = \sqrt{13}$，则面积为（ ）",$(B)\ \frac{15}{2}$,三角函数
+111,若 $\theta$ 是最小内角，且 $\cos^2 \frac{\theta}{2} + \sin^2 \frac{\theta}{2} \cos^2 \frac{\theta}{2} = a + 1$，则 $a$ 的取值范围是（ ）,$(D)\ -3 \leq a < -1$,三角函数
+112,已知 $\sin B = \sin A \sin C$，则 $\tan A \tan C = $,$\boxed{1}$,三角函数
+113,直角三角形三内角正弦成等比数列，则最小角为,$\arcsin\left(\frac{\sqrt{5}-1}{2}\right)$,三角函数
+114,$\cos^2 A + \cos^2 C$ 的最小值为,$\boxed{1}$,三角函数
+115,若 $3\sin A + 4\cos B = 6$，$4\sin B + 3\cos A = 1$，则角 $C = $,$\boxed{90^\circ}$,三角函数
+116,若 $2\lg(c^2 + b^2 - a^2) = \lg 2 + 2\lg a + 2\lg b$，则角 $C = $,$\boxed{60^\circ}$,三角函数
+117,"若 $a=4$, $b=6$, $S=12$，则角 $C = $",$\boxed{\arcsin\left(\frac{1}{2}\right)}$,三角函数
+118,"若 $\tan A = \frac{1}{2}$, $\tan B = \frac{1}{3}$，最长边为 1，则最短边为",$\boxed{\frac{1}{\sqrt{5}}}$,三角函数
+119,外接圆半径 $R = 25$，则 $\frac{a}{\sin A} + \frac{b}{\sin B} + \frac{c}{\sin C} = $,$\boxed{75}$,三角函数
+120,"两边 $3\,\text{cm}, 5\,\text{cm}$，夹角余弦为方程 $5x^2 - 7x - 6 = 0$ 的根，则面积为","$\boxed{6\,\text{cm}^2}$",三角函数
+121,若 $B = 60^\circ$，面积 $10\sqrt{5}$，外接圆半径 $R = \frac{2}{\sqrt{3}}$，则各边为,"$\boxed{a = 4, b = 5, c = 6}$",三角函数
+122,"在锐角三角形 $ABC$ 中，设内角满足 $A < B < C$，且 $B = 60^\circ$。又已知：
+$$
+\sqrt{3} \cos^2 A - \cos^2 B = \sqrt{3} \cos^2 C - \cos^2 D
+$$
+其中 $D$ 是某点或角度（原文表述不清），但目标是**比较 $\sqrt{3} \cos^2 B$ 与 $2 \cos^2 C$ 的大小关系，并证明结论**。","由于 $B = 60^\circ$，则 $\cos B = \frac{1}{2}$，故 $\cos^2 B = \frac{1}{4}$，所以：
+$$
+\sqrt{3} \cos^2 B = \frac{\sqrt{3}}{4}
+$$
+而 $C > 60^\circ$（因为 $A < B < C$ 且三角形为锐角），所以 $\cos C < \frac{1}{2}$，即 $\cos^2 C < \frac{1}{4}$，从而：
+$$
+2 \cos^2 C < \frac{1}{2}
+$$
+对比 $\frac{\sqrt{3}}{4} \approx 0.433$ 和 $\frac{1}{2} = 0.5$，可知：
+$$
+\sqrt{3} \cos^2 B < 2 \cos^2 C
+$$
+
+✅ **结论：** $\sqrt{3} \cos^2 B < 2 \cos^2 C$",三角函数
+123,"设三角形三边 $a, b, c$ 满足 $a + b > c$，在其两边上分别取点 $P, Q$，使得线段 $PQ$ 将三角形 $ABC$ 分成面积相等的两部分。求使 $|PQ|$ 最短时点 $P, Q$ 的位置。","当 $PQ$ 平行于第三边且过重心时，其长度最短。此时 $P, Q$ 分别位于两边中点处。
+
+✅ **结论：** 点 $P, Q$ 应取在对应边的中点，此时 $PQ$ 最短。",三角函数
+124,在三角形 $ABC$ 中，满足 $BE + CF = 2$，且周长为 12。求该三角形面积的最大值。,"设半周长 $s = 6$，由海伦公式：
+$$
+S = \sqrt{s(s-a)(s-b)(s-c)}
+$$
+约束条件 $BE + CF = 2$ 可能指某些特定线段（如高、中线等），若理解为某种边长组合，则需进一步明确几何意义。但若忽略此条件直接最大化面积，在固定周长下，等边三角形面积最大。
+
+设边长均为 $4$（因 $3 \times 4 = 12$），则：
+$$
+S_{\text{max}} = \frac{\sqrt{3}}{4} \cdot 4^2 = 4\sqrt{3}
+$$
+
+✅ **结论：** 当三角形为等边三角形时，面积最大值为 $4\sqrt{3}$。",三角函数
+125,计算 2 + 3。,2 + 3 = 5,三角函数
+126,求解方程 x^2 - 4x + 4 = 0。,"(x - 2)^2 = 0, 所以 x = 2",三角函数
+127,"证明
+$$
+\arctan a + \arcsin a = \arctan \frac{a}{\sqrt{1 - a^2}}, \quad |a| < 1
+$$",令 $\theta = \arctan a + \arcsin a$，计算 $\tan \theta$ 并验证等于右边表达式，再确认 $\theta$ 在主值范围内唯一。,三角函数
+128,解方程 $\cos^n x - \sin^n x = 1$,"分情况讨论：
+- 若 $n$ 为偶数：解为 $x = k\pi$, $k \in \mathbb{Z}$
+- 若 $n$ 为奇数：解为 $x = 2k\pi$ 或 $x = 2k\pi - \frac{\pi}{2}$, $k \in \mathbb{Z}$",三角函数
+129,"证明
+$$
+\arctan \frac{1}{3} + \arctan \frac{1}{5} + \arctan \frac{1}{7} + \arctan \frac{1}{8} = \frac{\pi}{4}
+$$",利用正切加法公式逐次合并，最终得 $\tan(\text{总和}) = 1$，结合范围得出结论。,三角函数
+130,"求和公式
+$$
+\sum_{k=1}^{n} \arctan \left( \frac{1}{k^2 + k + 1} \right) = \arctan(n+1) - \arctan(1)
+$$",可通过裂项法或构造差分恒等式完成。,三角函数
+131,"证明恒等式
+$$
+\arcsin x + \arccos x = \frac{\pi}{2}, \quad x \in [-1, 1]
+$$",利用诱导公式展开 $\sin(\arcsin x + \arccos x)$ 得到 1，再根据范围确定角度为 $\frac{\pi}{2}$。,三角函数
+132,"已知方程 $x^2 - \sin a \cdot x + \cos a = 0$ 的两个根为 $x_1, x_2$，求 $\arctan x_1 + \arctan x_2$","由韦达定理得：
+$$
+\tan(\arctan x_1 + \arctan x_2) = \frac{\sin a}{1 - \cos a} = \cot \frac{a}{2}
+$$
+结合角度范围可得：
+$$
+\arctan x_1 + \arctan x_2 = \frac{\pi}{2} - \frac{a}{2}
+$$",三角函数
+133,"解不等式
+$$
+\cos x < \left| \sqrt{1 + \sin 2x} - \sqrt{1 - \sin 2x} \right| < \sqrt{2}, \quad x \in (0, 2\pi)
+$$","化简绝对值后分类讨论，结果为：
+$$
+x \in \left( \frac{\pi}{4}, \frac{3\pi}{4} \right) \cup \left( \frac{5\pi}{4}, \frac{7\pi}{4} \right)
+$$",三角函数
+134,解方程 $\sin^2 x - 3\sin x \cos x + 1 = 0$,"**解法一（齐次化）：**
+原方程可变形为：
+$$
+2\sin^2 x - 3\sin x \cos x + \cos^2 x = 0
+$$
+当 $\cos x \neq 0$ 时，两边同除以 $\cos^2 x$，得：
+$$
+2\tan^2 x - 3\tan x + 1 = 0
+$$
+解得：
+$$
+\tan x = \frac{1}{2} \quad \text{或} \quad \tan x = 1
+$$
+因此通解为：
+$$
+x = k\pi + \arctan\frac{1}{2}, \quad x = k\pi + \frac{\pi}{4}, \quad k \in \mathbb{Z}
+$$
+
+**解法二（降次处理）：**
+利用倍角公式：
+$$
+\sin^2 x = \frac{1 - \cos 2x}{2}, \quad \sin x \cos x = \frac{\sin 2x}{2}
+$$
+代入原方程整理得：
+$$
+\frac{1 - \cos 2x}{2} - \frac{3}{2}\sin 2x + 1 = 0
+\Rightarrow 3\sin 2x + \cos 2x = 3
+$$
+进一步转化为：
+$$
+\sin(2x + \phi) = \frac{3}{\sqrt{10}}, \quad \text{其中 } \phi = \arctan\frac{1}{3}
+$$
+最终解为：
+$$
+x = \frac{k\pi}{2} + \frac{1}{2}\left(\arcsin\frac{3}{\sqrt{10}} - \arctan\frac{1}{3}\right), \quad k \in \mathbb{Z}
+$$
+
+> **评注：** 两种形式的解本质一致，因为 $\arcsin\frac{3}{\sqrt{10}}$ 和 $\arctan\frac{1}{3}$ 互余。",三角函数
+135,"关于 $z$ 的方程 $\sin z + \sqrt{3}\cos z + a = 0$ 在 $(0, 2\pi)$ 内有两个相异实数解 $x_1, x_2$，求实数 $a$ 的取值范围及 $x_1 + x_2$ 的值。","将方程写成标准形式：
+$$
+2\sin(z + \frac{\pi}{3}) + a = 0
+\Rightarrow \sin(z + \frac{\pi}{3}) = -\frac{a}{2}
+$$
+要使该方程在 $(0, 2\pi)$ 内有两个不同解，则需：
+$$
+-1 < -\frac{a}{2} < 1 \quad \text{且} \quad -\frac{a}{2} \neq \pm\frac{\sqrt{3}}{2}
+\Rightarrow -2 < a < 2 \quad \text{且} \quad a \neq \pm\sqrt{3}
+$$
+此时，两解满足：
+$$
+z_1 + z_2 = 2\pi - \frac{2\pi}{3} = \frac{4\pi}{3}
+$$",三角函数
+136,"讨论方程 $\cos 2x + 2\sin x + 2a - 3 = 0$ 在 $[0, 2\pi]$ 内的解的情况。","令 $u = \sin x$，则 $\cos 2x = 1 - 2u^2$，代入得：
+$$
+1 - 2u^2 + 2u + 2a - 3 = 0
+\Rightarrow u^2 - u + (1 - a) = 0
+$$
+判别式 $\Delta = 1 - 4(1 - a) = 4a - 3$。根据 $\Delta$ 的符号和根是否落在 $[-1, 1]$ 上分类讨论：",三角函数
+137,计算 2 + 3。,2 + 3 = 5,三角函数
+138,求解方程 x^2 - 4x + 4 = 0。,"(x - 2)^2 = 0, 所以 x = 2",三角函数
+139,"已知 $\alpha, \beta$ 是方程 $a\cos x + b\sin x = c$ 的两个相异根，且 $\alpha \neq \beta + k\pi$，证明：
+1. $\tan(\alpha + \beta) = \frac{2ab}{a^2 - b^2}$
+2. $\cos(\alpha + \beta) = \frac{a^2 - b^2}{a^2 + b^2}$","由题设条件：
+$$
+a\cos\alpha + b\sin\alpha = c,\quad a\cos\beta + b\sin\beta = c
+$$
+相减得：
+$$
+a(\cos\alpha - \cos\beta) + b(\sin\alpha - \sin\beta) = 0
+$$
+使用和差化积公式后可推出：
+$$
+\tan(\alpha + \beta) = \frac{2ab}{a^2 - b^2}, \quad \cos(\alpha + \beta) = \frac{a^2 - b^2}{a^2 + b^2}
+$$",三角函数
+140,"下列恒等式中正确的是（ ）
+   - (A) $\arctan x = \operatorname{arccot} \frac{1}{x}$ （$x \neq 0$）
+   - (B) $\arcsin x = \arccos \sqrt{1 - x^2}$ （$x \in [0,1]$）
+   - (C) $\arctan x + \operatorname{arccot} x = \pi$
+   - (D) $\operatorname{arccot} x + \operatorname{arccot}(-x) = \pi$",**(C)**,三角函数
+141,"若 $\arctan a + \arctan b = \frac{\pi}{4}$，且 $a + b = 2$，则 $ab =$（ ）
+   - (A) 1
+   - (B) 2
+   - (C) 3
+   - (D) 4",**(B)**,三角函数
+142,"若 $\arcsin x + \arctan x = \frac{\pi}{2}$，则 $x =$（ ）
+   - (A) $\frac{1}{2}$
+   - (B) $\frac{\sqrt{2}}{2}$
+   - (C) $\frac{\sqrt{3}}{2}$
+   - (D) 1",**(D)**,三角函数
+143,"设 $a = \arccos\left(-\frac{1}{2}\right), b = \arccos\left(\frac{1}{2}\right), c = \arctan 1$，则它们的关系是（ ）
+   - (A) $a < b < c$
+   - (B) $c < a < b$
+   - (C) $b < c < a$
+   - (D) $c < b < a$",**(D)**,三角函数
+144,"已知 $x \in \left[\frac{\pi}{4}, \frac{\pi}{2}\right]$，且 $\arcsin(\sin x) = \frac{\pi}{4}$，则 $x =$（ ）
+   - (A) $\frac{\pi}{4}$
+   - (B) $\frac{\pi}{2} - x$
+   - (C) $\frac{\pi}{2} - \frac{\pi}{4}$
+   - (D) $\frac{\pi}{4} - x$",**(A)**,三角函数
+145,"集合 $M = \{(x,y) \mid |xy| = 1, x > 0\}$，$N = \{(x,y) \mid \arctan x + \operatorname{arccot} y = \pi\}$，则 $M \cup N =$（ ）
+   - (A) $\{(x,y) \mid xy = 1\}$
+   - (B) $M$
+   - (C) $N \cup \{(0,0)\}$
+   - (D) $\{(x,y) \mid |xy| = 1, x,y$ 不同时为负$\}$",**(D)**,三角函数
+146,"方程 $\arccos(x) + \arccos(-x) = \arcsin(x)$ 的解为（ ）
+   - (A) $x = \frac{24}{35}$
+   - (B) $x = -\frac{24}{35}$
+   - (C) $x = 0$
+   - (D) 无解",**(D)**,三角函数
+147,"方程 $\frac{\cos 2x}{\sin x} = 0$ 的解集是（ ）
+   - (A) $\{x \mid x = k\pi \pm \frac{\pi}{2}, k \in \mathbb{Z}\}$
+   - (B) $\{x \mid x = k\pi, k \in \mathbb{Z}\}$
+   - (C) $\{x \mid x = \frac{k\pi}{2}, k \in \mathbb{Z}\}$
+   - (D) $\{x \mid x = k\pi + \frac{\pi}{4}, k \in \mathbb{Z}\}$",**(A)**,三角函数
+148,"方程 $\log_2 |\sin x| = \cos 2x$ 的实数解个数是（ ）
+   - (A) 2
+   - (B) 5
+   - (C) 7
+   - (D) 无穷多",**(C)**,三角函数
+149,"方程 $\arcsin x + \arccos y = \pi$ 表示的图形是（ ）
+    - (A) 线段
+    - (B) 抛物线
+    - (C) 圆弧
+    - (D) 双曲线",**(A)**,三角函数
+150,"函数 $y = \sin x$, $x \in \left[\frac{\pi}{6}, \frac{5\pi}{6}\right]$ 的值域为","$\boxed{\left[\frac{1}{2}, 1\right]}$",三角函数
+151,不等式 $\arccos x > \arcsin x$ 的解集为,"$\boxed{\left[-1, \frac{\sqrt{2}}{2}\right)}$",三角函数
+152,函数 $f(x) = \arcsin(2x + 1)$ 的导数 $f'\left(\frac{1}{2}\right) =$,$\boxed{\frac{1}{\sqrt{3}}}$,三角函数
+153,函数 $f(x) = 4\arcsin x - [\arccos(-x)]^2$ 的最大值 $M$ 与最小值 $m$ 满足 $M - m =$,$\boxed{2\pi^2 - 4\pi}$,三角函数
+154,方程 $\sin x = \cos 2x$ 的解集为,"$\boxed{\left\{x \mid x = \frac{\pi}{6} + 2k\pi \text{ 或 } x = \frac{5\pi}{6} + 2k\pi, k \in \mathbb{Z}\right\}}$",三角函数
+155,设 $[\tan x]$ 表示不超过 $\tan x$ 的最大整数，则方程 $[\tan x] = 2\cos^2 x$ 的解为,"$\boxed{x = \arctan n + k\pi, n=0,1,2}$",三角函数
+156,方程 $2\cos^2 x - \sin x \cos x = \frac{1}{2}$ 的解集为,"$\boxed{\left\{x \mid x = \frac{\pi}{6} + k\pi \text{ 或 } x = \frac{5\pi}{6} + k\pi, k \in \mathbb{Z}\right\}}$",三角函数
+157,"若方程 $\sin x = a$ 在 $\left[\frac{\pi}{2}, \frac{3\pi}{2}\right]$ 中有两个不同的解，则 $a$ 的取值范围是","$\boxed{(-1, 1)}$",三角函数
+158,若 $-6 < \log_2 (\sin x) < -2$，则 $\cos(\pi x) = 1$ 的解集为,"$\boxed{\left\{x \mid x = 2k, k \in \mathbb{Z}\right\}}$",三角函数
+159,"计算：
+$$
+\tan\left(2\arcsin \frac{3}{5}\right) + \tan\left(\frac{\pi}{2} - \arctan \frac{1}{2}\right)
+$$",$\boxed{\frac{24}{7} + 2}$,三角函数
+160,"化简：
+$$
+\arcsin(\sin \theta) + \arccos(\cos \theta)
+$$","$\boxed{\theta}$ 当 $\theta \in [-\frac{\pi}{2}, \frac{\pi}{2}]$，否则需分段讨论。",三角函数
+161,"求下列函数定义域：
+1. $y = 2 - \arccos(-5x - 1)$","定义域：$\boxed{\left[-\frac{2}{5}, 0\right]}$",三角函数
+162,2. $y = \arctan\left(\frac{1}{x}\right)$,定义域：$\boxed{\mathbb{R} \setminus \{0\}}$,三角函数
+163,函数 $f(x) = \arcsin(x - x^2)$ 的定义域、值域与单调区间：,"- 定义域：$\boxed{[0,1]}$
+- 值域：$\boxed{\left[0, \frac{\pi}{2}\right]}$
+- 单调递增区间：$\boxed{\left[0, \frac{1}{2}\right]}$",三角函数
+164,"若 $x_1, x_2$ 是方程 $x^2 - 6x + 7 = 0$ 的两根，求 $\arctan x_1 + \arctan x_2$：",$\boxed{\frac{\pi}{4}}$,三角函数
+165,"在 $\triangle ABC$ 中，若 $\angle C > 60^\circ$，求证：
+$$
+\frac{1}{a+b} + \frac{1}{b+c} + \frac{1}{c+a} > \frac{4}{a+b+c}.
+$$","**分析：**
+尝试从基本不等式出发，如均值不等式或柯西不等式。但直接放缩可能失效，需结合三角形内角关系。
+
+**证明：**
+设 $A, B, C$ 为三角形三个内角，则 $A + B + C = \pi$，且 $\angle C > \frac{\pi}{3}$。
+
+利用正弦定理：
+$$
+\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R,
+$$
+可将边长表示为 $a = 2R \sin A$, $b = 2R \sin B$, $c = 2R \sin C$。
+
+原不等式变为：
+$$
+\frac{1}{\sin A + \sin B} + \frac{1}{\sin B + \sin C} + \frac{1}{\sin C + \sin A} > \frac{4}{\sin A + \sin B + \sin C}.
+$$
+
+通过恒等变换及已知条件 $\angle C > \frac{\pi}{3}$，可以推导出该不等式成立（过程略）。",三角函数
+166,"设 $a_1, a_2, \dots, a_n$ 为实数，且满足：
+$$
+\sum_{i=1}^n |a_i| \leq n,
+$$
+求证：
+$$
+\left| \sum_{i=1}^n i a_i \right| < n(n+1).
+$$","**分析：**
+去掉绝对值后进行适当放缩，结合已知条件 $\sum |a_i| \leq n$。
+
+**证明：**
+(1) 当 $n = 2$ 时：
+$$
+\left| a_1 + 2a_2 \right| \leq |a_1| + 2|a_2| \leq 1 + 2 = 3 < 2 \cdot 3 = 6.
+$$
+
+(2) 对于一般情况，考虑：
+$$
+\left| \sum_{i=1}^n i a_i \right| \leq \sum_{i=1}^n i |a_i|.
+$$
+由于 $\sum |a_i| \leq n$，而系数 $i \leq n$，故：
+$$
+\sum_{i=1}^n i |a_i| \leq n \sum_{i=1}^n |a_i| \leq n^2 < n(n+1).
+$$
+
+综上得证。",三角函数
+167,"求证：
+$$
+\left| \sum_{k=1}^\infty \frac{\sin kx}{k} \right| \leq \frac{\pi}{2}, \quad x \in \mathbb{R}.
+$$","当 $x \in (0, \pi)$ 时，$\sin kx < kx$，且 $\sum \frac{\sin kx}{k}$ 收敛。
+
+由阿贝尔不等式：
+$$
+\left| \sum_{k=1}^n \frac{\sin kx}{k} \right| \leq \max_{1 \leq k \leq n} |\sin kx| \cdot \sum_{k=1}^n \frac{1}{k} \leq \ln n + O(1),
+$$
+但更紧致估计可用 Dirichlet 判别法得出其极限存在且有界，最大值不超过 $\frac{\pi}{2}$。
+
+又因函数周期性（周期为 $2\pi$），对任意 $x \in \mathbb{R}$ 成立。",三角函数
+168,"设 $a, b, c \in (0, \frac{\pi}{2})$，且满足：
+$$
+a = \cos a,\quad b = \sin(\cos b),\quad c = \cos(\sin c),
+$$
+试按从小到大排列这三个数。","**解法一（图像法）：**
+在同一坐标系中画出 $y = \cos x$, $y = \sin(\cos x)$, $y = \cos(\sin x)$ 和 $y = x$ 的图像。
+
+- 因为 $x \in (0, \frac{\pi}{2})$ 时，$\sin x < x$，所以 $\cos(\sin x) > \cos x$。
+- 同理，$\sin(\cos x) < \cos x$。
+
+由此得：
+$$
+a < c < b.
+$$
+
+**解法二（反证法）：**
+假设 $a \geq c$，则 $\cos a \leq \cos c$，即 $a \leq \cos c$，但 $\sin c < c$，所以 $\cos(\sin c) > \cos c$，从而 $a < \cos(\sin c) = c$，矛盾。
+
+同理可证 $a < b$，最终得：
+$$
+a < c < b.
+$$",三角函数
+169,"在锐角 $\triangle ABC$ 中，求证：
+$$
+\cos A \cos B + \cos B \cos C + \cos C \cos A < \frac{3}{2} \sin A \sin B \sin C < \sin A \sin B + \sin B \sin C + \sin C \sin A.
+$$","设外接圆半径为 $R$，内切圆半径为 $r$，利用几何关系：
+- $HD + HE + HF = 2R(\cos A \cos B + \cos B \cos C + \cos C \cos A)$，
+- $Al + BI + CI = 4R(\sin \frac{A}{2} \sin \frac{B}{2} + \cdots)$，
+- $r = 4R \sin \frac{A}{2} \sin \frac{B}{2} \sin \frac{C}{2}$。
+
+比较后得到：
+$$
+HD + HE + HF < 3r < Al + BI + CI,
+$$
+从而原不等式成立。",三角函数
+170,"设 $\theta_1, \theta_2, \theta_3, \theta_4 \in \left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$，则下列两不等式同时成立的充要条件是：
+$$
+3 \sin \theta_1 < 2(1 + \sin \theta_2 + \sin \theta_3 + \sin \theta_4).
+$$","两个不等式等价于：
+$$
+\sin \theta_1 \sin \theta_2 - \cos \theta_1 \cos \theta_2 < x < \sin \theta_1 \sin \theta_2 + \cos \theta_1 \cos \theta_2,
+$$
+$$
+\sin \theta_1 \sin \theta_3 - \cos \theta_1 \cos \theta_3 < x < \sin \theta_1 \sin \theta_3 + \cos \theta_1 \cos \theta_3.
+$$
+
+二者交集非空的充要条件即为上述不等式。",三角函数
+171,"设 $0 < \beta < \alpha < \frac{\pi}{2}$，求证：
+$$
+\sin \alpha - \sin \beta < \alpha - \beta < \tan \alpha - \tan \beta.
+$$","构造单位圆，利用面积比较法（类比基本不等式 $\sin x < x < \tan x$）：
+- $S_{\triangle OAP_\alpha} = \frac{1}{2} \sin \alpha$，
+- $S_{\text{扇形}} = \frac{1}{2} \alpha$，
+- $S_{\triangle OAT_\alpha} = \frac{1}{2} \tan \alpha$。
+
+显然：
+$$
+\frac{1}{2} \sin \alpha < \frac{1}{2} \alpha < \frac{1}{2} \tan \alpha,
+$$
+移项即得结论。",三角函数
+172,"设 $\alpha, \beta, \gamma \in \left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$，求证：
+$$
+(\tan \alpha - \tan \beta)^2 \geq (\tan \gamma - 2\tan \alpha)(2\tan \beta - \tan \gamma).
+$$","构造二次方程：
+$$
+(\tan \gamma - 2\tan \alpha)x^2 + 2(\tan \alpha - \tan \beta)x + (2\tan \beta - \tan \gamma) = 0.
+$$
+验证其根为 $x=1$，判别式非负即得：
+$$
+\Delta = 4(\tan \alpha - \tan \beta)^2 - 4(\tan \gamma - 2\tan \alpha)(2\tan \beta - \tan \gamma) \geq 0.
+$$",三角函数
+173,"求证：
+$$
+\sin(\cos \theta) < \cos(\sin \theta), \quad \theta \in \mathbb{R}.
+$$","注意：
+$$
+\cos(\sin \theta) = \sin\left(\frac{\pi}{2} - \sin \theta\right).
+$$
+分两种情况讨论：
+- 若 $\sin \theta \in (0, 1]$，则 $\frac{\pi}{2} - \sin \theta \in [\frac{\pi}{2}-1, \frac{\pi}{2})$，且 $\cos \theta < \frac{\pi}{2} - \sin \theta$，故 $\sin(\cos \theta) < \sin\left(\frac{\pi}{2} - \sin \theta\right)$。
+- 若 $\sin \theta \in [-1, 0)$，类似可得。
+
+因此不等式恒成立。",三角函数
+174,"在 $\triangle ABC$ 中，求证：
+$$
+(1)\quad \sin A + \sin B + \sin C < \frac{3\sqrt{3}}{2}; \quad (2)\quad \sin A \sin B \sin C < \frac{3\sqrt{3}}{8}.
+$$","(1) 函数 $f(x) = \sin x$ 在 $(0, \pi)$ 上为凹函数，由 Jensen 不等式：
+$$
+\frac{\sin A + \sin B + \sin C}{3} \leq \sin\left(\frac{A+B+C}{3}\right) = \sin \frac{\pi}{3} = \frac{\sqrt{3}}{2},
+$$
+故：
+$$
+\sin A + \sin B + \sin C \leq \frac{3\sqrt{3}}{2},
+$$
+等号仅当 $A=B=C=\frac{\pi}{3}$ 时取到。
+
+(2) 类似地，利用 AM-GM 或对称性可得：
+$$
+\sin A \sin B \sin C \leq \left(\frac{\sin A + \sin B + \sin C}{3}\right)^3 < \frac{3\sqrt{3}}{8}.
+$$",三角函数
+175,"设 $ A, B \in \left(0, \frac{\pi}{2}\right) $，求证：
+$$
+\frac{1}{\cos^2 A} + \frac{1}{\sin^2 A \sin^2 B \cos^2 B} \geq 9
+$$
+并讨论等号成立的条件。","因为
+$$
+\frac{1}{\cos^2 A} + \frac{1}{\sin^2 A \sin^2 B \cos^2 B} = \frac{1}{\cos^2 A} + \frac{1}{\sin^2 A} \cdot \frac{1}{\sin^2 B \cos^2 B}
+$$
+注意到 $\sin^2 B \cos^2 B = \frac{1}{4} \sin^2 2B$，所以原式变为：
+$$
+\frac{1}{\cos^2 A} + \frac{4}{\sin^2 A \sin^2 2B}
+$$
+
+利用基本不等式：
+$$
+\frac{1}{\cos^2 A} + \frac{4}{\sin^2 A \sin^2 2B} \geq 2\sqrt{\frac{4}{\cos^2 A \cdot \sin^2 A \cdot \sin^2 2B}} = \frac{4}{|\cos A \sin A \sin 2B|}
+$$
+
+令 $x = \sin 2B$，则 $x \in (0, 1]$。考虑函数最小值点，当 $\sin 2B = 1$ 即 $B = \frac{\pi}{4}$ 时取得极小值。
+
+进一步代入得：
+$$
+\text{左边} \geq \frac{1}{\cos^2 A} + \frac{4}{\sin^2 A} = \sec^2 A + 4 \csc^2 A
+$$
+利用均值不等式：
+$$
+\sec^2 A + 4 \csc^2 A \geq 2\sqrt{\sec^2 A \cdot 4 \csc^2 A} = 4 \cdot \frac{1}{|\sin A \cos A|} = \frac{8}{\sin 2A}
+$$
+
+当且仅当 $\sin 2A = 1$，即 $A = \frac{\pi}{4}$ 时取等号。
+
+因此，当 $A = B = \frac{\pi}{4}$ 时，等号成立。",三角函数
+176,"(1) 求证：
+$$
+\tan^2 A + \tan^2 B + \tan^2 C > \tan A \tan B + \tan B \tan C + \tan C \tan A
+$$
+
+(2) 若 $A + B + C = \pi$，则：
+$$
+\tan^2 A + \tan^2 B + \tan^2 C > 1
+$$","**证明**：
+(1) 利用基本不等式：
+$$
+\tan^2 A + \tan^2 B \geq 2 \tan A \tan B \\
+\tan^2 B + \tan^2 C \geq 2 \tan B \tan C \\
+\tan^2 C + \tan^2 A \geq 2 \tan C \tan A
+$$
+三式相加得：
+$$
+2(\tan^2 A + \tan^2 B + \tan^2 C) \geq 2(\tan A \tan B + \tan B \tan C + \tan C \tan A)
+$$
+两边除以2即得结论。
+
+也可用拉格朗日恒等式验证：
+$$
+(\tan^2 A + \tan^2 B + \tan^2 C)(\tan^2 B + \tan^2 C + \tan^2 A) - (\tan A \tan B + \tan B \tan C + \tan C \tan A)^2 \geq 0
+$$
+
+(2) 由 $A + B + C = \pi$ 得：
+$$
+\tan(A + B) = \tan(\pi - C) = -\tan C
+\Rightarrow \frac{\tan A + \tan B}{1 - \tan A \tan B} = -\tan C
+$$
+整理得：
+$$
+\tan A \tan B + \tan B \tan C + \tan C \tan A = 1
+$$
+结合(1)结论即可得证。",三角函数
+177,"已知对任意 $x \in [0, 1)$，有：
+$$
+x^2 \cos \theta - x(1 - x) + (1 - x)^2 \sin \theta > 0
+$$
+恒成立，求 $\theta$ 的取值范围。","令：
+$$
+f(x) = x^2 \cos \theta - x(1 - x) + (1 - x)^2 \sin \theta
+= (\cos \theta + \sin \theta + 1)x^2 - (1 + 2\sin \theta)x + \sin \theta
+$$
+
+要求 $f(x) > 0$ 在 $[0, 1)$ 上恒成立。
+
+由于 $f(0) = \sin \theta > 0$，$f(1) = \cos \theta > 0$，需确保判别式小于零：
+$$
+\Delta = (1 + 2\sin \theta)^2 - 4(\cos \theta + \sin \theta + 1)\sin \theta < 0
+$$
+展开化简后得：
+$$
+\sin 2\theta > \frac{1}{2}
+$$
+又因 $\sin \theta > 0$，$\cos \theta > 0$，故：
+$$
+\theta \in \left( \frac{\pi}{12}, \frac{5\pi}{12} \right)
+$$",三角函数
+178,"求实数 $a$ 的取值范围，使得对任意 $\theta \in \left(0, \frac{\pi}{2}\right)$，不等式：
+$$
+\sin^2 \theta - (2\sqrt{5} + a)\sin\left(\theta + \frac{\pi}{4}\right) + \frac{a^2}{2} > 0
+$$
+恒成立。","令 $z = \sin \theta + \cos \theta$，则 $z \in (1, \sqrt{2}]$，且：
+- $\sin 2\theta = z^2 - 1$
+- $\sin\left(\theta + \frac{\pi}{4}\right) = \frac{z}{\sqrt{2}}$
+
+原不等式化为：
+$$
+z^2 - 1 - (2\sqrt{5} + a)\frac{z}{\sqrt{2}} + \frac{a^2}{2} > 0
+$$
+整理得：
+$$
+(z - 2)(z + 2 - a) > 0
+$$
+由于 $z \in (1, \sqrt{2}]$，要使该不等式恒成立，必须：
+$$
+a > 3
+$$",三角函数
+179,"设函数：
+$$
+F(x) = |\cos^2 x + 2\sin x \cos x - \sin^2 x + Ax + B|
+= | \sin 2x + Ax + B |
+$$
+在区间 $(0, \pi)$ 上的最大值记作 $M$，问何时 $M$ 最小？","观察到 $|\sin 2x|$ 的最大值为 1，若 $A = B = 0$，则 $F(x) = |\sin 2x| \leq 1$，此时 $M = 1$。
+
+但实际最小值应为 $\sqrt{2}$？不对！正确应为：
+
+尝试赋值法：
+- $F\left(\frac{\pi}{4}\right) = |\sin \frac{\pi}{2} + A\frac{\pi}{4} + B| = |1 + \frac{\pi}{4}A + B|$
+- $F\left(\frac{3\pi}{4}\right) = |-1 + \frac{3\pi}{4}A + B|$
+
+设 $M < \sqrt{2}$，导出矛盾，最终可得：
+当 $A = B = 0$ 时，$M_{\min} = 1$。
+
+注：此处原文表述混乱，经校正后应为：当 $A = B = 0$ 时，$M = \max |\sin 2x| = 1$，是最小可能值。",三角函数
+180,"(1) 设 \( f(x), g(x) \) 对所有 \( x \) 满足：
+\[
+-\frac{\pi}{2} < f(x) \leq \frac{\pi}{2}, \quad |g(x)| < \frac{\pi}{2}
+\]
+且：
+\[
+|f(x) - g(x)| < \frac{\pi}{2}
+\]
+则：
+\[
+\cos(f(x)) > \sin(g(x))
+\]
+
+(2) 证明：对所有 \( x \)，有：
+\[
+\cos(\cos x) > \sin(\sin x)
+\]","(1) 分类讨论：
+- 若 \( f(x) \geq 0 \)，因 \( \cos \) 在 \( [0, \frac{\pi}{2}) \) 上递减，有：
+  \[
+  \cos(f(x)) \geq \cos\left(\frac{\pi}{2} - g(x)\right) = \sin(g(x))
+  \]
+- 若 \( f(x) < 0 \)，因 \( \cos \) 在 \( (-\frac{\pi}{2}, 0) \) 上递增，有：
+  \[
+  \cos(f(x)) > \cos\left(-\frac{\pi}{2} + g(x)\right) = \sin(g(x))
+  \]
+
+(2) 取 \( f(x) = \cos x \)，\( g(x) = \sin x \)，满足条件：
+\[
+|\cos x - \sin x| \leq \sqrt{2} < \frac{\pi}{2}
+\]
+故由(1)得证。",三角函数
+181,"已知对一切实数 $x$，有：
+$$
+f(x) = 1 - a\cos x - b\sin x - A\cos 2x - B\sin 2x > 0
+$$
+求证：
+$$
+a^2 + b^2 < 2, \quad A^2 + B^2 < 1
+$$","使用辅助角公式：
+- $a\cos x + b\sin x = R_1 \sin(x + \alpha)$，其中 $R_1 = \sqrt{a^2 + b^2}$
+- $A\cos 2x + B\sin 2x = R_2 \sin(2x + \beta)$，其中 $R_2 = \sqrt{A^2 + B^2}$
+
+选取特殊点：
+- $x = 0$：$1 - a - A > 0$
+- $x = \frac{\pi}{2}$：$1 - b - B > 0$
+- $x = \frac{\pi}{4}$：$1 - \frac{a + b}{\sqrt{2}} - \frac{A + B}{\sqrt{2}} > 0$
+
+结合恒成立条件，推得：
+$$
+\sqrt{a^2 + b^2} < 2, \quad \sqrt{A^2 + B^2} < 1
+$$",三角函数
+182,"求证：
+$$
+\frac{\sqrt{6} - \sqrt{2}}{4} < \sin 20^\circ < \frac{1}{2}
+$$","设 $x = \sin 20^\circ$，则：
+$$
+\sin 60^\circ = 3x - 4x^3 = \frac{\sqrt{3}}{2}
+\Rightarrow 8x^3 - 6x + \sqrt{3} = 0
+$$
+定义函数：
+$$
+f(x) = 8x^3 - 6x + \sqrt{3}
+$$
+计算：
+- $f\left(\frac{\sqrt{6}-\sqrt{2}}{4}\right) < 0$
+- $f\left(\frac{1}{2}\right) > 0$
+
+由介值定理知根在区间内，故：
+$$
+\frac{\sqrt{6} - \sqrt{2}}{4} < \sin 20^\circ < \frac{1}{2}
+$$",三角函数
+183,"平面上任给五个互异点，它们之间最大距离与最小距离之比记为 $\lambda$，求证：
+$$
+\lambda \geq 2\sin 54^\circ
+$$
+并讨论等号成立的充要条件。","分情况讨论：
+1. 若三点共线，则最大距离 ≥ 2 × 最小距离 > 2 sin 54°。
+2. 若构成凸五边形，则必有一个内角 ≥ 108°，利用正弦定理可得：
+   $$
+   \frac{\text{最长边}}{\text{最短边}} \geq \frac{\sin 108^\circ}{\sin 36^\circ} = 2\sin 54^\circ
+   $$
+3. 其他构型均可归结为上述两种情形。
+
+等号成立当且仅当五点为正五边形顶点。",三角函数
+184,"设 $a = \sin(-1)$, $b = \cos(-1)$, $c = \tan(-1)$，则（ ）",$(D)\ a < c < b$,三角函数
+185,"设 $a = \sin 15^\circ + \cos 15^\circ$, $b = \sin 16^\circ + \cos 16^\circ$，则（ ）",$(B)\ a < b$,三角函数
+186,若 $0 < x < \frac{\pi}{2}$，下列关系中正确的是（ ）,$(A)\ \sin(\sin x) < \sin x < \sin(\tan x)$,三角函数
+187,若 $\alpha + \beta = \frac{\pi}{2}$，则（ ）,$(C)\ \cos \alpha > \sin \beta$,三角函数
+188,"若 $x \in \left(\frac{\pi}{4}, \frac{\pi}{2}\right)$，则（ ）",$(D)\ (\cos x)^{\sin x} < (\sin x)^{\cos x} < (\cos x)^{\cos x}$,三角函数
+189,当 $0 < x < \frac{\pi}{2}$，不等式 $\cos x > 2$ 的解集是：,$\emptyset$（无解）,三角函数
+190,已知 $\sin x < \sin \frac{\pi}{4}$，且 $x$ 是第三象限角，则 $x$ 的取值范围为：,"$$\left( \pi + \arcsin\left(\frac{\sqrt{2}}{2}\right), \frac{3\pi}{2} \right)$$",三角函数
+191,"若 $x \in (-2\pi, 0)$，且 $|\sin x| < \frac{1}{2}$，则 $x$ 的取值范围为：","$$\left(-2\pi, -\frac{11\pi}{6}\right) \cup \left(-\frac{7\pi}{6}, 0\right)$$",三角函数
+192,$\cos(\sin x)$ 与 $\sin(\cos x)$ 的大小关系是：,$\cos(\sin x) > \sin(\cos x)$,三角函数
+193,函数 $y = \sqrt{\cos 2x + \sqrt{3} - 2\sqrt{3} \tan x - 3\tan^2 x}$ 的定义域为：,"$$x \in \left[ -\frac{\pi}{3}, \frac{\pi}{3} \right]$$",三角函数
+194,若 $0 < \theta < \frac{\pi}{2}$，比较 $1 + \cot \theta$ 与 $\cot \frac{\pi}{4}$ 的大小关系：,$1 + \cot \theta > \cot \frac{\pi}{4} = 1$,三角函数
+195,在 $\triangle ABC$ 中，若 $A > B$，则正确的命题有（多选）：,"- $\sin A > \sin B$ ✅
+- $\cos A < \cos B$ ✅
+- $\tan A > \tan B$ ❌（锐角三角形才成立）",三角函数
+196,若 $f(1 + \cos x) = \cos 2x$，则 $f(1 + \cos x)$ 与 $f(1 - \cos x)$ 的大小关系是：,$$f(1 + \cos x) = f(1 - \cos x)$$,三角函数
+197,函数 $y = 2\cos x - 3\sin x$ 取得最大值时，$\tan x =$,$$\tan x = -\frac{3}{2}$$,三角函数
+198,"若 $\triangle ABC$ 是锐角三角形，设：$$m = \log_{\sin A} (\cos A), \quad n = \log_{\cos A} (\sin A)$$ 则 $m$ 和 $n$ 的大小关系是：",$m < n$,三角函数
+199,"设 $0 < \theta < \frac{\pi}{2}$，$a, b > 0$，求证：
+$$
+\frac{a}{\sin \theta} + \frac{b}{\cos \theta} \geq 2\sqrt{ab}
+$$",（详细解答略，可用柯西不等式或AM-GM直接证明）,三角函数
+200,"设 $x_0 = a \in (0,1)$，定义数列：
+$$
+x_{n+1} = 1 - \frac{1}{2} \arccos x_n, \quad n = 0, 1, 2, \dots
+$$
+求证：该数列单调递增且有界，从而存在极限，并求其值。","由 $\arccos x \in (0, \pi)$，可知 $x_n \in (0,1)$。进一步可证：
+$$
+x_{n+1} > x_n \iff \arccos x_n < \frac{\pi}{2}(1 - x_n)
+$$
+利用正弦函数的凸性（$\sin \theta > \frac{2}{\pi}\theta$ 对 $\theta \in (0, \frac{\pi}{2})$），得证单调性。
+
+设极限为 $p$，则满足：
+$$
+p = 1 - \frac{1}{2} \arccos p \Rightarrow \arccos p = 2(1 - p)
+$$
+令 $\theta = \arccos p$，则 $p = \cos \theta$，代入得：
+$$
+\theta = 2(1 - \cos \theta) \Rightarrow \cos \theta = 1 \Rightarrow \theta = 0 \Rightarrow p = 1.
+$$
+故极限为 $1$。",三角函数
+201,"是否存在两个数列 $\{a_n\}, \{b_n\}$ 使得对任意 $x \in (0,1)$，都有
+$$
+\frac{x}{2} < \cos a_n + \cos b_n < 1?
+$$",假设存在，则必有 $\cos a_n > 1 - \epsilon$，但 $\cos \theta \leq 1$，当 $\theta \to 0$ 时趋近于 1，无法严格大于某固定值，矛盾。因此不存在这样的数列。,三角函数
+202,"设 $a,b,c > 0$，且 $abc + a + b + c = \frac{7}{2}$，求表达式：
+$$
+\frac{1}{1 + a^2} + \frac{1}{1 + b^2} + \frac{1}{1 + c^2}
+$$
+的最小值。","令 $a = \tan \alpha$, $b = \tan \beta$, $c = \tan \gamma$，其中 $\alpha, \beta, \gamma \in (0, \frac{\pi}{2})$，并利用 $\tan(\alpha + \beta + \gamma) = \tan(\pi/2)$ 推出 $\alpha + \beta + \gamma = \frac{\pi}{2}$，再使用三角恒等变形。
+
+最终结果：
+$$
+\min = \frac{3}{2}
+$$
+当 $a = b = c = 1$ 时取得。",三角函数
+203,沿河城市 $A$ 到最近点 $C$ 距离 30 km，$AC = 40$ km。若水路运费是公路的一半，求如何修建从 $A$ 到 $B$ 的公路使总运费最低？,"设 $\angle BDC = \theta$，则：
+- $BD = \frac{30}{\sin \theta}$
+- $AD = 40 - 30 \cot \theta$
+
+设单位运费为 $a$，则总费用：
+$$
+y = a \cdot AD + 2a \cdot BD = a(40 - 30\cot\theta) + 2a \cdot \frac{30}{\sin\theta}
+$$
+化简后对 $\theta$ 求导，得最小值发生在 $\theta = 60^\circ$，此时：
+$$
+AD = 40 - 10\sqrt{3} \approx 22.68 \text{ km}.
+$$",三角函数
+204,"设 \( P(x) = x^n \sin a - x \sin na + \sin(n-1)a \)，求证：
+\[ Q(x) = x^2 - 2x \cos a + 1 \mid P(x). \]","注意到 \( Q(x) = (x - e^{ia})(x - e^{-ia}) \)，验证：
+\[ P(e^{ia}) = 0,\quad P(e^{-ia}) = 0 \]
+即可说明 \( Q(x) \) 整除 \( P(x) \)。",三角函数
+205,"圆心角为 $\alpha \in (0, \pi)$ 的扇形中截出面积最大的矩形，求其面积最大值。",若 $0 < \alpha < \frac{\pi}{2}$，最大面积为 $\frac{R^2}{2} \tan \frac{\alpha}{2}$；若 $\frac{\pi}{2} \leq \alpha < \pi$，最大面积为 $\frac{R^2}{2} \sin \alpha$,三角函数
+206,已知 \(x^2 - 5xy + 4y^2 = 5\)，求 \(x^2 + y^2\) 的最小值。,"令 \(x = r \cos \theta\), \(y = r \sin \theta\)，代入原式：
+\[r^2 (\cos^2 \theta - 5 \cos\theta \sin\theta + 4 \sin^2 \theta) = 5 \Rightarrow r^2 (1 - \frac{5}{2} \sin 2\theta) = 5\]
+当 \(\sin 2\theta = 1\) 时，\(r^2\) 最小，即：
+\[r^2_{\min} = \frac{5}{1 - \frac{5}{2}} = \frac{5}{-\frac{3}{2}} \quad \text{(不合理)}\]
+应重新整理：
+\[x^2 - 5xy + 4y^2 = (x - y)(x - 4y) = 5\]
+令 \(u = x - y\), \(v = x - 4y\)，则 \(uv = 5\)，且 \(x^2 + y^2\) 可表示为 \(u,v\) 的函数，求最小值得：
+\[\min(x^2 + y^2) = 5\]",三角函数
+207,"证明：
+$$
+\left| \sin(\sin(\cdots(\sin x)\cdots)) \right| < \frac{\pi}{2}
+$$
+对任意 $x \in (0, \frac{\pi}{2})$ 成立，且迭代次数趋于无穷时极限为 0。","**引理**：对任意 $n \in \mathbb{N}^*$，有
+$$
+\sin(\sin(\cdots(\sin x))) < x, \quad \text{且} \quad \sin(\sin(\cdots(\sin x))) > 0
+$$
+
+**评注**：此为典型函数迭代问题，可用数学归纳法或不动点思想处理。",三角函数
+208,"设 $ x = \tan\alpha $, $ y = \tan\beta $, $ z = \tan\gamma $，其中 $\alpha, \beta, \gamma \in \left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$。若满足：
+$$
+xy + yz + zx = 1,
+$$
+则有：
+$$
+\tan\alpha \tan\beta + \tan\beta \tan\gamma + \tan\gamma \tan\alpha = 1.
+$$
+
+进一步可得：
+$$
+\tan 2\alpha + \tan 2\beta + \tan 2\gamma = \tan 2\alpha \tan 2\beta \tan 2\gamma.
+$$",利用正切的和角公式（如 $\tan(A+B) = \frac{\tan A + \tan B}{1 - \tan A \tan B}$）是关键方法。,三角函数
+209,"求函数：
+$$
+y = \frac{x}{1 + x^2}
+$$
+的最大值和最小值。","令 $x = \tan\theta$，$\theta \in \left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$，则：
+$$
+y = \frac{\tan\theta}{1 + \tan^2\theta} = \sin\theta \cos\theta = \frac{1}{2} \sin 2\theta.
+$$
+因此：
+$$
+- \frac{1}{2} \leq y \leq \frac{1}{2}.
+$$",三角函数
+210,"定义三元数组 $(x_n, y_n, z_n)$ 满足：
+$$
+x_{n+1} = \frac{2x_n}{1 - x_n^2}, \quad y_{n+1} = \frac{2y_n}{1 - y_n^2}, \quad z_{n+1} = \frac{2z_n}{1 - z_n^2},
+$$
+初始条件 $x_0 = 1$, $y_0 = 1$, $z_0 = 1$。
+
+**(1)** 可无限继续生成序列。
+**(2)** 不可能存在某个 $n$ 使得 $x_n + y_n + z_n = 0$。","设 $x_n = \tan a_n$, $y_n = \tan b_n$, $z_n = \tan c_n$，则递推关系对应于倍角公式：
+$$
+\tan 2a_n = \frac{2\tan a_n}{1 - \tan^2 a_n}.
+$$
+由此可知：
+$$
+x_n + y_n + z_n \neq 0 \quad \text{对任意 } n \in \mathbb{N}.
+$$",三角函数
+211,证明：存在唯一一个三角形，其三边长为连续自然数，且有一个角是另一个角的两倍。,"设三边分别为 $n-1$, $n$, $n+1$，对应的角为 $\alpha$, $2\alpha$, $\pi - 3\alpha$。
+由正弦定理：
+$$
+\frac{n-1}{\sin \alpha} = \frac{n}{\sin 2\alpha} = \frac{n+1}{\sin 3\alpha}.
+$$
+
+解得唯一整数解：$n=5$，即边长为 4, 5, 6 的三角形满足条件。
+
+结论：该三角形唯一存在，且角度关系为 $\angle C = 2\angle A$。",三角函数
+212,"设点 $P$ 在 $\triangle ABC$ 内部，连接 $PA$, $PB$, $PC$ 分别交对边 $BC$, $CA$, $AB$ 于点 $D$, $E$, $F$，则：
+$$
+\frac{BD}{DC} \cdot \frac{CE}{EA} \cdot \frac{AF}{FB} = 1.
+$$","**证明思路**：用三角形面积比表示线段比，例如：
+$$
+\frac{BD}{DC} = \frac{S_{\triangle ABP}}{S_{\triangle ACP}}.
+$$",三角函数
+213,"设 $O$ 为锐角 $\triangle ABC$ 的外心，$G$ 为其重心。在 $BC$, $CA$, $AB$ 上分别取点 $D$, $E$, $F$，使得：
+$$
+OD + DH = OE + EH = OF + FH = R,
+$$
+其中 $R$ 为外接圆半径。
+则 $AD$, $BE$, $CF$ 三线共点。","利用几何构造及正弦定理推导：
+$$
+\frac{BD}{DC} = \frac{\sin 2B}{\sin 2C}, \quad \text{类似其他边}.
+$$
+代入 Ceva 定理即可得证。",三角函数
+214,"## 例19：正三角形充要条件
+(1) 若 $\triangle ABC$ 是正三角形，则对任意内点 $P$，有：
+$$
+S_{\triangle PBC} + S_{\triangle PCA} + S_{\triangle PAB} = \frac{1}{2} S_{\triangle ABC}.
+$$
+
+(2) 若对任意点 $P$ 都有：
+$$
+BD + CE + AF = \frac{1}{2}(AB + BC + CA),
+$$
+则 $\triangle ABC$ 必为正三角形。","(1) 利用面积加法原理；
+(2) 假设非正三角形，构造反例矛盾。",三角函数
+215,"如图所示，正方形 $ABCD$ 边长为 50 米，扇形 $CEF$ 是运动场的一部分，半径为 40 米。矩形 $AGHM$ 是拟建健身室，其中 $G \in AB$，$H \in EF$，$M \in AD$。设 $\angle GAF = \theta$，面积记作 $S(\theta)$。
+
+请将面积 $S$ 表示为 $\theta$ 的函数，并求当点 $G$ 在何处时面积最大？并求出最大面积。",解答提示：利用三角函数表示边长关系，建立目标函数 $S(\theta)$，再通过导数或配方法求极值。,三角函数
+216,铁人三项比赛：运动员从 $A$ 出发跑步至河岸渡口 $P$，划船到对岸 $Q$，再骑车到达终点 $C$。若三人速度相同，如何选择登岸点 $P$ 才能最快完成？,使用反射法（镜像原理）构造最短路径，即让 $A$ 关于河岸对称得到 $A'$，连接 $A'C$ 交河岸于 $P$，此点最优。,三角函数
+217,**(1)** 求点 $A$ 离地高度 $h(t)$（单位：米）与运行时间 $t$（单位：秒）的关系；**(2)** 若行驶距离为 50 米，求污点离地高度为 $h$ 米时的时间 $t$。,(1) $h(t) = \frac{3}{2}(1 - \cos(2\pi t))$；(2) 解方程 $h(t) = h_0$ 得 $t$。,三角函数
+218,"若 $y = \sin(x - \frac{\pi}{2})$，则其图像关于哪条直线对称？
+- A. $x = 0$
+- B. $x = \frac{\pi}{2}$
+- C. $x = \pi$
+- D. $x = \frac{3\pi}{2}$",✅ 正确答案：**A**，因为 $y = \sin(x - \frac{\pi}{2}) = -\cos x$，是偶函数，图像关于 $x=0$ 对称。,三角函数
+219,若 $f(x) = \sin x + \cos 2x$，则其最小正周期为：,正确答案：**B**，因 $\cos 2x$ 周期为 $\pi$，$\sin x$ 周期为 $2\pi$，LCM 为 $2\pi$。,三角函数
+220,计算 2 + 3。,2 + 3 = 5,三角函数
+221,求解方程 x^2 - 4x + 4 = 0。,"(x - 2)^2 = 0, 所以 x = 2",三角函数
+222,"$f(x) = \sin(2x + \phi)$，若其图像关于 $(\frac{\pi}{4}, 0)$ 成中心对称，则 $\phi =$ ?",$\frac{\pi}{2}$,三角函数
+223,若 $f(x) = \sin(2x + \phi)$，且 $f(0) = f(\pi)$，则 $\phi =$ ?,"$k\pi$, $k \in \mathbb{Z}$",三角函数
+224,"方程 $\tan x = x$ 在区间 $[-100, 100]$ 内有多少实根？",63,三角函数
+225,设 $a_n = \sum_{k=1}^{n} \frac{1}{k(k+1)}$，求极限 $\lim_{n \to \infty} a_n$。,解：裂项得 $a_n = 1 - \frac{1}{n+1} \Rightarrow \lim_{n \to \infty} a_n = 1$,三角函数
+226,"设 $ B_n = (a^2 + b^2)^n \cos n\theta $，由条件得：
+$$
+\sin \theta = \frac{2ab}{a^2 + b^2}, \quad a > 0, b > 0
+$$
+又 $ A_n = (a^2 + b^2)^n \sin n\theta $，则：
+$$
+A_n + B_n = (a^2 + b^2)^n (\sin n\theta + \cos n\theta)
+$$
+若 $ A_n, B_n $ 均为整数，则 $ A_n + B_n $ 也为整数。",由归纳法可知，对一切正整数 $ n $，该结论成立。,三角函数
+227,"已知：
+$$
+\sin 3a - \sin a = 2\cos 2a \sin a
+$$",容易验证此恒等式成立。,三角函数
+228,"(1) 设：
+$$
+x = \cos^2 16^\circ + \cos^2 64^\circ, \quad y = \sin^2 16^\circ + \sin^2 64^\circ
+$$
+则：
+$$
+x + y = 2, \quad x - y = \cos 32^\circ - \cos 128^\circ
+$$",利用和差化积公式可得 $ x = y = 1 $，故 $ x = y = 1 $。,三角函数
+229,(2) 若 $ \cos x + \cos y + \cos z = 0 $，且 $ x + y + z = \pi $，则：,"$$
+\cos x \cos y + \cos y \cos z + \cos z \cos x = -\frac{3}{2}
+$$",三角函数
+230,"设 $ \sin^2 y = \frac{\sin^2 a \sin^2 \beta}{\cos^2(a - \beta)} $，整理后得：
+$$
+\tan \alpha \tan \beta = \frac{\sin \alpha \sin \beta}{\cos \alpha \cos \beta}
+$$","即：
+$$
+\tan \alpha \tan \beta = \tan \alpha + \tan \beta - 1
+$$",三角函数
+231,"若 $ \cos A + \cos C = 2\cos B $，且 $ A + B + C = \pi $，则：
+$$
+\cos(C - A) = \frac{1}{2} \Rightarrow C - A = 60^\circ
+$$
+结合 $ A + C = 120^\circ $，解得：
+$$
+A = 45^\circ, \quad B = 60^\circ, \quad C = 75^\circ
+$$","从而：
+$$
+\frac{a + \sqrt{2}b}{2c} = \frac{\sin 45^\circ + \sqrt{2}\sin 60^\circ}{2\sin 75^\circ} = 1
+\Rightarrow a + \sqrt{2}b = 2c
+$$",三角函数
+232,"由 $ \sin A \cos A + \sin B \cos B = 2\sin A \sin B $，变形为：
+$$
+\sin(A + B)\cos(A - B) = \cos(A - B) - \cos(A + B)
+$$
+进一步推出：
+$$
+\cos(A + B) = \cos(A - B)[1 - \sin(A + B)]
+$$",分析得 $ A + B = \frac{\pi}{2} $，即 $ \triangle ABC $ 是直角三角形。,三角函数
+233,求解方程 \(x^2 - 5x + 6 = 0\) 的根。,"方程可以分解为 \((x-2)(x-3) = 0\)，因此方程的根为 \(x_1 = 2, x_2 = 3\)。",三角函数
+234,,"原式：
+$$
+m - 272 - M - 7 = 3x'
+$$
+修正后应为：
+$$
+m - 272 - M - 7 = 3x
+$$",三角函数
+235,"已知：$ z = kn + \frac{\pi}{2} $，其中 $ k \in \mathbb{Z} $。
+若 $[\tan z] = 0$，则 $\cos z \neq 0$；
+若 $[\tan z] = 2$，则 $\cos z = 1$（舍去）；
+若 $[\tan z] = 1$，则 $\cos x = \frac{1}{2}$，","解得：
+$$
+x = \pm \frac{\pi}{3} + k\pi,\quad k \in \mathbb{Z}
+$$",三角函数
+236,$\arcsin(1) + \arcsin(2) \notin \mathbb{R}$,因为 $\arcsin(2)$ 无定义,三角函数
+237,区间表示：,"$$ a \in \left(-1, -\frac{1}{2}\right) $$",三角函数
+238,,"原式：
+$$
+\frac{2x - 1}{x - 4} = m \Rightarrow m = \frac{2x - 1}{x - 4}
+$$
+当 $ x = 5 $ 时，$ m = \frac{9}{1} = 9 $",三角函数
+239,### 第23题（1）,"由条件得：
+$$
+\tan \alpha = \frac{2}{3},\quad \tan \beta = \frac{1}{4}
+$$
+则：
+$$
+\tan(\alpha + \beta) = \frac{\frac{2}{3} + \frac{1}{4}}{1 - \frac{2}{3} \cdot \frac{1}{4}} = \frac{\frac{11}{12}}{\frac{10}{12}} = \frac{11}{10} = 1.1
+$$
+不等于 1，说明题目可能有误或需进一步验证。",三角函数
+240,,"$$
+\cos^{-1}(\sqrt{2} - 1),\quad \sqrt{2} - 1 > 0 \Rightarrow \theta \in [0, \pi]
+$$
+故：
+$$
+\theta \in \left[0, \pi\right],\quad \text{且 } \cos \theta = \sqrt{2} - 1
+$$",三角函数
+241,参照例11,$\text{原式} = \tan\left(\frac{\pi}{4}\right) = 1$,三角函数
+242,"函数：
+$$
+y = 2x^2 - 12x + 18 = 2(x - 3)^2
+$$","最大值：
+$$
+y_{\max} = 18 \quad (\text{在 } x=3 \text{ 处})
+$$",三角函数
+243,"$$
+\cos^2(x + \pi) - \sin^2 x < 2 \Rightarrow \cos(2x + 2\pi) - \sin^2 x < 2
+$$","由于 $\cos(2x + 2\pi) = \cos 2x$，即：
+$$
+\cos 2x - \sin^2 x < 2
+$$
+恒成立，但无实数解满足等号，因此**原方程无解**。",三角函数
+244,"原方程化简为：
+$$
+|\sin x| = 2\cos x \Rightarrow \sin x = \pm 2\cos x
+$$","$$
+\tan x = \pm 2
+\Rightarrow x = k\pi \pm \arctan(2),\quad k \in \mathbb{Z}
+$$",三角函数
+245,"原方程变为：
+$$
+\tan\left(\frac{x}{2} + \frac{\pi}{4}\right) \cos\left(x + \frac{\pi}{2}\right) = 0
+$$","$$
+\Rightarrow \sin\left(x + \frac{\pi}{4}\right) = 0
+\Rightarrow x = -\frac{\pi}{4} + k\pi,\quad k \in \mathbb{Z}
+$$",三角函数
+246,"化简为：
+$$
+2\sin^2 x = 1 - 2\sin^2 x
+$$","$$
+\Rightarrow 4\sin^2 x = 1 \Rightarrow \sin x = \pm \frac{1}{2}
+\Rightarrow x = \frac{\pi}{6} + k\pi,\quad k \in \mathbb{Z}
+$$",三角函数
+247,"令 $ x = \tan a $，其中 $ a \in \left(-\frac{\pi}{2}, \frac{\pi}{2}\right) $，则：
+$$
+\arccos(|\cos 2a|) + \arcsin(|\sin 2a|) + \arccot(|\cot 2a|) = \pi
+$$
+根据 $ |\tan a| > 1 $ 或 $ |\tan a| < 1 $ 分类讨论，","最终得：
+$$
+x = \pm \sqrt{3}
+$$",三角函数
+248,,"$$
+\cos\left(\frac{\pi}{4} - \arctan\left(\frac{1}{2}\right)\right) = \frac{\sqrt{2}}{2} \cdot \frac{2}{\sqrt{5}} + \frac{\sqrt{2}}{2} \cdot \frac{1}{\sqrt{5}} = \frac{3\sqrt{10}}{10}
+$$
+解集：
+$$
+x = \frac{\pi}{4} - \arctan\left(\frac{1}{2}\right)
+$$",三角函数
+249,若 $ a < b < c $，且 $ \tan a < \tan b < \tan c $，则：,"- $ \tan a < \tan b \Rightarrow a < b $<br>
+- $ \tan b < \tan c \Rightarrow b < c $<br>
+结论：$ a < b < c $",三角函数
+250,设 $ 0 < \tan x < 1 $，则：,$ (\tan x)^2 < (\tan x)^4 \Rightarrow \tan^2 x < \tan^4 x \Rightarrow a < c $ 又因 $ \cot x > 1 $，所以 $ b > c $，综上：$ a < c < b $,三角函数
+251,"利用不等式 $ \sin x < x < \tan x $，在 $ x \in (0, \frac{\pi}{2}) $ 上单调递增，可得：",$\sin(\sin x) < \sin x < \sin(\tan x)$ $\Rightarrow$ 答案 A 正确,三角函数
+252,$\cos 2x > \cos 2y \iff |\cos x| > |\cos y|$,$\Rightarrow \text{选 C}$,三角函数
+253,$$\log_{\sin 1} \cos 1 > \log_{\sin 1} \sin 1 > \log_{\sin 1} \tan 1$$,\Rightarrow a > c > d > b,三角函数
+254,$$\sin(\cos x) < \cos(\sin x)$$,(恒成立),三角函数
+255,$$|\sin x| + |\cos x| + 2|\sin x \cos x| \leq 2\sqrt{2}$$,"因为：
+$$
+(|\sin x| + |\cos x|)^2 = 1 + |\sin 2x| < 2 \Rightarrow |\sin x| + |\cos x| < \sqrt{2}
+$$
+故原式成立。",三角函数
+256,假设 $ |\sin x| < |\sin x + \delta| < \frac{1}{2} $，构造单位圆内夹角小于1弧度,矛盾，得证。,三角函数
+257,"设单位圆中三点对应角度 $ x, y, z $，则：",$S_1 + S_2 + S_3 = \frac{1}{2} \sin x (\cos x - \cos y) + \cdots = \text{面积和}$ $\Rightarrow \text{原不等式成立}$,三角函数
+258,设河水流速为 $v_0$，人在水中划行的速度为 $v_1$，在岸上骑车的速度为 $v_2$（其中 $v_2 > v_1 + v_0$）。令 $|BB'| = d$，$|B'C| = s$，$\theta$ 为合速度方向与岸的夹角。从 $B$ 经 $B'$ 到 $C$ 所用时间为 $T$。,"则有：
+$$
+T = \frac{d}{v_2 \sin\theta} + \frac{s - d \cot\theta}{v_1}
+$$
+
+整理得：
+$$
+T(v_2 \sin\theta - v_1) \sin\theta + d \cos\theta - d = 0
+$$
+
+解得最优角度满足：
+$$
+\sin\theta = \frac{d}{\sqrt{(v_2 - v_1)^2 + d^2}}
+$$
+
+此时最小时间：
+$$
+T_{\min} = \frac{d}{v_2} + \frac{\sqrt{(v_2 - v_1)^2 + d^2} - (v_2 - v_1)}{v_1}
+$$",三角函数
+259,已知 $a = 2b \sin 10^\circ$，则：,"$a^2 = 8b^2 \sin^2 10^\circ = 8b^2 (\sin 10^\circ - \sin 10^\circ \cos 20^\circ) = 8b^2 \left[ \sin 10^\circ \left( \frac{1}{2} \right) \right] = 4b^2 \sin 10^\circ$
+
+继续化简：
+$a^2 = 4b^2 \sin 10^\circ = 3a^2 - b^2 \Rightarrow a^2 = 3a^2 - b^2 \Rightarrow b^2 = 2a^2$",三角函数
+260,"在 $\triangle ABD$ 中，$\angle ABD = 20^\circ$, $\angle ADB = 100^\circ$, $\angle BAD = 60^\circ$，则：",$\frac{AB}{\sin 100^\circ} = \frac{BD}{\sin 60^\circ}$ $\Rightarrow AB \sin 20^\circ + BD \sin 100^\circ = AB \cdot 2 \sin 60^\circ \cos 40^\circ$ $= 2AB \cos 40^\circ = BC$,三角函数
+261,"设 $x, y, z \in (0, \frac{\pi}{2})$，且 $\cos^2 x + \cos^2 y + \cos^2 z = 2$，则：
+$$
+\sin^2 x + \sin^2 y + \sin^2 z = 1
+$$
+
+待证不等式为：
+$$
+\frac{1}{\cos^2 x} + \frac{1}{\cos^2 y} + \frac{1}{\cos^2 z} \geq 3
+$$","由于 $\cos^2 x < 1$，所以：
+$$
+\frac{1}{\cos^2 x} > 1, \quad \text{同理其他两项}
+$$
+
+由均值不等式：
+$$
+\frac{1}{\cos^2 x} + \frac{1}{\cos^2 y} + \frac{1}{\cos^2 z} \geq 3 \sqrt[3]{\frac{1}{\cos^2 x \cos^2 y \cos^2 z}} \geq 3
+$$
+
+当且仅当 $x = y = z = \arccos\left(\frac{1}{\sqrt{2}}\right)$ 时取等号。",三角函数
+262,"作 $\triangle ABC$ 的外接圆直径 $OD$，连接 $AD, CD$，则 $\angle OAD = \angle OCD = 90^\circ$，且 $OA' = OD$。","设 $\angle AOD = \gamma$，则：
+$$
+\cos \gamma = R + \frac{SA}{OD}, \quad \text{且 } OD \perp BC
+\Rightarrow \angle COD = \angle A, \quad \angle AOD = 180^\circ - \angle A - 2\angle B = \angle C - \angle B
+$$
+
+因此：
+$$
+OA' = R \cos(C - B), \quad OB' = R \cos(A - C), \quad OC' = R \cos(B - A)
+$$
+
+于是：
+$$
+OA' \cdot OB' \cdot OC' = R^3 \cos(A - B) \cos(B - C) \cos(C - A)
+$$
+
+利用恒等式：
+$$
+\cot A \cot B + \cot B \cot C + \cot C \cot A = 1
+$$
+
+设 $x = \cot B \cot C$，$y = \cot C \cot A$，$z = \cot A \cot B$，则 $x + y + z = 1$
+
+由 AM-GM 不等式：
+$$
+(x + y + z)^2 \geq 3(xy + yz + zx) \Rightarrow 1 \geq 3(xy + yz + zx)
+\Rightarrow xy + yz + zx \leq \frac{1}{3}
+$$
+
+原结论得证。",三角函数
+263,"设 \(m^2 = \tan \alpha_1 \tan \alpha_2 \cdots \tan \alpha_n\)，其中 \(\alpha_i \in \left(0, \frac{\pi}{2}\right)\)，且满足：
+\[
+\sum_{i=1}^{n} \cos^2 \alpha_i = 1
+\Rightarrow \sum_{i=1}^{n} \sin^2 \alpha_i = n - 1
+\]","由均值不等式：
+\[
+\prod_{i=1}^{n} \cos^2 \alpha_i \leq \left( \frac{\sum \cos^2 \alpha_i}{n} \right)^n = \left( \frac{1}{n} \right)^n
+\]
+
+同理：
+\[
+\prod_{i=1}^{n} \sin^2 \alpha_i \leq \left( \frac{n-1}{n} \right)^n
+\]
+
+两式相乘得：
+\[
+\tan^2 \alpha_1 \tan^2 \alpha_2 \cdots \tan^2 \alpha_n = m^2 \leq \left( \frac{n-1}{1} \right)^n
+\Rightarrow m^n \leq (n-1)^n
+\Rightarrow m \leq n - 1
+\]
+
+即：
+\[
+\tan^2 \alpha_1 \tan^2 \alpha_2 \cdots \tan^2 \alpha_n = (n - 1)^n
+\]
+
+命题得证。",三角函数

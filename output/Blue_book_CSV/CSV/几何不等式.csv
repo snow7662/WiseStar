@@ -1,0 +1,763 @@
+id,question,answer,type
+1,"设 $ a, b, c $ 是 $ \triangle ABC $ 的三边，求证：
+$$
+\frac{a}{b+c} + \frac{b}{c+a} + \frac{c}{a+b} < 2
+$$","由三角不等式 $ c < a + b $ 得：
+$$
+\frac{a}{b+c} < \frac{a}{a+b} = \frac{a}{a+b}
+$$
+同理：
+$$
+\frac{b}{c+a} < \frac{b}{a+b}, \quad \frac{c}{a+b} < \frac{c}{a+b}
+$$
+相加即得：
+$$
+\frac{a}{b+c} + \frac{b}{c+a} + \frac{c}{a+b} < \frac{a+b+c}{a+b} = 1 + \frac{c}{a+b} < 2
+$$",几何不等式
+2,设 $ P $ 是 $ \triangle ABC $ 内一点，且 $ AB $ 是最长边，求证：$$ PA + PB > PC $$,延长 $ CP $ 交 $ AB $ 于点 $ D $。由于 $ \angle ADC $ 或 $ \angle BDC $ 至少有一个不是锐角，不妨设 $ \angle ADC $ 非锐角，则在 $ \triangle ADC $ 中由命题3得：$$ AB > AC > CD > PC $$又在 $ \triangle PAB $ 中由三角不等式：$$ PA + PB > AB $$综上：$$ PA + PB > AB > PC\Rightarrow PA + PB > PC $$,几何不等式
+3,设一条平面闭折线周长为 $ 1 $，证明可用半径为 $ \frac{1}{4} $ 的圆完全覆盖该折线。,"关键是找到一点 $ O $，使得折线上任意点到 $ O $ 的距离不超过 $ \frac{1}{4} $。
+
+任取折线上一点 $ A $，在其上找另一点 $ B $，使沿折线从 $ A $ 到 $ B $ 的路径长度为 $ \frac{1}{2} $，记 $ AB $ 中点为 $ O $。
+
+对折线上任意点 $ M $，由命题4（中线性质）：
+$$
+OM \leq \frac{1}{2}(AM + MB)
+$$
+而 $ AM + MB \leq $ 折线 $ AMB $ 的长度 ≤ $ \frac{1}{2} $（因为总长为1，$ AB $ 分割成两段各≤1/2），故：
+$$
+OM \leq \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{4}
+$$
+因此整条折线都在以 $ O $ 为中心、半径 $ \frac{1}{4} $ 的圆内。",几何不等式
+4,求证：两端点在一圆周上且将此圆分成等面积的两部分的所有曲线中，以此圆的直径具有最短的长度。,"设 $AB$ 是一条满足题设条件的曲线。
+
+- 如果 $A$、$B$ 两点正好是某一条直径的两个端点，那么显然 $AB$ 的长度不会小于圆的直径。
+- 如果弦 $AB$ 不是直径，如图 1-3，令与弦 $AB$ 平行的直径为 $CD$，交于不同的两点。设 $E$ 是不是圆心的那个交点，则：
+  $$
+  \text{弧 } AB \text{ 的长} = \text{曲线 } AE + EB \text{ 的长} > AE + EB.
+  $$
+  （这样将曲线化为了折线）
+
+下面再证折线 $AE + EB$ 大于圆的直径。取 $B$ 关于 $CD$ 的对称点 $B'$，则易证 $AB'$ 是圆的直径。于是：
+$$
+AE + EB = AE + EB' > AB' = \text{直径}.
+$$
+综上便知所证结论成立。",几何不等式
+5,"设 \( P \) 是 \( \triangle ABC \) 内一点，\( A' \)、\( B' \)、\( C' \) 分别为 \( P \) 在边 \( BC \)、\( CA \)、\( AB \) 上的射影；\( AP \)、\( BP \)、\( CP \) 与三条对边的交点分别为 \( A'' \)、\( B'' \)、\( C'' \)。已知 \( \triangle A'B'C' \) 的周长为 1，求证：
+\[
+\frac{1}{A'B'} + \frac{1}{B'C'} + \frac{1}{C'A'} < 2.
+\]","要证此不等式，只需证明局部不等式：
+\[
+PA + PB > A'B' + B'C',
+\]
+以及类似的两个不等式：
+\[
+PB + PC > B'C' + C'A', \\
+PC + PA > C'A' + A'B'.
+\]
+
+下面给出第一个不等式的证明：
+
+**引理** 如图 1-4，设 \( P \) 是 \( \triangle ABC \) 的高 \( AD \) 上的一点，直线 \( BP \) 交 \( AC \) 于 \( E \)，\( CP \) 交 \( AB \) 于 \( F \)，且 \( \angle FDA = \angle EDA \)。
+
+**证明** 过 \( D \) 作 \( BC \) 的平行线，与直线 \( DE \)、\( DF \) 分别交于 \( M \)、\( N \)。由 Ceva 定理：
+\[
+\frac{AF}{FB} \cdot \frac{BD}{DC} \cdot \frac{CE}{EA} = 1,
+\]
+即：
+\[
+\frac{AM}{AN} = 1 \Rightarrow AM = AN.
+\]
+又因 \( AD \parallel MN \)，所以 \( DM = DN \)，从而：
+\[
+\angle EDA = \angle ADM = \angle ADN = \angle FDA.
+\]
+
+回到原命题的证明：
+
+(1) 若 \( P \) 位于 \( \triangle ABC \) 的高 \( AD \) 上，则 \( A' = A \)，不等式显然成立。
+(2) 若 \( P \) 不在 \( AD \) 上，如图 1-5，设 \( P \) 和 \( D \) 在 \( AB \) 同侧，连接并延长 \( AP \) 交 \( AB \) 于 \( M \)，连接 \( MC \) 交 \( BB' \) 于 \( M' \)，则由引理知：
+\[
+\angle BAP = \angle CA'P.
+\]
+作 \( B \) 关于 \( BC \) 的对称点 \( N \)，则：
+\[
+\angle NA'C = \angle CA'B'.
+\]
+由于 \( A' \)、\( C' \)、\( N \) 同侧，根据命题 5 有：
+\[
+A'C' + A'N > AC'.
+\]
+注意到 \( A'B' = AN \)，\( A'C' = A'N \)，因此：
+\[
+A'B' + A'C' > AB + AC'.
+\]
+得证。",几何不等式
+6,"设 \(P\) 是 \(\triangle ABC\) 内一点，证明：
+\[
+\sqrt{PA} + \sqrt{PB} + \sqrt{PC} < 2(\sqrt{a} + \sqrt{b} + \sqrt{c}),
+\]
+其中 \(a = BC\), \(b = CA\), \(c = AB\)。","记 \(BC = a\), \(CA = b\), \(AB = c\), \(PA = x\), \(PB = y\), \(PC = z\)。
+
+不妨设 \(P\) 位于平行四边形 \(A'B'AC'\) 中，应用引理得：
+\[
+x + y < a + b + c, \quad x + z < a + b + c.
+\]
+相加得：
+\[
+2x + y + z < 2(a + b + c).
+\]
+
+原不等式等价于：
+\[
+x + y + z + 2\sqrt{xy} + 2\sqrt{xz} + 2\sqrt{yz} < 2(a + b + c + 2\sqrt{ab} + 2\sqrt{bc} + 2\sqrt{ca}).
+\]
+
+利用均值不等式：
+\[
+2\sqrt{xy} \leq x + y,\quad 2\sqrt{xz} \leq x + z,\quad 2\sqrt{yz} \leq y + z,
+\]
+可得左边 ≤ \(x + y + z + (x + y) + (x + z) + (y + z) = 2(x + y + z)\)。
+
+只需证明：
+\[
+x + y + z < a + b + c + 2\sqrt{ab} + 2\sqrt{bc} + 2\sqrt{ca},
+\]
+而由前文不等式可知成立。
+
+另证（椭圆法）：
+过 \(P\) 作以 \(B\)、\(C\) 为焦点的椭圆，与 \(AB\)、\(AC\) 分别交于 \(E\)、\(F\)。则：
+\[
+PA < \max(EA, FA), \quad PB + PC < \sqrt{2}(EB + EC),
+\]
+故：
+\[
+\sqrt{PA} + \sqrt{PB} + \sqrt{PC} < \sqrt{EA} + \sqrt{2}(EB + EC) < \cdots < 2(\sqrt{a} + \sqrt{b} + \sqrt{c}).
+\]",几何不等式
+7,"设 $\triangle ABC$ 三边分别为 $a,b,c$，中线长为 $m_a,m_b,m_c$，则：
+$$
+4m_am_b < 2a^2 + bc.
+$$","构造平行四边形 $ABCD$ 和 $ACBE$，连接 $BD, CE$，注意 $DE = 2a$，$BD = 2m_a$，$CE = 2m_b$。对四边形 $BCDE$ 应用 Ptolemy 不等式即可得证。",几何不等式
+8,"$$
+m_a(bc - a^2) + m_b(ac - b^2) + m_c(ab - c^2) \geq 0.
+$$",设 $G$ 为重心，在四边形 $BDGF$ 中应用 Ptolemy 不等式，结合中线公式，整理后即得。,几何不等式
+9,"设 $A_1A_2\ldots A_n$ 是正 $n$ 边形，$M_i$ 为其对应边中点，$P$ 为平面上任意一点，则：
+$$
+\sum_{i=1}^{n} PM_i \geq \left(2\cos\frac{\pi}{n}\right) PA.
+$$",对每个四边形 $PM_{i-1}A_iM_i$ 应用 Ptolemy 不等式，累加后即可得。,几何不等式
+10,"设 $P$ 为平行四边形 $ABCD$ 内一点，则：
+$$
+PA + PC + PB + PD \geq AB + BC,
+$$
+等号成立当且仅当 $\angle APD + \angle CPB = \pi$。","构造辅助线 $PQ \parallel CD$，连接 $CQ, BQ$，在四边形 $PBQC$ 中使用 Ptolemy 不等式即可。",几何不等式
+11,"在 $\triangle ABC$ 中，$\angle A = 60^\circ$，点 $P$ 满足 $PA = 6$, $PB = 7$, $PC = 10$，求 $\triangle ABC$ 面积的最大值。","通过引入引理（关于凸四边形对角线夹角的关系），并结合 Ptolemy 不等式，最终得出：
+$$
+S_{\triangle ABC} \leq 36 + 22\sqrt{3},
+$$
+当且仅当 $A,P,C,D$ 四点共圆时取等。",几何不等式
+12,若 $A'$、$B'$、$C'$ 分别为 $\triangle ABC$ 的外角平分线上的点，则：,$A'B' + A'C' > AB + AC.$,几何不等式
+13,"若 $D,E,F$ 分别为 $\triangle ABC$ 边 $BC,CA,AB$ 上的点，$S$ 为面积，$R$ 为外接圆半径，则：",$DE + EF + FD \geq \frac{8S}{R}.$,几何不等式
+14,"若 $E,F$ 分别在射线 $AC,AB$ 上，则：","$|AB - AC| + |AE - AF| \geq |BE - CF|,$ 等号成立当且仅当 $AB = AC$ 且 $AE = AF$。",几何不等式
+15,在六边形 $A_1A_2\ldots A_6$ 内存在一点 $O$，使得 $\angle A_iOA_{i+1} = \frac{\pi}{3}$，且 $OA_1 > OA_2 > \cdots > OA_6$，则：,$A_1A_2 + A_3A_4 + A_5A_6 < A_2A_3 + A_4A_5 + A_6A_1.$,几何不等式
+16,,$70 + 6d > AB \cdot AC \tag{1}$,几何不等式
+17,,$PA^2 + PB^2 - PC^2 - PD^2 = 2AB \cdot BD = -AB \cdot AC \tag{2}$,几何不等式
+18,,$AB \cdot AC < 884 + 48\sqrt{3}$,几何不等式
+19,,$S_{\triangle ABC} < 36 + 22\sqrt{3}$,几何不等式
+20,,$S_{\triangle ABC} = 36 + 22\sqrt{3}$,几何不等式
+21,"设两个三角形的边长分别为 $a_1, a_2, a_3$ 和 $b_1, b_2, b_3$，其面积分别为 $F$ 和 $F'$，则有：
+
+$$
+M = b_1(a_2^2 + a_3^2 - a_1^2) + b_2(a_1^2 + a_3^2 - a_2^2) + b_3(a_1^2 + a_2^2 - a_3^2)
+$$
+
+证明不等式：
+
+$$
+M \geq 16FF'
+$$","**证明要点**：
+设空间四边形 $PACB$，应用 Ptolemy 不等式：
+$$
+PC \cdot AB + PA \cdot BC \geq PB \cdot AC
+$$
+
+结合余弦定理及向量夹角展开，最终得出：
+$$
+2b_1^2 \cdot AC^2 = 2a_3^2 b_3^2 + 2a_3^2 b_3^2 - 4a_2a_3b_2b_3 \cos(\angle A_3A_1A_2 + \angle A_2A_1C) + 16FF'
+$$
+
+从而证得：
+$$
+M \geq 16FF'
+$$
+
+注：由 Neuberg-Pedoe 不等式直接推出：
+$$
+b_1x_1 + b_2x_2 + b_3x_3 \geq 4\sqrt{FF'}
+$$
+
+若取两三角形均为正三角形，则得到费马不等式的加强形式：
+$$
+x_1 + x_2 + x_3 \geq \frac{1}{\sqrt{3}}(a + b + c) + 2\sqrt{3}F
+$$",几何不等式
+22,"设四边形 $ABCD$ 内接于圆，半径为 1，设 $\angle AOB = 2\alpha$，$\angle BOC = 2\beta$，$\angle COD = 2\gamma$，$\angle DOA = 2\delta$，且 $\alpha + \beta + \gamma + \delta = \pi$。
+
+则有：
+$$
+|AB - CD| + |AD - BC| > 2|AC - BD|
+$$","利用单位圆上弦长公式：
+$$
+|AB| = 2|\sin \alpha|,\quad |CD| = 2|\sin \gamma|,\quad |AC| = 2|\sin(\alpha+\beta)|,\quad |BD| = 2|\sin(\beta+\gamma)|
+$$
+
+代入后化简得：
+$$
+|AB - CD| + |AD - BC| - 2|AC - BD| > 0
+$$
+
+同理可得另一部分不等式，相加即证。",几何不等式
+23,"设四边形 $ABCD$ 同时有外接圆和内切圆，外接圆半径为 $R$，面积为 $S$，边长依次为 $a,b,c,d$，则：
+$$
+abc + abd + acd + bcd < 2\sqrt{S(S + 2R^2)} \tag{①}
+$$","**证明1（龙云）**：设内切圆半径为 $r=1$，切点分割边长为 $a', b', c', d'$，则：
+- $a + c = b + d$
+- 利用三角恒等变换与面积关系推导出：
+$$
+H = abc + abd + acd + bcd = (ac + bd)S
+$$
+
+进一步构造辅助点，利用正弦定理与夹角关系，最终得：
+$$
+(ac + bd)S < 2\sqrt{S(S + 2R^2)}
+$$
+
+**证明2（朱庆三）**：引入新构图，设 $E$ 点使 $\angle EAB + \angle ECB = 180^\circ$，利用引理：
+> 若 $\angle A > 90^\circ$，则 $\frac{b+c}{a} < 2$
+
+结合几何构造与三角不等式，完成证明。",几何不等式
+24,若凸四边形四边满足 $a \leq b \leq c \leq d$，则其面积 $S$ 满足什么不等式？,$S \leq \sqrt{(s-a)(s-b)(s-c)(s-d)}$，其中等号当且仅当四边形内接于圆时成立。,几何不等式
+25,在给定边长的四边形中，圆内接四边形的面积最大性及不等式的证明是什么？,"由于边长给定的四边形中，圆内接四边形的面积最大，因此我们仅需对圆内接四边形证明即可。此时，设半周长为：
+$$
+s = \frac{a + b + c + d}{2}
+$$
+其面积公式为：
+$$
+F = \sqrt{(s - a)(s - b)(s - c)(s - d)}
+$$
+
+由算术-几何平均不等式（AM-GM）可得：
+$$
+F < \frac{1}{4}(a + b + c + d) \cdot \text{某表达式}
+$$
+最后一步利用了 $a < b < c$ 的条件。
+
+两边开方后得到：
+$$
+F < \frac{1}{3}ab
+$$
+得证。",几何不等式
+26,"设四边形 $ABCD$ 和 $A'B'C'D'$ 的边分别为 $a, b, c, d$ 和 $a', b', c', d'$，面积分别为 $F$ 和 $F'$，定义：
+$$
+K = 4(ad + bc)(a'd' + b'c')\left(1 - \cos(B - B')\right)
+$$
+其中 $B = \angle ABC$, $B' = \angle A'B'C'$。
+
+求证：$K \geq 16FF'$。","由于给定边长的四边形以圆内接四边形具有最大面积，故只需考虑 $ABCD$ 和 $A'B'C'D'$ 均为圆内接四边形的情况。
+
+由圆内接性质知：
+$$
+2F = (ad + bc)\sin B,\quad 2F' = (a'd' + b'c')\sin B'
+$$
+
+又由余弦定理：
+$$
+AC^2 = a^2 + b^2 + 2ab\cos B = a'^2 + d'^2 - 2a'd'\cos B'
+$$
+整理得：
+$$
+a^2 + d^2 - b^2 - c^2 = 2(ad + bc)\cos B,\quad a'^2 + d'^2 - b'^2 - c'^2 = 2(a'd' + b'c')\cos B'
+$$
+
+则：
+$$
+K - 16FF' = 4(ad + bc)(a'd' + b'c')(1 - \cos(B - B')) \geq 0
+$$
+因为 $\cos(B - B') \leq 1$，所以原不等式成立。",几何不等式
+27,给定外接圆半径 $R$ 和面积 $S$ 不变的双圆四边形 $ABCD$（满足 $S < 2R^2$），求 $\frac{p}{l}$ 的最大值，其中 $p$ 是半周长，$l$ 是两条对角线之和。,"设内切圆半径为 $r$，$\alpha = \angle AIK$, $\beta = \angle BIK$，其中 $I$ 是内切圆心，$K$ 是切点。
+
+先证：
+$$
+p = r(\tan\alpha + \cot\alpha + \tan\beta + \cot\beta),\quad R = \frac{r}{\sin 2\alpha \sin 2\beta}
+$$
+
+令 $x = \sqrt{\sin 2\alpha \sin 2\beta}$，则：
+$$
+S = \frac{r^2}{\sin 2\alpha \sin 2\beta},\quad \frac{p}{l} = 4RS\sqrt{1 + ab}
+$$
+其中 $ab = \sin 2\alpha \sin 2\beta$，且约束条件为：
+$$
+\frac{ab}{1 + ab} = \frac{S}{2R^2}
+$$
+
+令 $t = \sqrt{ab} \in (0,1)$，代入得：
+$$
+f(t) = 4R^2 t^3 - St^2 - S \leq 0
+$$
+该函数在 $(0,1]$ 上先减后增，存在唯一正根 $\theta$ 满足 $f(\theta) = 0$。
+
+于是：
+$$
+\frac{p}{l} \leq 4RS\sqrt{1 + \theta} < 4RS\sqrt{1 + \theta_0}
+$$
+当 $a \to 0^+$ 时取等号。
+
+**结论：** 最大值为：
+$$
+\frac{p}{l}_{\max} = 4RS\sqrt{1 + \theta}
+$$
+其中 $\theta$ 是方程 $4R^2 x^3 - Sx^2 - S = 0$ 在区间 $(0,1]$ 内的根。",几何不等式
+28,**反问题：** 任意三角形内含平行四边形的最大面积不超过三角形面积的 $\frac{1}{2}$。,"**证明思路：** 化归法——将一般平行四边形转化为一组边平行于三角形一边的特殊平行四边形 $BDEF$，再用面积差法证明：
+$$
+S_{BDEF} = S_{\triangle ABC} - (S_{\triangle ADE} + S_{\triangle AEF}) \leq \frac{1}{2}S_{\triangle ABC}
+$$
+当 $D,E,F$ 分别为各边中点时等号成立。",几何不等式
+29,对任意塞瓦三角形 $DEF$，总可构造一个位于 $\triangle ABC$ 内的平行四边形，以其两边为邻边，从而推出命题 1 是定理 1 的推论。,对任意塞瓦三角形 $DEF$，总可构造一个位于 $\triangle ABC$ 内的平行四边形，以其两边为邻边，从而推出命题 1 是定理 1 的推论。,几何不等式
+30,对锐角三角形，垂足三角形也可扩张成一个内接平行四边形，从而命题 2 同样可由定理 1 推出。,对锐角三角形，垂足三角形也可扩张成一个内接平行四边形，从而命题 2 同样可由定理 1 推出。,几何不等式
+31,单位面积三角形内任给五点，则必存在两个不同的三点组构成的三角形面积均不超过 $\frac{1}{4}$。,"证明概要：
+- 若五点凸包为线段或三角形，则直接分析；
+- 若为四边形，使用引理；
+- 若为五边形，则通过划分多个互不相交的小三角形，总面积不超过 1，必有两个面积 $\leq \frac{1}{4}$。",几何不等式
+32,"Groenman 不等式：若 $ABCD$ 是圆内接四边形，边长为 $a,b,c,d$，则：",$ab(a - b) + bc(b - c) + cd(c - d) + da(d - a) \geq 0$,几何不等式
+33,"旁切圆半径不等式：设 $r_a, r_b, r_c, r_d$ 分别为与边 $AB, BC, CD, DA$ 相切的旁切圆半径，则：",$\frac{1}{r_a} + \frac{1}{r_b} + \frac{1}{r_c} + \frac{1}{r_d} \geq \frac{4}{\sqrt[4]{abcd}}$ 当且仅当 $ABCD$ 是正方形时等号成立。,几何不等式
+34,面积为 1 的凸多边形可被面积为 2 的平行四边形覆盖。,"设凸多边形 $M$ 位于支撑线 $AB$ 一侧，取点 $C$ 到直线 $AB$ 距离最大。连接 $AC$ 将 $M$ 分成两部分 $M_1, M_2$，分别包含 $\triangle AD_1C$ 和 $\triangle AD_2C$。过 $C$ 作平行于 $AB$ 的直线，再过 $D_1, D_2$ 作垂直于 $AC$ 的直线，构造包含 $M$ 的平行四边形 $P$。
+
+由于 $M_1, M_2$ 是凸的，有：
+$$
+S(P) = 2S(M_1) + 2S(M_2) = 2S(M) = 2.
+$$
+结论得证。",几何不等式
+35,面积为 1 的凸多边形可被面积为 2 的三角形覆盖。,考虑 $M$ 中最大面积内接三角形 $\triangle A_1A_2A_3$。若其面积大于 $\frac{1}{2}$，则可通过构造更大的三角形矛盾。否则直接构造一个面积不超过 2 的三角形覆盖 $M$。,几何不等式
+36,(1) 设 $M$ 是面积为 1 的凸多边形，$l$ 是任意直线，则存在 $M$ 的一个内接三角形，其一条边平行于 $l$，且面积 $\geq \frac{1}{3}$。,"作两条平行于 $l$ 的支撑线，构成宽度为 $d$ 的带形。将其分为四个等宽小带形（每段宽 $\frac{d}{4}$）。由梯形面积和覆盖关系：
+$$
+S(M) \leq S(T_1) + S(T_2) = \frac{1}{4}(PQ + RS),
+$$
+而两个三角形 $\triangle ARS$ 和 $\triangle BPQ$ 面积之和至少为 $\frac{1}{2}(PQ + RS)$，故二者之一面积 $\geq \frac{1}{3}$。",几何不等式
+37,(2) 若 $M$ 是正六边形，则不存在边平行于某方向且面积大于 $\frac{1}{3}$ 的内接三角形。,"正六边形 $ABCDEF$，设 $PQ // AB$，且 $P \in FA$, $Q \in BC$，则 $R \in DE$。设边长为 1，$AP = BQ = a$，则：
+$$
+PQ = 1 + 2a,\quad h_{\triangle PQR} = \sqrt{3}(1 - a).
+$$
+面积：
+$$
+S_{\triangle PQR} = \frac{1}{2} PQ \cdot h = \frac{\sqrt{3}}{2}(1 + 2a)(1 - a).
+$$
+当 $a = \frac{1}{2}$ 时取得最大值 $\frac{9}{16}$，而六边形面积为 $\frac{3\sqrt{3}}{2}$，说明最大内接三角形面积小于 $\frac{1}{3}$，结论成立。",几何不等式
+38,"设 $P$ 为 $\triangle ABC$ 内一点，到三边距离分别为 $p, q, r$，到顶点距离为 $x, y, z$，则：",$x + y + z \geq 2(p + q + r)$，等号成立当且仅当 $\triangle ABC$ 为正三角形且 $P$ 为其重心。,几何不等式
+39,"设 $\triangle ABC$ 边长为 $a, b, c$，高、中线、内角平分线分别为 $h_a, m_a, t_a$，则：
+$$
+h_a + m_a + t_a < a + b + c.
+$$","将高 $h_a$ 替换为更短的内角平分线 $t_a$，只需证明局部不等式：
+$$
+m_a + t_a < b + c.
+$$
+利用向量或几何不等式即可完成。",几何不等式
+40,平面点集最大最小三角形面积比 $w$ 的最小值：,已知 $n$ 个点任意三点构成三角形，求 $\max / \min$ 面积比的最小可能值。,几何不等式
+41,正方形内放置两个边长大于 $\sqrt{2}$ 的正方形是否可行？,不可能，因单位正方形面积为 1，每个小正方形面积大于 1，无法无重叠放入。,几何不等式
+42,钝角三角形外接圆半径为 1，是否存在斜边为 $\sqrt{2}+1$ 的等腰三角形覆盖它？,可证存在，利用外接圆性质及等腰三角形覆盖能力。,几何不等式
+43,Ceva 点相关面积恒等式：,"若 $D,E,F$ 在边 $BC,CA,AB$ 上，且 $AD,BE,CF$ 共点，则：
+$$
+S = S_1 + S_2 + S_3 + S_4,
+$$
+其中 $S_i$ 为各小三角形面积，等号成立当且仅当共点。",几何不等式
+44,"给定一个锐角 $\triangle ABC$，设 $h_a, h_b, h_c$ 分别为边 $BC, CA, AB$ 上的高，$s$ 表示半周长。证明：
+$$
+\sqrt{3} \cdot \max(h_a, h_b, h_c) \leq s.
+$$","若 $\triangle ABC$ 是正三角形，则等号成立。
+下面证明：如果 $\triangle ABC$ 不是正三角形，则可将其化归为等腰三角形的情形进行证明。
+
+事实上，假设 $\angle A > \angle B > \angle C$，则有：
+$$
+h_a > h_b > h_c.
+$$
+令 $AB = c$，取点 $D$ 在 $AB$ 上使得 $AD = AC$，连接 $CD$。若对等腰 $\triangle ACD$ 成立：
+$$
+\sqrt{3} h_a > s,
+$$
+则对一般的锐角 $\triangle ABC$ 也成立。
+
+在等腰 $\triangle ACD$ 中，设 $AC = b$，$\angle A = \alpha$，则：
+$$
+h_a = b \sin \alpha,\quad s = \frac{1}{2}(2b + CD).
+$$
+由于 $CD = 2b \sin(\alpha/2)$，代入得：
+$$
+\sqrt{3} b \sin \alpha > 1 + \sin \alpha \quad (\text{当 } 0 < \alpha < \pi/2).
+$$
+即：
+$$
+\sqrt{3} \sin \alpha - \sin \alpha > 1 \Rightarrow \sin \alpha (\sqrt{3} - 1) > 1.
+$$
+但此式并不恒成立，说明需要更精确估计。实际上应考虑如下不等式：
+$$
+\sqrt{3} \sin \alpha > 1 + \sin \alpha \iff \sin \alpha > \frac{1}{\sqrt{3} - 1}.
+$$
+进一步整理后得到关于 $\sin \alpha$ 的二次不等式：
+$$
+12x^2 - 11x + 2 < 0, \quad \text{其中 } x = \sin \alpha.
+$$
+解得：
+$$
+\frac{1}{3} < x < \frac{1}{2},
+$$
+结合 $\alpha \in (0, \pi/2)$，可知该区间有效，故原不等式成立。",几何不等式
+45,"设点 $P, Q, R$ 分别位于 $\triangle ABC$ 的三边 $BC, CA, AB$ 上，且将三角形的周长三等分，则：
+$$
+QR + RP + PQ \geq \frac{1}{3}(a + b + c).
+$$","如图5-8，从 $Q, R$ 向直线 $BC$ 作垂线，垂足分别为 $M, N$，则：
+$$
+QR \geq MN = a - (BR \cos B + CQ \cos C).
+$$
+同理：
+$$
+RP \geq b - (CP \cos C + AR \cos A), \\
+PQ \geq c - (AQ \cos A + BP \cos B).
+$$
+三式相加，并利用：
+$$
+AQ + AR = BR + BP = CP + CQ = \frac{a + b + c}{3},
+$$
+得：
+$$
+QR + RP + PQ \geq \frac{1}{3}(a + b + c)(3 - \cos A - \cos B - \cos C).
+$$
+又因在任意三角形中有：
+$$
+\cos A + \cos B + \cos C \leq \frac{3}{2},
+$$
+所以：
+$$
+QR + RP + PQ \geq \frac{1}{3}(a + b + c).
+$$",几何不等式
+46,"设 $I$ 为 $\triangle ABC$ 的内心，$G$ 为其重心，求证：
+$$
+AI + BI + CI < AG + BG + CG.
+$$","记 $BC = a$, $AC = b$, $AB = c$。先证 $G$ 必落在 $\triangle IBC$ 内或边界上。
+
+若 $G$ 落在 $\triangle IAB$ 内，则面积关系为：
+$$
+S_{\triangle GAC} < S_{\triangle IAC} = \frac{1}{3} S_{\triangle ABC},
+$$
+但实际 $S_{\triangle GAC} = \frac{1}{3} S_{\triangle ABC}$，矛盾。类似可证 $G$ 不落在 $\triangle IAC$ 或 $\triangle IBA$ 内。
+
+因此 $G$ 必落在 $\triangle IBC$ 内或边界上。由此可得：
+$$
+AG > AI + IG \cos \theta, \quad \theta \in (0^\circ, 90^\circ),
+$$
+同理：
+$$
+BG > BI + IG \cos \phi, \quad CG > CI + IG \cos \psi.
+$$
+相加得：
+$$
+AG + BG + CG > AI + BI + CI + IG(\cos \theta + \cos \phi + \cos \psi).
+$$
+由于 $\cos \theta + \cos \phi + \cos \psi > 0$，故结论成立。",几何不等式
+47,"设 $P$ 是 $\triangle ABC$ 所在平面上任一点，求证：
+$$
+a(PB \cdot PC + PC \cdot PA + PA \cdot PB) \geq abc.
+$$","视平面为复平面，设 $A, B, C$ 对应复数 $z_1, z_2, z_3$，点 $P$ 对应 $z$。定义函数：
+$$
+f(z) = \frac{(z - z_2)(z - z_3)}{(z_1 - z_2)(z_1 - z_3)} + \frac{(z - z_3)(z - z_1)}{(z_2 - z_3)(z_2 - z_1)} + \frac{(z - z_1)(z - z_2)}{(z_3 - z_1)(z_3 - z_2)},
+$$
+易知 $f(z_1) = f(z_2) = f(z_3) = 1$，且 $|f(z)| \leq 1$。于是：
+$$
+\left| \frac{(z - z_2)(z - z_3)}{(z_1 - z_2)(z_1 - z_3)} \right| + \cdots \leq 1,
+$$
+从而推出原不等式成立。",几何不等式
+48,"设 $\triangle ABC$ 和 $\triangle A'B'C'$ 是同一平面上两个方向相同的正三角形，求证：
+$$
+AA' + BB' \geq CC'.
+$$","设对应复数为 $z_1, z_2, z_3$ 和 $z'_1, z'_2, z'_3$，由正三角形性质有：
+$$
+|z_2 - z_3| = |z_3 - z_1| = |z_1 - z_2|,
+$$
+且满足恒等式：
+$$
+(z_1 - z'_1)^2 + (z_2 - z'_2)^2 + (z_3 - z'_3)^2 = 0.
+$$
+取模后利用三角不等式即可得：
+$$
+|z_1 - z'_1| + |z_2 - z'_2| \geq |z_3 - z'_3|.
+$$",几何不等式
+49,"在 $\triangle ABC$ 中，求证：
+$$
+bc(b - c) + ca(c - a) + ab(a - b) \geq 0.
+$$","使用代换：
+$$
+x = b + c - a,\quad y = c + a - b,\quad z = a + b - c,
+$$
+均为正数。原式变为：
+$$
+xy(x + y) + yz(y + z) + zx(z + x) \geq 0,
+$$
+显然成立。",几何不等式
+50,"设 \( r_a, r_b, r_c \) 分别为 \( \triangle ABC \) 的旁切圆半径，求证：
+\[
+\frac{r_a}{b + c} + \frac{r_b}{c + a} + \frac{r_c}{a + b} \geq \frac{3}{2}.
+\]","设 \( s = \frac{a + b + c}{2} \)，则：
+\[
+r_a = \frac{S}{s - a},\quad \text{其中 } S \text{ 为面积}.
+\]
+代入后转化为：
+\[
+\sum \frac{s - a}{b + c} \geq \frac{3}{2},
+\]
+再通过 Cauchy-Schwarz 不等式即可完成证明。",几何不等式
+51,"设 \(P_1(x_1, y_1), P_2(x_2, y_2), P_3(x_3, y_3)\) 是平面上三点，\(R_i\) 为 \(\triangle P_iP_jP_k\) 的外接圆半径，求证：
+\[
+\frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} \leq \frac{2}{\min(|x_2 - x_3|, |x_3 - x_1|, |x_1 - x_2|)}.
+\]","利用坐标平移不变性，不妨设 \(P_1 = (0, 0)\)，则：
+\[
+\frac{1}{R_1} = \frac{2}{|P_2P_3| |\sin \theta|} \leq \frac{2}{|x_2 - x_3|},
+\]
+其他两项类似。总和不超过右侧表达式。
+
+注：系数 2 是最优的，可通过极限情形验证。",几何不等式
+52,"设 $H = a^2(a + b^2) + b^2(b + c^2) + c^2(c + a^2)$，$F$ 为三角形面积，由海伦公式有：
+$$
+16F^2 = (a^2 + b^2 + c^2)^2 - 2(a^4 + b^4 + c^4)
+$$
+
+令 $D_i = \frac{a^2}{b^2 + c^2 - a^2}$，当 $a = b = c$ 时 $D_i = 0$，证明以下不等式：
+$$
+H > 8(a^2 F^2 + b^2 F^2 + c^2 F^2)
+$$","则：
+$$
+H - 8(F^2 + 2F) = \sum_{i=1}^{3} D_i(D_1 + D_2 + D_3) - \sum_{i<j} D_i D_j > 0
+$$
+
+因此：
+$$
+H > 8(a^2 F^2 + b^2 F^2 + c^2 F^2)
+$$",几何不等式
+53,给定半径为 $R$ 的圆上定点 $A$，过动点 $R$ 引垂线交切线于 $Q$，求 $\triangle PQR$ 面积的最大值。,"构造辅助点 $S$ 使得 $RS \parallel l$，连接 $PS$，易证 $\triangle PRS$ 为正三角形时面积最大，此时：
+$$
+S_{\triangle PQR} = \frac{\sqrt{3}}{4} R^2
+$$",几何不等式
+54,"曲线 $\gamma$ 将正三角形 $ABC$ 分成两部分面积相等。设 $L$ 为 $\gamma$ 的长度，$s$ 为边长，求证：
+$$
+L \geq \frac{3\sqrt{3}}{2} s
+$$","将三角形翻转六次形成闭合曲线，利用等周定理得：
+$$
+6L \geq 2\pi \sqrt{3S_{\triangle ABC}} \Rightarrow L \geq \frac{\sqrt{3\pi}}{3} \cdot s
+$$",几何不等式
+55,"设 $a_1, a_2, a_3$ 中至少有两个正数，且满足：
+$$
+a_1(a_2 + a_3) + a_2(a_3 + a_1) + a_3(a_1 + a_2) > 0
+$$
+则对任意 $x, y, z \in \mathbb{R}$，有：
+$$
+(xa_1 + ya_2 + za_3)^2 \geq (a_1a_2 + a_2a_3 + a_3a_1)(2xy + 2yz + 2zx - x^2 - y^2 - z^2)
+$$","令 $a_1 + a_2 = u$, $a_2 + a_3 = v$, $a_3 + a_1 = w$，结合条件推出 $a_1, a_2, a_3$ 构成三角形三边，再使用余弦定理和 Cauchy-Schwarz 不等式完成证明。",几何不等式
+56,"设 \(a, b, c > 0\)，则有：
+\[
+\frac{a^2}{b} + \frac{b^2}{c} + \frac{c^2}{a} \geq a + b + c,
+\]
+等号成立当且仅当 \(a = b = c\)。","由柯西不等式（Cauchy-Schwarz）：
+\[
+\left( \frac{a^2}{b} + \frac{b^2}{c} + \frac{c^2}{a} \right)(b + c + a) \geq (a + b + c)^2.
+\]
+两边同除以 \(a + b + c\) 即得原不等式。
+等号成立当且仅当 \(\frac{a}{\sqrt{b}} = \frac{b}{\sqrt{c}} = \frac{c}{\sqrt{a}}\)，即 \(a = b = c\)。",几何不等式
+57,"### 定理3（加权正弦和不等式）对任意实数 $x, y, z$ 及正数 $u, v, w$ 和任意三角形 $\triangle ABC$，有：
+$$
+uxy \sin C + vyz \sin A + wzx \sin B \leq \frac{u^2 + v^2 + w^2}{2}(x^2 + y^2 + z^2).
+$$","等号成立当且仅当：
+$$
+\frac{x}{\sin A} = \frac{y}{\sin B} = \frac{z}{\sin C}.
+$$",几何不等式
+58,"设 $\triangle ABC$ 和 $\triangle A'B'C'$ 的边长分别为 $a,b,c$ 和 $a',b',c'$，面积分别为 $S$ 和 $S'$，则：
+$$
+a^2(b'^2 + c'^2 - a'^2) + b^2(c'^2 + a'^2 - b'^2) + c^2(a'^2 + b'^2 - c'^2) \geq 16SS'.
+$$",等号成立当且仅当两个三角形均为正三角形。,几何不等式
+59,"设点 $P$ 在 $\triangle ABC$ 所在平面上，记 $PA = R_1$, $PB = R_2$, $PC = R_3$，对任意实数 $x, y, z$，有：
+$$
+(x + y + z)(xR_1^2 + yR_2^2 + zR_3^2) \geq x^2a^2 + y^2b^2 + z^2c^2,
+$$
+其中 $a = BC$, $b = AC$, $c = AB$。","等号成立当且仅当：
+$$
+\frac{xR_1}{\sin A} = \frac{yR_2}{\sin B} = \frac{zR_3}{\sin C}.
+$$",几何不等式
+60,"设 $P$ 是 $\triangle A_1A_2A_3$ 平面上一点，$PA_i = R_i$，边长为 $a_1, a_2, a_3$，对应角为 $A_1, A_2, A_3$，则：
+$$
+(a_2 + a_3 - a_1)R_1^2 + (a_3 + a_1 - a_2)R_2^2 + (a_1 + a_2 - a_3)R_3^2 \geq 4S,
+$$
+其中 $S$ 是 $\triangle A_1A_2A_3$ 的面积。","等号成立当且仅当 $a_1 = a_2 = a_3$ 且：
+$$
+R_1 : R_2 : R_3 = \sin A_1 : \sin A_2 : \sin A_3.
+$$",几何不等式
+61,"设 $a_1, a_2, a_3 > 0$，则：
+$$
+a_1(a_2 + a_3 - a_1)(a_1 + a_3 - a_2) + a_2(a_3 + a_1 - a_2)(a_2 + a_1 - a_3) + a_3(a_1 + a_2 - a_3)(a_3 + a_2 - a_1) \geq 8a_1a_2a_3,
+$$",等号成立当且仅当 $a_1 = a_2 = a_3$。,几何不等式
+62,"设 $P$ 是 $\triangle ABC$ 所在平面上的一个动点，其垂足三角形面积为 $F$，$\triangle ABC$ 的面积为 $S$。则有不等式：
+$$
+F \leq \frac{1}{4}S
+$$
+当且仅当 $P$ 在 $\triangle ABC$ 内部时取等号。
+
+进一步地，若 $PA = a'$, $PB = b'$, $PC = c'$，且 $a, b, c$ 为 $\triangle ABC$ 的边长，则：
+$$
+\frac{abc}{a'b'c'} \geq \frac{16S^2}{(abc)^2}
+$$
+等价于：
+$$
+|OP|^2 < 2R^2
+$$
+其中 $O$ 为 $\triangle ABC$ 的外心，$R$ 为外接圆半径。","因此，点 $P$ 的轨迹是一个以 $O$ 为圆心、半径为 $\sqrt{2}R$ 的圆及其内部区域。
+
+> **注**：此结论源于 Gergonne 公式（见 Roger A. Johnson《现代欧氏几何学》§198）。该公式表明：垂足三角形面积固定的点的轨迹是以外心为中心的圆；在外接圆内的点中，外心对应的垂足三角形面积最大。",几何不等式
+63,对于固定 $n$，$r$ 的最小圆最多有多少个？,最多有 $n - 2$ 个。,几何不等式
+64,"设 $d$ 为四面体的三组相对棱距离的最小值，$h$ 为其最小高。求证：
+$$
+2d > h
+$$","**证明思路**：
+选取合适的平面截面（如过某条棱的垂直平面），将三维问题转化为二维问题，在 $\triangle AEF$ 中分析高度关系即可得证。",几何不等式
+65,"设四面体 $ABCD$ 的内切球半径为 $r$，一组对棱 $AB = a$, $CD = b$，它们之间的距离为 $d$，夹角为 $\theta$。求证：
+$$
+r < \frac{ab \sin\theta}{6}
+$$","由关键公式联立可得不等式成立。
+- 体积 $V = \frac{1}{3} S_{\text{表}} r$
+- Steiner 定理：$V = \frac{1}{6} ab d \sin\theta$",几何不等式
+66,求最大正整数 $n$，使得平面内存在 $n$ 个凸多边形（包括三角形），其中每两个都有一条公共边但没有公共内部。,**引理**：设四面体 $A_1A_2A_3A_4$ 的体积为 $V$，记 $S_i$ 为顶点 $A_i$ 所对的面的面积，$\theta_{ij}$ 为面 $i$ 和面 $j$ 之间的二面角，则有：$$ S_i S_j \sin\theta_{ij} = 6V $$ **证明**（略）：通过作高和利用三角形面积公式可得该关系。由引理及体积公式 $3V = rS$（其中 $S = S_1 + S_2 + S_3 + S_4$），我们有：$$ \frac{1}{r} = \frac{S}{3V} = \sum_{i=1}^4 \frac{S_i}{3V} $$ 又由射影公式：$$ \sum_{j \neq i} S_j \cos\theta_{ij} \leq S_i $$ 结合 Cauchy 不等式：$$ \left(\sum_{i<j} S_i S_j \sin\theta_{ij}\right)^2 \leq \left(\sum_{i} S_i^2\right)\left(\sum_{i<j} \sin^2\theta_{ij}\right) $$ 最终推导出：$$ \frac{1}{r} \leq \sum_{i=1}^4 \frac{1}{r_i} $$ 等号成立当且仅当所有面全等且二面角相等，即为正四面体。,几何不等式
+67,"设 $R$ 是四面体 $A_1A_2A_3A_4$ 的外接球半径，$R_1, R_2, R_3, R_4$ 分别是四个面的外接圆半径。求证：
+$$
+\frac{1}{R} \leq \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \frac{1}{R_4}
+$$","设 $O$ 为四面体的外心且位于内部，则每个面的外心投影满足：
+$$
+R_i \leq R
+$$
+且存在一个最大内切球半径 $d < r$，使得：
+$$
+R_i^2 = R^2 - d^2 \Rightarrow R_i < R
+$$
+进一步利用著名不等式 $r \leq \frac{R}{2}$ 得：
+$$
+R_i > \sqrt{R^2 - r^2} > \frac{R}{\sqrt{2}}
+$$
+从而得出结论。",几何不等式
+68,使用 Ptolemy 不等式处理四边形 $ACEF$,$AC \cdot EF + CE \cdot AF \geq AE \cdot CF$,几何不等式
+69,应用广义 Ptolemy 定理于正方形 $ABDE$,$OM + ON = \frac{1}{2}(CD + CE) \leq \frac{\sqrt{2}}{2}(a + b)$,几何不等式
+70,利用角度关系与三角恒等式，结合对称性,$\tan\frac{A}{2} \tan\frac{B}{2} + \tan\frac{C}{2} \tan\frac{D}{2} \geq 1$,几何不等式
+71,"设平面内任意五点为 $A_1, A_2, A_3, A_4, A_5$，其中任意三点不共线。","(1) 若这五点的凸包不是凸五边形，则其中必有一点落在某个三角形内部，此时易证其面积不超过 3。
+
+(2) 设 $A_1A_2A_3$ 和 $A_4A_5$ 在直线 $MN$ 同侧时，有：
+$$
+\angle A_1A_2A_3 \geq 36^\circ
+$$
+若 $A_1, A_2$ 与 $A_3$ 均在直线 $MN$ 同侧，设 $\angle A_1A_2A_3 = \theta$，则总有：
+$$
+\sin\theta > \frac{1}{2}
+$$
+注意到 $\theta > 36^\circ$，所以总有：
+$$
+|A_1A_2| + |A_2A_3| > |A_1A_3|
+$$",几何不等式
+72,,"提示：问题转化为证明：
+$$
+AA_1 + BB_1 + CC_1 > m_a + m_b + m_c
+$$
+其中 $AA_1, BB_1, CC_1$ 是中线。设 $AA_1 = m_a$ 等，由相交弦定理可得：
+$$
+m_a(m_a - a) = \left(\frac{a}{2}\right)^2
+$$
+联立 $m_a^2 - am_a - \frac{a^2}{4} = 0$，解得：
+$$
+m_a = \frac{a}{2}(1 + \sqrt{5}) > 0
+$$",几何不等式
+73,"设凸四边形 $ABCD$ 内的四个定点为 $M,N,P,Q$，只需考虑 $MNPQ$ 为凸四边形的情形。
+
+对 $ABCD$ 周界上任意一点 $E$，令：
+$$
+f(E) = EA + EB + EC + ED,\quad g(E) = EN + EP + EQ
+$$
+只要证明存在一点 $E$ 使得 $f(E) > g(E)$ 即可。","作直线 $MP$ 交四边形边界于 $F,G$，则：
+$$
+f(F) + f(G) > g(P) + 2g(Q)
+$$
+表明 $f(E) > g(E)$ 对某些点成立。",几何不等式
+74,"已知 $x + y + z = p$，且 $x = p - a$, $y = p - b$, $z = p - c$，则：
+$$
+(x+y)(y+z)(z+x) \geq 8xyz
+$$","原不等式等价于：
+$$
+\sum_{\text{cyc}} \frac{(y+z)^2}{x} \geq 8(x+y+z)
+$$
+由均值不等式可知最后一式成立，故原不等式成立。",几何不等式
+75,提示：用解析法证明区域 $\Omega$ 是一个椭圆及其内部。,"新建直角坐标系 $x' = ax$, $y' = by$，将 $\Omega$ 变换为单位圆盘。设此变换把 $\triangle ABC$ 和 $\triangle DEF$ 分别变为 $\triangle A'B'C'$ 和 $\triangle D'E'F'$，它们分别是单位圆的外切和内接三角形。
+
+由面积关系：
+$$
+S_{\triangle DEF} \geq \frac{9}{\pi} S_{\triangle ABC}
+$$",几何不等式
+76,固定底边 $BC$，当点 $A$ 在线段 $BC$ 的垂直平分线上时，$\triangle ABC$ 面积最大。,"在固定 $BC$ 和 $\angle A$ 的情况下，外接圆半径 $R$ 固定，且：
+$$
+AB + AC = 2R(\sin B + \sin C) = 4R \sin\left(\frac{B+C}{2}\right)\cos\left(\frac{B-C}{2}\right)
+$$
+当 $B = C$ 时取最大值。",几何不等式
+77,"设等边 $\triangle ABC$ 与等边 $\triangle PQR$ 边长相等，且 $AB, AC$ 分别与 $PQ, QR$ 相交于 $D,E$。由旋转对称性得：",$K = S_{\triangle ABC} - 3S_{\triangle PDE} \geq \frac{1}{2} S_{\triangle ABC}$,几何不等式
+78,设四边形 $ABCD$ 满足 $AB = BC = CD = 1$，显然最大面积出现在凸四边形情形。,"(1) 若 $\angle B = 30^\circ$，则最大面积为：
+$$
+S = \frac{\sqrt{3}}{2}
+$$
+
+(2) 若 $\angle A = 30^\circ$，作 $B', C'$ 关于 $AD$ 的对称点，五边形 $BCDC'B'$ 为边长均为 1 的正五边形，当且仅当它为正五边形时面积最大。
+
+此时最大面积：
+$$
+S = \frac{5}{4} \sqrt{10 + 2\sqrt{5}}
+$$",几何不等式
+79,"设 $\triangle ABC$ 的面积为 $S$，由面积关系：
+$$
+\sum_{i=1}^{n} a_i^2 \geq \frac{4nS}{\pi}
+$$","由 Cauchy 不等式和等周不等式可得：
+$$
+\sum_{i=1}^{n} a_i \geq 2\sqrt{nS} \cot\left(\frac{\pi}{n}\right)
+$$",几何不等式
+80,,"利用恒等式：
+$$
+\cos A = \frac{b^2 + c^2 - a^2}{2bc}
+$$
+代入即得结论。",几何不等式
+81,,"注意公式：
+$$
+\cot A = \frac{s(s-a)}{\Delta},\quad \text{类似有 } \cot B, \cot C
+$$
+原不等式等价于：
+$$
+a + b + c > 2ab\cos C + 2bc\cos A + 2ca\cos B
+$$",几何不等式
+82,,"令 $x = \tan A$, $y = \tan B$, $z = \tan C$，通过一系列三角恒等变形即可得证。",几何不等式
+83,"设 $u = x\sin\alpha + y\sin\beta$, $v = z\sin\gamma + w\sin\delta$，则：
+$$
+u^2 + v^2 \leq (x^2 + y^2 + z^2 + w^2) - 2(xy\cos(\alpha+\beta) + zw\cos(\gamma+\delta))
+$$",由已知条件 $\alpha + \beta + \gamma + \delta = k\pi$，结合 Cauchy 不等式得证。,几何不等式
+84,,"惯性矩不等式中令 $x = \frac{a}{r}$ 等，得：
+$$
+\sum_{i<j} (a_i - a_j)^2 \geq \frac{16\Delta^2}{r^2}
+$$
+结合 Heron 公式：
+$$
+16\Delta^2 = 2(a^2b^2 + b^2c^2 + c^2a^2) - (a^2 + b^2 + c^2)^2
+$$
+得：
+$$
+\sum a_i^2 \geq \frac{16\Delta^2}{r^2}
+$$",几何不等式
+85,如图所示，标号为 1、2、3、4 的四个凸多边形每两个有一条公共边但无公共内部，故最大值不小于 4。,假设存在五个满足条件的凸多边形，则矛盾（构造反例），故最大值为 4。,几何不等式
+86,,结论是肯定的。若五点构成凸五边形，则最小距离与最大距离之比大于 $2\sin 70^\circ$；否则若为三角形或四边形，则矛盾。,几何不等式
+87,"设四面体 $A_1A_2A_3A_4$ 中，记面 $A_iA_jA_k$ 的面积为 $S_{ijk}$，体积为 $V$，则：
+$$
+V = \frac{1}{6} \sum_{i<j<k} S_{ijk} \cdot h_{ijk}
+$$
+其中 $h_{ijk}$ 是顶点到对面的距离。","利用柯西不等式和射影公式可得：
+$$
+\sum_{i<j} S_i S_j \cos^2 \theta_{ij} \leq \left(\sum S_i\right)^2
+$$",几何不等式

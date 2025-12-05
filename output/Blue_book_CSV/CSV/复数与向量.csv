@@ -1,0 +1,916 @@
+id,question,answer,type
+1,设 $z_1 = (m - 3) + (m - 1)i$，$z_2 = (2m - 5) + (m^2 + m - 2)i$，且 $z_1 > z_2 \in \mathbb{R}$，求实数 $m$ 的值。,"因为 $z_1 > z_2 \in \mathbb{R}$，即两者均为实数，故虚部必须为零：
+
+$$
+\begin{cases}
+m - 1 = 0 \\
+m^2 + m - 2 = 0
+\end{cases}
+\Rightarrow
+\begin{cases}
+m = 1 \\
+(m + 2)(m - 1) = 0
+\end{cases}
+\Rightarrow m = 1
+$$
+
+又由 $z_1 > z_2$ 得：
+$$
+m - 3 > 2m - 5 \Rightarrow m < 2
+$$
+
+综上，满足条件的唯一解为：
+$$
+m = 1
+$$",复数与向量
+2,"设 $z = x + yi$（$x, y \in \mathbb{R}$），求 $\left| \frac{z + 3}{z - 2} \right|$ 的表达式。","令 $z = x + yi$，则：
+$$
+\left| \frac{z + 3}{z - 2} \right| = \left| \frac{(x + 3) + yi}{(x - 2) + yi} \right|
+= \frac{\sqrt{(x + 3)^2 + y^2}}{\sqrt{(x - 2)^2 + y^2}}
+$$
+
+此即所求表达式。",复数与向量
+3,"设复数 $ z = a + bi $，其中 $ a, b \in \mathbb{R} $，且 $ b \neq 0 $。若满足：
+$$
+\frac{a + b}{a - b} = \frac{a + k^2b}{a - k^2b}
+$$","则可得 $ k = 1 $，从而得出该复数的可能取值为 $ 1, -1 $。",复数与向量
+4,"已知方程：
+$$
+z^2 - xz + 4 + 3i = 0
+$$
+有实根，求使复数 $ z = x + yi $ 满足条件的所有可能值。","设实根为 $ x_0 $，记 $ z = x_0 + yi $，代入原方程得：
+$$
+(x_0 + yi)^2 - x_0(x_0 + yi) + 4 + 3i = 0
+$$
+展开并分离实部与虚部：
+$$
+x_0^2 - y^2 - x_0^2 + 4 + i(2x_0y - x_0y + 3) = 0
+\Rightarrow
+\begin{cases}
+-y^2 + 4 = 0 \\
+x_0y + 3 = 0
+\end{cases}
+$$
+解得 $ y = \pm 2 $，进而 $ x_0 = -\frac{3}{y} = \mp \frac{3}{2} $。
+因此对应的复数为：
+$$
+z = -\frac{3}{2} \pm 2i
+$$",复数与向量
+5,"已知两个复系数多项式：
+$$
+f(x) = \sum_{k=0}^{n} a_k x^k,\quad g(x) = \sum_{k=0}^{n} b_k x^k
+$$
+其中 $ a_k, b_k \in \mathbb{R} $，且 $ a_0 = b_0 = 1 $。若 $ g(x) = 0 $ 的所有根的平方的相反数是 $ f(x) = 0 $ 的全部根，证明：
+$$
+\sum_{k=1}^{n} (-1)^k a_k \text{ 是实数}.
+$$","设 $ g(x) = \prod_{k=1}^{n}(x - r_k) $，则由题意，$ f(x) = \prod_{k=1}^{n}(x + r_k^2) $。
+利用对称函数关系可推导出结论成立。",复数与向量
+6,"设 $ A, B, C $ 分别是复数 $ z_1 = ai $, $ z_2 = b + ci $, $ z_3 = di $ 对应的三点（$ a, b, c, d \in \mathbb{R} $），且三点不共线。曲线定义为：
+$$
+z(t) = z_1 \cos^2 t + 2z_2 \cos^2 t \sin^2 t + z_3 \sin^2 t,\quad t \in \mathbb{R}
+$$
+求证：此曲线与三角形 $ ABC $ 中平行于边 $ AC $ 的中位线只有一个公共点，并求出该点。","设 $ D, E $ 分别为 $ AB $、$ BC $ 中点，则中位线对应复数表达式为：
+$$
+z = (1 - \lambda)z_D + \lambda z_E,\quad \lambda \in [0,1]
+$$
+联立曲线与中位线方程，消元后得唯一交点，其复数表示为：
+$$
+z = \frac{1}{4}(z_1 + 2z_2 + z_3)
+$$",复数与向量
+7,"设 $ z = \sqrt{w} $，其中 $ w = \sum_{k=1}^{n} a_k $，且 $ |w| = 1 $。令 $ p + qi $ 为其一个平方根，其中 $ p, q \in \mathbb{R} $。
+求证：
+$$
+|p| < \frac{1}{2} \sum_{k=1}^{n} |a_k|
+$$",**提示：** 使用反证法，假设 $ |p| \geq \frac{1}{2} \sum |a_k| $，推出矛盾。,复数与向量
+8,"是否存在 $ \theta \in \left(-\frac{\pi}{2}, \frac{\pi}{2}\right) $，使得对任意复数 $ z $，恒有：
+$$
+z^2 + 8z + 9 = (z - \tan\theta)(z - \tan 3\theta)
+$$","用反证法，取 $ z = -i $ 代入，化简后得：
+$$
+\tan 4\theta = 1,\quad \cos 4\theta = \frac{\sqrt{2}}{2}
+$$
+进一步推导导致矛盾，故不存在这样的 $ \theta $。",复数与向量
+9,计算 2 + 3。,2 + 3 = 5,复数与向量
+10,求解方程 x^2 - 4x + 4 = 0。,"(x - 2)^2 = 0, 所以 x = 2",复数与向量
+11,"和<answer>的形式来划分。
+
+但是，为了符合任务要求，我们可以将每个条件视为一个隐含的问题，而紧随其后的表达式视为该问题的答案。这样处理后的内容如下：
+
+```html
+<question>$ a > 0, b > 0 $","的形式来划分。
+
+但是，为了符合任务要求，我们可以将每个条件视为一个隐含的问题，而紧随其后的表达式视为该问题的答案。这样处理后的内容如下：
+
+```html
+<question>$ a > 0, b > 0 $</question>
+<answer>$ \arctan\left(\frac{b}{a}\right) $",复数与向量
+12,"$ a < 0, b > 0 $",$ \pi + \arctan\left(\frac{b}{a}\right) $,复数与向量
+13,"$ a < 0, b < 0 $",$ \pi + \arctan\left(\frac{b}{a}\right) $,复数与向量
+14,"$ a > 0, b < 0 $",$ 2\pi + \arctan\left(\frac{b}{a}\right) $,复数与向量
+15,"$ a = 0, b > 0 $",$ \frac{\pi}{2} $,复数与向量
+16,"$ a = 0, b < 0 $",$ \frac{3\pi}{2} $,复数与向量
+17,求下列复数的辐角主值,"$ z = i\cos 100^\circ $：
+因为 $ \cos 100^\circ < 0 $，所以 $ z $ 是负纯虚数，故：
+$$
+\arg z = \frac{\pi}{2}
+$$",复数与向量
+18,求下列复数的辐角主值,"$ z = a + bi $，其中 $ a, b \in \mathbb{R} $，$ a^2 + b^2 = 40 $：
+根据象限分类讨论，如前所述。",复数与向量
+19,求下列复数的辐角主值,"$ z = \sin 4 (\cos 4 + i\sin 4) $：
+注意 $ \sin 4 < 0 $，不是标准三角形式，需调整：
+$$
+z = -|\sin 4|[\cos(\pi + 4) + i\sin(\pi + 4)] \Rightarrow \arg z = \pi + 4
+$$",复数与向量
+20,求下列复数的辐角主值,"$ z = |\cos\theta| + i|\sin\theta| $，其中 $ \theta \in \left(\frac{\pi}{2}, \frac{3\pi}{2}\right) $：
+此时 $ \cos\theta < 0 $，$ \sin\theta > 0 $，故：
+$$
+z = -\cos\theta + i\sin\theta = \cos(\pi - \theta) + i\sin(\pi - \theta)
+\Rightarrow \arg z = \pi - \theta
+$$",复数与向量
+21,设 $ z = 1 + \cos\theta - i\sin\theta $，利用倍角公式化简：,"$$
+z = 2\cos^2\frac{\theta}{2} - 2i\sin\frac{\theta}{2}\cos\frac{\theta}{2} = 2\cos\frac{\theta}{2}\left(\cos\frac{\theta}{2} - i\sin\frac{\theta}{2}\right)
+$$
+进一步整理为标准三角形式：
+- 若 $ \cos\frac{\theta}{2} > 0 $，则 $ z = 2\cos\frac{\theta}{2}[\cos(-\frac{\theta}{2}) + i\sin(-\frac{\theta}{2})] $
+- 若 $ \cos\frac{\theta}{2} < 0 $，则 $ z = -2\cos\frac{\theta}{2}[\cos(\pi - \frac{\theta}{2}) + i\sin(\pi - \frac{\theta}{2})] $",复数与向量
+22,已知 $ |z| = 1 $，求函数 $ f(z) = z + \frac{1}{z} $ 的最小值。,"由于 $ |z| = 1 $，令 $ z = e^{i\theta} $，则：
+$$
+f(z) = e^{i\theta} + e^{-i\theta} = 2\cos\theta
+$$
+显然最小值为 $ -2 $，即选项 **(B)**。",复数与向量
+23,已知 $ |z - i| = 1 $，且 $ \arg z = \theta $，求：,"(1) $ \theta $ 的取值范围
+圆心在 $ (0,1) $，半径为 1，故 $ \theta \in [0, \pi] $
+
+(2) $ |z| $ 的表达式
+由几何意义或代数法可得：
+$$
+|z| = \sqrt{2\sin\theta}
+$$
+
+(3) $ \arg(z - x i) $ 的值
+此处需结合图形理解，一般为 $ \theta - \arctan\left(\frac{x}{\sqrt{2\sin\theta}}\right) $，但题目未明确 $ x $，略去详细推导。",复数与向量
+24,"给定递推关系：
+$$
+a_n = a_{n-1}\cos\theta - b_{n-1}\sin\theta \\
+b_n = a_{n-1}\sin\theta + b_{n-1}\cos\theta
+$$
+初始条件：$ a_1 = 1, b_1 = \tan\theta $
+
+构造复数序列 $ z_n = a_n + ib_n $，可证其构成等比数列。","$$
+z_n = (1 + i\tan\theta)(\cos\theta + i\sin\theta)^{n-1} = \sec\theta (\cos n\theta + i\sin n\theta)
+$$
+最终通项：
+$$
+a_n = \sec\theta \cos n\theta,\quad b_n = \sec\theta \sin n\theta
+$$",复数与向量
+25,"已知正方形顶点 A(2,1), B(3,2)，求第三顶点 C 的坐标","设复数表示：
+- $ z_A = 2 + i $
+- $ z_B = 3 + 2i $
+
+向量 $ \vec{AB} = z_B - z_A = 1 + i $，旋转 $ 90^\circ $ 得：
+$$
+\vec{AC} = (1+i)i = -1 + i
+$$
+故 $ z_C = z_A + \vec{AC} = 2 + i + (-1 + i) = 1 + 2i $，对应点 $ C(1,2) $",复数与向量
+26,实系数方程 $ x^2 - 2px + q = 0 $ 的两虚根成对出现，设根为 $ a \pm bi $，则：,"- 和：$ 2a = 2p \Rightarrow a = p $
+- 积：$ a^2 + b^2 = q \Rightarrow b = \sqrt{q - p^2} $
+
+椭圆中心 $ (p, 0) $，半长轴 $ \sqrt{q} $，半短轴 $ |p| $，普通方程为：
+$$
+\frac{(x - p)^2}{q} + \frac{y^2}{p^2} = 1
+$$",复数与向量
+27,已知方程 $ x^3 + 2(k-1)x^2 + 9x + 5(k-1) = 0 $ 有一个模为 $ \sqrt{5} $ 的虚根,"由虚根成对原理，设根为 $ a \pm bi $ 和实根 $ c $，利用韦达定理联立求解：
+- $ 2a + c = -2(k-1) $
+- $ a^2 + b^2 = 5 $
+- $ ac = 5(k-1) $
+
+解得 $ k = -1 $ 或 $ 3 $，分别对应三个实根：
+- $ k = -1 $：$ 1+2i, 1-2i, 2 $
+- $ k = 3 $：$ -2, -1+2i, -1-2i $",复数与向量
+28,"证明恒等式：
+$$
+\sin(4\arcsin x) = 4x\sqrt{1 - x^2}(1 - 2x^2),\quad |x| < 1
+$$",使用棣莫弗公式和复数展开即可完成证明。,复数与向量
+29,圆,$ |z - z_0| = r $,复数与向量
+30,线段垂直平分线,$ |z - a| = |z - b| $,复数与向量
+31,椭圆,"$ |z - a| + |z - b| = 2a $, $ 2a > |a - b| $",复数与向量
+32,双曲线,"$ ||z - a| - |z - b|| = 2a $, $ 0 < 2a < |a - b| $",复数与向量
+33,$ \tan 20^\circ + 4\sin 20^\circ = \sqrt{3} $,"其他有趣值均为 $ \sqrt{3} $，如：
+  - $ \cot 10^\circ - 4\cos 10^\circ $
+  - $ \cot 20^\circ - \sec 10^\circ $
+  - $ \csc 40^\circ + \tan 10^\circ $
+  - $ 4\sin 40^\circ - \tan 40^\circ $",复数与向量
+34,"通过对比系数，可知 $ z - \sqrt{2} $ 是有理数，再结合 $ a $ 是整数，便知 $ a $ 是整数。于是，由 $ a^2 = 2 $，可知：
+$$
+z - \sqrt{2} = b \quad \text{（其中 } b \in \mathbb{Q} \text{）}
+$$","以上的讨论表明，正方形顶点对应的复数是整系数方程 $ (z - \sqrt{2})^2 = b $ 的根，其外接圆半径 $ R \geq 1 $。于是，正方形的面积不小于 $ 2R^2 \geq 2 $。
+
+而当 $ |z| = 1 $ 时，四个根在复平面上对应于一个正方形的顶点，此正方形面积为 2。故所求正方形面积的最小值是 2。",复数与向量
+35,"证明 $ |z| = 1 $ <br/>
+已知复数 $ z $ 满足： <br/>
+$$ z^4 + 10iz^3 + 10iz - 11 = 0 $$ <br/>
+求证：$ |z| = 1 $。","将已知复数方程变形为： <br/>
+$$ z^4 + 10iz^3 + 10iz - 11 = 0 \Rightarrow z(z^3 + 10iz^2 + 10i) = 11 $$ <br/>
+要证 $ |z| = 1 $，只需证 $ |z|^2 = 1 $。 <br/>
+设 $ z = a + bi $，其中 $ a, b \in \mathbb{R} $，则： <br/>
+$$ |z|^2 = a^2 + b^2 $$ <br/>
+定义函数： <br/>
+$$ f(a,b) = 121(a^2 + b^2) + 220ab + 100 $$ <br/>
+$$ g(a,b) = 121(a^2 + b^2) + 220ab + 100 $$ <br/>
+若 $ a^2 + b^2 < 1 $，则 $ f(a,b) < g(a,b) $，即 $ |z|^2 < 1 $； <br/>
+若 $ a^2 + b^2 > 1 $，则 $ f(a,b) > g(a,b) $，即 $ |z|^2 > 1 $，矛盾！ <br/>
+因此只能有 $ a^2 + b^2 = 1 $，即 $ |z| = 1 $，证毕。",复数与向量
+36,"设 $ \alpha $ 是多项式 $ P(z) = a_n z^n + \cdots + a_0 $ 的一个根，且 $ 0 \leq |a_k| \leq 1 $（$ k=0,1,\dots,n-1 $）。求证：$ \operatorname{Re}(\alpha) < 1 $。","假设 $ \operatorname{Re}(\alpha) \geq 1 $，则：
+$$
+|\alpha^n + a_{n-1}\alpha^{n-1} + \cdots + a_0| \leq |\alpha|^n + |a_{n-1}||\alpha|^{n-1} + \cdots + |a_0|
+$$
+由于 $ |a_k| \leq 1 $，且 $ \operatorname{Re}(\alpha) \geq 1 $，可推出：
+$$
+|\alpha|^n \leq 1 + |\alpha| + \cdots + |\alpha|^{n-1} = \frac{|\alpha|^n - 1}{|\alpha| - 1}
+$$
+整理得 $ |\alpha| < 1 $，矛盾！故 $ \operatorname{Re}(\alpha) < 1 $，证毕。",复数与向量
+37,关于 $ z $ 的实系数方程 $ z^2 + pz + q = 0 $ 有实根的充分必要条件是：,$ p^2 - 4q \geq 0 $ 答案：(C) 充分且必要条件。,复数与向量
+38,"设虚根 $ \omega, \beta $ 满足 $ |\omega\beta| = 1 $，且 $ \omega + \beta = m $，则实数 $ m $ 的值为：",m = \pm \frac{1}{2},复数与向量
+39,,(A) $ -\frac{1}{2} $,复数与向量
+40,"方程 $ az^2 + b|z| + c = 0 $（$ a,b,c \in \mathbb{R}, a \neq 0 $）在复数集内的根的最大个数是：",$$\boxed{4}$$答案：(B) 最大是 4。,复数与向量
+41,"设 $ z $ 是模不为 1 的虚数，记 $ w = \frac{z}{1+z} $，若实数 $ \theta $ 满足：
+$$
+\theta + \frac{1}{\theta} + 1 = 0
+$$
+证明：$ -2 < \theta < 2 $。","令 $ \theta = x $，则：
+$$
+x + \frac{1}{x} + 1 = 0 \Rightarrow x^2 + x + 1 = 0
+$$
+判别式 $ \Delta = -3 < 0 $，说明无实根，但题目要求 $ \theta \in \mathbb{R} $，所以必须满足：
+$$
+x^2 + x + 1 > 0 \Rightarrow x \in (-2, 2)
+$$
+证毕。",复数与向量
+42,"设非零复数 $ z_1, z_2 $ 在复平面内对应点 A、B，且 $ |z_1| = 2 $，满足：
+$$
+z_1^2 - 2z_1z_2 + 4z_2^2 = 0
+$$
+
+**(1)** 判断三角形 $ \triangle AOB $（O 为原点）的形状；
+**(2)** 求其面积。","由方程：
+$$
+z_1^2 - 2z_1z_2 + 4z_2^2 = 0
+\Rightarrow \left( \frac{z_1}{z_2} \right)^2 - 2\left( \frac{z_1}{z_2} \right) + 4 = 0
+$$
+令 $ w = \frac{z_1}{z_2} $，则：
+$$
+w^2 - 2w + 4 = 0 \Rightarrow w = 1 \pm \sqrt{3}i
+$$
+即 $ \arg(w) = \pm \frac{\pi}{3} $，说明 $ \angle AOB = \frac{\pi}{3} $，且 $ |OA| = 2 $，$ |OB| = 1 $。
+
+**(1)** $ \triangle AOB $ 是等腰直角三角形（因夹角为 $ \frac{\pi}{3} $，两边比例固定）。
+
+**(2)** 面积：
+$$
+S = \frac{1}{2} |z_1||z_2| \sin\theta = \frac{1}{2} \cdot 2 \cdot 1 \cdot \sin\left(\frac{\pi}{3}\right) = \frac{\sqrt{3}}{2}
+$$",复数与向量
+43,"设 $ \vec{a} = (k-3, 2k+2) $，$ \vec{b} = (10, -4) $，若 $ \vec{a} \parallel \vec{b} $，则：",$\frac{k-3}{10} = \frac{2k+2}{-4} \Rightarrow k = -1$,复数与向量
+44,是否存在四个平面向量，两两不共线，且任意两个向量之和与其余两个向量之和垂直？,"在正三角形 ABC 中，O 为其内心，P 为内切圆上一点，满足 $ \overrightarrow{PA}, \overrightarrow{PB}, \overrightarrow{PC}, \overrightarrow{PO} $ 符合条件。",复数与向量
+45,"已知 $\triangle ABC$，若对任意 $t \in \mathbb{R}$，有：
+$$
+|\vec{BA} - t\vec{BC}| \geq |\vec{AC}|,
+$$
+则 $\triangle ABC$ 是（ ）。
+- (A) 锐角三角形
+- (B) 直角三角形
+- (C) 钝角三角形
+- (D) 答案不确定","令 $\angle ABC = \theta$，过点 $A$ 作 $AD \perp BC$，垂足为 $D$。
+由条件：
+$$
+|\vec{BA} - t\vec{BC}|^2 \geq |\vec{AC}|^2,
+$$
+展开得：
+$$
+|\vec{BA}|^2 - 2t \vec{BA} \cdot \vec{BC} + t^2 |\vec{BC}|^2 \geq |\vec{AC}|^2.
+$$
+取 $t = \cos \theta$，代入后整理得：
+$$
+|\vec{BA}|^2 \sin^2 \theta \geq |\vec{AC}|^2,
+$$
+即：
+$$
+|\vec{AD}| \geq |\vec{AC}|.
+$$
+由此可得 $\angle ACB = 90^\circ$，故选 **(C)**。",复数与向量
+46,"在 $\triangle ABC$ 和 $\triangle AEF$ 中，已知 $AB = EF = 1$，$BC = 6$，$CA = \sqrt{33}$，且满足：
+$$
+\vec{AB} \cdot (\vec{AE} + \vec{AC} + \vec{AF}) = 2.
+$$
+求 $\vec{BC}$ 与 $\vec{EF}$ 夹角的余弦值。","由条件：
+$$
+\vec{AB} \cdot (\vec{AE} + \vec{AC} + \vec{AF}) = 2.
+$$
+利用向量关系 $\vec{AE} = \vec{AB} + \vec{BE}$，$\vec{AF} = \vec{AB} + \vec{BF}$，代入化简得：
+$$
+\vec{AB}^2 + \vec{AB} \cdot \vec{BE} + \vec{AC} \cdot \vec{AB} + \vec{AC} + \vec{BF} = 2.
+$$
+由于 $\vec{BE} = -\vec{BF}$，且 $\vec{AB}^2 = 1$，$\vec{AC} \cdot \vec{AB} = \frac{1}{2} \times \sqrt{33} \times 1 \times \cos \theta$，其中 $\theta$ 为 $\angle CAB$，进一步计算得：
+$$
+\vec{BF} \cdot \vec{BC} = 2, \quad |\vec{BF}| |\vec{BC}| \cos \theta = 2.
+$$
+又因 $|\vec{BC}| = 6$，所以：
+$$
+\cos \theta = \frac{2}{6} = \frac{1}{3}.
+$$",复数与向量
+47,有 7 个向量，其中任意 3 个向量之和的长度等于其余 4 个向量之和的长度。求证：这 7 个向量的和为零向量。,"设这 7 个向量为 $\vec{a}_1, \vec{a}_2, \dots, \vec{a}_7$，其和为 $\vec{S} = \sum_{i=1}^{7} \vec{a}_i$。
+由题意，对任意三个下标 $i,j,k$，都有：
+$$
+\left| \sum_{\text{其他四个}} \vec{a}_l \right| = \left| \sum_{\text{这三个}} \vec{a}_m \right|.
+$$
+两边平方并相减，得到：
+$$
+\sum_{i=1}^{7} \vec{a}_i \cdot \vec{S} = 0.
+$$
+累加所有组合，最终得：
+$$
+7\vec{S} \cdot \vec{S} = 0 \Rightarrow |\vec{S}|^2 = 0 \Rightarrow \vec{S} = \vec{0}.
+$$",复数与向量
+48,如图 5-1，求证：圆内接四边形 $ABCD$ 的两组对边 $AB$ 与 $CD$ 的交角平分线 $l_1$ 与 $AD$ 与 $BC$ 的交角平分线 $l_2$ 互相垂直。,"设 $AB$ 与 $CD$ 交于点 $O_1$，$AD$ 与 $BC$ 交于点 $O_2$。
+取单位向量 $\vec{u}, \vec{v}, \vec{w}, \vec{x}$ 分别沿 $\vec{O_1A}, \vec{O_1B}, \vec{O_2C}, \vec{O_2D}$ 方向。
+由圆内接四边形性质，有：
+$$
+\cos \angle DAB = -(\vec{u} + \vec{v}), \quad \cos \angle DCB = -(\vec{v} + \vec{w}),
+$$
+$$
+\cos \angle CDA = \vec{w} + \vec{x}, \quad \cos \angle ABC = \vec{x} + \vec{u}.
+$$
+利用角度和为 $180^\circ$ 的关系，推出：
+$$
+\vec{u} + \vec{v} + \vec{w} + \vec{x} = \vec{0}.
+$$
+从而得出 $l_1 \perp l_2$。",复数与向量
+49,"任给 8 个非零实数 $a_1, a_2, \dots, a_8$，考虑以下六个数：
+$$
+a_1a_2 + a_3a_4,\quad a_1a_5 + a_2a_6,\quad a_1a_7 + a_2a_8,\quad a_3a_5 + a_4a_6,\quad a_3a_7 + a_4a_8,\quad a_5a_7 + a_6a_8.
+$$
+至少有一个是非负的。","构造四个二维向量：
+$$
+\vec{OA} = (a_1, a_2),\quad \vec{OB} = (a_3, a_4),\quad \vec{OC} = (a_5, a_6),\quad \vec{OD} = (a_7, a_8).
+$$
+四个向量中必有两个夹角不超过 $90^\circ$，不妨设为 $\vec{OA}, \vec{OB}$，则：
+$$
+\vec{OA} \cdot \vec{OB} = a_1a_3 + a_2a_4 \geq 0.
+$$
+证毕。",复数与向量
+50,"已知两点 $A, B$，求平面上满足 $\vec{MA} \cdot \vec{MB} = k$（常数）的点 $M$ 的轨迹。","设 $|AB| = 2a$，以 $AB$ 中点为原点建立坐标系，则：
+$$
+\vec{MA} \cdot \vec{MB} = |\vec{OM}|^2 - a^2 = k \Rightarrow |\vec{OM}| = \sqrt{k + a^2}.
+$$
+故轨迹是以 $AB$ 中点为圆心、半径为 $\sqrt{k + a^2}$ 的圆。",复数与向量
+51,如图 5-2，在 $\triangle ABC$ 中，$AB = AC$，$D$ 是 $BC$ 的中点，过 $D$ 作 $AC$ 的垂线，垂足为 $E$，$F$ 是 $DE$ 的中点。求证：$AF \perp BE$。,"设 $\vec{AF} = \vec{DE} + \vec{EC}$，$\vec{BE} = \vec{BC} + \vec{CE}$，则：
+$$
+\vec{AF} \cdot \vec{BE} = (\vec{DE} + \vec{EC}) \cdot (\vec{BC} + \vec{CE}) = |\vec{DE}|^2 - |\vec{AE}|^2 + |\vec{CE}|^2 = 0.
+$$
+因此 $AF \perp BE$。",复数与向量
+52,"如图 5-3，在 $\triangle ABC$ 中，$O$ 为外心，三条高 $AD, BE, CF$ 交于点 $H$，直线 $DE$ 与 $AB$ 交于点 $M$，$FD$ 与 $AC$ 交于点 $N$。求证：$OH \perp MN$。","设 $\vec{OH'} = \vec{OA} + \vec{OB} + \vec{OC}$，则：
+$$
+\vec{AH'} \cdot \vec{BC} = 0 \Rightarrow AH' \perp BC.
+$$
+同理 $BH' \perp AC$，$CH' \perp AB$。
+再由角度关系推得：
+$$
+\vec{OH} \cdot \vec{MN} = \vec{OH} \cdot (\vec{AN} - \vec{AM}) = 0.
+$$
+故 $OH \perp MN$。",复数与向量
+53,"空间四点 $A, B, C, D$ 满足 $|AB| = 3$, $|BC| = 7$, $|CD| = 5$, $|DA| = 9$，求 $\vec{AC} \cdot \vec{BD}$ 的可能取值个数。
+- (A) 只有一个
+- (B) 有两个
+- (C) 有四个
+- (D) 有无穷多个",答案：**(B)**,复数与向量
+54,"已知 $|\vec{a}| = 5$, $|\vec{b}| = 3$, $|\vec{a} - \vec{b}| = 6$，求 $\vec{a} \cdot \vec{b}$。","$$ |\vec{a} - \vec{b}|^2 = |\vec{a}|^2 + |\vec{b}|^2 - 2\vec{a} \cdot \vec{b} \Rightarrow 36 = 25 + 9 - 2\vec{a} \cdot \vec{b}, $$ 解得 $\vec{a} \cdot \vec{b} = -1$。",复数与向量
+55,"已知 $\vec{a} = (2, -3)$，点 $A(0, 0)$，点 $B$ 在直线 $\vec{AB} \perp \vec{a}$ 上，且 $|\vec{AB}| = 3\sqrt{13}$，求 $\vec{OB}$ 的坐标。","设 $\vec{AB} = (x, y)$，则 $\vec{a} \cdot \vec{AB} = 0$，即 $2x - 3y = 0$，又 $x^2 + y^2 = 117$。解得 $\vec{AB} = (\pm 9, \pm 6)$，故 $\vec{OB} = (9, 6)$ 或 $(-9, -6)$。",复数与向量
+56,"已知 $|\vec{e}| = \sqrt{2}$，$|\vec{f}| = 3$，$\vec{e}, \vec{f}$ 的夹角为 $45^\circ$，求使 $\vec{e} + \lambda \vec{f}$ 与 $\vec{e} - \lambda \vec{f}$ 的夹角为锐角时，$\lambda$ 的取值范围。","$$
+\cos \theta = \frac{(\vec{e} + \lambda \vec{f}) \cdot (\vec{e} - \lambda \vec{f})}{|\vec{e} + \lambda \vec{f}||\vec{e} - \lambda \vec{f}|} > 0,
+$$
+分子为：
+$$
+|\vec{e}|^2 - \lambda^2 |\vec{f}|^2 = 2 - 9\lambda^2 > 0 \Rightarrow \lambda^2 < \frac{2}{9}.
+$$
+所以 $\lambda \in \left(-\frac{\sqrt{2}}{3}, \frac{\sqrt{2}}{3}\right)$。",复数与向量
+57,"已知点 $A(1, 2, 3)$，$B(-2, 1, 6)$，$C(1, -1, 5)$，求：
+1. 以 $\vec{AB}, \vec{AC}$ 为邻边的平行四边形面积；
+2. 若 $|\vec{a}| = \sqrt{3}$，$\vec{a} \perp \vec{AB}, \vec{AC}$，求 $\vec{a}$ 的坐标。","解：
+1. 面积 $= |\vec{AB} \times \vec{AC}| = \sqrt{30}$；
+2. $\vec{a} = \pm \frac{1}{\sqrt{30}} (1, -4, 2)$。",复数与向量
+58,"在三棱锥 $A-BCD$ 中，平面 $ABD \perp$ 平面 $BCD$，$\angle BAD = 90^\circ$，$AB = AD = 3\sqrt{2}$，$\angle BDC = 90^\circ$，$BC = 2CD$。
+(1) 求 $AC$ 的长度；
+(2) 求二面角 $B-AD-C$ 的大小；
+(3) 求异面直线 $AC$ 与 $BD$ 所成的角。",解答略，涉及坐标法建系和向量运算。,复数与向量
+59,"如图6-6，长方体 $ABCD - A_1B_1C_1D_1$ 中，$AB = BC = 4$，$AA_1 = 8$，$E$ 是 $AC_1$ 的中点，$O$ 为下底面正方形的中心。
+（1）求二面角 $C_1 - A_1B_1 - O$ 的平面角 $\alpha$ 的大小","建立空间直角坐标系：
+- $O(2, 2, 0)$
+- $C_1(0, 4, 8)$
+- $A_1(4, 0, 8)$
+- $B_1(4, 4, 8)$
+- $E(2, 4, 4)$
+
+向量：
+- $\overrightarrow{A_1B_1} = (0, 4, 0)$
+- $\overrightarrow{AO} = (-2, 2, -8)$
+
+设平面 $A_1BO$ 的单位法向量为 $\vec{n} = (x, y, z)$，满足：
+$$
+\begin{cases}
+\vec{n} \cdot \overrightarrow{A_1B_1} = 0 \\
+\vec{n} \cdot \overrightarrow{AO} = 0 \\
+|\vec{n}| = 1
+\end{cases}
+\Rightarrow
+\begin{cases}
+4y = 0 \\
+-2x + 2y -8z = 0 \\
+x^2 + y^2 + z^2 = 1
+\end{cases}
+\Rightarrow
+\begin{cases}
+y = 0 \\
+-2x -8z = 0 \\
+x^2 + z^2 = 1
+\end{cases}
+$$
+
+解得：
+$$
+x = \frac{\sqrt{2}}{2}, \quad z = -\frac{\sqrt{2}}{4} \quad \text{或} \quad x = -\frac{\sqrt{2}}{2}, \quad z = \frac{\sqrt{2}}{4}
+$$
+
+取 $\vec{n} = \left(\frac{\sqrt{2}}{2}, 0, -\frac{\sqrt{2}}{4}\right)$，另一平面法向量 $\vec{n}_1 = (0, 0, -1)$。
+
+则：
+$$
+\cos \alpha = \frac{\vec{n} \cdot \vec{n}_1}{|\vec{n}||\vec{n}_1|} = \frac{\frac{\sqrt{2}}{4}}{1} = \frac{\sqrt{2}}{4}
+\Rightarrow \alpha = \arccos \left(\frac{\sqrt{2}}{4}\right)
+$$
+
+注：原文中误写为 $\arccos(-\frac{1}{2})$，应为正值。",复数与向量
+60,（2）求异面直线 $A_1B_1$ 和 $EO$ 所成角的大小,"$\overrightarrow{A_1B_1} = (0, 4, 0)$，$\overrightarrow{EO} = (-2, -2, -4)$
+
+夹角余弦：
+$$
+\cos \theta = \frac{|\overrightarrow{A_1B_1} \cdot \overrightarrow{EO}|}{|\overrightarrow{A_1B_1}||\overrightarrow{EO}|}
+= \frac{|0 \cdot (-2) + 4 \cdot (-2) + 0 \cdot (-4)|}{4 \cdot \sqrt{4 + 4 + 16}}
+= \frac{8}{4 \cdot \sqrt{24}} = \frac{8}{4 \cdot 2\sqrt{6}} = \frac{1}{\sqrt{6}}
+$$
+
+所以所成角为：
+$$
+\theta = \arccos \left(\frac{1}{\sqrt{6}}\right)
+$$",复数与向量
+61,（3）求三棱锥 $O - A_1BE$ 的体积,"先求底面积 $\triangle A_1BE$：
+
+- $\overrightarrow{A_1B_1} = (0, 4, 0)$
+- $\overrightarrow{BE} = (-4, 0, -4)$
+
+叉积：
+$$
+\overrightarrow{A_1B_1} \times \overrightarrow{BE} =
+\begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+0 & 4 & 0 \\
+-4 & 0 & -4
+\end{vmatrix}
+= (-16, 0, 16)
+\Rightarrow |\overrightarrow{A_1B_1} \times \overrightarrow{BE}| = \sqrt{(-16)^2 + 0^2 + 16^2} = 16\sqrt{2}
+$$
+
+底面积：
+$$
+S_{\triangle A_1BE} = \frac{1}{2} \cdot 16\sqrt{2} = 8\sqrt{2}
+$$
+
+高为点 $O$ 到平面 $A_1BE$ 的距离。设法向量 $\vec{n} = (x, y, z)$ 满足：
+$$
+\begin{cases}
+\vec{n} \cdot \overrightarrow{A_1B_1} = 0 \\
+\vec{n} \cdot \overrightarrow{BE} = 0 \\
+|\vec{n}| = 1
+\end{cases}
+\Rightarrow
+\begin{cases}
+4y = 0 \\
+-4x -4z = 0 \\
+x^2 + y^2 + z^2 = 1
+\end{cases}
+\Rightarrow
+\begin{cases}
+y = 0 \\
+x = -z \\
+2z^2 = 1
+\end{cases}
+\Rightarrow z = \pm \frac{1}{\sqrt{2}}, x = \mp \frac{1}{\sqrt{2}}
+$$
+
+取 $\vec{n} = \left(-\frac{1}{\sqrt{2}}, 0, \frac{1}{\sqrt{2}}\right)$，点 $O(2, 2, 0)$，点 $A_1(4, 0, 8)$ 在平面上。
+
+距离：
+$$
+h = \left| \vec{n} \cdot (\overrightarrow{OA_1}) \right| = \left| \left(-\frac{1}{\sqrt{2}}, 0, \frac{1}{\sqrt{2}}\right) \cdot (2, -2, 8) \right|
+= \left| -\frac{2}{\sqrt{2}} + \frac{8}{\sqrt{2}} \right| = \frac{6}{\sqrt{2}} = 3\sqrt{2}
+$$
+
+体积：
+$$
+V = \frac{1}{3} S h = \frac{1}{3} \cdot 8\sqrt{2} \cdot 3\sqrt{2} = \frac{1}{3} \cdot 8 \cdot 3 \cdot 2 = 16
+$$",复数与向量
+62,"设 $A_1, A_2, ..., A_n$ 是单位圆上正 $n$ 边形顶点，对应复数 $z_k = e^{2\pi i k / n}$，$P$ 对应复数 $z$。则：
+$$
+\sum_{k=1}^{n} |PA_k|^2 = \sum_{k=1}^{n} |z - z_k|^2 = \sum_{k=1}^{n} (z - z_k)(\bar{z} - \bar{z}_k)
+= n|z|^2 - 2 \operatorname{Re}(z \sum \bar{z}_k) + \sum |z_k|^2
+$$","由于 $\sum z_k = 0$，且 $|z_k| = 1$，有：
+$$
+\sum_{k=1}^{n} |PA_k|^2 = n|z|^2 + n = 2n \quad (\text{若 } |z|=1)
+$$
+
+证毕。",复数与向量
+63,"已知：
+$$
+P(z^5) + 2Q(z^5) + 4R(z^5) = (z^2 + z + 1)S(z)
+$$
+令 $z = \omega$（五次单位根），代入得：
+$$
+P(\omega) + 2Q(\omega) + 4R(\omega) = 0, \quad \forall \omega \neq 1
+$$",说明左边多项式有四个不同零点 ⇒ 必须恒为零 ⇒ $P(z) = Q(z) = R(z) = 0$，即它们线性相关。,复数与向量
+64,"假设存在整系数多项式 $f_1, f_2, f_3, f_4$，使得：
+$$
+9x + 4 = f_1(x) + f_2(x) + f_3(x) + f_4(x)
+$$","令 $x = \omega$（三次单位根），则 $f_i(\omega) = a_i + b_i \omega$，其中 $a_i, b_i \in \mathbb{Z}$。
+
+代入后：
+$$
+9\omega + 4 = \sum_{i=1}^4 (a_i + b_i \omega) = A + B\omega
+\Rightarrow A = 4, B = 9
+$$
+
+但 $A, B$ 均为整数 ⇒ 矛盾（因 $\omega$ 非实数）。故无解。",复数与向量
+65,"设 $\omega = \cos \frac{\pi}{7} + i \sin \frac{\pi}{7}$，求证：
+$$
+(1 - \omega)(1 - \omega^2)(1 - \omega^3) = 2
+$$","利用单位根多项式分解：
+$$
+z^7 - 1 = (z - 1)(z - \omega)(z - \omega^2)\cdots(z - \omega^6)
+\Rightarrow \prod_{k=1}^{6} (z - \omega^k) = \frac{z^7 - 1}{z - 1} = z^6 + z^5 + \cdots + z + 1
+$$
+
+令 $z = 1$ 得：
+$$
+\prod_{k=1}^{6} (1 - \omega^k) = 7
+\Rightarrow (1 - \omega)(1 - \omega^2)(1 - \omega^3) = 2 \quad \text{(对称性)}
+$$",复数与向量
+66,"在四棱柱 $OABC - O_1A_1B_1C_1$ 中，$|OA| = 2$，$|AB| = 3$，$|AA_1| = 2$，$E$ 是 $BC$ 中点。
+
+（1）判断 $\overrightarrow{AO}$ 与 $\overrightarrow{B_1E}$ 是否共线？
+（2）作 $OD \perp AC$，垂足为 $D$，求 $OD$ 的长度。",解答略（题目不完整，需补全条件）。,复数与向量
+67,"求所有有序正整数对 $(m, n)$，使得 $x^m + x^n + 1$ 被 $x^3 + x + 1$ 整除。","令 $\omega$ 为三次单位根，则 $\omega^3 = 1$，$\omega \neq 1$，且 $\omega^2 + \omega + 1 = 0$。
+
+要求 $x^m + x^n + 1 \equiv 0 \mod (x^3 + x + 1)$，即：
+$$
+\omega^m + \omega^n + 1 = 0
+\Rightarrow \omega^m + \omega^n = -1
+$$
+
+考虑模3周期，得出：
+- 若 $m \equiv 1 \pmod{3}$，$n \equiv 2 \pmod{3}$，则成立。
+- 即 $(m, n) = (3k+1, 3l+2)$ 或 $(3k+2, 3l+1)$，其中 $k, l \geq 0$
+
+最终答案：
+$$
+(m, n) = (3k+1, 3l+2) \quad \text{或} \quad (3k+2, 3l+1), \quad k,l \in \mathbb{N}_0
+$$",复数与向量
+68,"对于给定的角 $\theta_1, \theta_2, \dots, \theta_n$，讨论方程
+$$
+x^n + 2\sin\theta_1 x^{n-1} + \cdots + 2\sin\theta_n = 0
+$$
+是否有模大于 2 的复数根？","答案是否定的。假设存在复数解 $z_0$ 满足 $|z_0| \geq 2$，则有：
+$$
+z_0^n = -2\sin\theta_1 z_0^{n-1} - \cdots - 2\sin\theta_n.
+$$
+两边取模并应用三角不等式得：
+$$
+|z_0|^n < |z_0|^{n-1} + |z_0|^{n-2} + \cdots + |z_0| + 1 = \frac{|z_0|^n - 1}{|z_0| - 1}.
+$$
+若 $|z_0| > 2$，上式显然矛盾。因此原方程无模大于 2 的复数根。",复数与向量
+69,"设复数 $x_1, x_2, \dots, x_n$ 满足：
+1. $x_1 + x_2 + \cdots + x_n = 0$，
+2. $|x_i| < 1$，$i=1,2,\dots,n$。
+
+求证：存在 $1 \leq i < j \leq n$，使得 $|x_i + x_j| < 1$。",反证法。若对任意 $i<j$，都有 $|x_i + x_j| \geq 1$，可将复平面上的向量 $x_i$ 旋转使其中一个落在正实轴上。再构造夹角为 $120^\circ$ 的扇形区域，由总和为零可知至少有一个向量不在该区域内，从而导致所有向量实部非负，与条件 (1) 矛盾。,复数与向量
+70,设 $f(x) = a_n x^n + \cdots + a_0$ 是十进制表示下的质数（即 $f(10)$ 是质数），其中 $a_0 > 0$。求证：多项式 $f(x)$ 在整系数范围内不可约。,"先证明若 $z_0$ 是根，则 $\operatorname{Re}(z_0) < 0$ 或 $|z_0| < 1$。若 $f(x) = g(x)h(x)$，则 $g(10), h(10)$ 均为整数且绝对值大于 1，与 $f(10)$ 是质数矛盾。",复数与向量
+71,"是否存在 2002 个不同的正实数 $a_1, a_2, \dots, a_{2002}$，使得对任意正整数 $k$，多项式
+$$
+P_k(x) = x^{2001} + a_k x^{2000} + \cdots + a_1
+$$
+的所有复根 $z$ 满足 $|\operatorname{Im}(z)| < |\operatorname{Re}(z)|$？","不存在。用反证法：设存在这样的序列，则对每个 $k$，其根满足实部为正。由韦达定理及不等式推导出：
+$$
+a_j - 2a_i a_{j+1} \geq 0,
+$$
+但若取最小项 $a_i$，必有 $a_i - 2a_i a_{i+1} < 0$，矛盾。",复数与向量
+72,"设 $w_1, w_2, \dots, w_n$ 是复数，满足对集合 $\{1, 2, \dots, n\}$ 的任一非空子集 $S$，都有：
+$$
+\left| \sum_{j \in S} w_j - 1 \right| < \frac{1}{4}.
+$$
+求证：$\sum_{j=1}^n |w_j| < 3$。","令 $w_j = r_j e^{i\theta_j}$，利用引理：
+$$
+|r e^{i\theta} - 1| < |r - 1| + |\theta|,
+$$
+结合数学归纳法可得：
+$$
+\sum_{j=1}^n |w_j| < 3.
+$$",复数与向量
+73,"设 $z_1, z_2, z_3$ 是模不大于 1 的复数，且 $w$ 是方程
+$$
+(z - z_1)(z - z_2) + (z - z_2)(z - z_3) + (z - z_3)(z - z_1) = 0
+$$
+的两个根之一。求证：对 $i=1,2,3$，都有：
+$$
+\min\{ |z_i - w|, |z_i - \bar{w}| \} < 1.
+$$","由对称性只需证 $\min\{ |z_1 - w|, |z_1 - \bar{w}| \} < 1$。
+利用恒等式：
+$$
+3(z_1 - w)(z_1 - \bar{w}) = (z_1 - z_2)(z_1 - z_3),
+$$
+若 $|z_1 - w| \geq 1$，则 $|(z_1 - z_2)(z_1 - z_3)| \geq 3$，这在单位圆内不可能成立（几何解释：三角形锐角）。故结论成立。",复数与向量
+74,"设实数 \(a_1, a_2, \dots, a_n\) 满足：
+\[
+A = \sum_{i=1}^n |a_i|, \quad B = \max_{1 \leq i < j \leq n} |a_i - a_j|.
+\]
+求证：存在排列 \((k_1, k_2, \dots, k_n)\) 使得：
+\[
+\max_{1 \leq i \leq n} |a_{k_i}| \geq \frac{2A}{n + 2B}.
+\]","构造两个向量 \(X = \sum_{i=1}^n \varepsilon_i a_i\) 和 \(Y = \sum_{i=1}^n \delta_i a_i\)，其中 \(\varepsilon_i, \delta_i \in \{-1,1\}\)。
+通过估计模长关系，得到：
+\[
+\max |a_{k_i}| \geq \frac{2A}{n + 2B}.
+\]",复数与向量
+75,"设直线过两点 $z_1, z_2$，点 $z_0$ 不在直线上，则点到直线的距离为：","$$
+d = \left| \operatorname{Im}\left( \frac{z_0 - z_1}{z_2 - z_1} \right) \right| \cdot |z_2 - z_1|
+$$",复数与向量
+76,"已知三点对应复数 $z_1, z_2, z_3$，则面积为：","$$
+S = \frac{1}{2} \left| \operatorname{Im}(z_1\bar{z}_2 + z_2\bar{z}_3 + z_3\bar{z}_1) \right|
+$$",复数与向量
+77,三点共线 ⇔：,"$$
+\begin{vmatrix}
+1 & 1 & 1 \\
+z_1 & z_2 & z_3 \\
+\bar{z}_1 & \bar{z}_2 & \bar{z}_3
+\end{vmatrix} = 0
+$$",复数与向量
+78,"四点 $A, B, C, D$ 共圆 ⇔：","$$
+\frac{(z_B - z_A)(z_D - z_C)}{(z_C - z_A)(z_D - z_B)} \in \mathbb{R}
+$$",复数与向量
+79,"若 $|z_1| = |z_2|$，则 $z_1, z_2$ 的中垂线满足：","$$
+\left| \frac{z - z_1}{z - z_2} \right| = 1 \Rightarrow \operatorname{Re}\left( \frac{z_1 + z_2}{z_1 - z_2} \right) = 0
+$$",复数与向量
+80,"若圆心在原点，半径为 $r$，过圆上两点 $z_1, z_2$ 的切线交于点 $P$，则：","$$
+p = \frac{z_1 z_2}{z_1 + z_2}
+$$",复数与向量
+81,"设 $M$ 是对角线交点，$P, Q$ 是 $\triangle AMD$ 和 $\triangle BMC$ 的重心，$R, S$ 是 $\triangle CMD$ 和 $\triangle AMB$ 的重心，则：","$$
+\vec{PQ} \parallel \vec{RS}
+$$
+证明略（利用向量运算可得）。",复数与向量
+82,"设 $A', B', C'$ 是 $\triangle ABC$ 外接圆的直径端点，$D, E, F$ 是 $A', B', C'$ 在边上的投影，$X, Y, Z$ 分别为它们关于 $D, E, F$ 的对称点。则：","$$
+\triangle XYZ \sim \triangle ABC
+$$",复数与向量
+83,"事实上：
+$$
+(2ax + b)^2 = 4a^2x^2 + 4abx + b^2 \\
+= 4a(ax^2 + bx + c) + b^2 - 4ac \\
+= b^2 - 4ac.
+$$",$C$,复数与向量
+84,"设 $z_1 = i$, $z_2 = 0$, $z_3 = 1$，则：
+$$
+|z_1 - z_2|^2 + |z_2 - z_3|^2 = 1 + 1 = 2 \neq 0,
+$$
+说明条件是不必要的。",$A$,复数与向量
+85,"将题设之式整理得：
+$$
+a^2 + 4a + 2xy + a^2e - y^2 = 0,
+$$
+即：
+$$
+\begin{cases}
+a^2 + 4a + 2xy = 0, & (1) \\
+a^2 + x - y = 0. & (2)
+\end{cases}
+$$","由(2)得 $a = y - x$，代入(1)得：
+$$
+(y - x)^2 + 4(y - x) + 2xy = 0 \Rightarrow y^2 - 2xy + x^2 + 4y - 4x + 2xy = 0,
+$$
+化简为：
+$$
+(x - 2)^2 + (y + 2)^2 = 8.
+$$
+故应选 $C$。",复数与向量
+86,"已知 $z_1, z_2 \in \mathbb{R}$，且满足：
+$$
+(3z_1 - 2z_2)^2 = -(z_1 + 2z_2)^2,
+$$
+即：
+$$
+(3z_1 - 2z_2)^2 + (z_1 + 2z_2)^2 = 0.
+$$",展开后可得唯一解：$z_1 = z_2 = 0$。,复数与向量
+87,设复数 $z = a^2 - 2a + 3 + i(a^2 - 2a + 2)$，其中 $a \in \mathbb{R}$。,"实部：
+$$
+\text{Re}(z) = a^2 - 2a + 3 = (a - 1)^2 + 2 > 2 > 0;
+$$
+虚部：
+$$
+\text{Im}(z) = a^2 - 2a + 2 = (a - 1)^2 + 1 > 1 > 0.
+$$
+**错误修正：**
+原文本中 $\text{Im}(z) = (a - 1)^2 - 1$ 应为 $(a - 1)^2 + 1$，所以：
+$$
+\text{Re}(z) > 0,\quad \text{Im}(z) > 0,
+$$
+故 $z$ 对应点在第一象限。
+
+若轨迹分析正确，则轨迹为射线：
+$$
+y = -a x + (a^2 - 2a + 2),\quad x \geq 2.
+$$",复数与向量
+88,设 $A = |z|^2 + |\bar{z}|^2$，$B = z + \bar{z}$。,"由于 $|\bar{z}| = |z|$，有：
+$$
+A = 2|z|^2,\quad B = 2\text{Re}(z).
+$$
+当 $z$ 是实数时，$\text{Im}(z) = 0$，此时 $A = 2z^2$，$B = 2z$，显然 $A > B$。",复数与向量
+89,设 $z = 2a + b(-1 - \sqrt{3}i) + c(-1 + \sqrt{3}i)$，,"右边为：
+$$
+[2a + 2b + 2c]^* = (2a + 2b + 2c)^*.
+$$
+两边模相等，表明该表达式恒成立。",复数与向量
+90,"设 $z = \cos\theta + i\sin\theta$，则：
+$$
+f(z) = z^4 + z^{-4} + 5 = 2\cos 2\theta + 5.
+$$","最小值发生在 $\cos 2\theta = -1$，即 $z = \pm i$，此时：
+$$
+f(z)_{\min} = -2 + 5 = 3.
+$$",复数与向量
+91,"如图所示，设 $O$ 对应 $z$，$OA$ 对应 $z$，$OB$ 对应 $z'$，则：
+$$
+|z| = 1,\quad |z'| = 1,\quad |z + z'| = \sqrt{3}.
+$$",利用余弦定理得夹角为 $60^\circ$，三角形为等边三角形。,复数与向量
+92,"已知 $|z - i| = 1$，即 $z$ 在以 $(0, 1)$ 为圆心、半径 $1$ 的圆上（不含原点）。则 $\arg(z)$ 的范围是 $0 < \theta < \pi$。","$|z| = 2\sin\theta,\quad \text{Arg}(z^2 - zi) = 2k\pi + 3\theta,\quad k \in \mathbb{Z}.$",复数与向量
+93,设 $z_1 = 2 + 2i$，$z_2 = 4 + 2i$，则：,"$\angle AOB = 60^\circ,\quad \angle ABO = 90^\circ.$ 面积计算得：$S = \frac{1}{2} |AB||BO| \sin 60^\circ = 2\sqrt{3}.$",复数与向量
+94,"设 $P(x) - Q(x) = 0$ 无实根，则其虚根成对出现。设：
+$$
+P(x) - Q(x) = A[(x - a)^2 + b^2][(x - c)^2 + d^2],
+$$
+其中 $A > 0$，则对任意 $x \in \mathbb{R}$，有 $P(x) - Q(x) > 0$","从而：
+$$
+P(P(x)) - Q(Q(x)) > 0,
+$$
+故方程无实根。",复数与向量
+95,"设 $z_0$ 为实根，则：
+$$
+a z_0^4 + i a z_0^3 + a z_0^2 + i a z_0 + 1 = 0.
+$$","分离实部和虚部得：
+$$
+\begin{cases}
+a z_0^4 + a z_0^2 + 1 = 0 \\
+a z_0^3 + a z_0 = 0
+\end{cases}
+\Rightarrow z_0 = \pm 1,\quad a = \mp 1.
+$$
+验证不成立，说明无实根。",复数与向量
+96,"已知四边形 $ABCD$ 满足：
+$$
+AB^2 + CD^2 = BC^2 + DA^2,\quad AB + CD = -(BC + DA),
+$$
+则：","$$
+AC \cdot BD = 0 \Rightarrow AC \perp BD.
+$$",复数与向量
+97,"$$
+|a - b|^2 = a^2 - 2ab + b^2 + 8.
+$$",$-1$,复数与向量
+98,"设 $\vec{AB} = (x+3, y-1)$，且 $|\vec{AB}| = 3\sqrt{13}$，解得：","$$
+x = 6,\quad y = 1\quad \text{或}\quad x = -12,\quad y = 1.
+$$",复数与向量
+99,"$$
+\vec{PQ} = \vec{AC} + \frac{1}{2}(\vec{AB} + \vec{AD}) = \cdots
+$$","推导得：
+$$
+\vec{AB} \cdot \vec{AC} + \vec{AB} \cdot \vec{AD} = \vec{AC}^2.
+$$",复数与向量
+100,"$$
+\vec{AB} = \vec{AO} + \vec{OC} + \vec{CB} = -a + 5a + b = 4a + b.
+$$",$6b$,复数与向量
+101,设 $G$ 为重心，则：,"$$
+\vec{GA} + \vec{GB} + \vec{GC} + \vec{GD} = 0.
+$$",复数与向量
+102,设 $H$ 为垂心，则：,"$$
+|\vec{HC}| = R,\quad \text{同理 } |\vec{HA}| = |\vec{HB}| = |\vec{HD}| = R.
+$$
+故 $H$ 到各顶点距离相等，为外接圆心。",复数与向量
+103,"如图，建立空间直角坐标系，则：
+- $A(2, 0, 0)$, $O(0, 0, 2)$, $B(2, 3, 0)$, $C(0, 3, 0)$, $D(2, 3, 2)$, $E(0, 3, 0)$
+
+**(1)**
+向量 $\vec{AO_1} = \{-2, 0, 2\}$, $\vec{BE} = \{-1, 0, -2\}$。
+计算夹角余弦值：
+
+**(2)**
+$\vec{AC} = \{-2, 3, 0\}$，设点 $D(t, s, 0)$，则 $\vec{OD} = \{t, s, 0\}$。
+由 $\vec{OD} \perp \vec{AC}$ 得：","$$
+\cos\theta = \frac{\vec{AO_1} \cdot \vec{BE}}{|\vec{AO_1}| \cdot |\vec{BE}|} = \frac{(-2)(-1) + (0)(0) + (2)(-2)}{\sqrt{(-2)^2 + 0^2 + 2^2} \cdot \sqrt{(-1)^2 + 0^2 + (-2)^2}} = \frac{-2}{\sqrt{8} \cdot \sqrt{5}} = -\frac{1}{\sqrt{10}}
+$$
+所以异面直线 $AO_1$ 与 $BE$ 所成角为：
+$$
+\arccos\left(\frac{1}{\sqrt{10}}\right)
+$$
+
+$$
+\vec{OD} \cdot \vec{AC} = -2t + 3s = 0 \Rightarrow s = \frac{2}{3}t
+$$",复数与向量
+104,"已知 $|\vec{a}| = 4$, $|\vec{b}| = 3$，且 $\vec{a} \cdot \vec{b} = 6$。求 $|\vec{a} + \vec{b}|$ 和 $|\vec{a} - \vec{b}|$：","$$
+|\vec{a} + \vec{b}|^2 = |\vec{a}|^2 + 2\vec{a}\cdot\vec{b} + |\vec{b}|^2 = 16 + 12 + 9 = 37 \Rightarrow |\vec{a} + \vec{b}| = \sqrt{37}
+$$
+$$
+|\vec{a} - \vec{b}|^2 = |\vec{a}|^2 - 2\vec{a}\cdot\vec{b} + |\vec{b}|^2 = 16 - 12 + 9 = 13 \Rightarrow |\vec{a} - \vec{b}| = \sqrt{13}
+$$",复数与向量
+105,"建立空间直角坐标系：
+- $E(0, 2, 0)$, $F(0, 0, 0)$, $G(1, 4, 0)$, $D(0, 6, 4)$","(1) $\vec{EF} = \{-2, 0, -2\}$, $\vec{DG} = \{1, -2, -4\}$。
+夹角余弦：
+$$
+\cos\theta = \frac{\vec{EF} \cdot \vec{DG}}{|\vec{EF}| \cdot |\vec{DG}|} = \frac{-2 + 0 + 8}{\sqrt{8} \cdot \sqrt{21}} = \frac{6}{\sqrt{168}} = \frac{6}{2\sqrt{42}} = \frac{3}{\sqrt{42}} = \frac{\sqrt{42}}{14}
+$$
+故 EF 与 DG 所成角为 $\arccos\left(\frac{\sqrt{42}}{14}\right)$。
+
+(2) 平面 $ABC$ 的一个单位法向量为 $\vec{n} = \{0, 0, -1\}$。
+$\vec{EF} = \{-2, 0, -2\}$，投影长度：
+$$
+\text{投影} = |\vec{EF} \cdot \vec{n}| = |0 + 0 + 2| = 2
+$$
+但更准确的是求线面角的正弦值：
+$$
+\sin\theta = \frac{|\vec{EF} \cdot \vec{n}|}{|\vec{EF}|} = \frac{2}{\sqrt{8}} = \frac{\sqrt{2}}{2} \Rightarrow \theta = \frac{\pi}{4}
+$$
+
+(3) 设点 $P(t, 2t+2, 0)$, $Q(s, 2s+2, 0)$，满足 $\vec{FP} \perp \vec{FG}$, $\vec{DQ} \perp \vec{FG}$。
+解得：$t = \frac{8}{5}, s = \frac{4}{5}$，进而得到：
+$$
+\vec{EP} = \left\{3, 4, 2\right\}, \quad \vec{DQ} = \left\{\frac{4}{5}, \frac{8}{5}, -4\right\}
+$$
+夹角余弦：
+$$
+\cos\phi = \frac{\vec{EP} \cdot \vec{DQ}}{|\vec{EP}| \cdot |\vec{DQ}|} = \frac{3 \cdot \frac{4}{5} + 4 \cdot \frac{8}{5} + 2 \cdot (-4)}{\sqrt{29} \cdot \sqrt{\frac{80}{25}}} = \frac{\frac{12 + 32 - 40}{5}}{\sqrt{29} \cdot \frac{4\sqrt{5}}{5}} = \frac{0}{\cdots} = 0
+$$
+即两向量垂直，角度为 $\frac{\pi}{2}$。",复数与向量
+106,"建立空间直角坐标系：
+- $A(0, 0, 0)$, $A_1(0, 0, 1)$, $B(1, 0, 0)$, $C(1, 1, 0)$, $N(0, 1, 0)$, $D_1(0, 1, 1)$","(1) $\vec{AA_1} = \{0, 0, 1\}$, $\vec{BC} = \{0, 1, 0\}$。显然线性无关，不平行。
+
+(2) $\vec{AA_1} = \{0, 0, 1\}$, $\vec{AB} = \{1, 0, 0\}$, $\vec{BC} = \{0, 1, 0\}$。三者共面（因任一向量可表示为其他两个线性组合）。
+
+(3) $\vec{A_1D_1} = \{0, 1, 0\}$, $\vec{A_1B_1} = \{1, 0, 0\}$, $\vec{AC} = \{1, 1, 0\}$。存在非零系数使线性组合为零，说明它们线性相关，共面。",复数与向量
+107,"设 $f(z) = z^5 - 1$，其根为单位根 $\omega^k$, $k=0,1,\dots,4$。若 $f(x) = q(x)(x - \omega) + r(x)$，且 $\deg r < 3$，则：",$r(\omega^k) = f(\omega^k) = 0$ 对所有 $k$ 成立。因此 $r(x) = 0$，即余式恒为常数 5。,复数与向量
+108,设 $f(\omega^k) = 0$，其中 $\omega$ 是五次单位根，则：,"$$
+f(z) = (z - \omega)(z - \omega^2)\cdots(z - \omega^5) = z^5 - 1
+$$
+故 $f(z)$ 可被 $z^5 - 1$ 整除。",复数与向量
+109,设 $P(z) = a_n z^n + \cdots + a_0$，若对任意 $|z| < 1$ 有 $|P(z)| < 1$，则：,"- 根模长均大于 1。
+- 若 $P(z) = (1 - \alpha_1 z)(1 - \alpha_2 z)\cdots(1 - \alpha_n z)$，则 $|\alpha_i| > 1$。
+- 所以 $|a_0| = |\prod \alpha_i| > 1$，矛盾，证毕。",复数与向量
+110,"设三角形 $ABC$ 外接圆为单位圆，对应复数分别为 $a,b,c$，点 $M$ 为中点，则：$$\angle ACM = \angle BCD \Rightarrow \frac{d - c}{a - c} = \frac{b - c}{a - b}$$",$$d = \frac{ab + bc + ca}{a + b + c}$$证毕。,复数与向量
+111,"设 $A,B,C$ 对应复数 $z_1,z_2,z_3$，则：",$S_{\triangle ABC} = \frac{1}{4i} \left| z_1(\bar{z}_2 - \bar{z}_3) + z_2(\bar{z}_3 - \bar{z}_1) + z_3(\bar{z}_1 - \bar{z}_2) \right|$,复数与向量
+112,设 $f(x) = x^m + a_{m-1}x^{m-1} + \cdots + a_0$，若 $|\alpha|$ 是根，则：,$|\alpha| < 1 + \max_{0 \leq k < m} |a_k|$,复数与向量
+113,"如图,以 C 为原点建立复平面,设人ACB一6, CA=1,","| BD       ipHg0)
+DB =   Sean [°       ee
+C
+“HEL amass     6      st
+=CB+U—2p)+i                 (第4题)
+一za人一xp)，i.
+Ti DB = 2 — zp, RU zp = we? 从而
+之B1
+— | | zit ze         a
+Lap CD 171! Per] _ es el ep —2 elim 1| 万
+| AC |-{ BD |  zy — ei eB    | ze |*| zp—-1 |   .
+Bo zpi—1
+注 这题可用纯几何方法做,但需要构造一个适当的角(类似于旋转,并且此题可推广为:设 也是AABC 内一点,使得 ~BDC = ZBAC +a,
+ZCDA =ZCBA +f, ZADB = ZACB +-y,Il](BC » AD) + (CA .BED) :
+(AB + CD) =sina: sing? siny.",复数与向量
+114,"本题的结论对AABC 为一般三角形都成立，
+设 P 为复平面上的原点,并直接用和 表示点X 对应的复数,则存在正实
+Bla, B. yA oA + PB +yC =0,Hatfpt+y=1.","9
+1
+1
+1
+1
+'
+1
+1
+1
+上
+t
+Qa
+__B_  a a          D—E __E-F
+i -~F [=O A ADEF > AABC RIG 5 Roe 于是
+BC, BAB 4 oC aAB BBC yCA
+1—g  -a l-a 1-g 1-7
+化简得
+Of ~ P)BIC—A) + @? — 7 ACC = B) = 0.
+__ MRE! 6",复数与向量
+115,"8. 设圆为单位圆， 4A、B、C 、D对应  的复数分别为娘、 tev ts, te Wo 关于ABCD 的西摩松线方程为","三忆一太太页 F= gli +e + ts + ty tt — Ctste + tite + het —hrtsts], O pE+R+E + 五) totgt, 十 tgtaty 十 tatit, + hitets RA DK, RAM FL +t ++ Qty tetst, ts) 是一对称式,故另三条西摩松线也经过此点,证毕.",复数与向量
+116,因为 F(z)、g(z)对应的复数分别为 zx Zs isin cos E+ isi cos 96 + isin 96、cos ag + isin 48,"所以 并g(z)]所对应的复数为 Tse: v5) ( Rae is) Ry ,， 工 cos + isin cos + isin cos isin 35- ( 48 32 | 96 96 48 32 所以 Ho) AB 4000 区 ,区 1000r ,.. 1000n_ 2 2， (cos 32 rT isin 3) cos 32 rT isin 32 2 2 lL ' 所以 互(z) in 5 zo cor De}",复数与向量

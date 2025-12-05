@@ -1,0 +1,164 @@
+节点详细信息
+节点ID,层级,原始ID,内容长度,子节点,内容
+layer0_node0,0,0,54,,"$(1+5 \mathrm{i}) \mathrm{i}$ 的虚部为
+A．-1
+B． 0
+C． 1
+D． 6"
+layer0_node1,0,1,102,,"设全集 $U=\{x \mid x$ 是小于 9 的正整数 $\}$ ，集合 $A=\{1,3,5\}$ ，则 $\complement_{U} A$ 中元素个数为
+A． 2
+B． 3
+C． 5
+D． 8"
+layer0_node10,0,10,558,,"为研究某乘病与超声波检查结果的关系，从做过超声波检查的人群中随机调查了 1000 人，得到如下列联表：
+\begin{tabular}{|l|l|l|l|}
+\hline \backslashbox{组别}{超声波检查结果} & 正常 & 不正常 & 合计 \\
+\hline 患该疾病 & 20 & 180 & 200 \\
+\hline 未患该疾病 & 780 & 20 & 800 \\
+\hline 合计 & 800 & 200 & 1000 \\
+\hline
+\end{tabular}
+（1）记超声波检查结果不正常者患该疾病的概率为 $P$ ，求 $P$ 的估计值；
+（2）根据小概率值 $\alpha=0.001$ 的独立性检验，分析超声波检查结果是否与患该疾病有关。
+
+附：$\chi^{2}=\frac{n(a d-b c)^{2}}{(a+b)(c+d)(a+c)(b+d)}$ ，
+\begin{tabular}{|c|l|c|c|}
+\hline$P\left(\chi^{2} \geqslant k\right)$ & 0.005 & 0.010 & 0.001 \\
+\hline$k$ & 3.841 & 6.635 & 10.828 \\
+\hline
+\end{tabular}"
+layer0_node11,0,11,206,,"设数列 $\left\{a_{n}\right\}$ 满足 $a_{1}=3, \frac{a_{n+1}}{n}=\frac{a_{n}}{n+1}+\frac{1}{n(n+1)}$ ．
+（1）证明：$\left\{n a_{n}\right\}$ 为等差数列；
+（2）设 $f(x)=a_{1} x+a_{2} x^{2}+\cdots+a_{m} x^{m}$ ，求 $f^{\prime}(-2)$ ．"
+layer0_node12,0,12,126,,"样本数据 $2, 8, 14, 16, 20$ 的平均数为 ( )
+    \begin{multicols}{4}
+        A. 8 \quad B. 9 \quad C. 12 \quad D. 18
+    \end{multicols}"
+layer0_node13,0,13,139,,"已知 $z = 1 + i$，$\frac{1}{z - 1} = ( )$
+    \begin{multicols}{4}
+        A. $-i$ \quad B. $i$ \quad C. $-1$ \quad D. $1$
+    \end{multicols}"
+layer0_node14,0,14,203,,"已知 $A = \{-4, 0, 1, 2, 8\}, B = \{x \mid x^3 = x\}$，则 $A \cap B = ( )$
+    \begin{multicols}{4}
+        A. $\{0, 1, 2\}$ \quad B. $\{1, 2, 8\}$ \quad C. $\{2, 8\}$ \quad D. $\{0, 1\}$
+    \end{multicols}"
+layer0_node15,0,15,198,,"不等式 $\frac{x - 4}{x - 1} \geq 2$ 的解集是 ( )\\
+
+        A. $\{x \mid -2 \leq x \leq 1\}$ \\ 
+        B. $\{x \mid x \leq -2\}$ \\
+        C. $\{x \mid -2 \leq x < 1\}$ \\ 
+        D. $\{x \mid x > 1\}$"
+layer0_node16,0,16,177,,"记 $S_n$ 为等差数列 $\{a_n\}$ 的前 $n$ 项和，若 $S_3 = 6$, $S_5 = -5$，则 $S_6 = ( )$
+    \begin{multicols}{4}
+        A. $-20$ \quad B. $-15$ \quad C. $-10$ \quad D. $-5$
+    \end{multicols}"
+layer0_node17,0,17,306,,"已知 $0 < \alpha < \pi$, $\cos \frac{\alpha}{2} = \frac{\sqrt{5}}{5}$，则 $\sin \left(\alpha - \frac{\pi}{4}\right) = ( )$
+    \begin{multicols}{4}
+        A. $\frac{\sqrt{2}}{10}$ \quad B. $\frac{\sqrt{2}}{5}$ \quad C. $\frac{3\sqrt{2}}{10}$ \quad D. $\frac{7\sqrt{2}}{10}$
+    \end{multicols}
+\end{enumerate}"
+layer0_node18,0,18,237,,"记 $S_n$ 为等比数列 $\{a_n\}$ 的前 $n$ 项和，$q$ 为 $\{a_n\}$ 的公比，$q > 0$。若 $S_3 = 7$, $a_3 = 1$，则 ( )
+    \begin{multicols}{4}
+        A. $q = \frac{1}{2}$ \quad B. $a_5 = \frac{1}{9}$ \quad C. $S_3 = 8$ \quad D. $a_n + S_n = 8$
+    \end{multicols}"
+layer0_node19,0,19,385,,"双曲线 $C: \frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$ ($a > 0$, $b > 0$) 的左、右焦点为 $F_1, F_2$，左、右顶点分别为 $A_1, A_2$，以 $F_1F_2$ 为直径的圆与曲线 $C$ 的一条渐近线交于 $M, N$ 两点，且 $\angle NA_1M = \frac{5\pi}{6}$，则 ( )\\
+
+        A. $\angle A_1MA_2 = \frac{\pi}{6}$ \\
+        B. $|MA_1| = 2|MA_2|$ \\
+        C. $C$ 的离心率为 $\sqrt{13}$ \\
+        D. 当 $a = \sqrt{2}$ 时，四边形 $NA_1MA_2$ 的面积为 $8\sqrt{3}$
+
+\end{enumerate}"
+layer0_node2,0,2,90,,"若双曲线 $C$ 的虚轴长为实轴长的 $\sqrt{7}$ 倍，则 $C$ 的离心率为
+A．$\sqrt{2}$
+B． 2
+C．$\sqrt{7}$
+D． $2 \sqrt{2}$"
+layer0_node20,0,20,123,,"已知平面向量 $\vec{a} = (x, 1), \vec{b} = (x - 1, 2x)$，若 $\vec{a} \perp (\vec{a} - \vec{b})$，则 $|\vec{a}| = $ \rule{2cm}{0.15mm}."
+layer0_node21,0,21,81,,若 $x = 2$ 是函数 $f(x) = (x - 1)(x - 2)(x - a)$ 的极值点，则 $f(0) = $ \rule{2cm}{0.15mm}.
+layer0_node22,0,22,260,,"已知函数 $f(x) = \cos(2x + \varphi)$ ($0 \leq \varphi < \pi$)，$f(0) = \frac{1}{2}$.
+    \begin{enumerate}[label=\arabic*\intertext{.}]
+        1. 求 $\varphi$；\\
+        2. 设函数 $g(x) = f(x) + f\left(x - \frac{\pi}{6}\right)$，求 $g(x)$ 的值域及单调区间。\\
+    \end{enumerate}"
+layer0_node23,0,23,282,,"如图，四边形 $ABCD$ 中，$AB \parallel CD$, $\angle DAB = 90^\circ$，$F$ 为 $CD$ 中点，$E$ 在 $AB$ 上，$EF \parallel AD$，$AB = 3AD$, $CD = 2AD$，将四边形 $EFDA$ 沿 $EF$ 翻折至四边形 $EFD'A'$，使得 $EFD'A'$ 与 $EFCB$ 所成的二面角为 $60^\circ$。\\
+        1. 证明：$A'B \perp CD'F$；\\
+        2. 求 $BCD'$ 与 $EFD'A'$ 所成二面角的正弦值。\\"
+layer0_node24,0,24,104,,"集合 $U=1,2,3,4,5 A=1,3 B=2,3,5$ ，则 $C_{U}(A \cup B)=$
+A．$\{1,2,3,4\}$
+B．$\{2,3,4\}$
+C．$\{2,4\}$
+D．$\{4\}$"
+layer0_node25,0,25,64,,"＂$x=0$＂是＂ $\sin 2 x=0$＂的
+A．充分不必要条件
+B．必要不充分条件
+C．充要条件
+D．既不充分也不必要条件"
+layer0_node26,0,26,238,,"下列说法错误的是
+A．$X \sim N\left(\mu, \sigma^{2}\right)$ ，若 $P(X \leqslant \mu-\sigma)=P(X \geqslant \mu+\sigma)$
+B．$X \sim N\left(1,2^{2}\right), Y \sim N\left(2,2^{2}\right)$ ，则 $P(X<1)<P(Y<2)$
+C．$|r|$ 越接近于 1 ，线性相关程度越强
+D．$|r|$ 越接近于 0 ，线性相关程度越弱"
+layer0_node27,0,27,75,,"$S_{n}=-n^{2}+8 n$ ．则 $\left|a_{n}\right|$ 前 12 项和
+A. 112
+B. 48
+C. 80
+D. 64"
+layer0_node28,0,28,76,,"$f(x)=0.3^{x}-\sqrt{x}$ 的零点在
+A．$(0,0.3)$
+B．$(0.3,0.5)$
+C．$(0.5,1)$
+D．$(1,2)$"
+layer0_node29,0,29,291,,"$f(x)=\sin (\omega x+\varphi)(\omega>0,-\pi<\varphi<\pi)$ ，在 $\left[-\frac{\pi}{12}, \frac{\pi}{12}\right]$ 上单调递增，且 $x=\frac{\pi}{12}$ 为它的一条对称轴， $\left(\frac{\pi}{3}, 0\right)$ 是它的一个对称中心，当 $x \in\left[0, \frac{\pi}{2}\right]$ 时，$f(x)$ 的最小值为
+A．$-\frac{\sqrt{3}}{2}$
+B．$-\frac{1}{2}$
+C． 1
+D． 0"
+layer0_node3,0,3,157,,"若点 $(a, 0)(a>0)$ 是函数 $y=2 \tan \left(x-\frac{\pi}{3}\right)$ 的图象的一个对称中心，则 $a$ 的最小值为
+A．$\frac{\pi}{4}$
+B．$\frac{\pi}{2}$
+C．$\frac{\pi}{3}$
+D．$\frac{4 \pi}{3}$"
+layer0_node4,0,4,174,,"设 $f(x)$ 是定义在 $R$ 上且周期为 2 的偶函数，当 $2 \leqslant x \leqslant 3$ 时，$f(x)=5-2 x$ ，则 $f\left(-\frac{3}{4}\right)=$
+A．$-\frac{1}{2}$
+B．$-\frac{1}{4}$
+C．$\frac{1}{4}$
+D．$\frac{1}{2}$"
+layer0_node5,0,5,137,,"若圆 $x^{2}+(y+2)^{2}=r^{2}(r>0)$ 上到直线 $y=\sqrt{3} x+2$ 的距离为 1 的点有且仅有 2 个，则 $r$ 的取值范围是
+
+A．$(0,1)$
+B．$(1,3)$
+C．$(3,+\infty)$
+D．$(0,+\infty)$"
+layer0_node6,0,6,160,,"在正三棱柱 $A B C-A_{1} B_{1} C_{1}$ 中，$D$ 为 $B C$ 中点，则
+A．$A D \perp A_{1} C$
+B．$B_{1} C \perp$ 平面 $A A_{1} D$
+C．$C C_{1} / /$ 平面 $A A_{1} D$
+D．$A D / / A_{1} B_{1}$"
+layer0_node7,0,7,61,,若直线 $y=2 x+5$ 是曲线 $y=\mathrm{e}^{x}+x+a$ 的切线，则 $a=$ $\qquad$。
+layer0_node8,0,8,51,,若一个等比数列的前 4 项和为 4 ，前 8 项和为 68 ，则该等比数列的公比为 $\qquad$。
+layer0_node9,0,9,84,,一个箱子里有 5 个相同的球，分别以 $1 \sim 5$ 标号，从中有放回地取三次，记至少取出一次的球的个数 $X$ ，则数学期望 $E(X)=$ $\qquad$。
+layer1_cluster0,1,cluster_1_0,52,"layer0_node5, layer0_node8, layer0_node11, layer0_node13, layer0_node15, layer0_node16, layer0_node18, layer0_node25, layer0_node26, layer0_node27","解析几何  
+代数  
+数列  
+复数  
+不等式  
+数列  
+数列  
+逻辑  
+概率统计  
+数列"
+layer1_cluster1,1,cluster_1_1,4,"layer0_node3, layer0_node4, layer0_node7, layer0_node10, layer0_node17, layer0_node19, layer0_node20, layer0_node21, layer0_node22, layer0_node23, layer0_node28, layer0_node29",三角函数
+layer1_cluster2,1,cluster_1_2,41,"layer0_node0, layer0_node1, layer0_node2, layer0_node6, layer0_node9, layer0_node12, layer0_node14, layer0_node24","复数  
+集合  
+解析几何  
+立体几何  
+概率  
+统计  
+集合  
+集合"
+
+层次统计
+层级,节点数,平均内容长度,总内容长度
+0,30,173.3,5199
+1,3,32.3,97

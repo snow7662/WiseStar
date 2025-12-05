@@ -1,0 +1,62 @@
+[
+    {
+        "id": "1999-9",
+        "correct_answer": "259",
+        "answer": "\n$$\n\\boxed{259}\n$$\n",
+        "is_answer_correct": true
+    },
+    {
+        "id": "2024-II-2",
+        "correct_answer": "236",
+        "answer": "\n246\n",
+        "is_answer_correct": false
+    },
+    {
+        "id": "2004-I-6",
+        "correct_answer": "882",
+        "answer": "\n$$\n\\boxed{1260}\n$$\n",
+        "is_answer_correct": false
+    },
+    {
+        "id": "2011-I-11",
+        "correct_answer": "7",
+        "answer": "\n$$\n\\boxed{0}\n$$\n",
+        "is_answer_correct": false
+    },
+    {
+        "id": "2013-I-13",
+        "correct_answer": "961",
+        "answer": "\n1\n",
+        "is_answer_correct": false
+    },
+    {
+        "id": "2012-I-10",
+        "correct_answer": "170",
+        "answer": "\n893\n",
+        "is_answer_correct": false
+    },
+    {
+        "id": "1997-7",
+        "correct_answer": "198",
+        "answer": "\n$$\n\\boxed{198}\n$$\n",
+        "is_answer_correct": true
+    },
+    {
+        "id": "1984-13",
+        "correct_answer": "15",
+        "answer": "\n$\\boxed{15}$\n",
+        "is_answer_correct": true
+    },
+    {
+        "id": "2000-I-6",
+        "correct_answer": "997",
+        "answer": "\n$\\boxed{1999}$\n",
+        "is_answer_correct": false
+    },
+    {
+        "id": "2005-II-3",
+        "correct_answer": "802",
+        "answer": "\n802\n",
+        "is_answer_correct": true
+    }
+]

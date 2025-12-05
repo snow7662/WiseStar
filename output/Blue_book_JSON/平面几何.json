@@ -1,0 +1,1094 @@
+[
+    {
+        "id":1,
+        "question":"设点 $P$ 在 $\\triangle ABC$ 的外接圆上，直线 $CP$ 与 $AB$ 相交于点 $E$，$BP$ 与 $AC$ 相交于点 $F$。过点 $A$ 作 $AB$ 的垂直平分线交 $AC$ 于点 $K$，交 $BF$ 于点 $J$。求证：\n$$\n\\frac{CE^2}{BF^2} = \\frac{AJ + JE}{AK + KF}\n$$",
+        "answer":"连结 $BK$、$CT$。\n由 $A, B, P, C$ 四点共圆，知 $\\angle BPE = \\angle A$，故：\n$$\n\\angle E = \\angle ABP - \\angle A = \\angle ABP - \\angle ABK = \\angle KBF\n$$\n同理可得 $\\angle F = \\angle JCE$，因此：\n$$\n\\triangle AJC \\sim \\triangle KBF\n\\Rightarrow \\frac{CE}{BF} = \\frac{JE}{KF}\n\\Rightarrow \\frac{CE^2}{BF^2} = \\frac{JE^2}{KF^2}\n$$\n结合比例关系即得结论。",
+        "type":"平面几何"
+    },
+    {
+        "id":2,
+        "question":"设 $\\triangle PQR$ 与 $\\triangle P'Q'R'$ 是两个全等的等边三角形，六边形 $ABCDEF$ 边长依次为：\n$$\nAB = a_1,\\ BC = b_1,\\ CD = a_2,\\ DE = b_2,\\ EF = a_3,\\ FA = b_3\n$$\n求证：\n$$\na_1^2 + a_2^2 + a_3^2 = b_1^2 + b_2^2 + b_3^2\n$$",
+        "answer":"由于各三角形均为等边且角度相等，可证六个小三角形面积分别为 $S_1, S_2, \\dots, S_6$，且满足：\n$$\nS_1 + S_2 + S_3 = S_4 + S_5 + S_6\n$$\n令每组面积之和为 $S$，则有：\n$$\na_1^2 + a_2^2 + a_3^2 = b_1^2 + b_2^2 + b_3^2\n$$",
+        "type":"平面几何"
+    },
+    {
+        "id":3,
+        "question":"设圆 $O$ 和圆 $O'$ 外切于点 $S$，弦 $AB$ 是圆 $O$ 的直径，$M$ 是圆 $O'$ 上一点，过 $M$ 作 $MN \\perp AB$，垂足为 $N$，$r$ 为圆 $O$ 半径。求证：\n$$\nAC \\cdot CB = 2r \\cdot MN\n$$",
+        "answer":"**证明**：作圆 $O$ 的直径 $CD$，因 $S$ 是两圆位似中心，$C, M$ 为对应点，故 $S, C, M$ 共线。\n由相交弦定理得：\n$$\nAC \\cdot CB = SC \\cdot CM\n$$\n又 $\\triangle SCD \\sim \\triangle NMC$，所以：\n$$\nSC \\cdot CM = CD \\cdot MN = 2r \\cdot MN\n$$\n命题得证。",
+        "type":"平面几何"
+    },
+    {
+        "id":4,
+        "question":"设凸四边形 $ABCD$ 满足 $AB = BC$，$AD = DC$。点 $E$ 在 $AB$ 上，点 $F$ 在 $AD$ 上，且 $B, E, F, D$ 四点共圆。作 $\\triangle APE$ 顺向相似于 $\\triangle ADC$，作 $\\triangle AQF$ 顺向相似于 $\\triangle ABC$。求证：$A, P, Q$ 三点共线。",
+        "answer":"利用相似三角形性质及角度关系推导出 $\\angle BAO = \\angle DAP = \\angle DAQ$，从而得出 $A, P, Q$ 共线。",
+        "type":"平面几何"
+    },
+    {
+        "id":5,
+        "question":"设 $ABCD$ 为凸四边形，其对角线交于点 $O$，$\\odot OAB$ 与 $\\odot OCD$ 交于 $O, M$ 两点，直线 $OM$ 分别交 $\\odot OAB$、$\\odot OCD$ 于点 $T, S$。求证：$M$ 是线段 $TS$ 的中点。",
+        "answer":"连结 $BT, CS, MA, MB, MC, MD$。\n由 $\\angle BTO = \\angle BAO$，$\\angle BCO = \\angle BMO$，得：\n$$\n\\triangle BIM \\sim \\triangle BAC \\Rightarrow \\frac{IM}{AC} = \\frac{BM}{BC}\n$$\n同理 $\\triangle CMS \\sim \\triangle CBD$，得：\n$$\n\\frac{MS}{BD} = \\frac{CM}{BC}\n$$\n结合 $\\triangle MBD \\sim \\triangle MCA$ 得：\n$$\n\\frac{BM}{CM} = \\frac{BD}{AC}\n\\Rightarrow \\frac{IM}{MS} = \\frac{BM}{CM} \\cdot \\frac{AC}{BD} = 1\n$$\n故 $M$ 是 $TS$ 中点。",
+        "type":"平面几何"
+    },
+    {
+        "id":6,
+        "question":"已知：点 $D$ 在 $\\triangle ABC$ 的边 $BC$ 上，以线段 $BD$ 为直径的圆分别交直线 $AB$、$AD$ 于点 $X$、$P$（异于点 $B$、$D$），以线段 $CD$ 为直径的圆分别交直线 $AC$、$AD$ 于点 $Y$、$Q$（异于点 $C$、$D$）。过点 $A$ 作直线 $PX$、$QY$ 的垂线，垂足分别为 $M$、$N$。求证：$\\triangle AMN \\sim \\triangle ABC$ 的充分必要条件是直线 $AD$ 过 $\\triangle ABC$ 的外心。",
+        "answer":"由已知有 $B, P, D, X$ 及 $C, Y, Q, D$ 分别四点共圆。\n故：\n$$\n\\angle AXM = \\angle BXP = \\angle BDP = \\angle QDC = \\angle AYN\n$$\n所以：\n$$\n\\text{Rt}\\triangle AMX \\sim \\text{Rt}\\triangle ANY\n$$\n从而：\n$$\n\\frac{AM}{AN} = \\frac{AX}{AY}\n\\quad \\Rightarrow \\quad \\angle MAX = \\angle NAY\n$$\n于是：\n$$\n\\angle MAN = \\angle XAY\n\\quad \\Rightarrow \\quad \\triangle AMN \\sim \\triangle AXY\n$$\n又因：\n$$\n\\triangle AXY \\sim \\triangle ABC \\iff XY \\parallel BC \\iff \\angle DXY = \\angle XDB\n$$\n而：\n$$\n\\angle DXY = \\angle DAY = 90^\\circ - \\angle ABC\n\\quad \\Rightarrow \\quad AD \\text{ 过 } \\triangle ABC \\text{ 的外心}\n$$",
+        "type":"平面几何"
+    },
+    {
+        "id":7,
+        "question":"已知：在 $\\triangle ABC$ 中，$O$ 是三角形内一点满足：\n$$\n\\angle BAO = \\angle CAO = \\angle CBO = \\angle ACO\n$$\n求证：$\\triangle ABC$ 三边长成等比数列。",
+        "answer":"如图，过 $O$ 作 $OE \\perp AB$，$OF \\perp AC$，设 $\\angle BAO = \\angle CAO = \\alpha$，$\\angle CBO = \\angle ACO = \\beta$。\n则：\n- $\\angle OAC = \\angle OCA = \\alpha \\Rightarrow AO = OC$\n- $\\angle OBC = \\angle OCB = \\beta \\Rightarrow BO = CO$\n\n进一步可得：\n$$\n\\frac{AC}{OC} = \\frac{AO}{OE}, \\quad \\frac{AB}{AE} = \\frac{BC}{CD}\n\\quad \\Rightarrow \\quad \\frac{AC \\cdot AB}{AO \\cdot BC} = 1\n$$\n结合 $AO = OC$，$AE = OE$，得：\n$$\nBC^2 = AC \\cdot AB\n\\quad \\Rightarrow \\quad \\text{三边成等比数列}\n$$",
+        "type":"平面几何"
+    },
+    {
+        "id":8,
+        "question":"设 $P$ 是 $\\triangle ABC$ 外接圆弧 $BAC$ 上的一个动点，在射线 $BP$、$CP$ 上分别取定点 $U$ 和 $V$，使得：\n$$\nBU = yBA,\\quad CV = yCA\n$$\n再在射线 $UV$ 上取点 $Q$，使得 $UQ = UV$。\n求点 $Q$ 的轨迹。",
+        "answer":"延长 $BC$ 至点 $D$，使 $BD = yBC$。连结 $AD$、$DQ$。\n由条件知：\n$$\n\\triangle ACV \\sim \\triangle ABU \\Rightarrow \\frac{AV}{AU} = \\frac{AC}{AB},\\quad \\angle UAV = \\angle BAC\n\\Rightarrow \\triangle AUV \\sim \\triangle ABC\n$$\n且 $UQ = UV$，故 $Q$ 在以 $A$ 为圆心、半径为 $yAD$ 的圆上。\n当 $P$ 移动至弧端点时，$Q$ 的轨迹为该圆的一段弧。",
+        "type":"平面几何"
+    },
+    {
+        "id":9,
+        "question":"设 $\\triangle ABC$ 内部有四个半径相等的圆 $K_1, K_2, K_3, K_4$，其中：\n- $K_1, K_2, K_3$ 均与两边相切；\n- $K_4$ 外切于前三者。\n\n求证：$K_1, K_2, K_3$ 的圆心共线。",
+        "answer":"设内心为 $I$，外心为 $D$。由于各圆半径相同，且分别切于不同边，则：\n$$\nK_1K_2 \\parallel AB,\\quad K_2K_3 \\parallel BC,\\quad K_3K_1 \\parallel AC\n\\Rightarrow \\triangle K_1K_2K_3 \\sim \\triangle ABC\n$$\n且对应边比例一致，说明它们位似中心为 $I$，故三点共线。",
+        "type":"平面几何"
+    },
+    {
+        "id":10,
+        "question":"求证：$OI^2 = R^2 - 2Rr$，其中 $R$、$r$ 分别为 $\\triangle ABC$ 的外接圆和内切圆半径。",
+        "answer":"延长 $AI$ 交 $BC$ 于 $D$，作 $IF \\perp AB$，$IE \\perp AC$。\n利用相似关系：\n$$\n\\triangle EDC \\sim \\triangle AIF \\Rightarrow ED \\cdot IF = AI \\cdot DI\n\\Rightarrow 2Rr = AI \\cdot DI = R^2 - OI^2\n\\Rightarrow OI^2 = R^2 - 2Rr\n$$",
+        "type":"平面几何"
+    },
+    {
+        "id":11,
+        "question":"设四边形 $ABCD$ 内切圆圆心为 $O$，$AC$ 中点为 $M$，$BD$ 中点为 $N$。求证：$O$ 在直线 $MN$ 上。",
+        "answer":"作 $XY \\perp OF$，交 $AB$ 于 $X$，交 $CD$ 于 $Y$。\n由角度关系得：\n$$\n\\angle AOD = \\angle AXY = \\angle DYX = 90^\\circ + \\frac{1}{2}\\angle AED\n\\Rightarrow \\triangle AOD \\sim \\triangle AXO \\sim \\triangle DOY\n\\Rightarrow \\frac{OX}{OY} = \\frac{AX}{DY}\n$$\n同理 $\\frac{BX}{CY} = \\frac{OX}{OY}$，故：\n$$\n\\frac{AX}{XB} = \\frac{CY}{YD} \\Rightarrow MN \\text{ 过 } O\n$$",
+        "type":"平面几何"
+    },
+    {
+        "id":12,
+        "question":"设四边形 $ABCD$ 中，$AB$ 延长线与 $DC$ 相交于 $E$，$AD$ 延长线与 $BC$ 相交于 $F$，$AC$ 中点为 $M$，$BD$ 中点为 $N$。求证：$MN$ 经过 $EF$ 中点。",
+        "answer":"延长 $MN$ 交 $EF$ 于 $P$，取 $EC$ 中点 $Q$，则：\n$$\n\\frac{MP}{EF} = \\frac{MQ}{ED} = \\frac{AC}{2ED}\n\\Rightarrow MP : EF = AC : BD\n\\Rightarrow P \\text{ 为 } EF \\text{ 中点}\n$$",
+        "type":"平面几何"
+    },
+    {
+        "id":13,
+        "question":"在圆内接四边形 $ABCD$ 中，$F$、$G$ 分别为 $AC$、$BD$ 的中点。若 $\\angle B$ 与 $CD$ 平分线交点在 $AC$ 上，则：\n$$\nAC + BD = \\sqrt{AG^2 + BF^2 + OG^2 + DF^2}\n$$\n逆命题是否成立？",
+        "answer":"不成立",
+        "type":"平面几何"
+    },
+    {
+        "id":14,
+        "question":"设 $D$ 为 $BC$ 中点，$\\triangle ABD$、$\\triangle ACD$ 的外心分别为 $E$、$F$，直线 $BE$、$CF$ 交于 $G$，已知 $BC = 2DG = 2008$，$EF = 1255$，求 $\\triangle AEF$ 的面积。",
+        "answer":"$\\boxed{1255}$",
+        "type":"平面几何"
+    },
+    {
+        "id":15,
+        "question":"如图2-8，$A_1, B_1, C_1$ 分别是 $\\triangle ABC$ 的边 $BC, CA, AB$ 上的任意一点，$G_A, G_B, G_C$ 分别为 $\\triangle AB_1C_1, \\triangle BC_1A_1, \\triangle CA_1B_1$ 的重心。求证：直线 $AG_A, BG_B, CG_C$ 三线共点。",
+        "answer":"由角元塞瓦定理知，$AG_A, BG_B, CG_C$ 三线共点的充要条件为：\n$$\n\\frac{\\sin \\angle G_AAC}{\\sin \\angle G_ABC} \\cdot \\frac{\\sin \\angle G_CBC}{\\sin \\angle G_CBA} \\cdot \\frac{\\sin \\angle G_BAB}{\\sin \\angle G_BAC} = 1.\n$$\n\n注意到 $G_A$ 是 $\\triangle AB_1C_1$ 的重心，因此有：\n$$\nS_{\\triangle AB_1G_A} = S_{\\triangle AC_1G_A},\n$$\n即：\n$$\n\\frac{1}{2} AB_1 \\cdot AG_A \\cdot \\sin \\angle B_1AG_A = \\frac{1}{2} AC_1 \\cdot AG_A \\cdot \\sin \\angle C_1AG_A,\n$$\n从而可得：\n$$\n\\frac{\\sin \\angle B_1AG_A}{\\sin \\angle C_1AG_A} = \\frac{AC_1}{AB_1}.\n$$\n\n同理可得：\n$$\n\\frac{\\sin \\angle C_1BG_B}{\\sin \\angle A_1BG_B} = \\frac{BA_1}{BC_1}, \\quad\n\\frac{\\sin \\angle A_1CG_C}{\\sin \\angle B_1CG_C} = \\frac{CB_1}{CA_1}.\n$$\n\n代入原式得：\n$$\n\\frac{AB_1}{AC_1} \\cdot \\frac{BC_1}{BA_1} \\cdot \\frac{CA_1}{CB_1} = 1,\n$$\n这正是塞瓦定理的形式，等价于 $AA_1, BB_1, CC_1$ 三线共点。\n\n此题完美结合了塞瓦定理的边元形式与角元形式，使用自然且清晰。",
+        "type":"平面几何"
+    },
+    {
+        "id":16,
+        "question":"如图2-9，$P$ 是 $\\triangle ABC$ 内一点，满足：\n$$\n\\angle PAB = 10^\\circ,\\quad \\angle PBA = 20^\\circ,\\quad \\angle PCA = 30^\\circ,\\quad \\angle PAC = 40^\\circ.\n$$\n求证：$\\triangle ABC$ 是等腰三角形。",
+        "answer":"设 $\\angle ACB = x$，则：\n$$\n\\angle PCB = x - 30^\\circ.\n$$\n\n在 $\\triangle APB$ 和 $\\triangle APC$ 中应用角元塞瓦定理：\n$$\n\\frac{\\sin \\angle APB}{\\sin \\angle BPC} \\cdot \\frac{\\sin \\angle PCB}{\\sin \\angle CAB} \\cdot \\frac{\\sin \\angle BAP}{\\sin \\angle PCA} = 1.\n$$\n\n代入数值：\n$$\n\\frac{\\sin 150^\\circ}{\\sin (x - 30^\\circ)} \\cdot \\frac{\\sin 50^\\circ}{\\sin x} \\cdot \\frac{\\sin 10^\\circ}{\\sin 30^\\circ} = 1.\n$$\n\n利用 $\\sin 150^\\circ = \\frac{1}{2}$，化简得：\n$$\n\\frac{\\sin (x - 30^\\circ)}{\\sin x} = \\frac{\\sin 10^\\circ}{\\sin 50^\\circ}.\n$$\n\n进一步推导可得：\n$$\n\\cot x = \\cot 50^\\circ \\Rightarrow x = 50^\\circ.\n$$\n\n又因为 $\\angle BAC = 10^\\circ + 40^\\circ = 50^\\circ = x = \\angle ACB$，所以 $\\triangle ABC$ 是等腰三角形。",
+        "type":"平面几何"
+    },
+    {
+        "id":17,
+        "question":"如图2-10，在四边形 $ABCD$ 中，已知：\n$$\n\\angle CAB = 30^\\circ,\\quad \\angle ABD = 26^\\circ,\\quad \\angle ACD = 13^\\circ,\\quad \\angle DBC = 51^\\circ.\n$$\n求 $\\angle ADB = x$ 的度数。",
+        "answer":"对 $\\triangle ABC$ 和点 $D$ 应用角元塞瓦定理：\n$$\n\\frac{\\sin \\angle DCA}{\\sin \\angle CBA} \\cdot \\frac{\\sin \\angle ABD}{\\sin \\angle ADC} = 1.\n$$\n\n代入数据：\n$$\n\\frac{\\sin 13^\\circ}{\\sin 77^\\circ} \\cdot \\frac{\\sin 26^\\circ}{\\sin (x + 43^\\circ)} = 1.\n$$\n\n整理得：\n$$\n\\sin(x + 43^\\circ) = \\frac{\\sin 13^\\circ \\cdot \\sin 77^\\circ}{\\sin 26^\\circ}.\n$$\n\n计算后得 $x = 107^\\circ$。",
+        "type":"平面几何"
+    },
+    {
+        "id":18,
+        "question":"若 $P$ 为 $\\triangle ABC$ 的外心 $O$，则有如下向量恒等式：\n$$\n\\sin 2A \\cdot \\vec{OA} + \\sin 2B \\cdot \\vec{OB} + \\sin 2C \\cdot \\vec{OC} = \\vec{0}.\n$$",
+        "answer":"### 证明概要：\n设 $AO$ 交 $BC$ 于 $D$，交外接圆于 $A'$，连接 $CO$ 交 $AB$ 于 $F$。\n利用共边定理及正弦定理可得：\n$$\n\\frac{BD}{DC} = \\frac{\\sin 2C}{\\sin 2B},\\quad \\frac{AF}{FB} = \\frac{\\sin 2B}{\\sin 2A}.\n$$\n\n再结合梅涅劳斯定理和向量加法，最终推出：\n$$\n\\frac{\\sin 2A}{\\sin 2B + \\sin 2C} \\cdot \\vec{OD} = \\vec{OP},\n$$\n并由此推导出原式成立。",
+        "type":"平面几何"
+    },
+    {
+        "id":19,
+        "question":"设 $O, I$ 分别为 $\\triangle ABC$ 的外心和内心，$P$ 是平面上任意一点，从 $P$ 向三边作垂线，垂足分别为 $D, E, F$，其中线段方向规定如下：\n- $AB$ 上：正方向 $A \\to B$\n- $BC$ 上：正方向 $B \\to C$\n- $CA$ 上：正方向 $C \\to A$\n\n则当且仅当 $P$ 在直线 $OI$ 上时，以下等式成立：\n$$\nAF + BD + CE = FB + DC + EA.\n$$",
+        "answer":"此即为 $P$ 点轨迹：直线 $OI$。",
+        "type":"平面几何"
+    },
+    {
+        "id":20,
+        "question":"设两条平行线距离为 $a$，正方形 $ABCD$ 边长也为 $a$，放置在两平行线之间，使其两边分别与两线相交于 $E, F$。设 $\\triangle AEF$ 和 $\\triangle CGH$ 的周长分别为 $m_1, m_2$。\n\n则无论怎样放置正方形，总有：\n$$\nm_1 + m_2 = 2a.\n$$",
+        "answer":"- $O$ 是两个三角形的旁心；\n- 两个旁切圆同心；\n- 设切点 $P, Q, M, N$，易证 $PQ = MN = a$；\n- 利用旁心性质 $AP = AM$, $CQ = CN$，得：\n$$\nm_1 + m_2 = 2(AP + CQ) = 2(MN) = 2a.\n$$",
+        "type":"平面几何"
+    },
+    {
+        "id":21,
+        "question":"设 $O$ 为锐角 $\\triangle ABC$ 的外心，以三边中点 $A', B', C'$ 为圆心作过 $O$ 的圆，两两异于 $O$ 的交点为 $K, L, M$。则点 $O$ 是 $\\triangle KLM$ 的外心。",
+        "answer":"### 证明要点：\n- $B'C'$ 垂直平分 $OK$，交点为 $K'$；\n- 类似定义 $L', M'$；\n- 易证 $\\triangle A'B'C'$ 与 $\\triangle K'L'M'$ 相似，位似中心为 $O$；\n- 又因 $O$ 是 $\\triangle A'B'C'$ 的垂心，故也是 $\\triangle KLM$ 的外心。",
+        "type":"平面几何"
+    },
+    {
+        "id":22,
+        "question":"设 $AD$ 是 $\\triangle ABC$ 的高，$P$ 在 $AD$ 上，作 $PE \\perp AC$，$PF \\perp AB$，设 $O_1, O_2$ 分别为 $\\triangle ABF, \\triangle ACE$ 的外心。求证：$O_1O_2$ 过 $P$，且 $P$ 是 $\\triangle ABC$ 的垂心。",
+        "answer":"### 核心步骤：\n- $O_1$ 为 $BP$ 中点，$O_2$ 为 $CP$ 中点；\n- 若 $O_1, O_2, E, F$ 四点共圆，则 $P$ 必为垂心；\n- 通过角度关系（如 $\\angle O_1O_2E + \\angle O_2FE = 180^\\circ$）验证共圆；\n- 结合对称性与角度转换完成充分必要性证明。",
+        "type":"平面几何"
+    },
+    {
+        "id":23,
+        "question":"设 $A$ 在 $\\triangle ABC$ 外接圆上的切线上，以 $A$ 为圆心、$AC$ 为半径作圆交 $AB$ 于 $D$，交切线于 $F$。求证：$DE$ 过内心，$DF$ 过一个旁心。",
+        "answer":"### 证明要点：\n- $AD = AC$ ⇒ $\\angle DAC = \\angle DCA$；\n- $D, E, C$ 共圆 ⇒ $\\angle IAC = \\angle IEC$；\n- 推出 $A, I, C, E$ 四点共圆 ⇒ $I$ 为内心；\n- 对 $DF$：延长交外角平分线于 $I_1$，证其为旁心。",
+        "type":"平面几何"
+    },
+    {
+        "id":24,
+        "question":"设 $AA_1, BB_1$ 为角平分线，$I, O$ 分别为内心、外心，连 $IO$ 分别交 $AC, BC$ 于 $P, Q$。\n\n求证：\n1. $\\angle C = 60^\\circ$；\n2. $PQ = AP + BQ$。",
+        "answer":"- $A, I, B, C$ 四点共圆 ⇒ $\\angle AIB = 120^\\circ$；\n- 得 $\\angle C = 60^\\circ$；\n- 计算 $\\angle PAH = \\angle PHA = 30^\\circ$ ⇒ $AP = PH$；\n- 同理 $BQ = QH$ ⇒ $PQ = AP + BQ$。",
+        "type":"平面几何"
+    },
+    {
+        "id":25,
+        "question":"设 $\\triangle DEF$ 是 $\\triangle ABC$ 的内切圆切点三角形，$G$ 为其重心，$R, r$ 分别为外接圆与内切圆半径。\n\n求证：\n$$\n\\frac{OG}{r} = \\frac{R}{r} - 1.\n$$",
+        "answer":"### 关键结论：\n- $G$ 是 $\\triangle DEF$ 的重心，$\\triangle A'B'C'$ 与 $\\triangle ABC$ 相似；\n- $OT$ 连线与 $BC$ 成相同角 ⇒ $O, T, H$ 共线；\n- 由欧拉公式 $OM = \\frac{2}{3} R$，得结果。",
+        "type":"平面几何"
+    },
+    {
+        "id":26,
+        "question":"设 $BC > AC > AB$，点 $E$ 在 $AC$ 上，点 $D$ 在 $BC$ 上，满足 $AE = BD$，且 $CD + CE = AB$，$BE$ 交 $AD$ 于 $K$。\n\n求证：$KH = 2IO$，其中 $I, O$ 为内心、外心，$G$ 为重心。",
+        "answer":"### 解法要点：\n- 设 $M, N$ 为 $BC, AC$ 中点；\n- 利用比例关系得 $KG = 2IG$；\n- 结合位似变换（$AM \\parallel BL$）得出 $K, G, I$ 共线且 $KG = 2IG$。",
+        "type":"平面几何"
+    },
+    {
+        "id":27,
+        "question":"设 $I$ 为 $\\triangle ABC$ 内心，$D$ 为 $BC$ 中点，$AD$ 交外接圆于 $T$，延长 $PI$ 交圆于 $S$，求证：$MP \\cdot MT = NP \\cdot NT$。",
+        "answer":"- 构造等腰梯形 $PCMN$；\n- 由内心性质推出 $IM = CM$, $IN = BN$；\n- 得平行四边形 $MINP$，从而 $IT$ 平分 $MN$；\n- 使用面积法或正弦定理完成比例推导。",
+        "type":"平面几何"
+    },
+    {
+        "id":28,
+        "question":"设 $\\angle ACB = \\alpha$（固定），点 $C$ 在圆弧上移动，$E, F$ 分别为 $AC, BC$ 上满足特定角度条件的点，$ED, EF$ 分别交 $AT, BT$ 于 $M, N$。",
+        "answer":"线段 $MN$ 长度恒定，且 $\\triangle AMN$ 的外接圆过定点 $O$（即 $AB$ 为直径的圆心）。公式表达：$$ MN = AB \\cdot \\sin \\alpha \\quad (\\text{常数}) \\\\ \\angle MON = 2\\angle MAN = 2\\angle MBN $$",
+        "type":"平面几何"
+    },
+    {
+        "id":29,
+        "question":"设 $AE > EC$，延长 $AE$ 至 $F$ 使 $\\angle EAC = \\angle CAF$，连 $BF$ 交圆于 $G$，$ED$ 交 $CF$ 于 $H$，$O$ 为 $\\triangle DEF$ 的外心。证明 $A, C, O$ 三点共线。",
+        "answer":"设 $\\odot(AEF)$ 交 $AC$ 延长线于 $O'$，则 $O'$ 在 $\\angle EAF$ 的平分线上；利用角度计算得 $\\angle EDB = \\frac{1}{2}\\angle EOF$；进一步推出 $OD = OE = OF$，故 $O$ 与 $O'$ 重合 ⇒ $A, C, O$ 共线。",
+        "type":"平面几何"
+    },
+    {
+        "id":30,
+        "question":"在 $\\triangle ABC$ 中，$AB > BC$，外接圆上点 $A$ 处的切线交直线 $AC$ 于点 $P$，点 $D$ 是点 $A$ 关于点 $P$ 的对称点，点 $E$ 是点 $C$ 关于直线 $BP$ 的对称点。求证：四边形 $ABED$ 是圆内接四边形。",
+        "answer":"利用切割线定理得 $\\frac{PA}{PD} = \\frac{PD}{PC}$，结合角度关系可得 $\\angle BAD + \\angle BED = 180^\\circ$，故四点共圆。",
+        "type":"平面几何"
+    },
+    {
+        "id":31,
+        "question":"圆 $\\omega$ 与 $\\triangle ABC$ 的外接圆相切于点 $A$，直线 $AB$ 交 $\\omega$ 于点 $K$，$BC$ 交 $\\omega$ 于点 $L$。过点 $C$ 作圆 $\\omega$ 的切线交 $AB$ 于点 $T$。求证：线段 $BT$ 的长度等于点 $B$ 到圆 $\\omega$ 的切线长。",
+        "answer":"构造公切线 $DE$，利用相似三角形及圆幂关系推导出 $BT^2 = BK \\cdot BA$。",
+        "type":"平面几何"
+    },
+    {
+        "id":32,
+        "question":"圆内接四边形 $ABCD$ 中，$AD = AB$。求证：$AB^2 + BC \\cdot CD = AC^2$。",
+        "answer":"将 $\\triangle ACD$ 绕点 $A$ 旋转使 $AD$ 与 $AB$ 重合，利用圆幂定理得 $AC^2 - AB^2 = BE \\cdot BC$，从而得出结论。",
+        "type":"平面几何"
+    },
+    {
+        "id":33,
+        "question":"设 $\\odot O_1$ 与 $\\odot O_2$ 相交于点 $C, D$，过点 $C$ 的一条直线分别交 $\\odot O_1$、$\\odot O_2$ 于点 $A, B$。点 $P$ 在 $\\odot O_1$ 的弧 $AD$ 上，$PD$ 与 $AC$ 延长线交于点 $M$；点 $Q$ 在 $\\odot O_2$ 的弧 $BD$ 上，$QD$ 与 $BC$ 延长线交于点 $N$。若 $O$ 是 $\\triangle ABC$ 的外心，求证：$OD \\perp MN$ 的充要条件是 $P, Q, M, N$ 四点共圆。",
+        "answer":"通过圆幂表达式比较 $MO^2 - R^2$ 与 $NO^2 - R^2$，最终转化为 $P, Q, M, N$ 共圆的条件。",
+        "type":"平面几何"
+    },
+    {
+        "id":34,
+        "question":"从半圆上的点 $C$ 向直径 $AB$ 引垂线，垂足为 $D$。作圆 $O$ 分别切 $BC, CD, DB$ 于点 $E, F, G$。求证：$AC = AG$。",
+        "answer":"利用几何对称性和圆幂关系，结合角度相等推出 $AC$ 是 $\\triangle CEF$ 外接圆的切线，进而得到 $AC^2 = AE \\cdot AG$，从而 $AC = AG$。",
+        "type":"平面几何"
+    },
+    {
+        "id":35,
+        "question":"设 $D, E$ 分别在 $\\triangle ABC$ 的边 $AB, AC$ 上。求证：以 $BD, CE$ 为直径的两圆的根轴必过 $\\triangle ABC$ 的重心。",
+        "answer":"利用圆幂定义计算两点对两圆的幂，发现其差值恒为零，说明重心在根轴上。",
+        "type":"平面几何"
+    },
+    {
+        "id":36,
+        "question":"两个半径不等的圆 $O_1, O_2$ 相交于 $M, N$，且分别与圆 $O$ 内切于点 $S, T$。求证：$OM \\perp MN$ 的充要条件是 $S, N, T$ 三点共线。",
+        "answer":"使用根轴定理和切线性质，结合角度关系推出五点共圆，进而转化条件。",
+        "type":"平面几何"
+    },
+    {
+        "id":37,
+        "question":"设 $O, I$ 分别为 $\\triangle ABC$ 的外心和内心，内切圆与边 $BC, CA, AB$ 分别切于点 $D, E, F$。直线 $FD$ 与 $CA$ 交于点 $P$，直线 $DE$ 与 $AB$ 交于点 $Q$。设 $M, N$ 分别为 $PE, QF$ 的中点。求证：$OI \\perp MN$。",
+        "answer":"应用梅涅劳斯定理和圆幂关系，得出点 $M, N$ 到外接圆和内切圆的幂相等，因此它们位于同一条根轴上，从而 $OI \\perp MN$。",
+        "type":"平面几何"
+    },
+    {
+        "id":38,
+        "question":"以 $\\odot O$ 为圆心的圆过 $\\triangle ABC$ 的顶点 $A, C$，并与边 $AB, BC$ 分别交于点 $K, N$。$\\triangle ABC$ 和 $\\triangle BKN$ 的外接圆交于点 $B, M$。求证：$OM \\perp AB$。",
+        "answer":"设三圆根轴交于点 $P$，利用圆幂关系得出 $BM \\cdot BP = BN \\cdot BC$，进一步推出 $\\angle BMO = 90^\\circ$。",
+        "type":"平面几何"
+    },
+    {
+        "id":39,
+        "question":"设 $\\odot O_1, \\odot O_2$ 相离，引一条外公切线切 $\\odot O_1$ 于 $A$，切 $\\odot O_2$ 于 $B$；再引一条内公切线切 $\\odot O_1$ 于 $C$，切 $\\odot O_2$ 于 $D$。求证：直线 $AB$ 和 $CD$ 的交点在两圆的连心线上。",
+        "answer":"设交点为 $P$，利用圆幂关系说明 $P$ 在两圆的根轴上，而连心线也是根轴，故交点在此线上。",
+        "type":"平面几何"
+    },
+    {
+        "id":40,
+        "question":"已知六边形 $AC_1BA_2CB_1$ 中，满足：\n$$\nAC_1 = AB,\\quad BC_1 = BA_1,\\quad CA_1 = CB_1,\\quad \\angle A + \\angle B + \\angle C = \\angle A_1 + \\angle B_1 + \\angle C_1.\n$$\n求证：$\\triangle ABC$ 的面积是六边形 $AC_1BA_2CB_1$ 面积的一半。",
+        "answer":"如图6-1，将 $\\triangle ABC$ 绕点 $A$ 旋转至 $\\triangle A_1BC_1$，则：\n$$\n\\angle AC_1B + \\angle BA_1C + \\angle CB_1A = 360^\\circ,\n$$\n又因 $\\angle AC_1B + \\angle BA_1C + \\angle AC_1A_1 = 360^\\circ$，故 $\\angle AC_1B = \\angle AC_1A_1$。\n由 $AC_1 = AB$，$CA_1 = CB_1$，得 $\\triangle AC_1A_1 \\cong \\triangle AB_1C$，\n从而 $\\triangle ABC$ 与 $\\triangle A_1BC_1$ 全等，面积相等。\n因此：\n$$\nS_{\\triangle ABC} = \\frac{1}{2} S_{\\text{六边形}}.\n$$",
+        "type":"平面几何"
+    },
+    {
+        "id":41,
+        "question":"设 $P$ 是平行四边形 $ABCD$ 内一点，且 $\\angle PAB = \\angle PCB$。求证：$\\angle PBA = \\angle PDA$。",
+        "answer":"将 $\\triangle ABP$ 平移至 $\\triangle DCP'$，则四边形 $APP'D$ 和 $BPP'C$ 均为平行四边形。\n由 $\\angle PAB = \\angle PCB$ 得 $\\angle 1 = \\angle 2$，进而 $\\angle 3 = \\angle 4$，所以四边形 $PDP'C$ 内接于圆，\n从而 $\\angle PBA = \\angle PDA$。",
+        "type":"平面几何"
+    },
+    {
+        "id":42,
+        "question":"设 $\\triangle DEF$ 的三个顶点分别在 $\\triangle ABC$ 的三边上，称为内接三角形。求证：在锐角三角形的所有内接三角形中，垂足三角形的周长最短。",
+        "answer":"连续作关于各边的反射变换，最终得到折线路径 $EE'$，其长度等于 $2(DE + EF + FD)$。当 $\\triangle DEF$ 为垂足三角形时，折线上六点共线，取最小值，即：\n$$\n\\min(\\text{周长}) = 2 \\times (\\text{垂足三角形周长}).\n$$",
+        "type":"平面几何"
+    },
+    {
+        "id":43,
+        "question":"已知点 $A, B, C$ 在平面上，构造正定向等边三角形 $ABD$, $ABE$, $ACF$, $ADG$, $AEH$, $AGI$。求证：点 $I$ 是线段 $AI$ 的中点。",
+        "answer":"绕点 $A$ 顺时针旋转 $60^\\circ$ 将 $\\triangle ADF$ 映射为 $\\triangle CGF$，同理将 $\\triangle AHG$ 映射为 $\\triangle FEL$。由旋转性质及角度关系得 $AE = AD = CG = ET$，且夹角均为 $120^\\circ$，故 $A, E, L, T$ 共线，从而 $I$ 是 $AT$ 中点。",
+        "type":"平面几何"
+    },
+    {
+        "id":44,
+        "question":"设以 $B_0, B_1$ 为焦点的椭圆与 $\\triangle AB_0B_1$ 的边交于某点 $P_0$，并依次构造圆弧交于 $Q_0, Q_1, P_1, P_2$ 等点。求证：点 $P_0, Q_0, Q_1, P_1$ 四点共圆。",
+        "answer":"设 $O_0$ 为从 $P_0$ 到 $P_1$ 的旋转变换中心，旋转角为 $\\angle B_0P_0Q_0 + \\angle Q_0P_1B_1$，同理得另一旋转中心 $O'$，二者均位于 $\\angle AB_0B_1$ 的角平分线上，故 $P_0, Q_0, Q_1, P_1$ 四点共圆。",
+        "type":"平面几何"
+    },
+    {
+        "id":45,
+        "question":"已知圆 $O$ 过 $\\triangle ABC$ 的顶点 $A, C$，并与边 $AB, BC$ 分别交于点 $K, N$，$\\triangle ABC$ 与 $\\triangle KBN$ 的外接圆交于点 $M$。求证：$\\angle OMB = 90^\\circ$。",
+        "answer":"设过点 $O$ 且垂直于 $BM$ 的直线为 $l$，以 $l$ 为轴作反射变换 $S_l$，则 $K \\to K'$，$C \\to C'$，且 $CC' \\parallel KK' \\parallel BM$。由角度关系可得 $C', K', M$ 三点共线，故 $M$ 在 $l$ 上，即 $\\angle OMB = 90^\\circ$。",
+        "type":"平面几何"
+    },
+    {
+        "id":46,
+        "question":"在 $\\triangle ABC$ 中，$AB = AC$，点 $D, E$ 分别在 $AB, AC$ 上，满足 $ED \\parallel BN$，$EF \\parallel ED$，其中 $BN$ 是 $\\angle ABC$ 的平分线。求证：$BE + AF = AE + FD$。",
+        "answer":"作向量平移变换，使 $FD \\to FD'$，则 $EDFD'$ 为平行四边形。由角度计算得 $\\angle EOF = \\angle B + \\angle C$，且 $OE = OB$，故 $E, O, D'$ 共线，从而 $FD = ED'$，即 $BE + AF = AE + FD$。",
+        "type":"平面几何"
+    },
+    {
+        "id":47,
+        "question":"已知 $AC = \\sqrt{2}$，求函数 $f(P) = PA + BC + PC + AB + PD \\cdot CA$ 的最小值。",
+        "answer":"由托勒密不等式，对平面上任意点 $P$，有：\n$$\nPA \\cdot BC + PC \\cdot AB > PB \\cdot AC\n$$\n令：\n$$\nf(P) = PA + BC + PC + AB + PD \\cdot CA = (PB + PD) \\cdot CA\n$$\n由于 $PB + PD \\geq BD$，当且仅当 $P$ 在 $BD$ 上时取等号。\n因此，当 $P$ 为 $\\triangle ABC$ 外接圆与 $BD$ 的交点时，$f(P)$ 取最小值：\n$$\nf(P)_{\\min} = AC + BD\n$$\n此时 $P, A, B, C$ 四点共圆。",
+        "type":"平面几何"
+    },
+    {
+        "id":48,
+        "question":"计算角度和边长：\n设 $\\angle ECB = \\alpha$，则 $\\angle ECA = 2\\alpha$。",
+        "answer":"由正弦定理：\n$$\n\\frac{AE}{AB} = \\frac{\\sin 2\\alpha}{\\sin \\alpha} = \\frac{\\sqrt{3}}{2}\n\\Rightarrow \\sin 3\\alpha = \\frac{1}{2} \\sin 2\\alpha\n$$\n展开后得：\n$$\n4\\sqrt{3} \\cos^2 \\alpha - 4\\cos \\alpha - \\sqrt{3} = 0\n$$\n解得：\n$$\n\\cos \\alpha = \\frac{1}{2} \\quad \\text{或} \\quad \\cos \\alpha = -\\frac{1}{2\\sqrt{3}}\n\\Rightarrow \\alpha = 30^\\circ \\Rightarrow \\angle ACE = 60^\\circ\n$$\n\n进一步计算得：\n$$\n\\tan \\angle EAC = \\frac{1}{\\sqrt{3}} \\Rightarrow \\angle EAC = 75^\\circ\n\\Rightarrow \\angle E = 45^\\circ\n$$\n从而 $\\angle DAC = \\angle DCA = 45^\\circ$，$\\triangle ADC$ 是等腰直角三角形，$AC = \\sqrt{2} \\Rightarrow CD = 1$。\n同理 $\\triangle ABC$ 也为等腰直角三角形，$BC = \\sqrt{2}$，利用余弦定理：\n$$\nBD^2 = 1^2 + (\\sqrt{2})^2 - 2 \\cdot 1 \\cdot \\sqrt{2} \\cdot \\cos 135^\\circ = 5 \\Rightarrow BD = \\sqrt{5}\n$$\n故：\n$$\nf(P)_{\\min} = AC \\cdot BD = \\sqrt{2} \\cdot \\sqrt{5} = \\sqrt{10}\n$$",
+        "type":"平面几何"
+    },
+    {
+        "id":49,
+        "question":"在 $\\triangle ABC$ 中，$\\angle BAC = 40^\\circ$，$\\angle ABC = 60^\\circ$，点 $D$、$E$ 分别在边 $AC$、$AB$ 上，满足 $\\angle CBD = 40^\\circ$，$\\angle BCE = 70^\\circ$，设 $F = BD \\cap CE$。证明：直线 $AF \\perp BC$。",
+        "answer":"设 $BC = 1$，分别在 $\\triangle ABC$ 和 $\\triangle BCF$ 中使用正弦定理，得：\n$$\n\\frac{AB}{\\sin 80^\\circ} = \\frac{AC}{\\sin 60^\\circ}, \\quad \\frac{BF}{\\sin 70^\\circ} = \\frac{CF}{\\sin 40^\\circ}\n$$\n再利用 $AF \\perp BC \\iff AB^2 - AC^2 = BF^2 - CF^2$，代入可得恒等式成立，证毕。",
+        "type":"平面几何"
+    },
+    {
+        "id":50,
+        "question":"设 $O$ 是 $\\triangle ABC$ 内一点，满足：\n$$\n\\angle BAO = \\angle CBO = \\angle ACO = \\alpha\n$$\n则称 $O$ 为布洛卡点，其基本性质为：\n$$\n\\cot \\alpha = \\cot A + \\cot B + \\cot C\n$$",
+        "answer":"在 $\\triangle AOB$ 中，由正弦定理：\n$$\n\\frac{AB}{\\sin(\\pi - (A + \\alpha))} = \\frac{OB}{\\sin \\alpha}\n\\Rightarrow OB = \\frac{AB \\sin \\alpha}{\\sin(A + \\alpha)}\n$$\n类似推导其他边关系，结合三角恒等变换最终得到：\n$$\n\\cot \\alpha = \\cot A + \\cot B + \\cot C\n$$\n若三边 $a, b, c$ 成等比数列，则 $b^2 = ac$，即 $\\sin^2 B = \\sin A \\sin C$，故命题成立。",
+        "type":"平面几何"
+    },
+    {
+        "id":51,
+        "question":"设 $AD$, $BE$, $CF$ 过 $\\triangle ABC$ 的外心 $O$，六个比例中至少有两个是整数。求证：$\\triangle ABC$ 是等腰三角形。",
+        "answer":"若同一边上的两个比例均为整数，则必为 1，说明该边被垂直平分 ⇒ 等腰。\n否则考虑角度关系，构造辅助三角形 $A'B'C'$，其内角为 $180^\\circ - 2A$, $180^\\circ - 2B$, $180^\\circ - 2C$。\n利用正弦定理及三角不等式，得出该三角形为等腰 ⇒ 原三角形也为等腰。",
+        "type":"平面几何"
+    },
+    {
+        "id":52,
+        "question":"设 $\\triangle ABC$ 中，各角三等分线交于点 $D, E, F$，使得：\n$$\n\\angle DBC = \\angle FBA = \\frac{1}{3}\\angle ABC,\\quad \\angle FAB = \\angle EAC = \\frac{1}{3}\\angle BAC,\\quad \\angle HEC = \\angle DCB = \\frac{1}{3}\\angle ACB\n$$\n则 $\\triangle DEF$ 是正三角形。",
+        "answer":"利用外接圆半径 $R$ 和正弦定理，计算 $AF$, $AE$, $EF$，得：\n$$\nEF = 8R \\sin\\frac{A}{3} \\sin\\frac{B}{3} \\sin\\frac{C}{3}\n$$\n此表达式关于 $A, B, C$ 对称 ⇒ $DE = DF = EF$，故为正三角形。",
+        "type":"平面几何"
+    },
+    {
+        "id":53,
+        "question":null,
+        "answer":"**结论**：\n$$\nOI^2 = R^2 - 2Rr\n$$\n**推论**：若 $O = I$，则 $r = \\frac{R}{2}$，即三角形为等边三角形。",
+        "type":"平面几何"
+    },
+    {
+        "id":54,
+        "question":"设 $P$ 为锐角 $\\triangle ABC$ 内一点，$AP$, $BP$, $CP$ 分别交对边于 $D, E, F$，且 $P$ 是 $\\triangle DEF$ 的重心。证明：$D, E, F$ 分别为 $BC, CA, AB$ 的中点 ⇒ $P$ 是 $\\triangle ABC$ 的重心。",
+        "answer":"利用角度关系（如 $\\angle EDC = 2A - \\gamma$）和正弦定理，结合 Ceva 定理推出比例关系，最终得出各边中点。",
+        "type":"平面几何"
+    },
+    {
+        "id":55,
+        "question":"设 $AB$ 为圆 $\\omega$ 直径，直线 $l$ 切圆于点 $A$，点 $C, M, D$ 在 $l$ 上满足 $CM = DM$，延长 $BC$, $BD$ 交圆于 $P, Q$，连接 $PR, QR$。证明：$PA, QA, BR$ 共点于圆上 ⇒ $BR \\perp l$。",
+        "answer":"关键步骤：\n- 使用正弦定理比较 $\\angle CBM$ 与 $\\angle DBM$；\n- 利用相似三角形（$\\triangle RTP \\sim \\triangle RPB$）推出角度相等 ⇒ $BR \\perp l$。",
+        "type":"平面几何"
+    },
+    {
+        "id":56,
+        "question":"设 $CD$ 是锐角 $\\triangle ABC$ 的高，$M$ 为 $AB$ 中点，过 $M$ 的直线交射线 $CA$, $CB$ 于 $K, L$，且 $CK = CL$。证明：若 $S$ 为 $\\triangle CKL$ 的外心，则 $SD = SM$。",
+        "answer":"由 $CK = CL$ 得 $S$ 在 $KL$ 的垂直平分线上；结合 $ME \\parallel CD$，说明 $S$ 在 $MD$ 的中垂线上 ⇒ $SD = SM$。",
+        "type":"平面几何"
+    },
+    {
+        "id":57,
+        "question":"设 $BH \\perp AC$，$H$ 在 $AC$ 上，$BD = BA$，$D$ 在 $AC$ 上，$G, J$ 分别为 $\\triangle ABC$ 的内切圆与边 $AC, AB$ 的切点，$I$ 为 $\\triangle BCD$ 的内心。证明：$KI$ 平分线段 $AJ$。",
+        "answer":"证明要点：\n- 利用三角恒等式和内心坐标法；\n- 计算点到直线的距离，证明 $IK \\perp AJ$，且 $K$ 是 $AJ$ 中点 ⇒ 平分。",
+        "type":"平面几何"
+    },
+    {
+        "id":58,
+        "question":"设四边形 $ABFD$ 满足 $AB + BF = AD + DF$，$AB$ 与 $DF$ 交于 $C$，延长 $AD$ 与 $BF$ 交于 $E$。求证：$AC + CF = AE + EF$。",
+        "answer":"连接 $AF$，设 $\\angle BAF = \\alpha$，$\\angle DAF = \\beta$，则：\n$$\nAB + BF = AF \\cdot \\frac{\\sin \\alpha + \\sin \\beta}{\\sin(\\alpha + \\beta)}, \\quad\nAD + DF = AF \\cdot \\frac{\\sin \\gamma + \\sin \\delta}{\\sin(\\gamma + \\delta)}\n$$\n由条件可知两式相等 ⇒ $\\alpha + \\beta = \\gamma + \\delta$ ⇒ $AC + CF = AE + EF$。",
+        "type":"平面几何"
+    },
+    {
+        "id":59,
+        "question":"已知锐角 $\\triangle ABC$ 的重心为 $G$，内心为 $I$，且满足 $AC = BC$，$CH$、$CI$ 分别与 $\\triangle ABC$ 的外接圆交于点 $H$、$I$。证明：$\\angle ACH = 90^\\circ$ 的充分必要条件是 $\\angle IDL = 90^\\circ$。",
+        "answer":"不妨设 $\\angle B > \\angle A$，外接圆半径为 $R$，则有：\n$$\n\\angle HCL = \\angle HCA = \\angle ICA = 90^\\circ.\n$$\n通过正弦定理和向量关系可得：\n$$\nCH = 2R \\cos \\angle C, \\quad CI = 2R \\cos \\angle A.\n$$\n进一步推导可知：\n$$\n\\angle IDL = 90^\\circ \\iff \\angle CIH = 90^\\circ.\n$$\n因此，结论成立。",
+        "type":"平面几何"
+    },
+    {
+        "id":60,
+        "question":"设点 $C$ 在线段 $AB$ 上，点 $D$ 在延长线上，且 $C,D$ 调和分割 $AB$。过 $P$ 引射线 $PC$、$PD$，使得 $PC \\perp PD$。则以下四个命题等价：\n\n1. $PC$ 平分 $\\angle APB$\n2. $PD$ 平分 $\\angle APB$ 的外角\n3. $C,D$ 调和分割 $AB$\n4. $PC \\perp PD$",
+        "answer":"证明思路：使用正弦定理和三角恒等式验证比例关系即可。",
+        "type":"平面几何"
+    },
+    {
+        "id":61,
+        "question":"设 $RK$、$RL$ 是圆的两条切线，过 $R$ 的割线交圆于 $S,T$，连结 $SL$、$TL$，则：",
+        "answer":"$ (S,T;R,L) \\text{ 成调和点列}. $",
+        "type":"平面几何"
+    },
+    {
+        "id":62,
+        "question":"已知 $\\angle PBC = 60^\\circ$，求 $\\tan \\angle PCB$；",
+        "answer":"无直接答案或解析。",
+        "type":"平面几何"
+    },
+    {
+        "id":63,
+        "question":"设 $OT$ 分别为 $\\triangle ABC$ 的外心与内心，$DF$、$DE$ 交于 $F,E$，$M,N$ 为 $PE,QF$ 中点，求证 $OF \\parallel MN$；",
+        "answer":"无直接答案或解析。",
+        "type":"平面几何"
+    },
+    {
+        "id":64,
+        "question":"求解非钝角 $\\triangle ABC$ 中 $\\sin A$ 的值，已知 $\\sqrt{2}OI = AB - AC$。",
+        "answer":"无直接答案或解析。",
+        "type":"平面几何"
+    },
+    {
+        "id":65,
+        "question":"所以，$AD$、$BE$、$CF$ 三线共点。由性质2知 $PL \\perp EL \\perp A$，$CRA$。因为 $M$ 是线段 $PE$ 的中点，所以由性质7得：\n$$\nME^2 = MA + MC\n$$\n同理，\n$$\nNF^2 = NA + NB\n$$\n因此，点 $M$、$N$ 分别到 $\\triangle ABC$ 的内切圆和外接圆等距，故 $M$、$N$ 在 $\\triangle ABC$ 的内切圆与外接圆的根轴上。\n故 $OU \\parallel MN$。",
+        "answer":"注：本题在第5章中曾出现过，但这里用的是不同的方法。",
+        "type":"平面几何"
+    },
+    {
+        "id":66,
+        "question":"设四边形 $ABCD$ 的两组对边分别交于点 $E$、$F$，两条对角线的交点为 $P$，过 $P$ 作 $PO \\parallel EF$，求证：$\\angle BOC = \\angle AOD$。",
+        "answer":"如图8-18，延长 $AC$、$DB$ 分别与 $EF$ 交于点 $Q$、$R$。若 $BD \\parallel EF$，则视点 $R$ 在无穷远处。\n由性质2知 $P$、$Q$ 调和分割线段 $AC$，$P$、$R$ 调和分割线段 $BD$。\n因为 $PO \\parallel EF$，所以根据性质5中的(3)和(4)，有：\n$$\n\\angle POA = \\angle POC,\\quad \\angle POB = \\angle POD\n$$\n因此，\n$$\n\\angle BOC = \\angle AOD\n$$",
+        "type":"平面几何"
+    },
+    {
+        "id":67,
+        "question":"过锐角 $\\triangle ABC$ 的顶点 $A$、$B$、$C$ 的三条高分别交对边于点 $D$、$E$、$F$，过点 $D$ 平行于 $EF$ 的直线分别交 $AC$、$AB$ 于点 $Q$、$R$，$EF$ 交 $BC$ 于 $P$。求证：$\\triangle PQR$ 的外接圆过 $BC$ 的中点。",
+        "answer":"如图8-19，取边 $BC$ 的中点为 $M$。<br\/>\n由性质2知 $B$、$C$、$D$、$P$ 是调和点列。<br\/>\n又 $M$ 是 $BC$ 的中点，因此：<br\/>\n$$\nDM \\cdot DP = DB \\cdot DC\n$$\n（性质4第(4)条）<br\/>\n又 $DR \\parallel EF$，所以：<br\/>\n$$\n\\angle RQC = \\angle PEC = \\angle RBC\n$$\n从而 $Q$、$C$、$R$、$B$ 四点共圆，即：<br\/>\n$$\nDR \\cdot DQ = DB \\cdot DC = DM \\cdot DP\n$$\n故 $P$、$Q$、$R$、$M$ 四点共圆，即 $\\triangle PQR$ 的外接圆过 $BC$ 的中点 $M$。",
+        "type":"平面几何"
+    },
+    {
+        "id":68,
+        "question":"在完全四边形 $ABCD$ 中，对角线交于点 $P$，两组对边所在直线分别交于点 $Q$、$R$，过 $P$ 的直线分别交 $AB$、$CD$、$QR$ 于点 $M$、$N$、$G$。求证：$$\\frac{1}{MP} + \\frac{1}{MG} = \\frac{2}{MN}$$",
+        "answer":"如图8-20，设 $AC$ 与 $QR$ 交于点 $S$，则 $A$、$C$、$P$、$S$ 成调和点列。连结 $QP$，考虑过 $Q$ 的四条线束 $QA$、$QP$、$QD$、$QR$，它们被两条直线 $ACPS$ 和 $MPNC$ 所截，由于 $A$、$C$、$P$、$S$ 成调和点列，因此 $M$、$N$、$P$、$G$ 是调和点列，即：$$\\frac{1}{MP} + \\frac{1}{MG} = \\frac{2}{MN}$$",
+        "type":"平面几何"
+    },
+    {
+        "id":69,
+        "question":"如图8-21，点 $A$、$B$、$C$、$D$ 在圆上，$AN$ 分别交 $BF$、$BE$、$CF$ 于 $E$、$G$、$H$。求证：$$\\tan \\angle ABE = \\tan \\angle ACF$$",
+        "answer":"设 $BF$ 与 $CE$ 交于点 $I$，再设 $ID$ 与 $AN$ 交于点 $J$。由调和四边形性质2知：$A$、$G$、$M$、$N$；$A$、$J$、$G$、$I$ 均为调和点列。于是可推出结论成立。",
+        "type":"平面几何"
+    },
+    {
+        "id":70,
+        "question":"对平面上任意不共线的四点 $A$、$B$、$C$、$D$，有：\n$$\nAB \\cdot CD + BC \\cdot AD \\geq AC \\cdot BD\n$$\n等号成立当且仅当 $ABCD$ 是圆内接凸四边形。",
+        "answer":"以 $A$ 为反演中心，单位长度为反演半径，设 $B'$、$C'$、$D'$ 为对应反点，则：\n$$\nAB \\cdot CD + BC \\cdot AD \\geq AC \\cdot BD\n$$\n等号成立条件是 $B'$、$C'$、$D'$ 共线，即 $ABCD$ 圆内接。",
+        "type":"平面几何"
+    },
+    {
+        "id":71,
+        "question":"设 $AB$ 是圆 $O$ 的直径，$C$ 在 $AB$ 上，过 $C$ 作切线交 $AB$ 延长线于 $E$，$P$ 为圆上任意一点。\n求证：$\\angle BPC = \\angle BPE$。",
+        "answer":"由调和点列 $(A, B, C, E)$ 得 $(PA, PB, PC, PE)$ 成调和线束，结合 $PA \\perp PB$，即可得证。",
+        "type":"平面几何"
+    },
+    {
+        "id":72,
+        "question":"$Q$ 是以 $AB$ 为直径的圆上一点，$Q \\neq A,B$，$Q$ 在 $AB$ 上投影为 $H$，以 $Q$ 为圆心、$QE$ 为半径作圆与原圆交于 $C$、$D$。\n求证：$CD \\perp QH$。",
+        "answer":"以 $Q$ 为反演中心，$QO$ 为反演圆作反演，利用保角性和反演图像性质，得 $CD \\perp QH$。",
+        "type":"平面几何"
+    },
+    {
+        "id":73,
+        "question":"四边形 $ABCD$ 内接于圆 $O$，设 $\\odot ABP$、$\\odot BCP$、$\\odot CDP$、$\\odot DAP$ 的外心分别为 $O_1$、$O_2$、$O_3$、$O_4$。\n求证：$OO_1$、$OO_2$、$OO_3$、$OO_4$ 三线共点。",
+        "answer":"以 $O$ 为反演中心，单位长度为反演半径，得各外接圆反形为直线，利用平行四边形性质可证三线共点于 $OO_1$ 中点。",
+        "type":"平面几何"
+    },
+    {
+        "id":74,
+        "question":"已知圆 $O$ 外一点 $X$，从 $X$ 引两条切线切圆于 $A$、$B$，过 $X$ 作直线交圆于 $C$、$D$，满足 $CA \\parallel BD$，设 $CA$ 与 $BD$ 交于 $F$，$CD$ 与 $AB$ 交于 $G$，$BD$ 与 $GX$ 的中垂线交于 $H$。\n求证：$X$、$F$、$G$、$H$ 四点共圆。",
+        "answer":"由配极性质3知 $(X, G, D, C)$ 调和，结合 $CA \\parallel BD$，得 $\\angle GFD = \\angle DFX$，进而可证四点共圆。",
+        "type":"平面几何"
+    },
+    {
+        "id":75,
+        "question":"如图9-14，已知圆 $O$ 中，$CC'$ 为直径，过点 $G$ 作一条直线，使得 $A, H, E, R, M, G = B, G$（其中 $A, B$ 均在圆外）。连接 $AC, BC$，分别交圆 $O$ 于点 $D, E$。过 $D, E$ 分别作圆 $O$ 的切线，交于一点 $P$，连接 $PG$。求证：$PG \\perp AB$。",
+        "answer":"过 $C$ 作 $AB$ 的平行线交圆 $O$ 于 $Y$，过 $G$ 作圆 $O$ 的切线交直线 $DE$ 于 $X$。由于 $X$ 在 $G$ 的极线上（即过 $CG$ 的切线上），且 $X$ 在 $\\triangle AEP$ 的极线 $DE$ 上，故 $X$ 的极线过 $G, P$。又因 $AG = GB$，所以 $A, B, G, C$ 成调和点列，从而 $CA, CB, CG, CC'$ 成调和线束，于是四边形 $DG E Y$ 是调和四边形。\n由几何关系得 $GY \\perp CY$，即 $PG \\perp AB$。",
+        "type":"平面几何"
+    },
+    {
+        "id":76,
+        "question":"设 $OS_1, OS_2, OS_3$ 是三条射线，分别交于点 $A_1, B_1, C_1$ 和 $A_2, B_2, C_2$。若 $A_1, B_1, C_1, D_1$ 四点共圆（或共线），则 $A_2, B_2, C_2, D_2$ 四点也共圆（或共线）。",
+        "answer":"以 $A_1$ 为反演中心进行反演变换，则 $OS_1, OS_2$ 的反形分别为直线 $A_1D_1, A_2B_1$；同理，$OS_3$ 的反形为 $A_2C_1$。两圆交于 $C_2$，问题转化为三角形中的密克点问题。\n若 $\\triangle ABC$ 的外接圆与 $\\triangle ABD$ 的外接圆交于点 $C_2$，则 $\\triangle A_2B_2D_2$ 的外接圆也过该点，此结论已在圆章节中提及。",
+        "type":"平面几何"
+    },
+    {
+        "id":77,
+        "question":"如图9-16，凸四边形 $ABCD$ 内切圆分别切边 $AB, BC, CD, DA$ 于点 $F_1, F_2, F_3, F_4$。令 $E, F, G, H$ 分别为线段 $AB, BC, CD, DA$ 的中点。求证：四边形 $EFGH$ 为矩形的充要条件是 $A, B, C, D$ 共圆。",
+        "answer":"以 $ABCD$ 的内切圆为反演圆作反演变换，则 $A, B, C, D$ 共圆等价于其反点 $A', B', C', D'$ 共圆。\n注意到 $E, F, G, H$ 是各边中点，故 $EFGH$ 是平行四边形。因此，$EFGH$ 为矩形当且仅当其对角线相等，即 $A', B', C', D'$ 共圆，等价于原四点 $A, B, C, D$ 共圆。",
+        "type":"平面几何"
+    },
+    {
+        "id":78,
+        "question":"设 $P$ 为四边形 $ABCD$ 内一点，满足：\n$$\n\\angle APD = \\angle ABP + \\angle DCP\n$$\n且 $P$ 不在边 $AB, BC, CD$ 上。记 $E, F, G$ 分别为 $P$ 到 $AB, BC, CD$ 的垂足。求证：$\\triangle EFG \\sim \\triangle APD$。",
+        "answer":"**法一（反演变换）**：\n由 $\\angle APD = \\angle ABP + \\angle DCP$，可知 $\\triangle ABP$ 与 $\\triangle DCP$ 的外接圆在 $P$ 处外切。以 $P$ 为中心作反演变换，则 $A, B, C, D$ 变为 $A', B', C', D'$，且 $A'B' \\parallel C'D'$，故 $A'B'C'D'$ 为等腰梯形，有 $A'C' = B'D'$。\n利用反演变换的距离公式可得：\n$$\n\\frac{A'C'}{B'D'} = \\frac{AC}{BD}\n$$\n由此推出 $\\triangle EFG \\sim \\triangle APD$。\n\n**法二（构造辅助线）**：\n作 $\\angle APT = \\angle ABP$，$T$ 在 $AD$ 上，延长 $TP$ 交 $BC$ 于 $S$。由题设得 $\\angle TPD = \\angle DCP$，易知 $TP$ 是两外接圆的公切线。由根轴定理，$BA, CD, ST$ 交于一点 $R$。\n通过角度变换可得：\n$$\n\\angle PAD = \\angle FEG\n$$\n从而 $\\triangle EFG \\sim \\triangle APD$。",
+        "type":"平面几何"
+    },
+    {
+        "id":79,
+        "question":"设双心四边形 $ABCD$，对角线 $AC \\cap BD = E$，内切圆圆心为 $I$，外接圆圆心为 $O$。求证：$I, O, E$ 三点共线。",
+        "answer":"**引理**：圆外切四边形 $ABCD$，切点为 $M, N, P, Q$，则 $AC, BD, MP, NQ$ 四线共点。\n\n**证明**：设 $AC \\cap MP = G$，由正弦定理得：\n$$\n\\frac{AG}{GC} = \\frac{\\sin \\angle AGK}{\\sin \\angle CGM} \\cdot \\frac{CM}{AK}\n$$\n类似推导可得 $G = G'$，即三线共点。同理 $BD, MP, NQ$ 共点。\n\n**主证明**：以 $I$ 为中心、以 $IKLMN$（切点构成的四边形）为反演圆作反演，得到平行四边形 $A'B'C'D'$。由反演性质知 $Q, I, O$ 共线，进而 $I, O, E$ 共线。",
+        "type":"平面几何"
+    },
+    {
+        "id":80,
+        "question":"设一条平面闭折线周长为 1，证明可用半径为 $\\frac{1}{4}$ 的圆完全覆盖该折线。",
+        "answer":"取折线中点 $O$，任取折线上点 $M$，则 $OM < \\frac{1}{2}$，故以 $O$ 为圆心、$\\frac{1}{4}$ 为半径的圆可覆盖整条折线。",
+        "type":"平面几何"
+    },
+    {
+        "id":81,
+        "question":"设 $\\triangle ABC$ 的三边为 $a, b, c$，对应中线为 $m_a, m_b, m_c$，则：\n$$\nm_a(bc - a^2) + m_b(ca - b^2) + m_c(ab - c^2) > 0\n$$",
+        "answer":"对四边形 $BDGF$ 应用托勒密不等式即可得证。",
+        "type":"平面几何"
+    },
+    {
+        "id":82,
+        "question":"设 $ABCD$ 为圆内接四边形，则：\n$$\n|AB - CD| + |AD - BC| > 2|AC - BD|\n$$",
+        "answer":"设外接圆半径为 1，令 $\\angle AOB = 2\\alpha$, $\\angle BOC = 2\\beta$, $\\angle COD = 2\\gamma$, $\\angle DOA = 2\\delta$，则：\n$$\n|AB - CD| = 4|\\sin \\alpha \\cos \\beta - \\sin \\gamma \\cos \\delta|,\\quad \\text{其他类似}\n$$\n利用三角恒等变形即可得证。",
+        "type":"平面几何"
+    },
+    {
+        "id":83,
+        "question":"给定四条边长的四边形中，内接于圆的四边形面积最大。",
+        "answer":"证明思路：\n- 假设 $D$ 在 $\\triangle ABC$ 内部，作 $D$ 关于 $BC$ 的反射点 $D'$，则四边形 $ABCD'$ 与 $ABCD$ 四边相等但面积更大；\n- 对于任意凸四边形 $ABCD$，其面积满足：\n$$\nS < \\sqrt{(s-a)(s-b)(s-c)(s-d)}\n$$\n等号成立当且仅当 $\\cos\\theta = 0$，即四边形为圆内接四边形。\n\n因此，对于固定边长 $a, b, c, d$ 的四边形，当且仅当它为圆内接四边形时，面积最大。",
+        "type":"平面几何"
+    },
+    {
+        "id":84,
+        "question":"在 $\\triangle ABC$ 中，$\\angle A, \\angle B, \\angle C$ 中最大的一个记为 $\\angle B > 60^\\circ$。若 $AE$ 和 $CD$ 分别是 $\\angle A$ 和 $\\angle C$ 的平分线交对边于 $E, D$，则：",
+        "answer":"$AE + CD < AC$",
+        "type":"平面几何"
+    },
+    {
+        "id":85,
+        "question":"设 $A, B, C$ 为 $\\triangle ABC$ 的三个内角，对任意实数 $x, y, z$，有：",
+        "answer":"$x^2 + y^2 + z^2 - 2xy\\cos C - 2yz\\cos A - 2zx\\cos B \\geq 0$ 等号成立当且仅当 $x : y : z = \\sin A : \\sin B : \\sin C$。",
+        "type":"平面几何"
+    },
+    {
+        "id":86,
+        "question":"设凸四边形 $ABCD$ 满足 $AB = AD + BC$，内部存在一点 $P$，使得：",
+        "answer":"$AP = h + AD,\\quad BP = h + BC$ 则：$\\frac{1}{\\sqrt{AD}} + \\frac{1}{\\sqrt{BC}} \\geq \\frac{2}{\\sqrt{h}}$",
+        "type":"平面几何"
+    },
+    {
+        "id":87,
+        "question":"设锐角三角形 $ABC$，外心为 $O$，高线最长者为 $h_{\\max}$，则：",
+        "answer":"$AH + BH + CH < 2h_{\\max}$",
+        "type":"平面几何"
+    },
+    {
+        "id":88,
+        "question":"设 $ABC$ 为等边三角形，$P$ 是其内部一点，线段 $AP, BP, CP$ 分别交对边于 $A_1, B_1, C_1$，则：",
+        "answer":"$A_1B_1 \\cdot B_1C_1 \\cdot C_1A_1 > AB \\cdot BC \\cdot CA$",
+        "type":"平面几何"
+    },
+    {
+        "id":89,
+        "question":"设 $G$ 为 $\\triangle ABC$ 的重心，$A_1, B_1, C_1$ 分别为 $AG, BG, CG$ 与外接圆的交点（除 $A, B, C$ 外），则：",
+        "answer":"$GA_1 + GB_1 + GC_1 > GA + GB + GC$ 等号成立当且仅当 $\\triangle ABC$ 为正三角形。",
+        "type":"平面几何"
+    },
+    {
+        "id":90,
+        "question":"设 $\\triangle ABC$ 内有一点 $P$，满足 $\\angle APB = \\angle BPC = \\angle CPA = 120^\\circ$，直线 $BF, CE$ 分别交 $AC, AB$ 于 $D, E$，则：",
+        "answer":"$AB + AC > 4DE$",
+        "type":"平面几何"
+    },
+    {
+        "id":91,
+        "question":"设 $G$ 为 $\\triangle ABC$ 的重心，$A_1, B_1, C_1$ 分别为 $AG, BG, CG$ 与外接圆的交点，则：",
+        "answer":"$GA_1 + GB_1 + GC_1 > GA + GB + GC$ 等号成立当且仅当 $\\triangle ABC$ 是正三角形。",
+        "type":"平面几何"
+    },
+    {
+        "id":92,
+        "question":"设六边形 $ABCDEF$ 满足：",
+        "answer":"$AB = BC,\\quad CD = DE,\\quad EF = FA$ 则：$BC \\parallel DE \\parallel FA,\\quad BC + DE + FA \\geq 3$",
+        "type":"平面几何"
+    },
+    {
+        "id":93,
+        "question":"设 $AA_1, BB_1, CC_1$ 分别为 $\\angle A, \\angle B, \\angle C$ 的平分线与外接圆的交点（除 $A, B, C$ 外），则：",
+        "answer":"$AA_1 + BB_1 + CC_1 > 4R + (AB + BC + CA)$ 其中 $R$ 为外接圆半径。",
+        "type":"平面几何"
+    },
+    {
+        "id":94,
+        "question":"设两个凸四边形 $ABCD$ 和 $A'B'C'D'$ 的边长分别为 $(a,b,c,d)$ 和 $(a',b',c',d')$，面积分别为 $S$ 和 $S'$，则：",
+        "answer":"$aa' + bb' + cc' + dd' \\geq 4\\sqrt{SS'}$",
+        "type":"平面几何"
+    },
+    {
+        "id":95,
+        "question":"设 $T$ 是 $\\triangle ABC$ 的内心，$AT, BT, CT$ 分别交对边于 $D, E, F$，则：",
+        "answer":"$\\frac{AT}{TD} + \\frac{BT}{TE} + \\frac{CT}{TF} \\leq 3$",
+        "type":"平面几何"
+    },
+    {
+        "id":96,
+        "question":"设 $P$ 是 $\\triangle ABC$ 内一点，到三边距离分别为 $x, y, z$，外接圆半径为 $R$，则：",
+        "answer":"$x + y + z \\leq R + \\frac{r}{2}$ 其中 $r$ 为内切圆半径，等号成立当且仅当 $P$ 是内心。",
+        "type":"平面几何"
+    },
+    {
+        "id":97,
+        "question":"设 $P_1, P_2, ..., P_n$ 是圆上均匀分布的 $n$ 个点，$P$ 是圆周上任意一点，则：",
+        "answer":"$PP_1^2 + PP_2^2 + \\cdots + PP_n^2 = nR^2$ 其中 $R$ 为圆的半径，这是一个常数！",
+        "type":"平面几何"
+    },
+    {
+        "id":98,
+        "question":"设 $AH \\perp BC$，$H$ 在 $BC$ 上，过 $H$ 分别作 $AB, AC$ 的平行线，在圆上方交于 $F, E$。求证：$D, H, F, E$ 四点共圆。",
+        "answer":"通过延长 $FA$ 交圆于 $F'$，利用角度关系可得 $\\angle HDF = \\angle HEF$，从而 $D, H, F, E$ 共圆。",
+        "type":"平面几何"
+    },
+    {
+        "id":99,
+        "question":"设 $P$ 是 $\\triangle ABC$ 内一点，$PA, PB, PC$ 分别交对边于 $D, E, F$。求证：面积和 $S_{\\triangle PAF} + S_{\\triangle PBD} + S_{\\triangle PCE} = S_{\\triangle ABC}$ 当且仅当 $P$ 在某一条中线上。",
+        "answer":"由塞瓦定理得 $\\frac{AF}{FB} \\cdot \\frac{BD}{DC} \\cdot \\frac{CE}{EA} = 1$，\n结合梅涅劳斯定理计算面积比后化简得：\n$$\n(a-1)(b-1)(ab-1) = 0 \\Rightarrow a=1 \\text{ 或 } b=1 \\text{ 或 } ab=1\n$$\n即 $P$ 至少位于一条中线上。",
+        "type":"平面几何"
+    },
+    {
+        "id":100,
+        "question":"设 $D$ 是 $\\triangle ABC$ 内一点，满足 $\\angle DAC = \\angle DCA = 30^\\circ$，$\\angle DBA = 60^\\circ$，$E$ 是 $BC$ 中点，$F$ 是 $AC$ 上靠近 $C$ 的三等分点。求证：$DE \\perp EF$。",
+        "answer":"令 $A=0$, $B=1$, $C=z$，解出 $D, E, F$ 的复数坐标，计算斜率后得：\n$$\n\\frac{F-E}{E-D} = i \\Rightarrow DE \\perp EF\n$$",
+        "type":"平面几何"
+    },
+    {
+        "id":101,
+        "question":"在 $\\triangle ABC$ 三边上向外作等腰直角三角形，使得角度分别为 $45^\\circ, 30^\\circ, 15^\\circ$，求证 $\\angle PRQ = 90^\\circ$，且 $QR = PR$。",
+        "answer":"设 $z_A, z_B, z_C$ 表示点对应复数，通过旋转和加权平均得出：\n$$\nz_R - z_P = i(z_Q - z_P) \\Rightarrow \\angle PRQ = 90^\\circ,\\quad QR = PR\n$$",
+        "type":"平面几何"
+    },
+    {
+        "id":102,
+        "question":"圆内接四边形 $ABCD$，对角线交于 $S$，$S$ 在 $AB, CD$ 上的投影为 $E, F$，求证：$EF$ 的中垂线平分 $BC$ 和 $DA$。",
+        "answer":"设 $M$ 为 $AD$ 中点，则：\n$$\n\\vec{SE} \\cdot \\vec{SA} = |\\vec{SE}|^2,\\quad \\vec{SF} \\cdot \\vec{SD} = |\\vec{SF}|^2\n$$\n又因 $\\triangle ASE \\sim \\triangle DSF$，故：\n$$\n|\\vec{SA}||\\vec{SF}| = |\\vec{SD}||\\vec{SE}|\n$$\n进一步推出：\n$$\n(\\vec{SM} - \\vec{SF})^2 - (\\vec{SM} - \\vec{SE})^2 = 0\n\\Rightarrow M \\text{ 在 } EF \\text{ 的中垂线上}\n$$\n\n同理 $N$（$BC$ 中点）也在其上 ⇒ 得证。",
+        "type":"平面几何"
+    },
+    {
+        "id":103,
+        "question":"梯形 $ABCD$ 中 $AB \\parallel CD$，作点 $F \\in AB$，使 $CF = DF$，设 $AC \\cap BD = O$，$O_1, O_2$ 分别为 $\\triangle ADF$ 和 $\\triangle BCF$ 的外心。求证：$EF \\perp OO_2$。",
+        "answer":"以 $DC$ 中点为原点，建立直角坐标系：\n- $D(-1, 0), C(1, 0), F(0, d), A(d, b), B(c, b)$\n- 计算 $AC$ 与 $BD$ 交点 $E$\n- 求 $O_1, O_2$ 坐标并验证 $EF \\perp OO_2$\n\n最终得：\n$$\n\\vec{EF} \\cdot \\vec{OO_2} = 0 \\Rightarrow EF \\perp OO_2\n$$",
+        "type":"平面几何"
+    },
+    {
+        "id":104,
+        "question":"在 $\\triangle ABC$ 中，$AB = AC$，过点 $A$ 作 $\\triangle ABC$ 的外接圆，且与 $AB$ 和 $AC$ 分别相切于点 $P$ 和 $Q$。求证：点 $P$ 和 $Q$ 连线的中点是 $\\triangle ABC$ 的内心。",
+        "answer":"**分析**：设 $PQ$ 中点为 $O$，则 $O$ 在 $\\angle BAC$ 的角平分线 $AD$ 上。如图建立直角坐标系，设 $OA = 1$，$\\angle BAO = \\alpha$。设 $\\triangle ABC$ 的外接圆圆心为 $K$，内切圆圆心为 $M$。连结 $PK$。\n\n由题意：\n$$\ny_P = y_Q = -\\sin\\alpha\n$$\n\n因为 $\\triangle ABC$ 的外接圆直径：\n$$\n2R = OA + OK + KD = OA + OK + KP = 1 + \\tan\\alpha + \\tan\\alpha + \\sec\\alpha = \\frac{1}{\\sin\\alpha}\n$$\n所以：\n$$\nR = \\frac{1}{2\\cos^2\\alpha}\n$$\n\n从而，$OM$ 的方程为：\n$$\ny = \\frac{\\cos^2\\alpha - \\sin\\alpha}{2\\cos^2\\alpha}x + \\frac{\\sin\\alpha}{2\\cos^2\\alpha}\n$$\n\n$AB$ 的方程为：\n$$\ny = \\cot\\alpha \\cdot x + 1\n$$\n\n解上述两方程得：\n$$\nx_A = -1, \\quad y_A = -\\sin\\alpha\n$$\n\n故命题成立。\n\n> 注：此题我们在前面几章曾经多次出现过，这里用的是解析法，也是一种不错的方法。",
+        "type":"平面几何"
+    },
+    {
+        "id":105,
+        "question":"设 $\\odot O$、$\\odot O_1$、$\\odot O_2$ 被包含在 $\\odot O$ 内，且分别与 $\\odot O$ 相切于两个不同的点 $M$、$N$。$\\odot O_1$、$\\odot O_2$ 的两个交点的直线与 $\\odot O$ 相交于 $A$、$B$。直线 $MA$ 和 $MB$ 分别与 $\\odot O$ 相交于 $C$、$D$。证明：$CD$ 与 $\\odot O$ 相切。",
+        "answer":"以 $O$ 为原点，$MO_2$ 为 $x$ 轴正方向建立坐标系。设 $\\odot O$、$\\odot O_1$、$\\odot O_2$ 的半径分别为 $r$、$r_1$、$r_2$，$\\angle MO_1O_2 = 2\\alpha$。\n\n$\\odot O$ 的方程为：\n$$\nx^2 + y^2 = r^2\n$$\n\n$\\odot O_1$ 的方程为：\n$$\n(x - r_1)^2 + (y - r_1 \\cos 2\\alpha)^2 = r_1^2\n$$\n\n直线 $AB$ 的方程为：\n$$\n2r[\\cos 2\\alpha(x - r_1) + \\sin 2\\alpha \\cdot y] + r_1^2 - 2rr_1(1 + \\cos 2\\alpha) = 0\n$$\n\n由于 $\\odot O$ 与 $\\odot O_1$ 关于原点 $O$ 成位似图形（位似比为 $-1$），所以 $CD$ 的方程为：\n$$\n2r[\\cos 2\\alpha(x + r_1) + \\sin 2\\alpha \\cdot y] + r_1^2 - 2rr_1(1 + \\cos 2\\alpha) = 0\n$$\n\n计算 $O_1$ 到 $CD$ 的距离：\n$$\nd = \\left| \\cos 2\\alpha(r_1 + r_1 \\cos 2\\alpha) + \\sin 2\\alpha(r_1 \\sin 2\\alpha) + r_1 - r_1(1 + \\cos 2\\alpha) \\right| = r_1\n$$\n\n因此，$CD$ 与 $\\odot O_1$ 相切。",
+        "type":"平面几何"
+    },
+    {
+        "id":106,
+        "question":"求最小常数 $a_{\\min}$，使得对正方形 $ABCD$ 内部任一点 $P$，都存在 $\\triangle PAB$、$\\triangle PBC$、$\\triangle PCD$、$\\triangle PDA$ 中的某两个三角形，它们的面积之比属于区间 $[a, b]$。",
+        "answer":"不妨设正方形边长为 $\\sqrt{2}$。令 $S_1, S_2, S_3, S_4$ 分别表示 $\\triangle PAB$, $\\triangle PBC$, $\\triangle PCD$, $\\triangle PDA$ 的面积，不妨设 $S_1 > S_2 > S_3 > S_4$。\n\n由面积关系：\n$$\nS_1 + S_2 + S_3 + S_4 = 1\n$$\n\n若任意相邻面积之比均大于 $\\frac{9}{1}$，即：\n$$\n\\frac{S_i}{S_{i+1}} > 9 \\Rightarrow S_i > 9S_{i+1}\n$$\n\n则：\n$$\nS_1 > 9S_2 > 81S_3 > 729S_4\n$$\n\n但总和不超过 1，矛盾。故：\n$$\n\\min\\left\\{ \\frac{S_i}{S_j} \\right\\} < 9\n$$\n\n反过来，对于任意 $w \\in (1, 9)$，存在点 $P$ 使得所有相邻面积比均大于 $w$。例如取：\n$$\nS_1 = b,\\quad S_2 = 1,\\quad S_3 = 1 - b,\\quad S_4 = 1 - b\n$$\n\n可得：\n$$\n\\frac{S_1}{S_2} = b \\in (1, 9), \\quad \\frac{S_2}{S_3} = \\frac{1}{1-b} \\in (1, 9)\n$$\n\n因此，$a_{\\min} = 1$。",
+        "type":"平面几何"
+    },
+    {
+        "id":107,
+        "question":"证明 $ \\frac{PA}{PB} = \\frac{PC}{PD} $",
+        "answer":"设 $ PA + PB = s $，则：\n$$\n\\frac{PA}{PB} = \\frac{PC}{PD} \\iff PA \\cdot PD = PB \\cdot PC\n$$\n由题意知 $ AD \\parallel BE $，且 $ \\triangle PAD \\sim \\triangle PEB $，故有：\n$$\n\\frac{PA}{PE} = \\frac{PD}{PB} \\Rightarrow PA \\cdot PB = PE \\cdot PD\n$$\n又因 $ PA + PB = PE + PD $，可推得：\n$$\nPA \\cdot PD = PB \\cdot PC\n$$\n即 $ \\frac{PA}{PB} = \\frac{PC}{PD} $。证毕。",
+        "type":"平面几何"
+    },
+    {
+        "id":108,
+        "question":"已知 $ \\angle CBE = \\angle CAD $，$ \\angle ACD = \\angle BCE $，求证 $ BE = BD $",
+        "answer":"作 $ \\angle CBE = \\angle CAD $，$ \\angle ACD = \\angle BCE $，交于点 $ E $，则 $ \\triangle ACD \\sim \\triangle BCE $，所以：\n$$\n\\frac{AC}{BC} = \\frac{AD}{BE} = \\frac{CD}{CE}\n\\Rightarrow AC \\cdot BE = BC \\cdot AD\n$$\n但由题设 $ AC \\cdot BD = BC \\cdot AD $，故：\n$$\nAC \\cdot BE = AC \\cdot BD \\Rightarrow BE = BD\n$$\n证毕。",
+        "type":"平面几何"
+    },
+    {
+        "id":109,
+        "question":"在圆内接四边形 $ABCD$ 中，若 $ \\angle QAC = \\angle QCA $，则点 $R$ 不依赖于圆的选取",
+        "answer":"设 $ AQ $ 平分 $ \\angle BAC $，交圆于点 $ S $（不同于 $ Q $）。\n由正弦定理，在 $ \\triangle APB $、$ \\triangle ASC $ 中：\n$$\n\\frac{\\sin \\angle APB}{\\sin \\angle QAC} = \\frac{\\sin \\angle QCP}{\\sin \\angle QCA}\n$$\n由于 $ \\angle PAQ = \\angle ASQ = \\angle OQCA $，且 $ \\angle QCP = \\angle QCA $，可得：\n$$\n\\frac{\\sin \\angle APB}{\\sin \\angle QAC} = \\frac{\\sin \\angle QCP}{\\sin \\angle QCA} = 1\n$$\n因此，点 $ R $ 的位置仅取决于三角形 $ ABC $，与圆无关。",
+        "type":"平面几何"
+    },
+    {
+        "id":110,
+        "question":"设 $ A' $ 是 $ \\triangle ABC $ 的旁切圆与边 $ BC $ 的切点，$ D $ 是对应点，求证 $ AD \\perp EX $",
+        "answer":"设 $ A' $ 是 $ \\triangle ABC $ 内角 $ A $ 的旁切圆与 $ BC $ 的切点，则 $ A $ 是内切圆与旁切圆的位似中心，$ D $ 和 $ X $ 是对应点。\n过 $ X $ 的切线平行于 $ BC $，设其交 $ AD $ 于点 $ E $，则：\n$$\n\\angle XYE = 90^\\circ, \\quad \\text{且 } EY \\parallel AD\n$$\n故 $ AD \\perp EX $，证毕。",
+        "type":"平面几何"
+    },
+    {
+        "id":111,
+        "question":"设 $ D $、$ E $、$ F $ 分别为 $ \\triangle ABC $ 各边中点，求证 $ G $ 是重心",
+        "answer":"设 $ AB = c $，$ BC = a $，$ AC = b $，中点 $ M, N, P $ 对应边 $ BC, CA, AB $。\n由梅涅劳斯定理对直线 $ AGD $ 应用：\n$$\n\\frac{BD}{DC} \\cdot \\frac{CE}{EA} \\cdot \\frac{AF}{FB} = 1\n\\Rightarrow \\frac{a}{b} \\cdot \\frac{b}{c} \\cdot \\frac{c}{a} = 1\n$$\n同理，三式相乘得：\n$$\nxyz = 1, \\quad x+y+z=3 \\Rightarrow x=y=z=1\n$$\n即 $ D, E, F $ 为各边中点，$ G $ 为重心。",
+        "type":"平面几何"
+    },
+    {
+        "id":112,
+        "question":"延长 $ BP $ 交 $ AC $ 于 $ T $，求证 $ CF = \\frac{ac}{b} $",
+        "answer":"由 $ \\triangle ACB \\sim \\triangle BCF $，得：\n$$\nAC \\cdot CF = BC^2 \\Rightarrow CF = \\frac{BC^2}{AC} = \\frac{a^2}{b}\n$$\n又因 $ DTN \\parallel ARC $，利用比例关系：\n$$\n\\frac{BN}{NA} = \\frac{BC}{AC}, \\quad \\frac{BT}{TC} = \\frac{AB}{AC}\n$$\n代入即可得 $ CF = \\frac{ac}{b} $。",
+        "type":"平面几何"
+    },
+    {
+        "id":113,
+        "question":"设 $ ABCD $ 是圆内接四边形，求证 $ AB + CD + AC + BD = BC \\cdot AD $",
+        "answer":"由正弦定理：\n$$\n\\frac{AB}{\\sin \\angle ADB} = \\frac{CD}{\\sin \\angle CBD} = \\frac{AC}{\\sin \\angle ADC}\n$$\n结合圆内接性质，可得：\n$$\nAB + CD = BC \\cdot \\frac{\\sin \\angle ADB + \\sin \\angle CBD}{\\sin \\angle ADC}\n$$\n整理后得：\n$$\nAB + CD + AC + BD = BC \\cdot AD\n$$",
+        "type":"平面几何"
+    },
+    {
+        "id":114,
+        "question":"六个切点两两连线交于 $ P, Q, R $，求证三线共点",
+        "answer":"设六边形外接圆切点为 $ B_1, B_2, \\dots, B_6 $，分别连接 $ B_iB_j $。\n由角元形式的塞瓦定理：\n$$\n\\frac{\\sin \\angle B_1PB_2}{\\sin \\angle B_2PB_3} \\cdot \\cdots = 1\n$$\n由于角度互补，可得：\n$$\n\\prod_{i=1}^{6} \\frac{\\sin \\angle B_iPB_{i+1}}{\\sin \\angle B_{i+1}PB_i} = 1\n$$\n故三条直线共点。",
+        "type":"平面几何"
+    },
+    {
+        "id":115,
+        "question":"正方形 $ ABCD $ 中，$ S, R $ 为对角线交点，求证 $ \\frac{\\sin \\angle BAA'}{\\sin \\angle CAA'} = \\frac{\\sin \\angle BCA'}{\\sin \\angle ACA'} $",
+        "answer":"设 $ A' $ 是 $ \\triangle ABC $ 外心投影点，由正弦定理：\n$$\n\\frac{\\sin \\angle BAA'}{\\sin \\angle CAA'} = \\frac{\\sin \\angle BCA'}{\\sin \\angle ACA'}\n\\Rightarrow \\frac{\\sin(B + 45^\\circ)}{\\sin(C + 45^\\circ)} = \\frac{\\sin(C + 45^\\circ)}{\\sin(A + 45^\\circ)}\n$$\n交叉验证得恒等式成立，证毕。",
+        "type":"平面几何"
+    },
+    {
+        "id":116,
+        "question":"设 $ \\angle BAD = \\alpha $，$ \\angle ACD = \\beta $，$ \\angle CBD = \\gamma $，求证 $ \\alpha = \\beta $",
+        "answer":"应用角元塞瓦定理：\n$$\n\\frac{\\sin \\alpha}{\\sin \\beta} \\cdot \\frac{\\sin \\gamma}{\\sin \\delta} \\cdot \\frac{\\sin \\epsilon}{\\sin \\zeta} = 1\n$$\n整理得：\n$$\n\\frac{\\sin \\alpha}{\\sin \\beta} = \\frac{\\sin \\gamma}{\\sin \\delta} \\cdot \\frac{\\sin \\epsilon}{\\sin \\zeta}\n$$\n若 $ \\alpha = \\beta $，则上式成立，反之亦然。",
+        "type":"平面几何"
+    },
+    {
+        "id":117,
+        "question":"设 $ \\angle BAF = \\angle CAE = \\alpha $，$ \\angle ABF = \\angle CBD = \\beta $，求证 $ \\angle ACF = \\angle ACE $",
+        "answer":"应用角元塞瓦定理：\n$$\n\\frac{\\sin \\angle BAD}{\\sin \\angle DAC} \\cdot \\frac{\\sin \\angle ACF}{\\sin \\angle FCB} \\cdot \\frac{\\sin \\angle CBE}{\\sin \\angle EBA} = 1\n$$\n化简得：\n$$\n\\frac{\\sin(\\alpha + \\beta)}{\\sin(\\gamma - \\alpha)} \\cdot \\frac{\\sin(\\gamma - \\beta)}{\\sin(\\alpha + \\beta)} \\cdot \\frac{\\sin(\\alpha + \\gamma)}{\\sin(\\beta + \\gamma)} = 1\n$$\n故 $ \\angle ACF = \\angle ACE $，证毕。",
+        "type":"平面几何"
+    },
+    {
+        "id":118,
+        "question":"设 $ MN $、$ MB $、$ NC $ 均为圆切线，求证 $ \\angle MDN $ 被平分",
+        "answer":"由切线性质：\n$$\n\\angle BAM = \\angle ABC, \\quad \\angle CAN = \\angle ACB\n$$\n对 $ \\triangle ABD $ 和点 $ M $ 应用塞瓦定理：\n$$\n\\frac{\\sin \\angle ADM}{\\sin \\angle MDB} = \\frac{\\tan \\alpha}{\\tan \\beta}\n$$\n同理对 $ N $ 得：\n$$\n\\tan \\alpha = \\tan \\beta \\Rightarrow \\alpha = \\beta\n$$\n故 $ \\angle MDN $ 被平分。",
+        "type":"平面几何"
+    },
+    {
+        "id":119,
+        "question":"设 $ \\angle BAC = \\angle DAC = \\theta $，求证 $ \\sin \\theta \\cdot \\sin(\\theta - \\phi) = \\sin \\phi \\cdot \\sin(\\theta - \\alpha) $",
+        "answer":"由面积公式：\n$$\nS_{\\triangle ABC} = \\frac{1}{2} ab \\sin C, \\quad S_{\\triangle DEF} = \\frac{1}{2} de \\sin F\n$$\n代入得：\n$$\n\\sin \\theta \\cdot \\sin(\\theta - \\phi) = \\sin \\phi \\cdot \\sin(\\theta - \\alpha)\n\\Rightarrow \\tan \\theta = \\tan \\phi\n\\Rightarrow \\theta = \\phi\n$$\n证毕。",
+        "type":"平面几何"
+    },
+    {
+        "id":120,
+        "question":"设 $ AB = c $，$ BC = a $，$ CA = b $，求证 $ BE^2 = ac $",
+        "answer":"由 Stewart 定理：\n$$\nBE^2 = \\frac{ac}{a+c}(a+c) - \\frac{a^2c^2}{(a+c)^2}\n\\Rightarrow BE^2 = ac\n$$\n证毕。",
+        "type":"平面几何"
+    },
+    {
+        "id":121,
+        "question":"设 $ \\angle BED = x $，求证 $ x = 30^\\circ $",
+        "answer":"由角元塞瓦定理：\n$$\n\\frac{\\sin 50^\\circ \\cdot \\sin(x + 40^\\circ) \\cdot \\sin 20^\\circ}{\\sin 30^\\circ \\cdot \\sin x \\cdot \\sin 80^\\circ} = 1\n\\Rightarrow \\frac{\\sin(x + 40^\\circ)}{\\sin x} = \\frac{\\sin 80^\\circ}{2 \\cos 40^\\circ}\n$$\n计算得 $ x = 30^\\circ $，证毕。",
+        "type":"平面几何"
+    },
+    {
+        "id":122,
+        "question":"设三直线 $ AB, CD, EF $ 相交成 $ \\triangle UVW $，求证 $ MN $ 共线",
+        "answer":"由梅涅劳斯定理：\n$$\n\\frac{UN}{NV} \\cdot \\frac{VL}{LW} \\cdot \\frac{WM}{MU} = 1\n\\Rightarrow \\frac{VB}{BW} \\cdot \\frac{WC}{CU} \\cdot \\frac{UE}{EV} = 1\n$$\n故三点共线。",
+        "type":"平面几何"
+    },
+    {
+        "id":123,
+        "question":"设 $ A', B', C' $ 是 $ \\triangle ABC $ 的旁切圆切点，求证 $ \\frac{BD}{DC} \\cdot \\frac{CE}{EA} \\cdot \\frac{AF}{FB} = 1 $",
+        "answer":"由旁切圆性质：\n$$\nBD = p - c, \\quad DC = p - b, \\quad CE = p - a, \\quad EA = p - c, \\quad AF = p - b, \\quad FB = p - a\n$$\n代入得：\n$$\n\\frac{p - c}{p - b} \\cdot \\frac{p - a}{p - c} \\cdot \\frac{p - b}{p - a} = 1\n$$\n证毕。",
+        "type":"平面几何"
+    },
+    {
+        "id":124,
+        "question":"设 $ BF^2 - PF^2 = CP^2 - PE^2 $，求证 $ BF = CE $",
+        "answer":"由条件：\n$$\nBF^2 - PF^2 = CP^2 - PE^2 \\Rightarrow (BF - PF)(BF + PF) = (CP - PE)(CP + PE)\n$$\n若 $ BF = CE $，则两边相等，反之亦然。",
+        "type":"平面几何"
+    },
+    {
+        "id":125,
+        "question":"证明：三角形外心到内心距离关系",
+        "answer":"设 $AABC$ 的外接圆圆心为 $O$，内切圆圆心为 $I$。分别过顶点 $A, B, C$ 及内切圆圆心 $I$ 的直线为角平分线，记 $\\angle CAB = \\alpha$, $\\angle ABC = \\beta$, $\\angle BCA = \\gamma$。\n\n因为外接圆圆心 $O$ 在每条边的垂直平分线上，且 $O$ 和 $I$ 都在边 $BC$ 的垂直平分线上，所以 $OI$ 是边 $BC$ 的垂直平分线。同理，$OI_2$、$OI_3$ 分别为边 $AB$、$AC$ 的垂直平分线。\n\n由于 $\\angle IBC = \\frac{1}{2} \\beta$，而 $\\angle O_2OO_3 = 90^\\circ - \\frac{1}{2} \\beta$，故有：\n$$\n\\angle O_2OO_3 = \\angle IBC\n$$\n同理可得：\n$$\n\\angle OO_2O_3 = \\angle ICC = \\frac{1}{2} \\gamma\n$$\n因此，$\\triangle OO_2O_3$ 是等腰三角形，即：\n$$\nOO_2 = OO_3\n$$\n同理可得 $OO_1 = OO_2$，所以：\n$$\nOO_1 = OO_2 = OO_3\n$$\n这说明 $O$ 是 $\\triangle O_1O_2O_3$ 的外接圆圆心。",
+        "type":"平面几何"
+    },
+    {
+        "id":126,
+        "question":"如图，作 $\\triangle ABC$ 的外接圆 $\\odot O$，延长 $BI$ 交圆于点 $P$，连结 $AP$、$CP$，则 $PA = PC = IP$。",
+        "answer":"对圆内接四边形 $ABCP$ 应用托勒密定理：\n$$\nAC \\cdot BP = AB \\cdot CP + AP \\cdot BC\n$$\n代入 $PA = PC = IP$，得：\n$$\nAC \\cdot BP = AB \\cdot IP + IP \\cdot BC = (AB + BC) \\cdot IP\n$$\n由题意知 $2AC = AB + BC$，所以：\n$$\nBP = 2IP\n$$\n即 $P$ 是 $BI$ 的中点，从而 $OI \\parallel BI$。\n\n进一步地，由角平分线性质及 $AK + KC = AC$，结合 $2AC = AB + BC$，可得：\n$$\nAK = \\frac{1}{2} AE,\\quad CK = \\frac{1}{2} CD\n$$\n进而 $\\triangle AIE \\sim \\triangle AIK$，$\\triangle CID \\sim \\triangle CIK$，所以：\n$$\nIE = IK = ID\n$$\n故 $I$ 是 $\\triangle DEK$ 的外心。",
+        "type":"平面几何"
+    },
+    {
+        "id":127,
+        "question":"设 $\\triangle ABC$ 的内心为 $I$，连 $AI$ 交 $BC$ 于 $D$，连 $CI$ 交 $AB$ 于 $F$。",
+        "answer":"由角平分线定理：\n$$\n\\frac{BD}{DC} = \\frac{AB}{AC}\n$$\n又由正弦定理：\n$$\n\\frac{BF}{FC} = \\frac{\\sin C}{\\sin B}\n$$\n在 $\\triangle ABD$ 中应用梅涅劳斯定理：\n$$\n\\frac{DI}{IA} \\cdot \\frac{AF}{FB} \\cdot \\frac{BC}{CD} = 1\n$$\n化简后得：\n$$\n\\frac{DI}{IA} = \\frac{\\sin A}{\\sin B + \\sin C}\n$$\n类似地：\n$$\n\\frac{IB}{\\sin B} = \\frac{IC}{\\sin C} = \\frac{ID}{\\sin A}\n$$\n最终得到：\n$$\n\\sin A \\cdot IA + \\sin B \\cdot IB + \\sin C \\cdot IC = 0\n$$",
+        "type":"平面几何"
+    },
+    {
+        "id":128,
+        "question":"设与边 $BC$ 相切的旁切圆圆心为 $I_a$，其半径为 $r_a$，$\\triangle ABC$ 的半周长为 $p$，面积为 $S$，外接圆半径为 $R$，高为 $h$。利用旁心性质和相似三角形关系，求证 $\\frac{R}{r_a} = \\frac{b + c - a}{2(p - a)}$。",
+        "answer":"由相似三角形 $\\triangle AIF \\sim \\triangle AIE$ 得：\n$$\n\\frac{r}{r_a} = \\frac{p}{p - a}\n$$\n再由外心性质和余弦定理推导出：\n$$\nR = \\frac{abc}{4S},\\quad r_a = \\frac{S}{p - a}\n$$\n代入得：\n$$\n\\frac{R}{r_a} = \\frac{b + c - a}{2(p - a)} = \\frac{b + c - a}{2(p - a)}\n$$\n所以：\n$$\n\\frac{R}{r_a} = \\frac{b + c - a}{2(p - a)} = \\frac{b + c - a}{2(p - a)}\n$$\n结论成立。",
+        "type":"平面几何"
+    },
+    {
+        "id":129,
+        "question":"若 $AB = AC$，且两圆都以 $A$ 为顶点，则 $O$ 在 $\\angle BAC$ 的平分线上。设 $AM$ 交 $PQ$ 于 $T$，由对称性可知 $I$ 是 $PQ$ 中点。",
+        "answer":"设 $\\angle APQ = 2\\theta$，则 $\\angle ABC = 2\\theta$。连 $MP$、$MQ$、$MB$，易得：\n$$\n\\angle PMQ = 2\\theta,\\quad \\angle PMI = \\theta\n$$\n因 $AM$ 为直径，$\\angle PBM = 90^\\circ$，所以 $P, B, M, T$ 四点共圆，故 $\\angle PBT = \\theta$，即 $BT$ 平分 $\\angle ABC$。\n\n又 $AT$ 平分 $\\angle BAC$，所以 $I$ 是 $\\triangle ABC$ 的内心。因此，线段 $PQ$ 的中点即为 $\\triangle ABC$ 内切圆的圆心。",
+        "type":"平面几何"
+    },
+    {
+        "id":130,
+        "question":"设 $O_1, O_2, O_3$ 分别是 $\\triangle ABP, \\triangle BQP, \\triangle ACS$ 的外心。",
+        "answer":"由外心性质：\n$$\n\\angle PO_1S = 2\\angle A,\\quad \\angle QO_2P = 2\\angle B,\\quad \\angle SO_3Q = 2\\angle C\n$$\n总和：\n$$\n\\angle PO_1S + \\angle QO_2P + \\angle SO_3Q = 360^\\circ\n$$\n由此推出：\n$$\n\\angle O_1O_2O_3 = \\angle A,\\quad \\angle O_2O_3O_1 = \\angle B,\\quad \\angle O_3O_1O_2 = \\angle C\n$$\n故 $\\triangle O_1O_2O_3 \\cong \\triangle ABC$。",
+        "type":"平面几何"
+    },
+    {
+        "id":131,
+        "question":"设 $AM$ 为高线亦为中线，取 $AC$ 上点 $F$，使得 $EF = \\frac{1}{2} DE$。设 $CD \\perp AM$ 于 $G$，则 $G$ 为 $\\triangle ABC$ 的重心。",
+        "answer":"连 $GE, MF$，交 $DC$ 于 $E$。易证：\n$$\nDG : GK = DE : EF = 3:1\n\\Rightarrow GE \\parallel MF\n$$\n又因 $OD \\parallel AB$，$MF \\parallel AB$，故 $OD \\parallel GE$。进一步得：\n$$\nOG \\perp DE \\Rightarrow G \\text{ 是 } \\triangle DOE \\text{ 的垂心}\n\\Rightarrow OF \\perp CD\n$$",
+        "type":"平面几何"
+    },
+    {
+        "id":132,
+        "question":"连 $AQ, AO, HF$，设 $Q$ 为 $\\triangle APB$ 的外心，则 $Q$ 在 $\\angle PAB$ 的外角平分线上。",
+        "answer":"设 $\\angle PAB = \\alpha$，则 $\\angle QAB = \\frac{1}{2}(180^\\circ - \\alpha)$，同理 $\\angle QBA = \\frac{1}{2}(180^\\circ - \\beta)$。由对称性和外角平分线性质，可知 $Q$ 是 $\\triangle APB$ 的旁心。",
+        "type":"平面几何"
+    },
+    {
+        "id":133,
+        "question":"连 $OB, OC, OE, OF, AE, AF$，由 $\\angle OBA + \\angle OCA = 180^\\circ$，得 $A, B, O, C$ 共圆。",
+        "answer":"又因 $MB \\cdot MC = MD \\cdot MA$，结合 $ME \\cdot MF = MD \\cdot MA$，得：\n$$\nME \\cdot MF = MO \\cdot MA\n\\Rightarrow A, E, O, F \\text{ 共圆}\n$$\n令 $AO$ 交 $\\odot O$ 于 $X, Y$，则 $X, Y$ 在 $BC$ 上，且：\n$$\n\\angle XFM = \\angle XFE = \\frac{1}{2} \\angle AOE = \\frac{1}{2} \\angle AFE\n\\Rightarrow XF \\text{ 平分 } \\angle AEM\n$$\n所以 $X$ 是 $\\triangle AEF$ 的外心，且 $X$ 是 $\\triangle ABC$ 的旁心。",
+        "type":"平面几何"
+    },
+    {
+        "id":134,
+        "question":"设 $O, O'$ 在边 $BC$ 上的垂足分别为 $M, N$，则：",
+        "answer":"$MD = EN,\\quad MO' + NO' = MD + ND \\Rightarrow \\angle EO'O_2 = 90^\\circ \\Rightarrow BO' \\perp EO_2$",
+        "type":"平面几何"
+    },
+    {
+        "id":135,
+        "question":"设 $\\angle BAC = 90^\\circ$，$O$ 为 $\\triangle AEF$ 的外心，则 $OE \\perp EF$。",
+        "answer":"由 $O_1O_2 = R - r$，且 $O_1O_2^2 = R(R - 2r)$，得欧拉公式：\n$$\nR^2 - d^2 = 2Rr\n$$\n其中 $d = OI$，$r$ 为内切圆半径。",
+        "type":"平面几何"
+    },
+    {
+        "id":136,
+        "question":"设 $E, F$ 分别为 $BD, CD$ 的中点，$K$ 是四边形 $ABCD$ 的外心。",
+        "answer":"由角度计算：\n$$\n\\angle BDC = 180^\\circ + \\angle BAC,\\quad \\angle BKC = 180^\\circ - \\angle BAC\n\\Rightarrow K \\text{ 在 } \\triangle ABC \\text{ 的外接圆上}\n$$",
+        "type":"平面几何"
+    },
+    {
+        "id":137,
+        "question":"若 $P$ 在 $\\angle DFE$ 的平分线上，则点 $T$ 是 $\\triangle DEF$ 的内心。",
+        "answer":"因为：\n$$\n\\angle PET = \\angle PIE + (180^\\circ - \\angle P)\n$$\n又因 $\\angle DEF = \\frac{1}{2} \\angle P$，所以 $\\angle PET = 90^\\circ$，即点 $T$ 是 $\\triangle DEF$ 的内心。",
+        "type":"平面几何"
+    },
+    {
+        "id":138,
+        "question":null,
+        "answer":"已知 $PE = 2R \\sin \\frac{\\theta}{2}$，且：$$ ID + IP = IM + IN = (R + d)(R - d) = R^2 - d^2 $$由于 $T$ 在角平分线上，故 $T$ 是 $\\triangle DEF$ 的内心 ⇒ 弦 $EF$ 与 $OF$ 相切。",
+        "type":"平面几何"
+    },
+    {
+        "id":139,
+        "question":"(3) 点 $M$ 在 $\\triangle ABC$ 外接圆上",
+        "answer":"延长 $ED$ 至 $M$ 使 $ED = DM$，连结 $BM, CM, BH, CH$。\n因 $H$ 是 $BC$ 中点，四边形 $BHOM$ 为平行四边形 ⇒ $\\angle BHC = 180^\\circ - \\angle BAC$。\n所以 $\\angle BMC + \\angle BAC = 180^\\circ$ ⇒ 点 $M$ 在 $\\triangle ABC$ 的外接圆上。",
+        "type":"平面几何"
+    },
+    {
+        "id":140,
+        "question":null,
+        "answer":"$\\angle PBF = \\angle PCE$ ⇒ $\\triangle PBF \\sim \\triangle PCE$ ⇒ $\\angle PFB = \\angle PEC$\n又 $\\angle PFA = \\angle PEA$ ⇒ 点 $P, A, E, F$ 四点共圆。",
+        "type":"平面几何"
+    },
+    {
+        "id":141,
+        "question":"$\\angle ACA_1 + \\angle AQA_1 = 180^\\circ$ ⇒ $A_1, C_1, A, Q$ 四点共圆。",
+        "answer":"同理：\n$$\n\\angle A_0Q = 180^\\circ - \\angle A_1PQ,\\quad \\angle A_0'Q = 180^\\circ - \\angle A_1PQ\n\\Rightarrow \\angle A_0QA_0' = 180^\\circ\n$$\n故 $A_0, A_0', Q$ 共线 ⇒ 定圆过 $A_0, A_0', Q$。",
+        "type":"平面几何"
+    },
+    {
+        "id":142,
+        "question":"设 $\\odot O$ 切弓形于 $C,D$，则：\n$$\n\\angle ACB = \\angle DCE = \\angle DCB + \\angle BCD\n$$",
+        "answer":"从而 $CA$ 平分 $\\angle MCN$ ⇒ $E$ 是优弧 $MN$ 中点；同理 $F$ 是劣弧中点 ⇒ $T$ 是 $MN$ 中点。",
+        "type":"平面几何"
+    },
+    {
+        "id":143,
+        "question":"条件：凸四边形 $ABCD$ 满足 $AB + AD = CB + CD$。构造点 $J,K$ 使得 $AJ = AG, CK = CH$，作圆过 $J,K$ 且分别切延长线于 $DA,DC$。",
+        "answer":"则直线 $AC$ 是两圆根轴 ⇒ 点 $A,C$ 对两圆等幂 ⇒ $AB + AD = CB + CD$ 成立。",
+        "type":"平面几何"
+    },
+    {
+        "id":144,
+        "question":"点 \\(P\\) 在根轴上的判定条件是什么？",
+        "answer":"设 \\(XY\\) 是两圆的根轴 ⇒ \\(XY \\perp AD\\)。\n若 \\(AC\\) 为直径 ⇒ \\(\\angle QMC = \\angle PZC = 90^\\circ\\) ⇒ \\(Q,M,Z,C\\) 共圆。\n同理 \\(Q',N,Z,B\\) 共圆 ⇒ 由相交弦定理得：\n$$\nQP \\cdot PZ = XP \\cdot PY = Q'P \\cdot PZ \\Rightarrow QP = Q'P\n$$\n又 \\(Q,Q'\\) 均在 \\(XY\\) 上且同侧 ⇒ \\(Q = Q'\\)。",
+        "type":"平面几何"
+    },
+    {
+        "id":145,
+        "question":"两圆外切于 $C$，直线 $l$ 过 $C$ ⇒ $A,C,B$ 共线。",
+        "answer":"利用角度关系可得：\n$$\nAC \\cdot AF = AE \\cdot AB \\Rightarrow AC + AF = AE + AB\n$$",
+        "type":"平面几何"
+    },
+    {
+        "id":146,
+        "question":"设 $P$ 为中心，将 $\\triangle ABC$ 映射至 $\\triangle A'D'$，保持比例不变。",
+        "answer":"任意一对点 $(A,B)$，其对应圆必过定点 $O,K$ ⇒ 圆过固定两点，距离为 $\\sqrt{OK^2 - r^2}$。",
+        "type":"平面几何"
+    },
+    {
+        "id":147,
+        "question":"$CH \\perp MN$，且 $C,D,M,E$ 共圆，$C,E,N,D$ 共圆",
+        "answer":"根轴交于一点 $O$ ⇒ $OC \\parallel MN$。",
+        "type":"平面几何"
+    },
+    {
+        "id":148,
+        "question":null,
+        "answer":"证明：如图，由 $\\triangle AKB \\cong \\triangle ADC$，得 $\\angle ABK = \\angle ACD$，故 $\\triangle AKB \\sim \\triangle ADC$。将 $\\triangle AKB$ 绕点 $A$ 旋转至 $\\triangle ADC$，则 $\\angle BAC = \\angle IAI'$，且 $AI = SC$。从而 $\\angle AIX = \\angle ACB = \\angle ADX$，所以点 $A, X, I, D$ 四点共圆。",
+        "type":"平面几何"
+    },
+    {
+        "id":149,
+        "question":null,
+        "answer":"如图，以 $B$ 为旋转中心旋转 $\\triangle BCD$，使 $BC$ 与 $BA$ 重合，点 $D$ 转到 $D'$。由于四边形 $ABCD$ 内接于圆，有：\n$$\n\\angle BAD' + \\angle CBD = \\angle BCD + \\angle CDB = 180^\\circ\n$$\n设 $Q$ 是 $AD$ 与 $BD'$ 的交点。由 $\\angle D'BA = \\angle DBC$，可得：\n$$\n\\angle DBQ = \\angle D'BA + \\angle ABQ = \\angle DBC + \\angle ABQ = \\angle QBD\n$$\n因此 $\\triangle AD'B \\cong \\triangle ADB$，即 $D'H = HD$。又因 $AD = 3DC = 3D'A$，得 $D'H = 2D'A$，即 $D'D = 2D'A$。过点 $A$ 作直线 $l$ 垂直于 $BD$，应用梅涅劳斯定理：\n$$\n\\frac{AH}{HD} + \\frac{DQ}{QB} = 1\n$$\n从而 $\\angle ADQ = \\angle BDQ$，故 $BD = 3DH = 3AH = DA$，于是 $DP \\perp AB$，$\\angle APD = 90^\\circ$。",
+        "type":"平面几何"
+    },
+    {
+        "id":150,
+        "question":"证明：可证三点均在 $\\odot O$ 与九点圆的根轴上。",
+        "answer":"如图，将 $\\triangle ABC$ 关于重心位似变换为 $\\triangle A'B'C'$，位似比为 $-\\frac{1}{2}$。在此变换下，$O$ 映射为九点圆圆心 $N$，且 $AO \\parallel A'N$，故 $AP$ 是九点圆的切线。易知 $\\angle OAB + \\angle C = 90^\\circ$，而 $\\angle BAA' + \\angle AAO + \\angle C = 90^\\circ$（不妨设 $AB < AC$）。又 $\\angle PAA' = \\angle BAA' + \\angle C$，所以 $\\angle PAA' = 90^\\circ - \\angle AAO$，进而 $\\angle APA' = \\angle P'A'A$，故 $P$ 在 $\\odot O$ 与九点圆的根轴上。同理，其余两点也在该根轴上。",
+        "type":"平面几何"
+    },
+    {
+        "id":151,
+        "question":"证明：如图，以 $A$ 为中心顺时针旋转 $90^\\circ$，使 $B \\to D$，$E \\to E'$，则 $AE' = AE$，且 $DE' \\parallel BF$。",
+        "answer":"因为 $E'$ 在 $CD$ 延长线上，所以：\n$$\nBE + FD = DE' + FD = EF\n$$\n于是 $BF + DF = EF$。\n又 $\\triangle AE'F \\cong \\triangle AEF$，得 $\\angle EAF = \\frac{1}{2} \\angle EAE' = 45^\\circ$。\n注意到“任意一条直线与其像直线的夹角等于旋转角”，$AF$ 是 $AE$ 的像，故 $\\angle AEF = 45^\\circ$。\n同理可证 $EP \\perp PF$，所以 $P, E, C, F$ 四点共圆。",
+        "type":"平面几何"
+    },
+    {
+        "id":152,
+        "question":null,
+        "answer":"如图，已知 $\\angle DCB = 50^\\circ$，$\\angle A = 20^\\circ$，且 $BD = BC$，故 $\\triangle BCD$ 为等腰三角形。作关于对称轴的轴反射，令 $C \\to D$，$E$ 的像为 $F$，交 $AC$ 于 $F$。得 $\\angle FBC = \\angle EBD = 20^\\circ$，$\\angle BFC = 80^\\circ = \\angle FCB$，故 $AB = BC = BD$。又 $\\angle FBD = 60^\\circ$，所以 $\\triangle BDF$ 是正三角形，$FD = FB$。再由 $\\angle FBE = \\angle BEF = 40^\\circ$，得 $FE = FB$，故 $F$ 是 $\\triangle BED$ 的外心，$\\angle DEB = 30^\\circ$。",
+        "type":"平面几何"
+    },
+    {
+        "id":153,
+        "question":"证明：如图，设折痕为直线 $l$，轴反射后 $A \\to A'$，$D \\to D'$，且 $D'$ 在 $BC$ 上。",
+        "answer":"因 $D$ 到三边距离相等，故 $D$ 是 $\\triangle ABD'$ 的旁心。\n在直角三角形 $\\triangle ABD'$ 中，内切圆半径公式：\n$$\nr = \\frac{1}{2}(BE + BD' - ED')\n$$",
+        "type":"平面几何"
+    },
+    {
+        "id":154,
+        "question":"证明：设 $M$ 为 $AD$ 中点，以 $M$ 为中心作中心对称，则 $D \\to A$，$C \\to B$，$P \\to P'$。",
+        "answer":"此时 $P'A = PD$，$PB = PC$，故：\n$$\nPA + PD > PB + PC\n$$\n即 $PA + PD > PB + PC$。",
+        "type":"平面几何"
+    },
+    {
+        "id":155,
+        "question":"证明：如图，以 $M$ 为中心作中心对称，则 $E \\to F$，$F \\to E$，$B \\to B'$，$C \\to C'$。",
+        "answer":"由 $EC' = CF = AB$，且 $EC \\perp CF$，得 $\\angle BEC' = \\angle BDF = \\angle BAC$。\n又 $EB = AC$，故 $\\triangle EC'B \\cong \\triangle ABC$，得 $BC' = BC$。\n因此 $BB' \\parallel CC'$，即 $BM \\parallel MC$ 成立。",
+        "type":"平面几何"
+    },
+    {
+        "id":156,
+        "question":"证明：设两圆切于点 $T$，$AT, BT, CT$ 分别交小圆于 $A_1, B_1, C_1$。小圆与大圆关于点 $T$ 位似，位似比为 $k$。",
+        "answer":"由圆幂定理：\n$$\nAT = k \\cdot AT,\\quad BT = k \\cdot BT,\\quad CT = k \\cdot CT\n$$\n代入得：\n$$\nAT + BT + CT = k(AT + BT + CT) \\Rightarrow a = b + c\n$$",
+        "type":"平面几何"
+    },
+    {
+        "id":157,
+        "question":null,
+        "answer":"证明：如图，作 $\\triangle AEC$ 和 $\\triangle BDC$，使得 $AE = BD$，$\\angle BDC + \\angle AEC = 180^\\circ$。\n则 $C, D, B, E$ 共线，且 $\\triangle ACC_1 \\cong \\triangle BCC$，三边对应相等。\n设 $O$ 为 $AB$ 的中垂线与 $CC_1$ 的交点，则 $OA = OB$，$OC = OC_1$。\n故 $\\triangle OAC_1 \\cong \\triangle OBC$，得 $\\angle OAC_1 = \\angle OBC$，\n进而 $\\angle COC_1 = \\angle AOB$，说明 $C_1, A, C$ 绕 $O$ 旋转 $\\angle AOB$ 后分别映射到 $C, B, C_1$。\n因此 $\\triangle ABCC_1$ 是 $\\triangle AC_1C$ 的像。\n由等腰三角形相似性可推得：\n$$\n\\frac{OE}{OF} = \\frac{OC}{OB},\\quad \\frac{OD}{OE} = \\frac{OC}{OA}\n$$\n从而 $\\triangle FOE \\sim \\triangle BOC$，得 $OF = OE$。",
+        "type":"平面几何"
+    },
+    {
+        "id":158,
+        "question":"证明：如图，设 $J$ 在 $\\angle FEC$ 的平分线上。",
+        "answer":"由 $D, J$ 关于 $I$ 对称，$A, D$ 构成平行四边形 $ADOJ$，故 $\\angle FEJ = \\angle DFE$。\n只需证 $\\angle DFE = \\frac{1}{2} \\angle FEC$，即 $\\angle DOE = \\frac{1}{2} \\angle FOC$。\n由 $\\triangle AOE$ 为等边三角形，得：\n$$\n\\angle DOE = 60^\\circ - \\angle AOD = \\frac{1}{2}(180^\\circ - (\\angle AOB + 60^\\circ)) = \\frac{1}{2}(\\angle AOB + \\angle FOA)\n$$\n命题成立，故 $J$ 在 $\\angle FEC$ 平分线上。\n又 $AF = AE$，所以 $J$ 是 $\\triangle CEF$ 的内心。",
+        "type":"平面几何"
+    },
+    {
+        "id":159,
+        "question":"证明：如图，以 $AB, DE$ 为边向外作正三角形 $\\triangle ABM$, $\\triangle DEN$。",
+        "answer":"将 $\\triangle AGB$ 绕 $A$ 顺时针旋转 $60^\\circ$ 至 $\\triangle AG'M$，则 $\\triangle AGG'$ 为正三角形，$AG = GG'$，$GB = G'M$。\n同理，将 $\\triangle EHD$ 顺时针旋转 $60^\\circ$ 至 $\\triangle EHN$，得 $\\triangle EHH'$ 为正三角形，$EH = HH'$，$HD = H'N$。\n连接 $MN$，由对称性知 $MN = CF$。\n由最短路径原理：\n$$\nAG + GB + GH + DH + HE = MG' + G'G + GH + HH' + H'N > MN = CF\n$$\n即 $AG + GB + GH + DH + HE > CF$。",
+        "type":"平面几何"
+    },
+    {
+        "id":160,
+        "question":"过点 $D$ 作 $MN \\parallel BC$，交 $CE$、$CF$ 于 $M$、$N$。",
+        "answer":"由平行线分线段成比例定理：\n$$\n\\frac{CE}{CF} = \\frac{CM}{CN}, \\quad \\frac{BD}{DC} = \\frac{BM}{CN}\n$$\n\n若 $G$ 是 $BC$ 上一点满足 $BG : GC = BD : DC$，则 $D, G$ 调和分割 $BC$，即 $(B,C;D,G)$ 成调和点列。",
+        "type":"平面几何"
+    },
+    {
+        "id":161,
+        "question":"取 $CD$、$BD$、$BC$ 中点分别为 $Q$、$R$、$S$。\n在 $\\triangle ACD$ 中，$M, R, Q$ 共线；在 $\\triangle BCF$ 中，$S, R, N$ 共线；在 $\\triangle BCE$ 中，$S, Q, P$ 共线。",
+        "answer":"对 $\\triangle QRS$ 应用梅涅劳斯定理，可得 $N, M, P$ 三点共线。",
+        "type":"平面几何"
+    },
+    {
+        "id":162,
+        "question":"设直线 $EF$ 与 $BC$ 交于点 $G$，由角平分线定理和 Ceva 定理可知：",
+        "answer":"$\\frac{CE}{EB} \\cdot \\frac{BF}{FA} \\cdot \\frac{AD}{DC} = 1 \\Rightarrow B, C, D, G \\text{ 成调和点列}$\n\n进而 $OB, OC, OD, OG$ 成调和线束 ⇒ $OD$ 平分 $\\angle BOC$。",
+        "type":"平面几何"
+    },
+    {
+        "id":163,
+        "question":"延长 $AO$ 至 $R$，使得 $OR = OA$，令 $R'$ 为 $A$ 关于 $\\odot O$ 的反演点。",
+        "answer":"由反演性质知：$A, R, O$ 共线，且 $AR \\cdot AO = r^2$（$r$ 为反演半径）。若 $Q$ 是某点关于 $\\odot O$ 的极点，则其轨迹为线段 $AO$ 内部。注：此题也可通过反演知识理解——$Q$ 与 $A$ 关于 $\\triangle ABC$ 外接圆互为反演点。",
+        "type":"平面几何"
+    },
+    {
+        "id":164,
+        "question":"设 $BC$ 与 $EF$ 交于点 $Q$，$M$ 为 $BC$ 中点。",
+        "answer":"由调和点列性质：\n$$\nQD \\cdot QM = QB \\cdot QC\n\\Rightarrow QE \\cdot QF = QB \\cdot QC = QD \\cdot QM\n$$\n\n故 $E, F, D, M$ 四点共圆 ⇒ $ME \\perp MF$。",
+        "type":"平面几何"
+    },
+    {
+        "id":165,
+        "question":"延长 $GE$ 与 $BD$ 交于点 $N$，则 $D, B, E, N$ 成调和点列。",
+        "answer":"以 $C$ 为中心作位似变换 ⇒ $G, M, N$ 成调和点列 ⇒ $AC$ 平分 $\\angle GAE$，即：\n$$\n\\angle GAC = \\angle EAC\n$$",
+        "type":"平面几何"
+    },
+    {
+        "id":166,
+        "question":"设 $FE$ 与 $BC$ 交于点 $Q$，由例2结论知 $B, C, E, H$ 成调和点列。",
+        "answer":"⇒ $DB, DC, DE, DH$ 成调和线束 ⇒ $DF$ 平分 $\\angle CDH$。",
+        "type":"平面几何"
+    },
+    {
+        "id":167,
+        "question":"设 $I$ 为 $\\triangle ABC$ 内心，$M$ 为 $BC$ 中点，连结 $OM$，则 $OM \\perp BC$。",
+        "answer":"由性质7推论2：\n$$\n\\frac{AI}{IE} = \\frac{AM}{ME} \\Rightarrow AI + IE = AE\n$$\n\n进一步得：\n$$\nOM = IF = \\text{边 } BC \\text{ 上旁切圆半径}\n$$",
+        "type":"平面几何"
+    },
+    {
+        "id":168,
+        "question":"作 $\\angle BAC$ 平分线交 $DE$ 于 $L$，交外接圆于 $A_1$。",
+        "answer":"由几何关系得：\n$$\n\\angle ATC = \\frac{1}{2} \\angle B = \\angle APC\n\\Rightarrow A, T, P, C \\text{ 共圆}\n$$\n\n于是 $T$ 为 $\\triangle ABC$ 的内心 ⇒ $I$ 在 $AT$ 上。",
+        "type":"平面几何"
+    },
+    {
+        "id":169,
+        "question":"设 $\\odot O$ 与 $AC$、$AB$ 切于点 $E$、$F$，$FE$ 与 $BC$ 交于点 $K$。",
+        "answer":"由配极原则知：$A$ 在 $K$ 关于 $\\odot O$ 的极线上 ⇒ $AK$ 是 $K$ 的极线。\n\n又因 $AD$ 与 $DX$ 重合 ⇒ $K' = K$。\n\n由 $ZDND = 90^\\circ$，得 $ND$ 是 $\\angle BNC$ 的平分线。\n\n设 $NB, NC$ 与 $\\odot O$ 交于 $P, Q$，则 $PQ \\parallel BC$。",
+        "type":"平面几何"
+    },
+    {
+        "id":170,
+        "question":"要证：\n$$\n\\frac{1}{ab} + \\frac{1}{bc} + \\frac{1}{ca} \\geq \\frac{4}{R^2}\n$$",
+        "answer":"只需证：\n$$\n\\frac{1}{4R^2 \\sin B + \\sin C} + \\frac{1}{4R^2 \\sin C + \\sin A} + \\frac{1}{4R^2 \\sin A + \\sin B} \\geq \\frac{1}{4R^2 \\sin B + \\sin C}\n$$\n进一步化简得：\n$$\n\\sin A + \\sin B + \\sin C \\geq 4 \\sin A \\sin B \\sin C\n$$\n利用恒等式：\n$$\n\\sin A + \\sin B + \\sin C = 4 \\cos \\frac{A}{2} \\cos \\frac{B}{2} \\cos \\frac{C}{2}\n$$\n且：\n$$\n\\sin A \\sin B \\sin C \\leq \\left( \\frac{\\sin A + \\sin B + \\sin C}{3} \\right)^3\n$$\n故不等式成立，当且仅当 $A = B = C = 60^\\circ$，即三角形为正三角形时取等。",
+        "type":"平面几何"
+    },
+    {
+        "id":171,
+        "question":"设 $x, y, z$ 为实数，则：\n$$\nx^2 + y^2 + z^2 - 2xy \\cos C - 2yz \\cos A - 2zx \\cos B = (x - y \\cos C - z \\cos B)^2 + (y \\sin C - z \\sin B)^2 \\geq 0\n$$",
+        "answer":"显然成立，等号成立当且仅当：\n$$\nx = y \\cos C + z \\cos B,\\quad y \\sin C = z \\sin B\n$$",
+        "type":"平面几何"
+    },
+    {
+        "id":172,
+        "question":"设 $M$ 是 $\\triangle ABC$ 内一点，满足 $AM = r$, $BM = R$，则存在以 $OA, OB$ 为圆心、$r, R$ 为半径的圆与边 $CD$ 相切。此时需证：$$\\frac{1}{r} + \\frac{1}{R} \\geq \\frac{1}{\\sqrt{rR}}$$",
+        "answer":"即：$$\\frac{1}{r} + \\frac{1}{R} \\geq \\frac{2}{\\sqrt{rR}} \\Rightarrow \\left( \\frac{1}{\\sqrt{r}} - \\frac{1}{\\sqrt{R}} \\right)^2 \\geq 0$$恒成立，最小值在 $r = R$ 时取得。",
+        "type":"平面几何"
+    },
+    {
+        "id":173,
+        "question":"对于固定边长的四边形，其面积最大时为圆内接四边形。",
+        "answer":"设 $s = \\frac{a+b+c+d}{2}$，则面积为：\n$$\nS = \\sqrt{(s-a)(s-b)(s-c)(s-d)} \\leq \\frac{(a+c)(b+d)}{4}\n$$\n由均值不等式得：\n$$\n(a+c)(b+d) \\leq \\frac{(a+b+c+d)^2}{4} = s^2\n$$\n故面积最大值为 $s^2\/4$，当且仅当四边形为矩形时取等。",
+        "type":"平面几何"
+    },
+    {
+        "id":174,
+        "question":"对四边形 $ACEF$ 应用托勒密定理：",
+        "answer":"$$\nAC \\cdot EF + CE \\cdot AF \\geq AE \\cdot CF\n$$",
+        "type":"平面几何"
+    },
+    {
+        "id":175,
+        "question":"建立坐标系后，直线 $QR$ 恒过定点 $( -\\frac{x_0}{2}, 0 )$，其中 $x_0$ 是某固定点横坐标。",
+        "answer":"此结论可通过代数验证：\n$$\n\\frac{x_0}{2} = \\frac{1}{2} \\cdot \\frac{x_0}{1} \\Rightarrow \\text{定点为 } \\left(-\\frac{x_0}{2}, 0\\right)\n$$",
+        "type":"平面几何"
+    },
+    {
+        "id":176,
+        "question":null,
+        "answer":"若四边形 $ABCD$ 是正方形，则：\n$$\n\\frac{PQ}{RS} = 1 \\Rightarrow \\text{比值为 } 1\n$$\n否则，通过中点连线和平行四边形性质，可证：\n$$\n\\frac{PQ}{RS} < 1\n$$\n即非正方形时该比值小于1。",
+        "type":"平面几何"
+    },
+    {
+        "id":177,
+        "question":"第9题",
+        "answer":"证明：如图，连接 $AC$、$MP$。\n由面积关系：\n$$\nS_{\\triangle ABC} = S_{\\triangle AMP} + S_{\\triangle MBC}\n$$\n又因：\n$$\nS_{\\triangle ABC} = S_{\\triangle AMC} + S_{\\triangle AMB}\n$$\n所以：\n$$\nS_{\\triangle AMP} = \\frac{1}{2} S_{\\triangle ABC}\n$$",
+        "type":"平面几何"
+    },
+    {
+        "id":178,
+        "question":"第10题",
+        "answer":"证明：将平面上的点视为复数。设四边形 $P_1P_2P_3P_4$ 为平行四边形，则有：\n$$\nP_4 = P_1 + P_2 - P_3\n$$\n同理可得：\n$$\nP_5 = P_1 + P_3 - P_2,\\quad P_6 = P_2 + P_3 - P_1\n$$\n于是：\n$$\n\\overrightarrow{P_1P_4} = (P_1 + P_2) - (P_3 + P_4),\\quad \\overrightarrow{P_3P_5} = (P_1 + P_4) - (P_2 + P_4)\n$$\n因此 $\\triangle P_1P_4P_5$ 全等于由点 $P_1+P_2$, $P_3+P_4$, $P_1+P_3$ 构成的三角形。\n\n同理可证 $\\triangle P_2P_5P_6$ 也全等于由 $P_2+P_3$, $P_1+P_4$, $P_2+P_4$ 构成的三角形。\n\n故：\n$$\n\\triangle P_1P_4P_5 \\cong \\triangle P_2P_5P_6\n$$",
+        "type":"平面几何"
+    },
+    {
+        "id":179,
+        "question":"第11题",
+        "answer":"证明：如图，连接 $PN$，过 $O$ 作 $MN \\parallel AB$，交 $AD$ 于 $M$，交 $BC$ 于 $N$，设 $E$ 为 $MN$ 的中点。\n\n由角度关系知：\n$$\n\\angle BAP = \\angle ADC,\\quad \\angle BPA = \\angle DPC\n$$\n从而：\n$$\n\\frac{\\sin \\angle BAP}{\\sin \\angle BPA} = \\frac{\\sin \\angle ADC}{\\sin \\angle DPC}\n\\Rightarrow \\frac{BP}{PC} = \\frac{AD}{DC}\n$$\n进一步推导得 $NP \\perp AD$。又因 $GM \\parallel AB$，且 $BG = CO$，则 $ON = \\frac{1}{2} MN$，同理 $OQ = \\frac{1}{2} MN$，故 $OP = OQ$。",
+        "type":"平面几何"
+    },
+    {
+        "id":180,
+        "question":"第12题",
+        "answer":"证明：设 $I$ 为 $\\triangle ABC$ 的内心。\n\n首先证明：点 $D, B, T, X$ 和 $E, C, T, Y$ 分别共圆。\n\n注意到：\n$$\n\\angle XIB = 180^\\circ - \\angle BIC = 90^\\circ + \\frac{1}{2}\\angle A\n$$\n而：\n$$\n\\angle ADE = 90^\\circ - \\frac{1}{2}\\angle A\n\\Rightarrow \\angle XIB = \\angle ADE\n\\Rightarrow D, B, T, X \\text{ 四点共圆}\n$$\n同理 $E, C, T, Y$ 四点共圆。\n\n由此可知 $XZ = YZ$，且均为直角三角形斜边上的中线，故 $\\triangle XYZ$ 是等边三角形的充要条件是：\n$$\n\\angle YXZ = 60^\\circ \\iff \\angle B + \\angle C = 60^\\circ \\iff \\angle A = 60^\\circ\n$$\n因此命题成立。",
+        "type":"平面几何"
+    },
+    {
+        "id":181,
+        "question":"第13题",
+        "answer":"证明：设 $BC = a$，$CA = b$，$AB = c$，连结 $PA$、$PB$、$PC$。\n\n由面积公式：\n$$\nS_{\\triangle ABC} = \\frac{1}{2} ab \\sin C,\\quad S_{\\triangle PAC} = \\frac{1}{2} ac \\sin B\n$$\n若 $S_{\\triangle PAC} = \\frac{1}{2} S_{\\triangle ABC}$，则：\n$$\nac \\sin B = ab \\sin C \\Rightarrow \\frac{\\sin B}{b} = \\frac{\\sin C}{c}\n$$\n说明 $P$ 在某个特定位置上满足该比例关系。\n\n再利用中线性质可得：\n$$\nPN = \\frac{a}{2},\\quad PM = \\frac{c}{2}\n$$\n最终得出：\n$$\nPQ = \\frac{1}{2}(PN + PM) = \\frac{1}{2}(a + c)\n$$",
+        "type":"平面几何"
+    },
+    {
+        "id":182,
+        "question":"第14题",
+        "answer":"证明：设 $A'$、$B'$、$C'$ 分别为点 $A$、$B$、$C$ 关于直线 $l$ 的对称点。\n\n由勾股定理：\n$$\nAP^2 - AA'^2 = BP^2 - BB'^2 = CP^2 - CC'^2\n$$\n三式相加得：\n$$\nAA'^2 + BB'^2 + CC'^2 = BA'^2 + CB'^2 + AC'^2\n$$\n整理后：\n$$\n(AA' - BA')(AA' + BA') + (BB' - CB')(BB' + CB') + (CC' - AC')(CC' + AC') = 0\n$$\n由于 $AA' + BA' = BB' + CB' = CC' + AC'$，令其为常数 $k$，则：\n$$\nAA' - BA' + BB' - CB' + CC' - AC' = 0\n\\Rightarrow AA' + BB' + CC' = BA' + CB' + AC'\n$$\n即：\n$$\n\\sum AA' = \\sum A'B\n$$\n这表明重心或某种对称结构存在。",
+        "type":"平面几何"
+    }
+]

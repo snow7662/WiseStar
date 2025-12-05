@@ -1,0 +1,1999 @@
+## 数学竞赛中的著名定理 v1.0 张端阳
+
+## 2025.6.14
+
+## 目录
+
+1 几何 6
+
+1.1 梅涅劳斯定理, Menelaus 6
+
+1.2 塞瓦定理, Ceva, 1678 7
+
+1.3 笛沙格定理, Desargues, 1639 8
+
+1.4 帕斯卡定理, Pascal, 1639 8
+
+1.5 帕普斯定理, Pappus, 320 9
+
+1.6 托勒密定理, Ptolemy 9
+
+1.7 三弦定理 10
+
+1.8 张角定理 10
+
+1.9 西姆松定理, Simson, 1797 11
+
+1.10 斯坦纳定理, Steiner, 1856 11
+
+1.11 斯特瓦尔特定理, Stewart, 1746 12
+
+1.12 布利安桑定理, Brianchon, 1806 12
+
+1.13 布洛卡定理, Brocard 13
+
+1.14 密克定理, Miquel, 1838 13
+
+1.15 蝴蝶定理, 1803 14
+
+1.16 蒙日圆定理, Monge 15
+
+1.17 开世定理, Casey, 1866 15
+
+1.18 费尔巴哈定理, Feuerbach, 1822 16
+
+1.19 高斯-波登米勒定理, Gauss-Bodenmiller 16
+
+1.20 彭赛列闭合定理, Poncelet, 1813 17
+
+1.21 莫利定理, Morley, 1900 17
+
+1.22 沢山引理, Sawayama, 1905 18
+
+1.23 Thébault 定理, 1938 18
+
+1.24 笛卡尔圆定理, Descartes, 1643 19
+
+1.25 杜洛斯-凡利线定理, Droz-Farny, 1899 19
+
+1.26 Sondat 定理, 1894 20
+
+1.27 Erdós-Mordell 不等式, 1935 20
+
+<!-- Meanless: 1-->
+
+
+2 不等式 21
+
+2.1 均值不等式 21
+
+2.2 柯西不等式, Cauchy, 1821 21
+
+2.3 Aczél 不等式, 1956 21
+
+2.4 拉格朗日恒等式, Lagrange 21
+
+2.5 排序不等式 22
+
+2.6 切比雪夫不等式, Chebyshev 22
+
+2.7 阿贝尔变换, Abel, 1826 22
+
+2.8 伯努利不等式, Bernoulli, 1689 22
+
+2.9 琴生不等式, Jensen, 1906 23
+
+2.10 幂平均不等式, 1858 23
+
+2.11 范数不等式, 1902 23
+
+2.12 赫尔德不等式, Hölder, 1889 24
+
+2.13 闵可夫斯基不等式, Minkowski, 1896 24
+
+2.14 樊畿不等式, 1959 24
+
+2.15 嵌入不等式, Wolstenholme, 1867 25
+
+2.16 舒尔不等式, Schur, 1934 25
+
+2.17 康托洛维奇不等式, Kantorovich, 1948 25
+
+2.18 波利亚-舍贵不等式, Pólya-Szegö, 1925 25
+
+2.19 Ostrowski 不等式, 1951 25
+
+2.20 哈代不等式, Hardy, 1920 26
+
+2.21 Carleman 不等式, 1923 26
+
+2.22 希尔伯特不等式, Hilbert, 1888 26
+
+2.23 Carlson 不等式, 1934 27
+
+2.24 Fan-Taussky-Todd 不等式, 1955 27
+
+2.25 Lenhard 不等式, 1957 28
+
+2.26 Hlawka 不等式, 1942 28
+
+2.27 卡拉玛特不等式, Karamata, 1932 29
+
+2.28 Popoviciu 不等式, 1965 29
+
+2.29 牛顿不等式, Newton, 1707 29
+
+2.30 麦克劳林不等式, Maclaurin, 1729 30
+
+2.31 Surányi 不等式, 1968 30
+
+3 多项式 31
+
+3.1 韦达定理, Vieta, 1579 31
+
+3.2 代数基本定理, 1608 31
+
+3.3 牛顿恒等式, Newton, 1629 31
+
+3.4 拉格朗日插值公式, Lagrange, 1795 31
+
+3.5 艾森斯坦判别法, Eisenstein, 1846 31
+
+3.6 组合零点定理, Alon, 1999 32
+
+3.7 高斯-卢卡斯定理, Gauss-Lucas, 1836 32
+
+3.8 Marden 定理, 1864 32
+
+3.9 笛卡尔符号法则, Descartes, 1637 32
+
+3.10 Perron 判别法, 1907 32
+
+<!-- Meanless: 2-->
+
+
+3.11 Cohn 判别法, 1925 32
+
+3.12 Mason-Stothers 定理, 1981 32
+
+4 数论 33
+
+4.1 算术基本定理 33
+
+4.2 裴蜀定理, Bézout, 1624 33
+
+4.3 费马小定理, Fermat, 1640 33
+
+4.4 欧拉定理, Euler, 1736 33
+
+4.5 威尔逊定理, Wilson, 1770 33
+
+4.6 中国剩余定理 34
+
+4.7 拉格朗日定理, Lagrange 34
+
+4.8 欧拉判别法, Euler, 1761 34
+
+4.9 二次互反律, Gauss, 1801 34
+
+4.10 Thue 引理, 1902 34
+
+4.11 费马二平方和定理, Fermat, 1640 34
+
+4.12 拉格朗日四平方和定理, Lagrange, 1770 35
+
+4.13 厄米特恒等式, Hermite, 1884 35
+
+4.14 勒让德公式, Legendre, 1808 35
+
+4.15 指数提升引理 35
+
+4.16 卢卡斯定理, Lucas, 1878 35
+
+4.17 库默尔定理, Kummer, 1852 36
+
+4.18 沃斯滕霍姆定理, Wolstenholme, 1862 36
+
+4.19 舒尔定理, Schur, 1912 36
+
+4.20 亨泽尔引理, Hensel, 1904 36
+
+4.21 莫比乌斯反演公式, Möbius, 1832 36
+
+4.22 闵可夫斯基定理, Minkowski, 1896 37
+
+4.23 狄利克雷逼近定理, Dirichlet, 1842 37
+
+4.24 克罗内克逼近定理, Kronecker, 1884 37
+
+4.25 Hurwitz 无理数定理, 1891 38
+
+4.26 刘维尔定理, Liouville, 1844 38
+
+4.27 Thue 定理, 1909 38
+
+4.28 小林定理, Kobayashi, 1981 38
+
+4.29 Erdós-Ginzburg-Ziv 定理, 1961 38
+
+4.30 柯西-达文波特定理, Cauchy-Davenport, 1813 39
+
+4.31 Chevalley-Warning 定理, 1935 39
+
+4.32 卡塔兰猜想, Catalan, 1844 39
+
+4.33 Bertrand 假设, 1845 39
+
+4.34 Sylvester-Schur 定理, 1892 39
+
+4.35 Mertens 定理, 1874 39
+
+4.36 狄利克雷定理, Dirichlet, 1837 40
+
+4.37 Pólya-Vinogradov 不等式, 1918 40
+
+4.38 Zsigmondy 定理, 1892 40
+
+4.39 Beatty 定理, 1894 40
+
+4.40 Uspensky 定理, 1927 40
+
+<!-- Meanless: 3-->
+
+
+4.41 Lerch 同余式, 1905 41
+
+5 组合 42
+
+5.1 施佩纳定理, Sperner, 1928 42
+
+5.2 LYM 不等式, Lubell-Yamamoto-Meshalkin, 1954 42
+
+5.3 Bollobás 定理, 1965 42
+
+5.4 Erdós-Ko-Rado 定理, 1961 42
+
+5.5 Kleitman 引理, 1966 42
+
+5.6 Fisher 不等式, 1940 42
+
+5.7 舒尔定理, Schur, 1917 43
+
+5.8 Dilworth 定理, 1950 43
+
+5.9 Mirsky 定理, 1971 43
+
+5.10 Erdós-Szekeres 定理, 1935 43
+
+5.11 太阳花引理, 1960 43
+
+5.12 拉格朗日反演公式, Lagrange, 1770 43
+
+5.13 范德瓦尔登定理, van der Waerden, 1927 44
+
+5.14 Rado 定理, 1933 44
+
+5.15 Raney 引理, 1960 44
+
+6 图论 45
+
+6.1 图兰定理, Turán, 1941 45
+
+6.2 拉姆赛定理, Ramsey, 1930 45
+
+6.3 霍尔定理, Hall, 1935 45
+
+6.4 Ore 定理, 1960 45
+
+6.5 Caro-Wei定理, 1979 46
+
+6.6 交叉数引理, 1973 46
+
+6.7 Berge 定理, 1957 46
+
+6.8 Gallai-Roy 定理, 1958 46
+
+6.9 Brooks 定理, 1941 46
+
+6.10 König 边染色定理, 1916 46
+
+6.11 Vizing 定理, 1964 47
+
+6.12 Tutte 定理, 1947 47
+
+6.13 Menger 定理, 1927 47
+
+6.14 König-Egeváry 定理, 1931 47
+
+6.15 Hoffman-Singleton 定理, 1960 47
+
+6.16 友谊定理, 1966 47
+
+6.17 Graham-Pollak 定理, 1972 47
+
+6.18 Erdós-Gallai 定理, 1960 48
+
+7 组合几何 49
+
+7.1 皮克定理, Pick, 1899 49
+
+7.2 欧拉多面体公式, Euler, 1750 49
+
+7.3 海莱定理, Helly, 1913 49
+
+7.4 Sylvester-Gallai 定理, 1893 49
+
+<!-- Meanless: 4-->
+
+
+7.5 施佩纳引理, Sperner, 1928 49
+
+7.6 Szemerédi-Trotter 定理, 1983 49
+
+7.7 Spencer-Szemerédi-Trotter 定理, 1984 50
+
+8 概率 51
+
+8.1 Bonferroni 不等式, 1936. 51
+
+8.2 马尔可夫不等式, Markov, 1889 51
+
+8.3 切比雪夫不等式, Chebyshev, 1853 51
+
+8.4 霍夫丁不等式, Hoeffding, 1963 51
+
+8.5 Lovász 局部引理, 1975 52
+
+9 其他 53
+
+9.1 离散介值定理 53
+
+9.2 欧拉四平方和恒等式, Euler, 1749 53
+
+9.3 齐肯多夫定理, Zeckendorf, 1939 53
+
+9.4 西格尔引理, Siegel, 1929 53
+
+<!-- Meanless: 5-->
+
+
+## 1 几何
+
+### 1.1 梅涅劳斯定理, Menelaus
+
+一条直线与 \( \bigtriangleup  {ABC} \) 的三边 \( {BC},{AC},{AB} \) 或其延长线分别交于点 \( D,E,F \) ,则
+
+\[\frac{AF}{FB} \cdot  \frac{BD}{DC} \cdot  \frac{CE}{EA} = 1.\]
+
+<!-- Media -->
+
+<!-- figureText: \( \mathbf{\mathit{E}} \) \( E \) \( B \) \( \mathbf{\mathit{C}} \) -->
+
+<img src="https://cdn.noedgeai.com/01983027-7278-7e0d-baee-039b4daa7cb0_5.jpg?x=365&y=633&w=838&h=334&r=0"/>
+
+<!-- Media -->
+
+角元形式: 设 \( G \) 是平面上任意一点,则
+
+\[\frac{\sin \angle {AGF}}{\sin \angle {FGB}} \cdot  \frac{\sin \angle {BGD}}{\sin \angle {DGC}} \cdot  \frac{\sin \angle {CGE}}{\sin \angle {EGA}} = 1.\]
+
+<!-- Media -->
+
+<!-- figureText: \( B \) \( G \) \( C \) \( D \) -->
+
+<img src="https://cdn.noedgeai.com/01983027-7278-7e0d-baee-039b4daa7cb0_5.jpg?x=574&y=1183&w=422&h=333&r=0"/>
+
+<!-- Media -->
+
+<!-- Meanless: 6-->
+
+
+### 1.2 塞瓦定理, Ceva, 1678
+
+设 \( P \) 是 \( \bigtriangleup {ABC} \) 所在平面上的一点,直线 \( {AP},{BC} \) 交于点 \( D \) ,直线 \( {BP},{CA} \) 交于点 \( E \) ,直线 \( {CP},{AB} \) 交于点 \( F \) ,则
+
+\[\frac{AF}{FB} \cdot  \frac{BD}{DC} \cdot  \frac{CE}{EA} = 1.\]
+
+<!-- Media -->
+
+<!-- figureText: \( B \) \( D \) \( B \) -->
+
+<img src="https://cdn.noedgeai.com/01983027-7278-7e0d-baee-039b4daa7cb0_6.jpg?x=430&y=580&w=684&h=280&r=0"/>
+
+<!-- Media -->
+
+角元形式: 设 \( {AD},{BE},{CF} \) 交于一点,则
+
+\[\frac{\sin \angle {BAD}}{\sin \angle {CAD}} \cdot  \frac{\sin \angle {ACF}}{\sin \angle {BCF}} \cdot  \frac{\sin \angle {CBE}}{\sin \angle {ABE}} = 1.\]
+
+<!-- Media -->
+
+<!-- figureText: \( B \) -->
+
+<img src="https://cdn.noedgeai.com/01983027-7278-7e0d-baee-039b4daa7cb0_6.jpg?x=431&y=1030&w=661&h=295&r=0"/>
+
+<!-- Media -->
+
+圆内接六边形形式: 在圆内接六边形 \( {ABCDEF} \) 中,对角线 \( {AD},{BE},{CF} \) 交于
+
+一点当且仅当
+
+\[\frac{AB}{BC} \cdot  \frac{CD}{DE} \cdot  \frac{EF}{FA} = 1\]
+
+<!-- Media -->
+
+<!-- figureText: \( B \) -->
+
+<img src="https://cdn.noedgeai.com/01983027-7278-7e0d-baee-039b4daa7cb0_6.jpg?x=590&y=1516&w=393&h=377&r=0"/>
+
+<!-- Media -->
+
+<!-- Meanless: 7-->
+
+
+### 1.3 笛沙格定理, Desargues, 1639
+
+对于两个三角形, 对应边的交点共线等价于对应点的连线共点. 在下图中, 即为 \( P,Q,R \) 三点共线等价于 \( {A}_{1}{A}_{2},{B}_{1}{B}_{2},{C}_{1}{C}_{2} \) 三线共点.
+
+<!-- Media -->
+
+<!-- figureText: \( {B}_{2} \) \( {C}_{2} \) \( {C}_{1} \) -->
+
+<img src="https://cdn.noedgeai.com/01983027-7278-7e0d-baee-039b4daa7cb0_7.jpg?x=517&y=488&w=562&h=424&r=0"/>
+
+<!-- Media -->
+
+### 1.4 帕斯卡定理, Pascal, 1639
+
+圆内接六边形三条对边所在直线的交点共线. 在下图中,即为 \( {AB} \) 与 \( {DE} \) 的交点 \( P\text{、}{BC} \) 与 \( {EF} \) 的交点 \( Q\text{、}{CD} \) 与 \( {FA} \) 的交点 \( R \) 共线.
+
+<!-- Media -->
+
+<!-- figureText: \( Q \) \( B \) \( \mathbf{\mathit{F}} \) -->
+
+<img src="https://cdn.noedgeai.com/01983027-7278-7e0d-baee-039b4daa7cb0_7.jpg?x=571&y=1183&w=424&h=427&r=0"/>
+
+<!-- Media -->
+
+度量帕斯卡: \( \frac{QP}{PR} \cdot  \frac{RA}{AC} \cdot  \frac{CE}{EQ} = 1 \) .
+
+<!-- Meanless: 8-->
+
+
+
+
+### 1.5 帕普斯定理, Pappus, 320
+
+设 \( {A}_{1},{B}_{1},{C}_{1} \) 依次是直线 \( {l}_{1} \) 上的点, \( {A}_{2},{B}_{2},{C}_{2} \) 依次是直线 \( {l}_{2} \) 上的点. 设 \( P,Q \) , \( R \) 分别是 \( {B}_{1}{C}_{2} \) 与 \( {B}_{2}{C}_{1}\text{、}{C}_{1}{A}_{2} \) 与 \( {C}_{2}{A}_{1}\text{、}{A}_{1}{B}_{2} \) 与 \( {A}_{2}{B}_{1} \) 的交点. 则 \( P,Q,R \) 三点共线.
+
+<!-- Media -->
+
+<!-- figureText: \( {B}_{1} \) \( {C}_{1} \) \( {l}_{1} \) \( {B}_{2} \) \( {C}_{2} \) \( {l}_{2} \) \( R \) \( {A}_{2} \) -->
+
+<img src="https://cdn.noedgeai.com/01983027-7278-7e0d-baee-039b4daa7cb0_8.jpg?x=487&y=538&w=585&h=332&r=0"/>
+
+<!-- Media -->
+
+### 1.6 托勒密定理, Ptolemy
+
+在圆内接四边形 \( {ABCD} \) 中,
+
+\[{AB} \cdot  {CD} + {AD} \cdot  {BC} = {AC} \cdot  {BD}.\]
+
+<!-- Media -->
+
+<!-- figureText: \( B \) \( D \) -->
+
+<img src="https://cdn.noedgeai.com/01983027-7278-7e0d-baee-039b4daa7cb0_8.jpg?x=598&y=1175&w=369&h=352&r=0"/>
+
+<!-- Media -->
+
+托勒密不等式: 在四边形 \( {ABCD} \) 中,
+
+\[{AB} \cdot  {CD} + {AD} \cdot  {BC} \geq  {AC} \cdot  {BD},\]
+
+当且仅当 \( A,B,C,D \) 共圆时等号成立.
+
+<!-- Meanless: 9-->
+
+
+
+
+### 1.7 三弦定理
+
+设 \( A,B,C,D \) 是圆上顺次四点,则
+
+\[{AB} \cdot  \sin \angle {CAD} + {AD} \cdot  \sin \angle {BAC} = {AC} \cdot  \sin \angle {BAD}.\]
+
+<!-- Media -->
+
+<!-- figureText: \( B \) \( D \) -->
+
+<img src="https://cdn.noedgeai.com/01983027-7278-7e0d-baee-039b4daa7cb0_9.jpg?x=595&y=522&w=370&h=355&r=0"/>
+
+<!-- Media -->
+
+### 1.8 张角定理
+
+在 \( \bigtriangleup {ABC} \) 中, \( D \) 是 \( {BC} \) 上一点,则
+
+\[\frac{\sin \angle {BAD}}{AC} + \frac{\sin \angle {CAD}}{AB} = \frac{\sin \angle {BAC}}{AD}.\]
+
+<!-- Media -->
+
+<!-- figureText: \( B \) \( D \) -->
+
+<img src="https://cdn.noedgeai.com/01983027-7278-7e0d-baee-039b4daa7cb0_9.jpg?x=558&y=1224&w=461&h=322&r=0"/>
+
+<!-- Media -->
+
+<!-- Meanless: 10-->
+
+
+### 1.9 西姆松定理, Simson, 1797
+
+设 \( P \) 是 \( \bigtriangleup {ABC} \) 外接圆上一点, \( P \) 在 \( {BC},{CA},{AB} \) 上的投影分别为 \( D,E,F \) , 则 \( D,E,F \) 共线.
+
+<!-- Media -->
+
+<!-- figureText: \( B \) \( P \) \( \mathbf{\mathit{F}} \) -->
+
+<img src="https://cdn.noedgeai.com/01983027-7278-7e0d-baee-039b4daa7cb0_10.jpg?x=590&y=496&w=385&h=434&r=0"/>
+
+<!-- Media -->
+
+### 1.10 斯坦纳定理, Steiner, 1856
+
+设 \( P \) 是 \( \bigtriangleup {ABC} \) 外接圆上一点, \( H \) 是 \( \bigtriangleup {ABC} \) 的垂心,则 \( P \) 关于 \( \bigtriangleup {ABC} \) 的西姆松线平分线段 \( {PH} \) .
+
+<!-- Media -->
+
+<!-- figureText: \( B \) -->
+
+<img src="https://cdn.noedgeai.com/01983027-7278-7e0d-baee-039b4daa7cb0_10.jpg?x=573&y=1193&w=439&h=440&r=0"/>
+
+<!-- Media -->
+
+<!-- Meanless: 11-->
+
+
+### 1.11 斯特瓦尔特定理, Stewart, 1746
+
+在 \( \bigtriangleup {ABC} \) 中, \( D \) 是 \( {BC} \) 上一点,则
+
+\[A{D}^{2} = \frac{CD}{BC} \cdot  A{B}^{2} + \frac{BD}{BC} \cdot  A{C}^{2} - {BD} \cdot  {CD}.\]
+
+<!-- Media -->
+
+<!-- figureText: \( B \) \( D \) -->
+
+<img src="https://cdn.noedgeai.com/01983027-7278-7e0d-baee-039b4daa7cb0_11.jpg?x=562&y=568&w=457&h=320&r=0"/>
+
+<!-- Media -->
+
+### 1.12 布利安桑定理, Brianchon, 1806
+
+设 \( {ABCDEF} \) 是圆外切六边形,则 \( {AD},{BE},{CF} \) 三线共点.
+
+<!-- Media -->
+
+<!-- figureText: \( B \) \( \mathbf{\mathit{F}} \) \( D \) -->
+
+<img src="https://cdn.noedgeai.com/01983027-7278-7e0d-baee-039b4daa7cb0_11.jpg?x=555&y=1125&w=478&h=425&r=0"/>
+
+<!-- Media -->
+
+<!-- Meanless: 12-->
+
+
+### 1.13 布洛卡定理, Brocard
+
+设四边形 \( {ABCD} \) 内接于圆 \( O,{AB},{CD} \) 交于点 \( E,{AD},{BC} \) 交于点 \( F,{AC},{BD} \) 交于点 \( G \) ,则 \( O \) 是 \( \bigtriangleup  {EFG} \) 的垂心.
+
+<!-- Media -->
+
+<!-- figureText: \( D \) \( E \) 0 \( A \) -->
+
+<img src="https://cdn.noedgeai.com/01983027-7278-7e0d-baee-039b4daa7cb0_12.jpg?x=485&y=492&w=605&h=474&r=0"/>
+
+<!-- Media -->
+
+### 1.14 密克定理, Miquel, 1838
+
+三角形形式: 在 \( \bigtriangleup  {ABC} \) 中, \( D,E,F \) 分别是 \( {BC},{CA},{AB} \) 上的点,则 \( \bigtriangleup  {AEF} \) , \( \bigtriangleup {BFD},\bigtriangleup {CDE} \) 的外接圆交于一点 \( M \) ,称为 \( \bigtriangleup {ABC} \) 关于 \( D,E,F \) 的密克点. 进一步,设 \( X,Y,Z \) 分别是弧 \( {EF},{FD},{DE} \) 上的点,使得 \( {AX},{BY},{CZ} \) 交于一点 \( P \) , 则 \( X,Y,Z,M,P \) 五点共圆.
+
+<!-- Media -->
+
+<!-- figureText: \( B \) -->
+
+<img src="https://cdn.noedgeai.com/01983027-7278-7e0d-baee-039b4daa7cb0_12.jpg?x=572&y=1315&w=432&h=416&r=0"/>
+
+<!-- Media -->
+
+<!-- Meanless: 13-->
+
+
+完全四边形形式: 在 \( \bigtriangleup  {ABC} \) 中,一直线与 \( {BC} \) 延长线及 \( {AC},{AB} \) 分别交于点 \( D,E,F \) ,则 \( \bigtriangleup  {AEF}, \bigtriangleup  {BDF}, \bigtriangleup  {CDE}, \bigtriangleup  {ABC} \) 的外接圆交于一点 \( M \) ,称为完全四边形 \( {ABCDEF} \) 的密克点. 进一步,设四个圆的圆心分别为 \( {O}_{1},{O}_{2},{O}_{3},{O}_{4} \) ,则它们与 \( M \) 五点共圆; 当四边形 \( {BCEF} \) 内接于圆 \( O \) 时, \( M \) 是 \( O \) 在 \( {AD} \) 上的投影,且 \( M \) 也在 \( \bigtriangleup {BOE} \) 和 \( \bigtriangleup {COF} \) 的外接圆上.
+
+<!-- Media -->
+
+<!-- figureText: \( {O}_{1} \) \( M \) \( E \) \( {\sigma }_{2} \) \( B \) -->
+
+<img src="https://cdn.noedgeai.com/01983027-7278-7e0d-baee-039b4daa7cb0_13.jpg?x=551&y=521&w=477&h=517&r=0"/>
+
+<!-- Media -->
+
+### 1.15 蝴蝶定理, 1803
+
+设 \( {PQ} \) 是圆的一条弦, \( M \) 是 \( {PQ} \) 的中点,过 \( M \) 作圆的另两条弦 \( {AB},{CD} \) . 设 \( {AD},{BC} \) 与 \( {PQ} \) 分别交于点 \( X,Y \) ,则 \( M \) 也是 \( {XY} \) 的中点.
+
+<!-- Media -->
+
+<!-- figureText: \( A \) \( \mathbf{\mathit{C}} \) \( X \) \( D \) -->
+
+<img src="https://cdn.noedgeai.com/01983027-7278-7e0d-baee-039b4daa7cb0_13.jpg?x=590&y=1313&w=396&h=410&r=0"/>
+
+<!-- Media -->
+
+<!-- Meanless: 14-->
+
+
+### 1.16 蒙日圆定理, Monge
+
+对平面上的三个圆, 若它们互不包含, 且半径两两不同, 则它们两两外公切线的交点共线.
+
+<!-- Media -->
+
+<img src="https://cdn.noedgeai.com/01983027-7278-7e0d-baee-039b4daa7cb0_14.jpg?x=553&y=484&w=489&h=490&r=0"/>
+
+<!-- Media -->
+
+### 1.17 开世定理, Casey, 1866
+
+设圆 \( {O}_{1},{O}_{2},{O}_{3},{O}_{4} \) 是圆 \( O \) 内依次与圆 \( O \) 内切的四个圆,用 \( {l}_{ij} \) 表示圆 \( {O}_{i},{O}_{j} \) 外公切线的长度, 则
+
+\[{l}_{12} \cdot  {l}_{34} + {l}_{14} \cdot  {l}_{23} = {l}_{13} \cdot  {l}_{24}.\]
+
+<!-- Media -->
+
+<!-- figureText: \( {O}_{4} \) \( {O}_{3} \) 0 \( {O}_{1} \) \( {l}_{12} \) -->
+
+<img src="https://cdn.noedgeai.com/01983027-7278-7e0d-baee-039b4daa7cb0_14.jpg?x=587&y=1300&w=398&h=405&r=0"/>
+
+<!-- Media -->
+
+当圆 \( {O}_{1},{O}_{2},{O}_{3},{O}_{4} \) 中有与圆 \( O \) 外切的时,适当定义 \( {l}_{ij} \) 仍可使等式成立. 具体地,若圆 \( {O}_{i},{O}_{j} \) 均与圆 \( O \) 外切,则 \( {l}_{ij} \) 仍表示圆 \( {O}_{i},{O}_{j} \) 外公切线的长度; 若圆 \( {O}_{i},{O}_{j} \) 一个与圆 \( O \) 外切、一个与圆 \( O \) 内切,则 \( {l}_{ij} \) 表示圆 \( {O}_{i},{O}_{j} \) 内公切线的长度.
+
+<!-- Meanless: 15-->
+
+
+
+
+### 1.18 费尔巴哈定理, Feuerbach, 1822
+
+\( \bigtriangleup  {ABC} \) 的九点圆与内切圆内切、与三个旁切圆外切.
+
+<!-- Media -->
+
+<!-- figureText: \( B \) -->
+
+<img src="https://cdn.noedgeai.com/01983027-7278-7e0d-baee-039b4daa7cb0_15.jpg?x=499&y=448&w=584&h=635&r=0"/>
+
+<!-- Media -->
+
+### 1.19 高斯-波登米勒定理, Gauss-Bodenmiller
+
+在完全四边形 \( {ABCDEF} \) 中,以 \( {AD},{BE},{CF} \) 为直径的圆共轴,且 \( \bigtriangleup {AEF} \) , \( \bigtriangleup  {ABC}, \bigtriangleup  {BDF}, \bigtriangleup  {CDE} \) 的垂心 \( {H}_{1},{H}_{2},{H}_{3},{H}_{4} \) 共线.
+
+<!-- Media -->
+
+<!-- figureText: \( {H}_{3} \) \( {H}_{2} \) \( B \) -->
+
+<img src="https://cdn.noedgeai.com/01983027-7278-7e0d-baee-039b4daa7cb0_15.jpg?x=522&y=1358&w=549&h=404&r=0"/>
+
+<!-- Media -->
+
+<!-- Meanless: 16-->
+
+
+### 1.20 彭赛列闭合定理, Poncelet, 1813
+
+设 \( C,D \) 是平面上的两条圆锥曲线,已知有一个 \( n \) 边形外切于 \( D \) 且内接于 \( C \) , 则对 \( C \) 上任意一点,存在一个 \( n \) 边形以该点为顶点且具有上述性质.
+
+<!-- Media -->
+
+<img src="https://cdn.noedgeai.com/01983027-7278-7e0d-baee-039b4daa7cb0_16.jpg?x=579&y=519&w=423&h=361&r=0"/>
+
+<!-- Media -->
+
+### 1.21 莫利定理, Morley, 1900
+
+在 \( \bigtriangleup {ABC} \) 中,设 \( \angle A,\angle B,\angle C \) 的三等分线分别交于点 \( D,E,F \) ,则 \( \bigtriangleup {DEF} \) 是等边三角形.
+
+<!-- Media -->
+
+<!-- figureText: \( B \) -->
+
+<img src="https://cdn.noedgeai.com/01983027-7278-7e0d-baee-039b4daa7cb0_16.jpg?x=521&y=1158&w=543&h=348&r=0"/>
+
+<!-- Media -->
+
+<!-- Meanless: 17-->
+
+
+### 1.22 沢山引理, Sawayama, 1905
+
+在圆内接四边形 \( {ABCD} \) 中, \( {I}_{1},{I}_{2} \) 分别是 \( \bigtriangleup {ABC},\bigtriangleup {DBC} \) 的内心, \( {J}_{1} \) 是 \( \bigtriangleup {ABD} \) 角 \( D \) 内的旁心, \( {J}_{2} \) 是 \( \bigtriangleup {ACD} \) 角 \( A \) 内的旁心. 圆 \( \Omega \) 与 \( {BD},{AC} \) 及外接圆分别切于点 \( P,Q,T \) ,则 \( {I}_{1},{I}_{2},{J}_{1},{J}_{2} \) 都在直线 \( {PQ} \) 上.
+
+<!-- Media -->
+
+<!-- figureText: \( {J}_{1} \) \( D \) Q \( {J}_{2} \) \( B \) -->
+
+<img src="https://cdn.noedgeai.com/01983027-7278-7e0d-baee-039b4daa7cb0_17.jpg?x=418&y=527&w=736&h=458&r=0"/>
+
+<!-- Media -->
+
+### 1.23 Thébault 定理, 1938
+
+在 \( \bigtriangleup {ABC} \) 中, \( I \) 是内心, \( D \) 是 \( {BC} \) 上一点. 设 \( \odot  {O}_{1} \) 与 \( {AD},{BD} \) 及外接圆相切, \( \odot  {O}_{2} \) 与 \( {AD},{CD} \) 及外接圆相切,则 \( I \) 在 \( {O}_{1}{O}_{2} \) 上.
+
+<!-- Media -->
+
+<!-- figureText: \( {O}_{1} \) \( D \) -->
+
+<img src="https://cdn.noedgeai.com/01983027-7278-7e0d-baee-039b4daa7cb0_17.jpg?x=562&y=1242&w=461&h=464&r=0"/>
+
+<!-- Media -->
+
+<!-- Meanless: 18-->
+
+
+### 1.24 笛卡尔圆定理, Descartes, 1643
+
+设平面上的四个圆两两相切于不同点,则其半径 \( {r}_{1},{r}_{2},{r}_{3},{r}_{4} \) 满足:
+
+(1)若四个圆两两外切,则
+
+\[{\left( \frac{1}{{r}_{1}} + \frac{1}{{r}_{2}} + \frac{1}{{r}_{3}} + \frac{1}{{r}_{4}}\right) }^{2} = 2\left( {\frac{1}{{r}_{1}^{2}} + \frac{1}{{r}_{2}^{2}} + \frac{1}{{r}_{3}^{2}} + \frac{1}{{r}_{4}^{2}}}\right) ;\]
+
+<!-- Media -->
+
+<!-- figureText: \( {O}_{2} \) \( {O}_{3} \) -->
+
+<img src="https://cdn.noedgeai.com/01983027-7278-7e0d-baee-039b4daa7cb0_18.jpg?x=556&y=607&w=411&h=294&r=0"/>
+
+<!-- Media -->
+
+(2)若半径为 \( {r}_{1},{r}_{2},{r}_{3} \) 的圆内切于半径为 \( {r}_{4} \) 的大圆中,则
+
+\[{\left( \frac{1}{{r}_{1}} + \frac{1}{{r}_{2}} + \frac{1}{{r}_{3}} - \frac{1}{{r}_{4}}\right) }^{2} = 2\left( {\frac{1}{{r}_{1}^{2}} + \frac{1}{{r}_{2}^{2}} + \frac{1}{{r}_{3}^{2}} + \frac{1}{{r}_{4}^{2}}}\right) .\]
+
+高维情形: 设 \( {b}_{1},{b}_{2},\cdots ,{b}_{n + 2} \) 是 \( n \) 维空间中 \( n + 2 \) 个两两相切的球的曲率,则
+
+\[{\left( \mathop{\sum }\limits_{{i = 1}}^{{n + 2}}{b}_{i}\right) }^{2} = n\mathop{\sum }\limits_{{i = 1}}^{{n + 2}}{b}_{i}^{2}.\]
+
+### 1.25 杜洛斯-凡利线定理, Droz-Farny, 1899
+
+设 \( H \) 是 \( \bigtriangleup {ABC} \) 的垂心,过 \( H \) 作两条互相垂直的直线分别与 \( {BC},{CA},{AB} \) 交于点 \( X,{X}^{\prime };Y,{Y}^{\prime };Z,{Z}^{\prime } \) ,则 \( X{X}^{\prime },Y{Y}^{\prime },Z{Z}^{\prime } \) 的中点 \( {M}_{a},{M}_{b},{M}_{c} \) 共线.
+
+<!-- Media -->
+
+<!-- figureText: \( {M}_{c} \) -->
+
+<img src="https://cdn.noedgeai.com/01983027-7278-7e0d-baee-039b4daa7cb0_18.jpg?x=598&y=1512&w=394&h=416&r=0"/>
+
+<!-- Media -->
+
+<!-- Meanless: 19-->
+
+
+### 1.26 Sondat 定理, 1894
+
+称 \( \bigtriangleup {ABC} \) 与 \( \bigtriangleup {A}_{1}{B}_{1}{C}_{1} \) 正交,如果 \( {A}_{1} \) 到 \( {BC} \) 的垂线、 \( {B}_{1} \) 到 \( {CA} \) 的垂线、 \( {C}_{1} \) 到 \( {AB} \) 的垂线交于一点 \( P \) . 容易证明,此时 \( A \) 到 \( {B}_{1}{C}_{1} \) 的垂线、 \( B \) 到 \( {C}_{1}{A}_{1} \) 的垂线、 \( C \) 到 \( {A}_{1}{B}_{1} \) 的垂线交于一点 \( {P}_{1}.P \) 和 \( {P}_{1} \) 分别称为 \( \bigtriangleup {ABC} \) 和 \( \bigtriangleup {A}_{1}{B}_{1}{C}_{1} \) 的正交中心.
+
+称 \( \bigtriangleup {ABC} \) 与 \( \bigtriangleup {A}_{1}{B}_{1}{C}_{1} \) 透视,如果 \( A{A}_{1},B{B}_{1},C{C}_{1} \) 交于一点 \( Q \) . 由笛沙格定理,此时 \( {AB} \) 与 \( {A}_{1}{B}_{1} \) 的交点、 \( {BC} \) 与 \( {B}_{1}{C}_{1} \) 的交点、 \( {CA} \) 与 \( {C}_{1}{A}_{1} \) 的交点共线于 \( l.Q \) 和 \( l \) 分别称为 \( \bigtriangleup {ABC} \) 和 \( \bigtriangleup {A}_{1}{B}_{1}{C}_{1} \) 的透视中心和透视轴.
+
+如果 \( \bigtriangleup {ABC} \) 与 \( \bigtriangleup {A}_{1}{B}_{1}{C}_{1} \) 既正交也透视,则正交中心 \( P,{P}_{1} \) 和透视中心 \( Q \) 在一条垂直于透视轴 \( l \) 的直线上.
+
+<!-- Media -->
+
+<!-- figureText: \( {B}_{1} \) \( A \) -->
+
+<img src="https://cdn.noedgeai.com/01983027-7278-7e0d-baee-039b4daa7cb0_19.jpg?x=433&y=747&w=794&h=509&r=0"/>
+
+<!-- Media -->
+
+### 1.27 Erdós-Mordell 不等式, 1935
+
+设 \( O \) 是 \( \bigtriangleup {ABC} \) 内一点, \( O \) 在三边上的投影分别为 \( P,Q,R \) . 则
+
+\[{OA} + {OB} + {OC} \geq  2\left( {{OP} + {OQ} + {OR}}\right) .\]
+
+<!-- Media -->
+
+<!-- figureText: \( R \) \( P \) \( B \) -->
+
+<img src="https://cdn.noedgeai.com/01983027-7278-7e0d-baee-039b4daa7cb0_19.jpg?x=576&y=1550&w=416&h=377&r=0"/>
+
+<!-- Media -->
+
+<!-- Meanless: 20-->
+
+
+## 2 不等式
+
+### 2.1 均值不等式
+
+设 \( {x}_{1},{x}_{2},\cdots ,{x}_{n} > 0 \) ,则
+
+\[\frac{{x}_{1} + {x}_{2} + \cdots  + {x}_{n}}{n} \geq  \sqrt[n]{{x}_{1}{x}_{2}\cdots {x}_{n}},\]
+
+当且仅当 \( {x}_{1} = {x}_{2} = \cdots  = {x}_{n} \) 时等号成立.
+
+加权形式: 设正实数 \( {\lambda }_{1},{\lambda }_{2},\cdots ,{\lambda }_{n} \) 满足 \( \mathop{\sum }\limits_{{i = 1}}^{n}{\lambda }_{i} = 1,{x}_{1},{x}_{2},\cdots ,{x}_{n} \) 是正实数.
+
+则
+
+\[\mathop{\sum }\limits_{{i = 1}}^{n}{\lambda }_{i}{x}_{i} \geq  \mathop{\prod }\limits_{{i = 1}}^{n}{x}_{i}^{{\lambda }_{i}}\]
+
+当且仅当 \( {x}_{1} = {x}_{2} = \cdots  = {x}_{n} \) 时等号成立.
+
+### 2.2 柯西不等式, Cauchy, 1821
+
+设 \( {a}_{1},{a}_{2},\cdots ,{a}_{n},{b}_{1},{b}_{2},\cdots ,{b}_{n} \) 是实数,则
+
+\[\left( {\mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}^{2}}\right) \left( {\mathop{\sum }\limits_{{i = 1}}^{n}{b}_{i}^{2}}\right)  \geq  {\left( \mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}{b}_{i}\right) }^{2},\]
+
+当且仅当 \( \frac{{a}_{1}}{{b}_{1}} = \frac{{a}_{2}}{{b}_{2}} = \cdots  = \frac{{a}_{n}}{{b}_{n}} \) 时等号成立,其中规定 \( {a}_{i} = 0 \) 时 \( {b}_{i} = 0 \) .
+
+### 2.3 Aczél 不等式, 1956
+
+设整数 \( n \geq  2,{a}_{1},{a}_{2},\cdots ,{a}_{n},{b}_{1},{b}_{2},\cdots ,{b}_{n} \) 是实数,满足 \( {a}_{1}^{2} > \mathop{\sum }\limits_{{i = 2}}^{n}{a}_{i}^{2} \) ,则
+
+\[\left( {{a}_{1}^{2} - \mathop{\sum }\limits_{{i = 2}}^{n}{a}_{i}^{2}}\right) \left( {{b}_{1}^{2} - \mathop{\sum }\limits_{{i = 2}}^{n}{b}_{i}^{2}}\right)  \leq  {\left( {a}_{1}{b}_{1} - \mathop{\sum }\limits_{{i = 2}}^{n}{a}_{i}{b}_{i}\right) }^{2},\]
+
+当且仅当 \( \frac{{a}_{1}}{{b}_{1}} = \frac{{a}_{2}}{{b}_{2}} = \cdots  = \frac{{a}_{n}}{{b}_{n}} \) 时等号成立,其中规定 \( {a}_{i} = 0 \) 时 \( {b}_{i} = 0 \) .
+
+### 2.4 拉格朗日恒等式, Lagrange
+
+\[\left( {\mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}^{2}}\right) \left( {\mathop{\sum }\limits_{{i = 1}}^{n}{b}_{i}^{2}}\right)  - {\left( \mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}{b}_{i}\right) }^{2} = \mathop{\sum }\limits_{{1 \leq  i < j \leq  n}}{\left( {a}_{i}{b}_{j} - {a}_{j}{b}_{i}\right) }^{2}.\]
+
+<!-- Meanless: 21-->
+
+
+### 2.5 排序不等式
+
+对实数 \( {a}_{1} \geq  {a}_{2} \geq  \cdots  \geq  {a}_{n},{b}_{1} \geq  {b}_{2} \geq  \cdots  \geq  {b}_{n} \) ,及 \( 1,2,\cdots ,n \) 的一个排列 \( \sigma \left( 1\right) ,\sigma \left( 2\right) ,\cdots ,\sigma \left( n\right) \) ,称
+
+顺序和: \( {a}_{1}{b}_{1} + {a}_{2}{b}_{2} + \cdots  + {a}_{n}{b}_{n} \) ;
+
+乱序和: \( {a}_{1}{b}_{\sigma \left( 1\right) } + {a}_{2}{b}_{\sigma \left( 2\right) } + \cdots  + {a}_{n}{b}_{\sigma \left( n\right) } \) ;
+
+倒序和: \( {a}_{1}{b}_{n} + {a}_{2}{b}_{n - 1} + \cdots  + {a}_{n}{b}_{1} \) .
+
+顺序和 \( \geq \) 乱序和 \( \geq \) 倒序和,当且仅当 \( {a}_{1} = {a}_{2} = \cdots  = {a}_{n} \) 或 \( {b}_{1} = {b}_{2} = \cdots  = \) \( {b}_{n} \) 时等号成立.
+
+### 2.6 切比雪夫不等式, Chebyshev
+
+设实数 \( {a}_{1} \geq  {a}_{2} \geq  \cdots  \geq  {a}_{n},{b}_{1} \geq  {b}_{2} \geq  \cdots  \geq  {b}_{n} \) ,则
+
+\[\mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}{b}_{i} \geq  \frac{1}{n}\left( {\mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}}\right) \left( {\mathop{\sum }\limits_{{i = 1}}^{n}{b}_{i}}\right) ,\]
+
+当且仅当 \( {a}_{1} = {a}_{2} = \cdots  = {a}_{n} \) 或 \( {b}_{1} = {b}_{2} = \cdots  = {b}_{n} \) 时等号成立.
+
+### 2.7 阿贝尔变换, Abel, 1826
+
+对 \( 1 \leq  k \leq  n \) ,记 \( {S}_{k} = {a}_{1} + {a}_{2} + \cdots  + {a}_{k} \) ,则
+
+\[\mathop{\sum }\limits_{{k = 1}}^{n}{a}_{k}{b}_{k} = \mathop{\sum }\limits_{{k = 1}}^{{n - 1}}{S}_{k}\left( {{b}_{k} - {b}_{k + 1}}\right)  + {S}_{n}{b}_{n}.\]
+
+规定 \( {S}_{0} = 0 \) ,则
+
+\[\mathop{\sum }\limits_{{k = 1}}^{n}{a}_{k}{b}_{k} = \mathop{\sum }\limits_{{k = 1}}^{n}\left( {{S}_{k} - {S}_{k - 1}}\right) {b}_{k} = \mathop{\sum }\limits_{{k = 1}}^{{n - 1}}{S}_{k}\left( {{b}_{k} - {b}_{k + 1}}\right)  + {S}_{n}{b}_{n}.\]
+
+阿贝尔不等式: 设 \( m \leq  {S}_{k} \leq  M,{b}_{1} \geq  {b}_{2} \geq  \cdots  \geq  {b}_{n} > 0 \) ,则
+
+\[m{b}_{1} \leq  \mathop{\sum }\limits_{{k = 1}}^{n}{a}_{k}{b}_{k} \leq  M{b}_{1}.\]
+
+### 2.8 伯努利不等式, Bernoulli, 1689
+
+设 \( x >  - 1 \) 且 \( x \neq  0 \) ,
+
+当 \( \alpha  > 1 \) 或 \( \alpha  < 0 \) 时, \( {\left( 1 + x\right) }^{\alpha } > 1 + {\alpha x} \) ;
+
+当 \( 0 < \alpha  < 1 \) 时, \( {\left( 1 + x\right) }^{\alpha } < 1 + {\alpha x} \) .
+
+<!-- Meanless: 22-->
+
+
+
+
+广义伯努利不等式: 设 \( {x}_{1},{x}_{2},\cdots ,{x}_{n} >  - 1 \) 且同号,则
+
+\[\mathop{\prod }\limits_{{i = 1}}^{n}\left( {1 + {x}_{i}}\right)  \geq  1 + \mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}\]
+
+当且仅当 \( {x}_{1},{x}_{2},\cdots ,{x}_{n} \) 中至少有 \( n - 1 \) 个为 0 时等号成立.
+
+### 2.9 琴生不等式, Jensen, 1906
+
+设 \( f\left( x\right) \) 是 \( \left\lbrack  {a,b}\right\rbrack \) 上的下凸函数,则对任意 \( {x}_{1},{x}_{2},\cdots ,{x}_{n} \in  \left\lbrack  {a,b}\right\rbrack \) ,有
+
+\[f\left( {\frac{1}{n}\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}}\right)  \leq  \frac{1}{n}\mathop{\sum }\limits_{{i = 1}}^{n}f\left( {x}_{i}\right) ,\]
+
+当且仅当 \( {x}_{1} = {x}_{2} = \cdots  = {x}_{n} \) 时等号成立.
+
+加权形式: 设 \( f\left( x\right) \) 是 \( \left\lbrack  {a,b}\right\rbrack \) 上的下凸函数,正实数 \( {\lambda }_{1},{\lambda }_{2},\cdots ,{\lambda }_{n} \) 满足 \( \mathop{\sum }\limits_{{i = 1}}^{n}{\lambda }_{i} = \)
+
+1. 则对任意 \( {x}_{1},{x}_{2},\cdots ,{x}_{n} \in  \left\lbrack  {a,b}\right\rbrack \) ,有
+
+\[f\left( {\mathop{\sum }\limits_{{i = 1}}^{n}{\lambda }_{i}{x}_{i}}\right)  \leq  \mathop{\sum }\limits_{{i = 1}}^{n}{\lambda }_{i}f\left( {x}_{i}\right) ,\]
+
+当且仅当 \( {x}_{1} = {x}_{2} = \cdots  = {x}_{n} \) 时等号成立.
+
+### 2.10 幂平均不等式, 1858
+
+设 \( {a}_{1},{a}_{2},\cdots ,{a}_{n} \) 是正实数,非零实数 \( \alpha  < \beta \) . 则
+
+\[{\left( \frac{1}{n}\mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}^{\alpha }\right) }^{\frac{1}{\alpha }} \leq  {\left( \frac{1}{n}\mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}^{\beta }\right) }^{\frac{1}{\beta }},\]
+
+当且仅当 \( {a}_{1} = {a}_{2} = \cdots  = {a}_{n} \) 时等号成立.
+
+### 2.11 范数不等式, 1902
+
+设 \( {a}_{1},{a}_{2},\cdots ,{a}_{n} \) 是非负实数,正实数 \( \alpha  < \beta \) . 则
+
+\[{\left( \mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}^{\beta }\right) }^{\frac{1}{\beta }} \leq  {\left( \mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}^{\alpha }\right) }^{\frac{1}{\alpha }},\]
+
+当且仅当 \( {a}_{1},{a}_{2},\cdots ,{a}_{n} \) 中至少有 \( n - 1 \) 个为 0 时等号成立.
+
+<!-- Meanless: 23-->
+
+
+
+
+### 2.12 赫尔德不等式, Hölder, 1889
+
+形式 1: 设 \( {a}_{1},{a}_{2},\cdots ,{a}_{n},{b}_{1},{b}_{2},\cdots ,{b}_{n} \) 是正实数, \( p,q \) 是大于 1 的实数,满足 \( \frac{1}{p} + \frac{1}{q} = 1 \) . 则
+
+\[{\left( \mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}^{p}\right) }^{\frac{1}{p}}{\left( \mathop{\sum }\limits_{{i = 1}}^{n}{b}_{i}^{q}\right) }^{\frac{1}{q}} \geq  \mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}{b}_{i}\]
+
+当且仅当 \( \frac{{a}_{1}^{p}}{{b}_{1}^{q}} = \frac{{a}_{2}^{p}}{{b}_{2}^{q}} = \cdots  = \frac{{a}_{n}^{p}}{{b}_{n}^{q}} \) 时等号成立.
+
+形式 \( {1}^{\prime } \) : 设 \( {a}_{1},{a}_{2},\cdots ,{a}_{n},{b}_{1},{b}_{2},\cdots ,{b}_{n} \) 是正实数,实数 \( p,q \) 满足 \( 0 < p < \) 1 且 \( \frac{1}{p} + \frac{1}{q} = 1 \) . 则
+
+\[{\left( \mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}^{p}\right) }^{\frac{1}{p}}{\left( \mathop{\sum }\limits_{{i = 1}}^{n}{b}_{i}^{q}\right) }^{\frac{1}{q}} \leq  \mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}{b}_{i}.\]
+
+形式 2: 设 \( {a}_{ij} > 0\left( {1 \leq  i \leq  n,1 \leq  j \leq  m}\right) \) ,则
+
+\[\mathop{\prod }\limits_{{j = 1}}^{m}{\left( \mathop{\sum }\limits_{{i = 1}}^{n}{a}_{ij}\right) }^{\frac{1}{m}} \geq  \mathop{\sum }\limits_{{i = 1}}^{n}{\left( \mathop{\prod }\limits_{{j = 1}}^{m}{a}_{ij}\right) }^{\frac{1}{m}}.\]
+
+### 2.13 闵可夫斯基不等式, Minkowski, 1896
+
+设 \( {a}_{1},{a}_{2},\cdots ,{a}_{n},{b}_{1},{b}_{2},\cdots ,{b}_{n} \) 是正实数,实数 \( p \geq  1 \) . 则
+
+\[{\left( \mathop{\sum }\limits_{{i = 1}}^{n}{\left( {a}_{i} + {b}_{i}\right) }^{p}\right) }^{\frac{1}{p}} \leq  {\left( \mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}^{p}\right) }^{\frac{1}{p}} + {\left( \mathop{\sum }\limits_{{i = 1}}^{n}{b}_{i}^{p}\right) }^{\frac{1}{p}},\]
+
+当且仅当 \( \frac{{a}_{1}}{{b}_{1}} = \frac{{a}_{2}}{{b}_{2}} = \cdots  = \frac{{a}_{n}}{{b}_{n}} \) 时等号成立. 当 \( 0 < p < 1 \) 或 \( p < 0 \) 时不等号反向.
+
+### 2.14 樊畿不等式, 1959
+
+设 \( {a}_{1},{a}_{2},\cdots ,{a}_{n} \in  \left( {0,\frac{1}{2}}\right\rbrack \) ,则
+
+\[\frac{\mathop{\prod }\limits_{{i = 1}}^{n}{a}_{i}}{{\left( \mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}\right) }^{n}} \leq  \frac{\mathop{\prod }\limits_{{i = 1}}^{n}\left( {1 - {a}_{i}}\right) }{{\left( \mathop{\sum }\limits_{{i = 1}}^{n}\left( 1 - {a}_{i}\right) \right) }^{n}}.\]
+
+<!-- Meanless: 24-->
+
+
+### 2.15 嵌入不等式, Wolstenholme, 1867
+
+设 \( A,B,C \) 是 \( \bigtriangleup {ABC} \) 的三个内角,则对任意实数 \( x,y,z \) ,有
+
+\[{x}^{2} + {y}^{2} + {z}^{2} \geq  {2xy}\cos C + {2yz}\cos A + {2zx}\cos B.\]
+
+### 2.16 舒尔不等式, Schur, 1934
+
+设 \( a,b,c \) 是非负实数, \( r \) 是实数,则
+
+\[{a}^{r}\left( {a - b}\right) \left( {a - c}\right)  + {b}^{r}\left( {b - c}\right) \left( {b - a}\right)  + {c}^{r}\left( {c - a}\right) \left( {c - b}\right)  \geq  0.\]
+
+当且仅当 \( a = b = c \) 或 \( a,b,c \) 中有一个为 0 另两个相等时取到等号.
+
+### 2.17 康托洛维奇不等式, Kantorovich, 1948
+
+设正实数 \( {\lambda }_{1},{\lambda }_{2},\cdots ,{\lambda }_{n} \) 满足 \( \mathop{\sum }\limits_{{i = 1}}^{n}{\lambda }_{i} = 1 \) ,实数 \( 0 < m \leq  {a}_{i} \leq  M,i = 1,2,\cdots ,n \) .
+
+则
+
+\[\left( {\mathop{\sum }\limits_{{i = 1}}^{n}{\lambda }_{i}{a}_{i}}\right) \left( {\mathop{\sum }\limits_{{i = 1}}^{n}\frac{{\lambda }_{i}}{{a}_{i}}}\right)  \leq  \frac{{\left( M + m\right) }^{2}}{4Mm}.\]
+
+### 2.18 波利亚-舍贵不等式, Pólya-Szegö, 1925
+
+设实数 \( 0 < {m}_{1} \leq  {a}_{i} \leq  {M}_{1},0 < {m}_{2} \leq  {b}_{i} \leq  {M}_{2},i = 1,2,\cdots ,n \) ,则
+
+\[\left( {\mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}^{2}}\right) \left( {\mathop{\sum }\limits_{{i = 1}}^{n}{b}_{i}^{2}}\right)  \leq  \frac{1}{4}{\left( \sqrt{\frac{{M}_{1}{M}_{2}}{{m}_{1}{m}_{2}}} + \sqrt{\frac{{m}_{1}{m}_{2}}{{M}_{1}{M}_{2}}}\right) }^{2}{\left( \mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}{b}_{i}\right) }^{2}.\]
+
+### 2.19 Ostrowski 不等式, 1951
+
+设实数 \( {a}_{1},{a}_{2},\cdots ,{a}_{n},{b}_{1},{b}_{2},\cdots ,{b}_{n},{x}_{1},{x}_{2},\cdots ,{x}_{n} \) 满足 \( \mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}{x}_{i} = 0,\mathop{\sum }\limits_{{i = 1}}^{n}{b}_{i}{x}_{i} = \)
+
+1, 则
+
+\[\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}^{2} \geq  \frac{\mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}^{2}}{\left( {\mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}^{2}}\right) \left( {\mathop{\sum }\limits_{{i = 1}}^{n}{b}_{i}^{2}}\right)  - {\left( \mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}{b}_{i}\right) }^{2}},\]
+
+<!-- Meanless: 25-->
+
+
+当且仅当
+
+\[{x}_{k} = \frac{{b}_{k}\mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}^{2} - {a}_{k}\mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}{b}_{i}}{\left( {\mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}^{2}}\right) \left( {\mathop{\sum }\limits_{{i = 1}}^{n}{b}_{i}^{2}}\right)  - {\left( \mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}{b}_{i}\right) }^{2}},\;k = 1,2,\cdots ,n\]
+
+时等号成立.
+
+Fan-Todd 不等式: 设 \( {a}_{1},{a}_{2},\cdots ,{a}_{n},{b}_{1},{b}_{2},\cdots ,{b}_{n} \) 是实数,满足当 \( i \neq  j \) 时 \( {a}_{i}{b}_{j} \neq \) \( {a}_{j}{b}_{i} \) ,则
+
+\[\frac{1}{{\left( {\mathrm{C}}_{n}^{2}\right) }^{2}}\mathop{\sum }\limits_{{i = 1}}^{n}{\left( \mathop{\sum }\limits_{\substack{{j = 1} \\  {j \neq  i} }}^{n}\frac{{a}_{j}}{{a}_{j}{b}_{i} - {a}_{i}{b}_{j}}\right) }^{2} \geq  \frac{\mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}^{2}}{\left( {\mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}^{2}}\right) \left( {\mathop{\sum }\limits_{{i = 1}}^{n}{b}_{i}^{2}}\right)  - {\left( \mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}{b}_{i}\right) }^{2}}.\]
+
+### 2.20 哈代不等式, Hardy, 1920
+
+设 \( {a}_{1},{a}_{2},\cdots ,{a}_{n} \) 是正实数, \( p \) 是大于 1 的实数,则
+
+\[\mathop{\sum }\limits_{{i = 1}}^{n}{\left( \frac{{a}_{1} + {a}_{2} + \cdots  + {a}_{i}}{i}\right) }^{p} \leq  {\left( \frac{p}{p - 1}\right) }^{p}\mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}^{p},\]
+
+且常数 \( {\left( \frac{p}{p - 1}\right) }^{p} \) 是最佳的.
+
+### 2.21 Carleman 不等式, 1923
+
+设 \( {a}_{1},{a}_{2},\cdots ,{a}_{n} \) 是正实数,则
+
+\[\mathop{\sum }\limits_{{i = 1}}^{n}\sqrt[i]{{a}_{1}{a}_{2}\cdots {a}_{i}} \leq  e\mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}\]
+
+且常数 \( e \) 是最佳的.
+
+### 2.22 希尔伯特不等式, Hilbert, 1888
+
+设 \( {a}_{1},{a}_{2},\cdots ,{a}_{N} \) 是实数,则
+
+\[\mathop{\sum }\limits_{{m = 1}}^{N}\mathop{\sum }\limits_{{n = 1}}^{N}\frac{{a}_{m}{a}_{n}}{m + n} \leq  \pi \mathop{\sum }\limits_{{m = 1}}^{N}{a}_{m}^{2}\]
+
+<!-- Meanless: 26-->
+
+
+且常数 \( \pi \) 是最佳的.
+
+推广: 设 \( {a}_{1},{a}_{2},\cdots ,{a}_{N},{b}_{1},{b}_{2},\cdots ,{b}_{N} \) 是非负实数, \( p,q \) 是大于 1 的实数,满足 \( \frac{1}{p} + \frac{1}{q} = 1 \) . 则
+
+\[\mathop{\sum }\limits_{{m = 1}}^{N}\mathop{\sum }\limits_{{n = 1}}^{N}\frac{{a}_{m}{b}_{n}}{m + n} \leq  \frac{\pi }{\sin \frac{\pi }{p}}{\left( \mathop{\sum }\limits_{{m = 1}}^{N}{a}_{m}^{p}\right) }^{\frac{1}{p}}{\left( \mathop{\sum }\limits_{{n = 1}}^{N}{b}_{n}^{q}\right) }^{\frac{1}{q}},\]
+
+且常数 \( \frac{\pi }{\sin \frac{\pi }{p}} \) 是最佳的.
+
+### 2.23 Carlson 不等式, 1934
+
+设 \( {a}_{1},{a}_{2},\cdots ,{a}_{n} \) 是实数,则
+
+\[{\left( \mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}\right) }^{4} \leq  {\pi }^{2}\left( {\mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}^{2}}\right) \left( {\mathop{\sum }\limits_{{i = 1}}^{n}{i}^{2}{a}_{i}^{2}}\right) ,\]
+
+且常数 \( {\pi }^{2} \) 是最佳的.
+
+### 2.24 Fan-Taussky-Todd 不等式, 1955
+
+(1) 设 \( {x}_{1},{x}_{2},\cdots ,{x}_{n} \) 是实数,满足 \( \mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i} = 0 \) ,则
+
+\[\mathop{\sum }\limits_{{i = 1}}^{n}{\left( {x}_{i} - {x}_{i + 1}\right) }^{2} \geq  4{\sin }^{2}\frac{\pi }{n}\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}^{2},\]
+
+其中 \( {x}_{n + 1} = {x}_{1} \) ; 等价地,
+
+\[\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}{x}_{i + 1} \leq  \cos \frac{2\pi }{n}\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}^{2}\]
+
+仅当 \( {x}_{i} = A\cos \frac{2i\pi }{n} + B\sin \frac{2i\pi }{n} \) 时取等.
+
+(2)设 \( {x}_{1},{x}_{2},\cdots ,{x}_{n} \) 是实数,则
+
+\[4{\sin }^{2}\frac{\pi }{2\left( {{2n} + 1}\right) }\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}^{2} \leq  \mathop{\sum }\limits_{{i = 0}}^{{n - 1}}{\left( {x}_{i} - {x}_{i + 1}\right) }^{2} \leq  4{\cos }^{2}\frac{\pi }{{2n} + 1}\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}^{2},\]
+
+其中 \( {x}_{0} = 0 \) ; 等价地,
+
+\[\frac{1}{4{\cos }^{2}\frac{\pi }{{2n} + 1}}\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}^{2} \leq  \mathop{\sum }\limits_{{i = 1}}^{n}{S}_{i}^{2} \leq  \frac{1}{4{\sin }^{2}\frac{\pi }{2\left( {{2n} + 1}\right) }}\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}^{2},\]
+
+<!-- Meanless: 27-->
+
+
+其中 \( {S}_{i} = {x}_{1} + {x}_{2} + \cdots  + {x}_{i} \) ; 等价地,
+
+\[ - \cos \frac{2\pi }{{2n} + 1}\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}^{2} \leq  \mathop{\sum }\limits_{{i = 1}}^{{n - 1}}{x}_{i}{x}_{i + 1} + \frac{1}{2}{x}_{n}^{2} \leq  \cos \frac{\pi }{{2n} + 1}\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}^{2};\]
+
+分别仅当 \( {x}_{i} = A\sin \frac{i\pi }{{2n} + 1} \) 和 \( {x}_{i} = {\left( -1\right) }^{i}A\sin \frac{2i\pi }{{2n} + 1} \) 时取等.
+
+( 3 )设 \( {x}_{1},{x}_{2},\cdots ,{x}_{n} \) 是实数,则
+
+\[4{\sin }^{2}\frac{\pi }{2\left( {n + 1}\right) }\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}^{2} \leq  \mathop{\sum }\limits_{{i = 0}}^{n}{\left( {x}_{i} - {x}_{i + 1}\right) }^{2} \leq  4{\cos }^{2}\frac{\pi }{2\left( {n + 1}\right) }\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}^{2},\]
+
+其中 \( {x}_{0} = {x}_{n + 1} = 0 \) ; 等价地,
+
+\[ - \cos \frac{\pi }{n + 1}\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}^{2} \leq  \mathop{\sum }\limits_{{i = 1}}^{{n - 1}}{x}_{i}{x}_{i + 1} \leq  \cos \frac{\pi }{n + 1}\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}^{2};\]
+
+分别仅当 \( {x}_{i} = A\sin \frac{i\pi }{n + 1} \) 和 \( {x}_{i} = {\left( -1\right) }^{i}A\sin \frac{i\pi }{n + 1} \) 时取等.
+
+### 2.25 Lenhard 不等式, 1957
+
+设 \( {\alpha }_{1},{\alpha }_{2},\cdots ,{\alpha }_{n} \) 满足 \( \mathop{\sum }\limits_{{k = 1}}^{n}{\alpha }_{k} = \left( {{2r} + 1}\right) \pi \) ,其中 \( r \in  \mathbb{N} \) . 则对任意实数 \( {x}_{1},{x}_{2},\cdots ,{x}_{n} \) ,
+
+有
+
+\[\cos \frac{\pi }{n}\mathop{\sum }\limits_{{k = 1}}^{n}{x}_{k}^{2} \geq  \mathop{\sum }\limits_{{k = 1}}^{n}{x}_{k}{x}_{k + 1}\cos {\alpha }_{k},\]
+
+其中 \( {x}_{n + 1} = {x}_{1} \) .
+
+### 2.26 Hlawka 不等式, 1942
+
+设 \( a,b,c \) 是复数,则
+
+\[\left| a\right|  + \left| b\right|  + \left| c\right|  + \left| {a + b + c}\right|  \geq  \left| {a + b}\right|  + \left| {b + c}\right|  + \left| {c + a}\right| .\]
+
+推广: 设 \( {a}_{1},{a}_{2},\cdots ,{a}_{n} \) 是复数,则对任意 \( 2 \leq  k \leq  n - 1 \) ,
+
+\[\mathop{\sum }\limits_{{1 \leq  {i}_{1} < \cdots  < {i}_{k} \leq  n}}\left| {{a}_{{i}_{1}} + \cdots  + {a}_{{i}_{k}}}\right|  \leq  \left( \begin{array}{l} n - 2 \\  k - 2 \end{array}\right) \left( {\frac{n - k}{k - 1}\mathop{\sum }\limits_{{i = 1}}^{n}\left| {a}_{i}\right|  + \left| {\mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}}\right| }\right) .\]
+
+<!-- Meanless: 28-->
+
+
+### 2.27 卡拉玛特不等式, Karamata, 1932
+
+设 \( {x}_{1},{x}_{2},\cdots ,{x}_{n},{y}_{1},{y}_{2},\cdots ,{y}_{n} \) 是实数. 如果 \( {x}_{1} \geq  {x}_{2} \geq  \cdots  \geq  {x}_{n},{y}_{1} \geq  {y}_{2} \geq \) \( \cdots  \geq  {y}_{n},\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i} = \mathop{\sum }\limits_{{i = 1}}^{n}{y}_{i} \) ,且对 \( 1 \leq  k \leq  n - 1,\mathop{\sum }\limits_{{i = 1}}^{k}{x}_{i} \geq  \mathop{\sum }\limits_{{i = 1}}^{k}{y}_{i} \) ,则称 \( \left( {{x}_{1},{x}_{2},\cdots ,{x}_{n}}\right) \) 优超于 \( \left( {{y}_{1},{y}_{2},\cdots ,{y}_{n}}\right) \) ,记作 \( \left( {{x}_{1},{x}_{2},\cdots ,{x}_{n}}\right)  \succ  \left( {{y}_{1},{y}_{2},\cdots ,{y}_{n}}\right) \) . 此时对任意下凸函数 \( f\left( x\right) \) ,有 \( \mathop{\sum }\limits_{{i = 1}}^{n}f\left( {x}_{i}\right)  \geq  \mathop{\sum }\limits_{{i = 1}}^{n}f\left( {y}_{i}\right) \) .
+
+### 2.28 Popoviciu 不等式, 1965
+
+设 \( f\left( x\right) \) 是 \( \mathbb{R} \) 上的下凸函数,则对任意实数 \( {a}_{1},{a}_{2},\cdots ,{a}_{n} \) ,都有
+
+\[\mathop{\sum }\limits_{{i = 1}}^{n}f\left( {a}_{i}\right)  + n\left( {n - 2}\right) f\left( {\frac{1}{n}\mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}}\right)  \geq  \left( {n - 1}\right) \mathop{\sum }\limits_{{i = 1}}^{n}f\left( {\frac{1}{n - 1}\mathop{\sum }\limits_{{j \neq  i}}{a}_{j}}\right) .\]
+
+一般地,
+
+\[{\mathrm{C}}_{n - 2}^{p - 2}\left( {\frac{n - p}{p - 1}\mathop{\sum }\limits_{{i = 1}}^{n}{\lambda }_{i}f\left( {a}_{i}\right)  + \left( {\mathop{\sum }\limits_{{i = 1}}^{n}{\lambda }_{i}}\right) f\left( \frac{{\lambda }_{1}{a}_{1} + \cdots  + {\lambda }_{n}{a}_{n}}{{\lambda }_{1} + \cdots  + {\lambda }_{n}}\right) }\right) \]
+
+\[ \geq  \mathop{\sum }\limits_{{1 \leq  {i}_{1} < \cdots  < {i}_{p} \leq  n}}\left( {{\lambda }_{{i}_{1}} + \cdots  + {\lambda }_{{i}_{p}}}\right) f\left( \frac{{\lambda }_{{i}_{1}}{a}_{{i}_{1}} + \cdots  + {\lambda }_{{i}_{p}}{a}_{{i}_{p}}}{{\lambda }_{{i}_{1}} + \cdots  + {\lambda }_{{i}_{p}}}\right) ,\]
+
+其中 \( p \in  \{ 2,\cdots ,n - 1\} ,{\lambda }_{1},\cdots ,{\lambda }_{n} \) 是正实数.
+
+### 2.29 牛顿不等式, Newton, 1707
+
+设 \( {a}_{1},{a}_{2},\cdots ,{a}_{n} \) 是实数,对 \( 0 \leq  k \leq  n \) ,记
+
+\[{S}_{k} = \frac{\mathop{\sum }\limits_{{1 \leq  {i}_{1} < {i}_{2} < \cdots  < {i}_{k} \leq  n}}{a}_{{i}_{1}}{a}_{{i}_{2}}\cdots {a}_{{i}_{k}}}{{\mathrm{C}}_{n}^{k}},\]
+
+其中 \( {S}_{0} = 1 \) . 则 \( {S}_{k}^{2} \geq  {S}_{k - 1}{S}_{k + 1} \) ,当且仅当 \( {a}_{1} = {a}_{2} = \cdots  = {a}_{n} \) 时等号成立.
+
+<!-- Meanless: 29-->
+
+
+
+
+### 2.30 麦克劳林不等式, Maclaurin, 1729
+
+设 \( {a}_{1},{a}_{2},\cdots ,{a}_{n} \) 是正实数,对 \( 1 \leq  k \leq  n \) ,记
+
+\[{S}_{k} = \frac{\mathop{\sum }\limits_{{1 \leq  {i}_{1} < {i}_{2} < \cdots  < {i}_{k} \leq  n}}{a}_{{i}_{1}}{a}_{{i}_{2}}\cdots {a}_{{i}_{k}}}{{\mathrm{C}}_{n}^{k}}.\]
+
+则
+
+\[{S}_{1} \geq  \sqrt{{S}_{2}} \geq  \sqrt[3]{{S}_{3}} \geq  \cdots  \geq  \sqrt[n]{{S}_{n}}\]
+
+当且仅当 \( {a}_{1} = {a}_{2} = \cdots  = {a}_{n} \) 时等号成立.
+
+### 2.31 Surányi 不等式, 1968
+
+设 \( {a}_{1},{a}_{2},\cdots ,{a}_{n} \) 是正实数,则
+
+\[\left( {n - 1}\right) \mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}^{n} + n\mathop{\prod }\limits_{{i = 1}}^{n}{a}_{i} \geq  \left( {\mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}}\right) \left( {\mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}^{n - 1}}\right) .\]
+
+<!-- Meanless: 30-->
+
+
+## 3 多项式
+
+### 3.1 韦达定理, Vieta, 1579
+
+设复系数多项式 \( P\left( x\right)  = {a}_{n}{x}^{n} + {a}_{n - 1}{x}^{n - 1} + \cdots  + {a}_{1}x + {a}_{0} \) 的根为 \( {r}_{1},{r}_{2},\cdots ,{r}_{n} \) . 则对 \( 1 \leq  k \leq  n \) ,
+
+\[\mathop{\sum }\limits_{{1 \leq  {i}_{1} < {i}_{2} < \cdots  < {i}_{k} \leq  n}}{r}_{{i}_{1}}{r}_{{i}_{2}}\cdots {r}_{{i}_{k}} = {\left( -1\right) }^{k} \cdot  \frac{{a}_{n - k}}{{a}_{n}}.\]
+
+### 3.2 代数基本定理, 1608
+
+一元非常值复系数多项式至少有一个复根.
+
+### 3.3 牛顿恒等式, Newton, 1629
+
+记 \( {S}_{k} = {x}_{1}^{k} + {x}_{2}^{k} + \cdots  + {x}_{n}^{k},{\sigma }_{k} = \mathop{\sum }\limits_{{1 \leq  {i}_{1} < \cdots  < {i}_{k} \leq  n}}{x}_{{i}_{1}}\cdots {x}_{{i}_{k}} \) ,则
+
+(1) 当 \( k \geq  n \) 时,
+
+\[{S}_{k} - {\sigma }_{1}{S}_{k - 1} + {\sigma }_{2}{S}_{k - 2} + \cdots  + {\left( -1\right) }^{n}{\sigma }_{n}{S}_{k - n} = 0;\]
+
+(2) 当 \( 1 \leq  k < n \) 时,
+
+\[{S}_{k} - {\sigma }_{1}{S}_{k - 1} + {\sigma }_{2}{S}_{k - 2} + \cdots  + {\left( -1\right) }^{k - 1}{\sigma }_{k - 1}{S}_{1} + {\left( -1\right) }^{k}{\sigma }_{k}k = 0.\]
+
+### 3.4 拉格朗日插值公式, Lagrange, 1795
+
+对任意两两不同的实数 \( {x}_{0},{x}_{1},\cdots ,{x}_{n} \) 和实数 \( {a}_{0},{a}_{1},\cdots ,{a}_{n} \) ,存在次数不超过 \( n \) 的多项式 \( f\left( x\right) \) ,满足对任意 \( 0 \leq  i \leq  n \) ,有 \( f\left( {x}_{i}\right)  = {a}_{i} \) .
+
+### 3.5 艾森斯坦判别法, Eisenstein, 1846
+
+设 \( P\left( x\right)  = {a}_{n}{x}^{n} + {a}_{n - 1}{x}^{n - 1} + \cdots  + {a}_{0}\left( {{a}_{n} \neq  0}\right) \) 是整系数多项式,若存在质数 \( p \) , 使得 (1) \( p \mid  {a}_{i},i = 0,1,2,\cdots ,n - 1 \) ; (2) \( p \nmid  {a}_{n} \) ; (3) \( {p}^{2} \nmid  {a}_{0} \) . 则 \( P\left( x\right) \) 在 \( \mathbb{Z}\left\lbrack  x\right\rbrack \) 中不可约.
+
+<!-- Meanless: 31-->
+
+
+
+
+### 3.6 组合零点定理, Alon, 1999
+
+设 \( F \) 为一个域, \( f \in  F\left\lbrack  {{x}_{1},{x}_{2},\cdots ,{x}_{n}}\right\rbrack \) 为域 \( F \) 上的一个 \( n \) 元多项式. 若 \( f \) 有一个最高次项 \( {x}_{1}^{{d}_{1}}{x}_{2}^{{d}_{2}}\cdots {x}_{n}^{{d}_{n}} \) 系数非零,则对任意 \( {S}_{1},{S}_{2},\cdots ,{S}_{n} \subseteq  F \) ,当 \( \left| {S}_{i}\right|  > \) \( {d}_{i}\left( {1 \leq  i \leq  n}\right) \) 时,存在 \( {s}_{i} \in  {S}_{i} \) ,使得 \( f\left( {{s}_{1},{s}_{2},\cdots ,{s}_{n}}\right)  \neq  0 \) . 其中多元多项式的次数是各单项式指数和最大的一个, 有多个系数非零的最高次项时可以任选一个.
+
+### 3.7 高斯-卢卡斯定理, Gauss-Lucas, 1836
+
+设 \( P \) 是非常值复系数多项式,则 \( {P}^{\prime } \) 的根在 \( P \) 的根所构成的凸包内.
+
+### 3.8 Marden 定理, 1864
+
+设 \( P \) 是三次复系数多项式,则 \( {P}^{\prime } \) 的根是 \( P \) 的根构成三角形的 Steiner 椭圆的两个焦点, 其中 Steiner 椭圆是与三边切于中点的椭圆.
+
+### 3.9 笛卡尔符号法则, Descartes, 1637
+
+实系数多项式正根 (计重数) 的个数等于系数的变号次数减去一个非负偶数.
+
+对于 \( n \) 次实系数多项式 \( f\left( x\right)  = {a}_{n}{x}^{n} + {a}_{n - 1}{x}^{n - 1} + \cdots  + {a}_{0} \) ,忽略系数为 0 的项, 若相邻系数符号相反, 则称为 1 次变号. 变号的总次数称为多项式系数的变号次数,记为 \( V\left( f\right) \) .
+
+### 3.10 Perron 判别法, 1907
+
+设 \( P\left( x\right)  = {x}^{n} + {a}_{n - 1}{x}^{n - 1} + \cdots  + {a}_{1}x + {a}_{0} \) 是整系数多项式,满足 \( \left| {a}_{n - 1}\right|  > \) \( 1 + \left| {a}_{n - 2}\right|  + \cdots  + \left| {a}_{1}\right|  + \left| {a}_{0}\right| \) ,且 \( {a}_{0} \neq  0 \) ,则 \( P\left( x\right) \) 在 \( \mathbb{Z}\left\lbrack  x\right\rbrack \) 中不可约.
+
+### 3.11 Cohn 判别法, 1925
+
+设整数 \( b \geq  2,\overline{{a}_{n}{a}_{n - 1}\cdots {a}_{0}}\left( {{a}_{n} \neq  0}\right) \) 是一个质数在 \( b \) 进制中的表示,则多项式 \( P\left( x\right)  = {a}_{n}{x}^{n} + {a}_{n - 1}{x}^{n - 1} + \cdots  + {a}_{0} \) 在 \( \mathbb{Z}\left\lbrack  x\right\rbrack \) 中不可约.
+
+### 3.12 Mason-Stothers 定理, 1981
+
+设 \( f\left( x\right) ,g\left( x\right) ,h\left( x\right) \) 是互质的复系数多项式,不全为常数,且满足 \( f\left( x\right)  + g\left( x\right)  + \) \( h\left( x\right)  = 0 \) . 则 \( f\left( x\right) g\left( x\right) h\left( x\right) \) 的不同复根个数至少是 \( \max \{ \deg f,\deg g,\deg h\}  + 1 \) .
+
+<!-- Meanless: 32-->
+
+
+
+
+## 4 数论
+
+### 4.1 算术基本定理
+
+每个大于 1 的整数都可以写成质数之积的形式, 且除因数的顺序外, 写法是唯一的. 即 \( n \) 可以唯一地表示成
+
+\[n = {p}_{1}^{{\alpha }_{1}}{p}_{2}^{{\alpha }_{2}}\cdots {p}_{k}^{{\alpha }_{k}},\]
+
+其中 \( {p}_{1} < {p}_{2} < \cdots  < {p}_{k} \) 是质数, \( {\alpha }_{1},{\alpha }_{2},\cdots ,{\alpha }_{k} \) 是正整数.
+
+### 4.2 裴蜀定理, Bézout, 1624
+
+设 \( a,b \) 是非零整数,则存在整数 \( x,y \) ,使得 \( {ax} + {by} = \gcd \left( {a,b}\right) \) .
+
+推广: 设 \( {a}_{1},{a}_{2},\cdots ,{a}_{n} \) 是非零整数,则存在整数 \( {x}_{1},{x}_{2},\cdots ,{x}_{n} \) ,使得
+
+\[{a}_{1}{x}_{1} + {a}_{2}{x}_{2} + \cdots  + {a}_{n}{x}_{n} = \gcd \left( {{a}_{1},{a}_{2},\cdots ,{a}_{n}}\right) .\]
+
+多项式形式: 设 \( f\left( x\right) ,g\left( x\right) \) 是整系数多项式,没有公共根,则存在整系数多项式 \( A\left( x\right) ,B\left( x\right) \) 和非零整数 \( C \) ,使得 \( A\left( x\right) f\left( x\right)  + B\left( x\right) g\left( x\right)  = C \) .
+
+### 4.3 费马小定理, Fermat, 1640
+
+设 \( p \) 是质数, \( a \) 是与 \( p \) 互质的整数,则 \( {a}^{p - 1} \equiv  1\left( {\;\operatorname{mod}\;p}\right) \) .
+
+### 4.4 欧拉定理, Euler, 1736
+
+设 \( a,n \) 是互质的正整数,则 \( {a}^{\varphi \left( n\right) } \equiv  1\left( {\;\operatorname{mod}\;n}\right) \) .
+
+### 4.5 威尔逊定理, Wilson, 1770
+
+设 \( p \) 是质数,则 \( \left( {p - 1}\right) ! \equiv   - 1\left( {\;\operatorname{mod}\;p}\right) \) .
+
+逆命题: 设整数 \( n \geq  2 \) ,若 \( \left( {n - 1}\right) ! \equiv   - 1\left( {\;\operatorname{mod}\;n}\right) \) ,则 \( n \) 是质数. 进一步,
+
+\[\left( {n - 1}\right) ! \equiv  \left\{  {\begin{array}{ll} 0, & n\text{ 是大于 }4\text{ 的合数 } \\  2, & n = 4 \end{array}\;\left( {\;\operatorname{mod}\;n}\right) .}\right. \]
+
+推广: 设整数 \( n \geq  2 \) ,则
+
+\[\mathop{\prod }\limits_{\substack{{1 \leq  d \leq  n} \\  {\left( {d,n}\right)  = 1} }}d \equiv  \left\{  \begin{array}{ll}  - 1, & n = 2,4,{p}^{k},2{p}^{k}\left( {p\text{ 奇质数 }}\right) \\  1, & \text{ 其他 } \end{array}\right. \left( {\;\operatorname{mod}\;n}\right) .\]
+
+<!-- Meanless: 33-->
+
+
+### 4.6 中国剩余定理
+
+设 \( {m}_{1},{m}_{2},\cdots ,{m}_{n} \) 是两两互质的正整数,则对任意整数 \( {a}_{1},{a}_{2},\cdots ,{a}_{n} \) ,同余方程组
+
+\[x \equiv  {a}_{i}\;\left( {\;\operatorname{mod}\;{m}_{i}}\right) ,\;i = 1,2,\cdots ,n\]
+
+有解,且在模 \( {m}_{1}{m}_{2}\cdots {m}_{n} \) 的意义下解唯一.
+
+推广: 设 \( {m}_{1},{m}_{2},\cdots ,{m}_{n} \) 是正整数,则对任意整数 \( {a}_{1},{a}_{2},\cdots ,{a}_{n} \) ,同余方程组
+
+\[x \equiv  {a}_{i}\;\left( {\;\operatorname{mod}\;{m}_{i}}\right) ,\;i = 1,2,\cdots ,n\]
+
+有解的充要条件是对任意 \( 1 \leq  i < j \leq  n \) ,均有
+
+\[{a}_{i} \equiv  {a}_{j}\;\left( {{\;\operatorname{mod}\;\gcd }\left( {{m}_{i},{m}_{j}}\right) }\right) .\]
+
+### 4.7 拉格朗日定理, Lagrange
+
+设 \( p \) 是质数, \( f\left( x\right)  = {a}_{n}{x}^{n} + {a}_{n - 1}{x}^{n - 1} + \cdots  + {a}_{0} \) 是整系数多项式,满足 \( p \nmid  {a}_{n} \) , 则同余方程 \( f\left( x\right)  \equiv  0\left( {\;\operatorname{mod}\;p}\right) \) 在模 \( p \) 的意义下至多有 \( n \) 个解.
+
+### 4.8 欧拉判别法, Euler, 1761
+
+设 \( p \) 是奇质数, \( a \) 是与 \( p \) 互质的整数,则 \( a \) 是模 \( p \) 的二次剩余当且仅当 \( {a}^{\frac{p - 1}{2}} \equiv  1 \) \( \left( {\;\operatorname{mod}\;p}\right) ,a \) 是模 \( p \) 的二次非剩余当且仅当 \( {a}^{\frac{p - 1}{2}} \equiv   - 1\left( {\;\operatorname{mod}\;p}\right) \) ,即
+
+\[\left( \frac{a}{p}\right)  \equiv  {a}^{\frac{p - 1}{2}}\;\left( {\;\operatorname{mod}\;p}\right) .\]
+
+### 4.9 二次互反律, Gauss, 1801
+
+设 \( p,q \) 是不同的奇质数,则
+
+\[\left( \frac{p}{q}\right) \left( \frac{q}{p}\right)  = {\left( -1\right) }^{\frac{p - 1}{2} \cdot  \frac{q - 1}{2}}.\]
+
+### 4.10 Thue 引理, 1902
+
+设 \( n \) 是大于 1 的整数, \( a \) 是与 \( n \) 互质的整数. 则存在整数 \( x,y \) ,满足 \( 0 < \) \( \left| x\right| ,\left| y\right|  \leq  \sqrt{n} \) ,且 \( x \equiv  {ay}\left( {\;\operatorname{mod}\;n}\right) \) .
+
+### 4.11 费马二平方和定理, Fermat, 1640
+
+奇质数 \( p \) 可以表示为两个整数的平方和当且仅当 \( p \equiv  1\left( {\;\operatorname{mod}\;4}\right) \) .
+
+<!-- Meanless: 34-->
+
+
+
+
+### 4.12 拉格朗日四平方和定理, Lagrange, 1770
+
+每个正整数都可以表示为四个整数的平方和.
+
+### 4.13 厄米特恒等式, Hermite, 1884
+
+设 \( n \) 是正整数, \( x \) 是实数,则
+
+\[\left\lbrack  x\right\rbrack   + \left\lbrack  {x + \frac{1}{n}}\right\rbrack   + \left\lbrack  {x + \frac{2}{n}}\right\rbrack   + \cdots  + \left\lbrack  {x + \frac{n - 1}{n}}\right\rbrack   = \left\lbrack  {nx}\right\rbrack  .\]
+
+### 4.14 勒让德公式, Legendre, 1808
+
+设 \( p \) 是质数, \( n \) 是正整数,则
+
+\[{\nu }_{p}\left( {n!}\right)  = \mathop{\sum }\limits_{{k = 1}}^{\infty }\left\lbrack  \frac{n}{{p}^{k}}\right\rbrack   = \frac{n - {S}_{p}\left( n\right) }{p - 1},\]
+
+其中 \( {S}_{p}\left( n\right) \) 是 \( n \) 在 \( p \) 进制中的数码和.
+
+### 4.15 指数提升引理
+
+## 设 \( n \) 是正整数.
+
+(1) 若 \( p \) 是奇质数, \( x,y \) 是与 \( p \) 互质的整数, \( p \mid  x - y \) ,则
+
+\[{\nu }_{p}\left( {{x}^{n} - {y}^{n}}\right)  = {\nu }_{p}\left( {x - y}\right)  + {\nu }_{p}\left( n\right) .\]
+
+(2)若 \( x,y \) 是奇数,则
+
+\[{\nu }_{2}\left( {{x}^{n} - {y}^{n}}\right)  = \left\{  \begin{array}{ll} {\nu }_{2}\left( {x - y}\right)  + {\nu }_{2}\left( {x + y}\right)  + {\nu }_{2}\left( n\right)  - 1, & n\text{ 是偶数 } \\  {\nu }_{2}\left( {x - y}\right) , & n\text{ 是奇数 } \end{array}\right. \]
+
+### 4.16 卢卡斯定理, Lucas, 1878
+
+设 \( p \) 是质数,正整数 \( n,m \) 在 \( p \) 进制下的表示为
+
+\[n = {n}_{k}{p}^{k} + {n}_{k - 1}{p}^{k - 1} + \cdots  + {n}_{0},\]
+
+\[m = {m}_{k}{p}^{k} + {m}_{k - 1}{p}^{k - 1} + \cdots  + {m}_{0},\]
+
+其中 \( 0 \leq  {n}_{i},{m}_{i} \leq  p - 1,i = 0,1,\cdots ,k \) . 则
+
+\[{\mathrm{C}}_{n}^{m} \equiv  {\mathrm{C}}_{{n}_{k}}^{{m}_{k}}{\mathrm{C}}_{{n}_{k - 1}}^{{m}_{k - 1}}\cdots {\mathrm{C}}_{{n}_{0}}^{{m}_{0}}\;\left( {\;\operatorname{mod}\;p}\right) ,\]
+
+其中约定 \( {\mathrm{C}}_{0}^{0} = 1 \) .
+
+<!-- Meanless: 35-->
+
+
+
+
+### 4.17 库默尔定理, Kummer, 1852
+
+设 \( p \) 是质数, \( m,n \) 是正整数. 则 \( {\mathrm{C}}_{n}^{m} \) 所含 \( p \) 的最高幂次等于在 \( p \) 进制中 \( m \) 加 \( n - \) \( m \) 时进位的次数.
+
+### 4.18 沃斯滕霍姆定理, Wolstenholme, 1862
+
+设质数 \( p > 3 \) ,则 \( \left( 1\right) \mathop{\sum }\limits_{{k = 1}}^{{p - 1}}\frac{1}{{k}^{2}} \equiv  0\left( {\;\operatorname{mod}\;p}\right) ;\left( 2\right) \mathop{\sum }\limits_{{k = 1}}^{{p - 1}}\frac{1}{k} \equiv  0\left( {\;\operatorname{mod}\;{p}^{2}}\right) ;\left( 3\right) {\mathrm{C}}_{{2p} - 1}^{p - 1} \equiv \) 1 (mod \( {p}^{3} \) ).
+
+### 4.19 舒尔定理, Schur, 1912
+
+设 \( f\left( x\right) \) 是非常值整系数多项式,则 \( \left\{  {f\left( n\right)  \mid  n \in  {\mathbb{N}}_{ + }}\right\} \) 的质因子集是无限集. 推广: 设 \( S = \left( {{s}_{1},{s}_{2},\cdots }\right) \) 是一个整数序列,满足
+
+- \( S \) 是几乎单射的: 存在常数 \( c \) ,使得每个值在序列中至多出现 \( c \) 次;
+
+- \( S \) 是次指数增长的: 存在函数 \( f : {\mathbb{N}}_{ + } \rightarrow  {\mathbb{R}}_{ + } \) ,使得 \( \frac{f\left( n\right) }{\ln n} \rightarrow  0\left( {n \rightarrow  \infty }\right) \) , 且 \( \left| {s}_{n}\right|  \leq  {e}^{{e}^{f\left( n\right) }} \) ,
+
+则能整除 \( S \) 中某个元素的质数构成的集合 \( {\mathbb{P}}_{S} \) 是无限集.
+
+### 4.20 亨泽尔引理, Hensel, 1904
+
+形式 1: 设 \( f\left( x\right) \) 是整系数多项式, \( p \) 是质数, \( k \) 是正整数. 若存在整数 \( n \) 使得 \( {p}^{k} \mid  f\left( n\right) ,p \nmid  {f}^{\prime }\left( n\right) \) ,则在模 \( p \) 的意义下恰有一个整数 \( t \) 使得 \( {p}^{k + 1} \mid  f\left( {n + t{p}^{k}}\right) \) .
+
+形式 2: 设 \( f\left( x\right) \) 是整系数多项式, \( p \) 是质数, \( n \) 是整数,使得 \( p \mid  f\left( n\right) ,p \nmid  {f}^{\prime }\left( n\right) \) . 则存在序列 \( \left\{  {n}_{k}\right\} \) ,使得 \( {n}_{1} = n,{p}^{k} \mid  {n}_{k + 1} - {n}_{k} \) ,且 \( {p}^{k} \mid  f\left( {n}_{k}\right) \) .
+
+推论: 设 \( f\left( x\right) \) 是非常值整系数多项式,则对任意正整数 \( k \) ,存在质数 \( p \) 和整数 \( n \) ,使得 \( {p}^{k} \mid  f\left( n\right) \) .
+
+### 4.21 莫比乌斯反演公式, Möbius, 1832
+
+若 \( f\left( n\right)  = \mathop{\sum }\limits_{{d \mid  n}}g\left( d\right) \) ,则
+
+\[g\left( n\right)  = \mathop{\sum }\limits_{{d \mid  n}}f\left( d\right) \mu \left( \frac{n}{d}\right) ,\]
+
+<!-- Meanless: 36-->
+
+
+其中 \( \mu \) 是 Möbius 函数,定义为
+
+\[\mu \left( n\right)  = \left\{  {\begin{array}{ll} 1, & n = 1 \\  0, & {p}^{2} \mid  n \\  {\left( -1\right) }^{k}, & n = {p}_{1}{p}_{2}\cdots {p}_{k} \end{array}.}\right. \]
+
+### 4.22 闵可夫斯基定理, Minkowski, 1896
+
+设 \( A \) 是 \( {\mathbb{R}}^{n} \) 中的有界凸体,关于原点对称,体积大于 \( {2}^{n} \) . 则 \( A \) 的内部有不同于原点的格点.
+
+一般格形式: 设 \( A \) 是 \( {\mathbb{R}}^{n} \) 中的有界凸体,关于原点对称. \( {v}_{1},{v}_{2},\cdots ,{v}_{n} \) 是 \( {\mathbb{R}}^{n} \) 中线性无关的向量, 记基础区域
+
+\[P = \left\{  {\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}{v}_{i} \mid  0 \leq  {x}_{i} \leq  1}\right\}  .\]
+
+如果 \( A \) 的体积大于 \( {2}^{n} \cdot  \operatorname{Vol}\left( P\right) \) ,则 \( A \) 的内部有格 \( L = \mathbb{Z}{v}_{1} + \mathbb{Z}{v}_{2} + \cdots  + \mathbb{Z}{v}_{n} \) 中的点, 且不同于原点.
+
+线性型形式: 设 \( A = \left( {a}_{ij}\right) \) 是 \( n \times  n \) 的可逆实矩阵,正实数 \( {c}_{1},{c}_{2},\cdots ,{c}_{n} \) 满足 \( {c}_{1}{c}_{2}\cdots {c}_{n} > \left| {\det A}\right| \) . 则存在不全为 0 的整数 \( {x}_{1},{x}_{2},\cdots ,{x}_{n} \) ,使得 \( \left| {\mathop{\sum }\limits_{{j = 1}}^{n}{a}_{ij}{x}_{j}}\right|  < \) \( {c}_{i} \) 对任意 \( 1 \leq  i \leq  n \) 成立.
+
+### 4.23 狄利克雷逼近定理, Dirichlet, 1842
+
+一维情形: 设 \( \alpha \) 是实数, \( N \) 是正整数,则存在整数 \( p,q \) ,使得 \( 0 < q \leq  N \) ,且
+
+\[\left| {{q\alpha } - p}\right|  < \frac{1}{N}.\]
+
+多维情形: 设 \( {\alpha }_{1},\cdots ,{\alpha }_{n} \) 是实数, \( N \) 是正整数,则存在整数 \( {p}_{1},\cdots ,{p}_{n},q \) ,使得 \( 0 < q \leq  {N}^{n} \) ,且
+
+\[\left| {q{\alpha }_{i} - {p}_{i}}\right|  < \frac{1}{N},\;i = 1,2,\cdots ,n.\]
+
+### 4.24 克罗内克逼近定理, Kronecker, 1884
+
+一维情形: 设 \( \alpha \) 是无理数, \( \beta \) 是实数,则对任意 \( \varepsilon  > 0 \) ,存在整数 \( p,q \) ,使得 \( q > 0 \) ,且
+
+\[\left| {{q\alpha } - p - \beta }\right|  < \varepsilon \]
+
+多维情形: 设 \( {\beta }_{1},\cdots ,{\beta }_{n} \) 是实数,若实数 \( {\alpha }_{1},\cdots ,{\alpha }_{n},1 \) 在 \( \mathbb{Q} \) 上线性无关,则对任意 \( \varepsilon  > 0 \) ,存在整数 \( {p}_{1},\cdots ,{p}_{n},q \) ,使得 \( q > 0 \) ,且
+
+\[\left| {q{\alpha }_{i} - {p}_{i} - {\beta }_{i}}\right|  < \varepsilon ,\;i = 1,2,\cdots ,n.\]
+
+<!-- Meanless: 37-->
+
+
+### 4.25 Hurwitz 无理数定理, 1891
+
+设 \( \alpha \) 是无理数,则存在无穷多对整数 \( p,q \) ,使得 \( \left( {p,q}\right)  = 1,q > 0 \) ,且
+
+\[\left| {\alpha  - \frac{p}{q}}\right|  < \frac{1}{\sqrt{5}{q}^{2}}\]
+
+其中 \( \sqrt{5} \) 是最佳的.
+
+### 4.26 刘维尔定理, Liouville, 1844
+
+设 \( \alpha \) 是一个实代数数,次数 \( d \geq  2 \) . 则存在正常数 \( C\left( \alpha \right) \) ,使得对任意整数 \( p \) 和正整数 \( q \) ,均有
+
+\[\left| {\alpha  - \frac{p}{q}}\right|  > \frac{C\left( \alpha \right) }{{q}^{d}}.\]
+
+推论: \( \beta  = \mathop{\sum }\limits_{{n = 1}}^{\infty }\frac{1}{{2}^{n!}} \) 是超越数.
+
+### 4.27 Thue 定理, 1909
+
+(1) 设 \( \xi \) 是一个实代数数,次数 \( d \geq  3 \) . 则对任意 \( \varepsilon  > 0 \) ,只有有限多个有理数 \( \frac{p}{q},q > 0 \) ,使得
+
+\[\left| {\xi  - \frac{p}{q}}\right|  < \frac{1}{{q}^{1 + \frac{1}{2}d + \varepsilon }}.\]
+
+(2)设 \( A,B,C \) 是非零整数,则方程 \( A{x}^{3} + B{y}^{3} = C \) 至多有有限多个整数解(x,y).
+
+### 4.28 小林定理, Kobayashi, 1981
+
+设正整数数列 \( \left\{  {a}_{n}\right\} \) 有无穷多个不同的项,且质因子集是有限集. 则对任意非零整数 \( t \) ,数列 \( \left\{  {{a}_{n} + t}\right\} \) 的质因子集是无限集.
+
+### 4.29 Erdós-Ginzburg-Ziv 定理, 1961
+
+设 \( n \) 是正整数,则在 \( {2n} - 1 \) 个整数 \( {a}_{1},{a}_{2},\cdots ,{a}_{{2n} - 1} \) 中,存在 \( n \) 个的和是 \( n \) 的倍数.
+
+<!-- Meanless: 38-->
+
+
+
+
+### 4.30 柯西-达文波特定理, Cauchy-Davenport, 1813
+
+设 \( p \) 是奇质数, \( A,B \) 是 \( {\mathbb{Z}}_{p} \) 的非空子集,则在模 \( p \) 的意义下,
+
+\[\left| {A + B}\right|  \geq  \min \{ p,\left| A\right|  + \left| B\right|  - 1\} \]
+
+其中 \( A + B = \{ a + b \mid  a \in  A,b \in  B\} \) .
+
+### 4.31 Chevalley-Warning 定理, 1935
+
+设 \( {f}_{1},{f}_{2},\cdots ,{f}_{k} \in  {\mathbb{F}}_{p}\left\lbrack  {{x}_{1},{x}_{2},\cdots ,{x}_{n}}\right\rbrack \) ,满足 \( \mathop{\sum }\limits_{{i = 1}}^{k}\deg {f}_{i} < n \) . 如果 \( {f}_{1},{f}_{2},\cdots ,{f}_{k} \) 有一个公共零点 \( \left( {{c}_{1},{c}_{2},\cdots ,{c}_{n}}\right) \) ,那么它们也有另一个公共零点.
+
+### 4.32 卡塔兰猜想, Catalan, 1844
+
+相差 1 的幂只有 8 和 9 ,即不定方程
+
+\[{x}^{a} - {y}^{b} = 1\]
+
+的满足 \( x,a,y,b > 1 \) 的整数解只有 \( x = 3,a = 2,y = 2,b = 3 \) .
+
+### 4.33 Bertrand 假设, 1845
+
+设整数 \( n > 1 \) ,则存在质数 \( p \) 满足 \( n < p < {2n} \) .
+
+### 4.34 Sylvester-Schur 定理, 1892
+
+设正整数 \( n \geq  k \) ,则 \( n + 1,n + 2,\cdots ,n + k \) 中有一个数有大于 \( k \) 的质因子.
+
+### 4.35 Mertens 定理, 1874
+
+(1) 对任意 \( x \geq  1 \) ,
+
+\[\mathop{\sum }\limits_{{p \leq  x}}\frac{\log p}{p} = \log x + O\left( 1\right) .\]
+
+(2) 对任意 \( x \geq  2 \) ,
+
+\[\mathop{\sum }\limits_{{p \leq  x}}\frac{1}{p} = \log \log x + M + O\left( \frac{1}{\log x}\right) ,\]
+
+<!-- Meanless: 39-->
+
+
+其中 \( M \) 称为 Meissel - Mertens 常数.
+
+(3) 对任意 \( x \geq  2 \) ,
+
+\[\mathop{\prod }\limits_{{p \leq  x}}\left( {1 - \frac{1}{p}}\right)  = \frac{{e}^{-\gamma }}{\log x} + O\left( \frac{1}{{\log }^{2}x}\right) ,\]
+
+其中 \( \gamma \) 是欧拉常数.
+
+### 4.36 狄利克雷定理, Dirichlet, 1837
+
+设 \( a,m \) 是互质的正整数,则存在无穷多个模 \( m \) 余 \( a \) 的质数.
+
+### 4.37 Pólya-Vinogradov 不等式, 1918
+
+设 \( p \) 是奇质数,则对任意整数 \( 0 < m \leq  n \) ,有
+
+\[\left| {\mathop{\sum }\limits_{{t = m}}^{n}\left( \frac{t}{p}\right) }\right|  < \sqrt{p}\log p\]
+
+一般地,对任意模 \( k \) 的非主 Dirichlet 特征 \( \chi \) ,及任意整数 \( 0 < m \leq  n \) ,有
+
+\[\mathop{\sum }\limits_{{t = m}}^{n}\chi \left( t\right)  = O\left( {\sqrt{k}\log k}\right) \]
+
+### 4.38 Zsigmondy 定理, 1892
+
+形式 1: 设整数 \( a > b,\left( {a,b}\right)  = 1,n \geq  2 \) ,则 \( {a}^{n} - {b}^{n} \) 有一个质因子 \( p \) ,使得对任意 \( 0 < k < n \) ,均有 \( p \nmid  {a}^{k} - {b}^{k} \) . 以下情况例外:
+
+(1) \( a = 2,b = 1,n = 6 \) ;
+
+(2) \( n = 2,a + b \) 是 2 的幂.
+
+形式 2: 设整数 \( a > b,\left( {a,b}\right)  = 1,n \geq  2 \) ,则 \( {a}^{n} + {b}^{n} \) 有一个质因子 \( p \) ,使得对任意 \( 0 < k < n \) ,均有 \( p \nmid  {a}^{k} + {b}^{k} \) . 以下情况例外: \( a = 2,b = 1,n = 3 \) .
+
+### 4.39 Beatty 定理, 1894
+
+设 \( \alpha ,\beta \) 是正无理数,满足 \( \frac{1}{\alpha } + \frac{1}{\beta } = 1 \) . 记集合 \( A = \left\{  {\left\lbrack  {n\alpha }\right\rbrack   \mid  n \in  {\mathbb{N}}_{ + }}\right\}  ,B = \) \( \left\{  {\left\lbrack  {n\beta }\right\rbrack   \mid  n \in  {\mathbb{N}}_{ + }}\right\} \) ,则 \( A,B \) 构成 \( {\mathbb{N}}_{ + } \) 的一个划分.
+
+### 4.40 Uspensky 定理, 1927
+
+对正实数 \( \alpha \) ,记集合 \( {S}_{\alpha } = \left\{  {\left\lbrack  {t\alpha }\right\rbrack   \mid  t \in  {\mathbb{N}}_{ + }}\right\} \) . 若存在正实数 \( {\alpha }_{1},{\alpha }_{2},\cdots ,{\alpha }_{n} \) ,使得 \( {S}_{{\alpha }_{1}},{S}_{{\alpha }_{2}},\cdots ,{S}_{{\alpha }_{n}} \) 构成 \( {\mathbb{N}}_{ + } \) 的一个划分,则 \( n < 3 \) .
+
+<!-- Meanless: 40-->
+
+
+
+
+### 4.41 Lerch 同余式, 1905
+
+对质数 \( p \) 和不被 \( p \) 整除的整数 \( a \) ,定义以 \( a \) 为底 \( p \) 的费马商为
+
+\[{q}_{p}\left( a\right)  = \frac{{a}^{p - 1} - 1}{p}.\]
+
+对质数 \( p \) ,定义 \( p \) 的威尔逊商为
+
+\[{w}_{p} = \frac{\left( {p - 1}\right) ! + 1}{p}.\]
+
+设 \( p \) 是奇质数,则
+
+\[\mathop{\sum }\limits_{{a = 1}}^{{p - 1}}{q}_{p}\left( a\right)  \equiv  {w}_{p}\;\left( {\;\operatorname{mod}\;p}\right) \]
+
+即
+
+\[\mathop{\sum }\limits_{{a = 1}}^{{p - 1}}{a}^{p - 1} \equiv  \left( {p - 1}\right) ! + p\;\left( {\;\operatorname{mod}\;{p}^{2}}\right) .\]
+
+<!-- Meanless: 41-->
+
+
+## 5 组合
+
+### 5.1 施佩纳定理, Sperner, 1928
+
+设 \( {A}_{1},{A}_{2},\cdots ,{A}_{k} \) 是集合 \( \{ 1,2,\cdots ,n\} \) 的子集,任两个互不包含,则 \( k \leq  {\mathrm{C}}_{n}^{\left\lbrack  \frac{n}{2}\right\rbrack  } \) .
+
+### 5.2 LYM 不等式, Lubell-Yamamoto-Meshalkin, 1954
+
+设 \( {A}_{1},{A}_{2},\cdots ,{A}_{k} \) 是集合 \( \{ 1,2,\cdots ,n\} \) 的子集,任两个互不包含,则
+
+\[\mathop{\sum }\limits_{{i = 1}}^{k}\frac{1}{{\mathrm{C}}_{n}^{\left| {A}_{i}\right| }} \leq  1\]
+
+### 5.3 Bollobás 定理, 1965
+
+设 \( {A}_{1},{A}_{2},\cdots ,{A}_{k},{B}_{1},{B}_{2},\cdots ,{B}_{k} \) 是集合 \( \{ 1,2,\cdots ,n\} \) 的不同子集,满足对 \( 1 \leq \) \( i,j \leq  k,{A}_{i} \cap  {B}_{j} = \varnothing \) 当且仅当 \( i = j \) ,则
+
+\[\mathop{\sum }\limits_{{i = 1}}^{k}\frac{1}{{\mathrm{C}}_{\left| {A}_{i}\right|  + \left| {B}_{i}\right| }^{\left| {A}_{i}\right| }} \leq  1.\]
+
+特别当 \( \left| {A}_{1}\right|  = \cdots  = \left| {A}_{k}\right|  = a,\left| {B}_{1}\right|  = \cdots  = \left| {B}_{k}\right|  = b \) 时, \( k \leq  {\mathrm{C}}_{a + b}^{a} \) .
+
+### 5.4 Erdós-Ko-Rado 定理, 1961
+
+设正整数 \( n,r \) 满足 \( r \leq  \frac{n}{2}.{A}_{1},{A}_{2},\cdots ,{A}_{k} \) 是 \( \{ 1,2,\cdots ,n\} \) 的 \( r \) 元子集,两两交集非空,则 \( k \leq  {\mathrm{C}}_{n - 1}^{r - 1} \) .
+
+### 5.5 Kleitman 引理, 1966
+
+称子集族 \( \mathcal{F} \) 是下闭的,如果对任意 \( A \subseteq  B \) ,若 \( B \in  \mathcal{F} \) ,则 \( A \in  \mathcal{F} \) . 类似定义上闭.
+
+设 \( \mathcal{F} \) 和 \( \mathcal{G} \) 分别是 \( n \) 元集合 \( S \) 的下闭子集族和上闭子集族,则
+
+\[\left| \mathcal{F}\right|  \cdot  \left| \mathcal{G}\right|  \geq  {2}^{n}\left| {\mathcal{F} \cap  \mathcal{G}}\right| .\]
+
+### 5.6 Fisher 不等式, 1940
+
+设整数 \( n \geq  2,{A}_{1},{A}_{2},\cdots ,{A}_{m} \) 是集合 \( \{ 1,2,\cdots ,n\} \) 的不同非空子集,满足对任意 \( 1 \leq  i < j \leq  m,\left| {{A}_{i} \cap  {A}_{j}}\right| \) 相同. 则 \( m \leq  n \) .
+
+<!-- Meanless: 42-->
+
+
+
+
+### 5.7 舒尔定理, Schur, 1917
+
+对任意整数 \( m \geq  2 \) ,存在整数 \( N > 3 \) ,使得当将 \( 1,2,\cdots ,N \) 任意分为 \( m \) 组时, 必有同组中的三个数 \( x,y,z \) 满足 \( x + y = z \) .
+
+推论: 对任意正整数 \( m \) ,存在正整数 \( N \) ,使得对任意质数 \( p \geq  N \) ,同余方程
+
+\[{x}^{m} + {y}^{m} \equiv  {z}^{m}\;\left( {\;\operatorname{mod}\;p}\right) \]
+
+都有使 \( p \nmid  {xyz} \) 的整数解(x,y,z).
+
+### 5.8 Dilworth 定理, 1950
+
+在偏序集中, 称一些元素构成链, 如果它们任意两个可比; 称一些元素构成反链, 如果它们任意两个不可比.
+
+对任意有限偏序集, 其最大反链中元素的数目等于最小链划分中链的数目.
+
+### 5.9 Mirsky 定理, 1971
+
+对任意有限偏序集, 其最长链的长度等于最小反链划分中反链的数目.
+
+### 5.10 Erdós-Szekeres 定理, 1935
+
+设 \( m,n \) 是正整数,则在任意由 \( {mn} + 1 \) 个实数构成的序列中,都存在长为 \( m + \) 1 的不减子序列或长为 \( n + 1 \) 的不增子序列.
+
+### 5.11 太阳花引理, 1960
+
+一个有 \( k \) 个花瓣的太阳花是指一族集合 \( {S}_{1},{S}_{2},\cdots ,{S}_{k} \) ,满足存在集合 \( Y \) ,使得对任意 \( 1 \leq  i < j \leq  k \) ,都有 \( {S}_{i} \cap  {S}_{j} = Y.Y \) 称为花心, \( {S}_{i} \smallsetminus  Y \) 称为花瓣.
+
+设 \( \mathcal{F} \) 是由 \( s \) 元集合构成的集族,若 \( \left| \mathcal{F}\right|  > s!{\left( k - 1\right) }^{s} \) ,则 \( \mathcal{F} \) 包含一个有 \( k \) 个花瓣的太阳花.
+
+### 5.12 拉格朗日反演公式, Lagrange, 1770
+
+设
+
+\[\mathbb{C}\left\lbrack  \left\lbrack  x\right\rbrack  \right\rbrack   = \left\{  {\mathop{\sum }\limits_{{k = 0}}^{\infty }{a}_{k}{x}^{k} \mid  {a}_{k} \in  \mathbb{C}}\right\}  \]
+
+是形式幂级数环. 对级数 \( f\left( x\right)  = \mathop{\sum }\limits_{k}{a}_{k}{x}^{k} \) ,定义 \( \left\lbrack  {x}^{n}\right\rbrack  f\left( x\right)  = {a}_{n} \) .
+
+<!-- Meanless: 43-->
+
+
+
+
+设 \( f,g \in  \mathbb{C}\left\lbrack  \left\lbrack  x\right\rbrack  \right\rbrack \) ,满足 \( f\left( x\right)  = {xg}\left( {f\left( x\right) }\right) \) ,则对任意 \( h \in  \mathbb{C}\left\lbrack  \left\lbrack  x\right\rbrack  \right\rbrack \) ,任意 \( n \in  \mathbb{N} \) ,有
+
+\[n\left\lbrack  {x}^{n}\right\rbrack  h\left( {f\left( x\right) }\right)  = \left\lbrack  {x}^{n - 1}\right\rbrack  {h}^{\prime }\left( x\right) g{\left( x\right) }^{n}.\]
+
+特别当 \( h\left( x\right)  = x \) 时,
+
+\[n\left\lbrack  {x}^{n}\right\rbrack  f\left( x\right)  = \left\lbrack  {x}^{n - 1}\right\rbrack  g{\left( x\right) }^{n}.\]
+
+### 5.13 范德瓦尔登定理, van der Waerden, 1927
+
+设 \( k,l \) 是正整数,则存在正整数 \( W\left( {k,l}\right) \) ,使得当将任意连续 \( W\left( {k,l}\right) \) 个正整数任意分成 \( k \) 组时,必有一组中有 \( l \) 个数构成等差数列.
+
+### 5.14 Rado 定理, 1933
+
+设 \( S \) 是关于变量 \( {x}_{1},{x}_{2},\cdots ,{x}_{n} \) 的整系数方程组. 称 \( S \) 是 \( r - \) 正则的,如果对 \( {\mathbb{N}}_{ + } \) 的任意一个 \( r \) 染色, \( S \) 都有同色解. 称 \( S \) 是正则的,如果对每个 \( r,S \) 都是 \( r - \) 正则的.
+
+设 \( {c}_{1},{c}_{2},\cdots ,{c}_{n} \) 是非零整数,则方程
+
+\[{c}_{1}{x}_{1} + {c}_{2}{x}_{2} + \cdots  + {c}_{n}{x}_{n} = 0\]
+
+是正则的,当且仅当 \( {c}_{1},{c}_{2},\cdots ,{c}_{n} \) 中有若干个 (至少一个) 之和为 0 .
+
+### 5.15 Raney 引理, 1960
+
+离散版本: 设整数 \( {x}_{1},{x}_{2},\cdots ,{x}_{n} \) 的和为 1,则存在唯一的 \( 1 \leq  j \leq  n \) ,使得
+
+\[\mathop{\sum }\limits_{{i = j}}^{{j + k - 1}}{x}_{i} > 0,\;1 \leq  k \leq  n,\]
+
+其中下标按模 \( n \) 理解.
+
+连续版本: 设实数 \( {x}_{1},{x}_{2},\cdots ,{x}_{n} \) 的和大于 0,则存在 \( 1 \leq  j \leq  n \) ,使得
+
+\[\mathop{\sum }\limits_{{i = j}}^{{j + k - 1}}{x}_{i} > 0,\;1 \leq  k \leq  n\]
+
+其中下标按模 \( n \) 理解.
+
+<!-- Meanless: 44-->
+
+
+
+
+## 6 图论
+
+### 6.1 图兰定理, Turán, 1941
+
+设 \( G \) 是有 \( n \) 个顶点的简单图,不含 \( \left( {r + 1}\right)  - \) 团,则 \( G \) 的边数
+
+\[\left| E\right|  \leq  \frac{r - 1}{r} \cdot  \frac{{n}^{2}}{2}.\]
+
+特别当 \( G \) 不含三角形时, \( \left| E\right|  \leq  \frac{{n}^{2}}{4} \) ,这也称为 Mantel 定理.
+
+### 6.2 拉姆赛定理, Ramsey, 1930
+
+当对充分大的完全图的边染色时, 必有同色的完全子图. 常用的有如下两种形式:
+
+形式 1: 对任意正整数 \( n \) ,存在最小的正整数 \( R\left( n\right) \) ,使得当将 \( R\left( n\right) \) 阶完全图的边染为 \( n \) 种颜色之一时,必有同色三角形.
+
+形式 2: 对任意正整数对(s,t),存在最小的正整数 \( R\left( {s,t}\right) \) ,使得当将 \( R\left( {s,t}\right) \) 阶完全图的边染为红色或蓝色时,必有红色的 \( s \) 阶完全子图或蓝色的 \( t \) 阶完全子图.
+
+### 6.3 霍尔定理, Hall, 1935
+
+图 \( G \) 中若干互不相交 (没有公共顶点) 的边组成的集合称为 \( G \) 的一个匹配. 对于二部图 \( G = \left( {X,Y;E}\right) \) ,若存在一个匹配,使得 \( X \) 中每一点都是这个匹配中的点,则称这个匹配是 \( X \) 到 \( Y \) 的完全匹配.
+
+图论表述: 对二部图 \( G = \left( {X,Y;E}\right) \) ,存在 \( X \) 到 \( Y \) 的完全匹配的充要条件是, 对每个 \( S \subseteq  X \) ,都有 \( \left| {N\left( S\right) }\right|  \geq  \left| S\right| \) . 其中 \( N\left( S\right) \) 表示与 \( S \) 中的点相邻的点的集合.
+
+集合表述: 设 \( S = \left\{  {{S}_{1},{S}_{2},\cdots ,{S}_{n}}\right\} \) 是集合 \( X \) 的一个子集族,则存在 \( X \) 的不同元素 \( {x}_{1},{x}_{2},\cdots ,{x}_{n} \) ,使得对任意 \( 1 \leq  i \leq  n \) 有 \( {x}_{i} \in  {S}_{i} \) 的充要条件是, \( S \) 的任意 \( k \) 个子集的并中至少有 \( k \) 个元素.
+
+亏数形式: 对二部图 \( G = \left( {X,Y;E}\right) \) 以及 \( S \subseteq  X \) ,记
+
+\[\operatorname{def}\left( S\right)  = \left| S\right|  - \left| {N\left( S\right) }\right| ,\;\delta  = \mathop{\max }\limits_{{S \subseteq  X}}\operatorname{def}\left( S\right) \]
+
+称为 \( G \) 的亏数. 约定 \( \operatorname{def}\left( \varnothing \right)  = 0 \) .
+
+设二部图 \( G = \left( {X,Y;E}\right) \) 的亏数为 \( \delta \) ,则存在 \( \left| X\right|  - \delta \) 条边的匹配.
+
+### 6.4 Ore 定理, 1960
+
+在 \( n\left( {n \geq  3}\right) \) 阶简单图 \( G \) 中,若对每一对不相邻的顶点 \( u,v \) ,都有 \( d\left( u\right)  + d\left( v\right)  \geq \) \( n \) ,则 \( G \) 有哈密顿圈.
+
+<!-- Meanless: 45-->
+
+
+
+
+### 6.5 Caro-Wei定理, 1979
+
+图 \( G \) 中若干互不相邻的顶点组成的集合称为 \( G \) 的一个独立集,最大独立集的点数记作 \( \alpha \left( G\right) \) . 则 \( \alpha \left( G\right)  \geq  \mathop{\sum }\limits_{{v \in  V}}\frac{1}{{d}_{v} + 1} \) .
+
+### 6.6 交叉数引理, 1973
+
+图的一个画法是将顶点和边嵌入平面的一个映射, 其中顶点互不相同, 边是连接其两端点的曲线, 且满足: 边不自交; 边的内部没有其他顶点; 有相同端点的边不相交；任两条边至多有一个交点；任三条边没有交点. 两条边的交点(非端点)称为一个交叉,在图 \( G \) 的所有画法中交叉的最小数目称为 \( G \) 的交叉数,记作 \( \operatorname{cr}\left( G\right) \) .
+
+对简单图 \( G = \left( {V,E}\right) \) ,若 \( \left| E\right|  \geq  4\left| V\right| \) ,则 \( \operatorname{cr}\left( G\right)  \geq  \frac{1}{64} \cdot  \frac{{\left| E\right| }^{3}}{{\left| V\right| }^{2}} \) .
+
+### 6.7 Berge 定理, 1957
+
+设 \( M \) 是图 \( G \) 的一个匹配, \( G \) 的一个 \( M \) -交错路是边交替属于 \( M \) 和不属于 \( M \) 的路. 进一步,如果一个 \( M - \) 交错路的起点和终点均不被 \( M \) 覆盖,则称该路是一个 \( M \) -增广路.
+
+图 \( G \) 的匹配 \( M \) 是最大匹配,当且仅当 \( G \) 不含 \( M - \) 增广路.
+
+### 6.8 Gallai-Roy 定理, 1958
+
+设 \( D \) 是有向图,则 \( D \) 有一条有 \( \chi \) 个顶点的有向路,其中 \( \chi \) 是色数.
+
+### 6.9 Brooks 定理, 1941
+
+设 \( G \) 是一个连通图,且不是奇圈或完全图,则 \( \chi  \leq  \Delta \) ,其中 \( \chi \) 是色数, \( \Delta \) 是顶点的最大度数.
+
+### 6.10 König 边染色定理, 1916
+
+设 \( G \) 是二部图,则 \( {\chi }^{\prime } = \Delta \) ,其中 \( {\chi }^{\prime } \) 是边色数, \( \Delta \) 是顶点的最大度数.
+
+<!-- Meanless: 46-->
+
+
+
+
+### 6.11 Vizing 定理, 1964
+
+设 \( G \) 是简单图,则 \( {\chi }^{\prime } = \Delta \) 或 \( \Delta  + 1 \) . 其中 \( {\chi }^{\prime } \) 是边色数 (即最小的正整数 \( k \) ,使得可将 \( E\left( G\right) \) 染为 \( k \) 种颜色,满足同色边没有公共顶点), \( \Delta \) 是顶点的最大度数.
+
+### 6.12 Tutte 定理, 1947
+
+对简单图 \( G \) ,用 \( o\left( G\right) \) 表示 \( G \) 中有奇数个顶点的连通分支的个数.
+
+简单图 \( G \) 有完美匹配,当且仅当对任意 \( S \subseteq  V \) 都有 \( o\left( {G - S}\right)  \leq  \left| S\right| \) .
+
+### 6.13 Menger 定理, 1927
+
+设 \( u,v \) 是图 \( G = \left( {V,E}\right) \) 中的两个不相邻的顶点, \( S \) 是 \( V \smallsetminus  \{ u,v\} \) 的一个子集, 如果 \( u,v \) 不在 \( G - S \) 的同一个连通分支中,则称 \( S \) 是 \( u,v \) 的一个分离集. 如果一些 \( u - v \) 路两两无公共内点,则称它们内部不交.
+
+### 6.14 König-Egeváry 定理, 1931
+
+图 \( G \) 中若干互不相交 (没有公共顶点) 的边组成的集合称为 \( G \) 的一个匹配,边数最多的匹配称为最大匹配. 最大匹配的边数称为 \( G \) 的匹配数,记作 \( \nu \left( G\right) \) 或 \( {\alpha }^{\prime }\left( G\right) \) .
+
+图 \( G \) 中若干顶点组成的集合称为 \( G \) 的一个点覆盖,如果 \( G \) 的每条边都有一个端点在该集合中. 最小点覆盖的点数称为 \( G \) 的点覆盖数,记作 \( \tau \left( G\right) \) .
+
+### 6.15 Hoffman-Singleton 定理, 1960
+
+设 \( G \) 是一个有 \( {n}^{2} + 1 \) 个顶点的图,已知每个顶点的度都等于 \( n \) 且每个圈的长度至少为 5,则 \( n \in  \{ 2,3,7,{57}\} \) .
+
+### 6.16 友谊定理, 1966
+
+若在一群人中任两人都恰有一个共同的朋友, 则有一个人是所有人的朋友.
+
+图论语言: 设 \( G \) 是一个有限简单图,任两个顶点都恰有一个公共邻点,则存在一个顶点与其他所有顶点都相邻.
+
+### 6.17 Graham-Pollak 定理, 1972
+
+如果能将完全图 \( {K}_{n} \) 分解成 \( m \) 个边不交的完全二部图,那么 \( m \geq  n - 1 \) .
+
+<!-- Meanless: 47-->
+
+
+
+
+### 6.18 Erdós-Gallai 定理, 1960
+
+非负不增的整数列 \( d = \left( {{d}_{1},\cdots ,{d}_{n}}\right) \) 是一个简单图的度序列,当且仅当 \( \mathop{\sum }\limits_{{i = 1}}^{n}{d}_{i} \) 是偶数,且对任意 \( 1 \leq  k \leq  n \) ,有
+
+\[\mathop{\sum }\limits_{{i = 1}}^{k}{d}_{i} \leq  k\left( {k - 1}\right)  + \mathop{\sum }\limits_{{i = k + 1}}^{n}\min \left\{  {{d}_{i},k}\right\}  .\]
+
+<!-- Meanless: 48-->
+
+
+## 7 组合几何
+
+### 7.1 皮克定理, Pick, 1899
+
+设 \( \pi \) 是顶点都在格点上的简单多边形,则 \( \pi \) 的面积 \( A = I + \frac{1}{2}B - 1 \) ,其中 \( I \) 是在 \( \pi \) 内部的格点数, \( B \) 是在 \( \pi \) 边界上的格点数.
+
+### 7.2 欧拉多面体公式, Euler, 1750
+
+设 \( P \) 是一个凸多面体,分别用 \( V,E,F \) 表示 \( P \) 的顶点数、棱数和面数,则 \( V - \) \( E + F = 2. \)
+
+### 7.3 海莱定理, Helly, 1913
+
+有限情形: 设 \( {M}_{1},{M}_{2},\cdots ,{M}_{n}\left( {n \geq  3}\right) \) 是平面内的 \( n \) 个凸集,如果其中任意三个都有公共点,那么这 \( n \) 个凸集有公共点.
+
+无限情形: 设 \( {M}_{1},{M}_{2},\cdots \) 是平面内的闭凸集,且至少一个有界. 如果其中任意三个都有公共点, 那么这无穷多个凸集有公共点.
+
+### 7.4 Sylvester-Gallai 定理, 1893
+
+由平面上不共线的 \( n \) 个点所确定的直线中存在一条恰好经过其中的两个点.
+
+### 7.5 施佩纳引理, Sperner, 1928
+
+将一个三角形任意划分为若干不重叠的小三角形, 用红、黄、蓝对每个顶点染色, 满足: 三角形三个顶点的颜色互不相同; 三边上的点的颜色与所对顶点的颜色不同; 内部的点任意染色. 则存在三个顶点互不同色的小三角形.
+
+### 7.6 Szemerédi-Trotter 定理, 1983
+
+设 \( P \) 是平面上的有限点集, \( L \) 是有限直线集,记关联集合
+
+\[I\left( {P,L}\right)  = \{ \left( {p,l}\right)  \in  P \times  L \mid  p \in  l\} ,\]
+
+则
+
+\[\left| {I\left( {P,L}\right) }\right|  \leq  4\left( {{\left| P\right| }^{\frac{2}{3}}{\left| L\right| }^{\frac{2}{3}} + \left| P\right|  + \left| L\right| }\right) .\]
+
+<!-- Meanless: 49-->
+
+
+### 7.7 Spencer-Szemerédi-Trotter 定理, 1984
+
+平面上 \( n \) 个点构成的集合中最多存在 \( 8{n}^{\frac{4}{3}} \) 对距离为 1 的点.
+
+<!-- Meanless: 50-->
+
+
+
+
+## 8 概率
+
+### 8.1 Bonferroni 不等式, 1936
+
+设 \( {A}_{1},{A}_{2},\cdots ,{A}_{n} \) 是事件,对 \( 1 \leq  k \leq  n \) ,记
+
+\[{S}_{k} = \mathop{\sum }\limits_{{1 \leq  {i}_{1} < \cdots  < {i}_{k} \leq  n}}P\left( {{A}_{{i}_{1}} \cap  \cdots  \cap  {A}_{{i}_{k}}}\right) ,\]
+
+则对奇数 \( k \in  \{ 1,2,\cdots ,n\} \) ,
+
+\[P\left( {\mathop{\bigcup }\limits_{{i = 1}}^{n}{A}_{i}}\right)  \leq  \mathop{\sum }\limits_{{j = 1}}^{k}{\left( -1\right) }^{j - 1}{S}_{j}\]
+
+对偶数 \( k \in  \{ 1,2,\cdots ,n\} \) ,
+
+\[P\left( {\mathop{\bigcup }\limits_{{i = 1}}^{n}{A}_{i}}\right)  \geq  \mathop{\sum }\limits_{{j = 1}}^{k}{\left( -1\right) }^{j - 1}{S}_{j}\]
+
+### 8.2 马尔可夫不等式, Markov, 1889
+
+设 \( X \) 是一个非负随机变量,则对任意正实数 \( t \) ,
+
+\[P\left( {X \geq  t}\right)  \leq  \frac{\mathbb{E}\left\lbrack  X\right\rbrack  }{t}.\]
+
+### 8.3 切比雪夫不等式, Chebyshev, 1853
+
+对任意正实数 \( t \) ,
+
+\[P\left( {\left| {X - \mathbb{E}\left\lbrack  X\right\rbrack  }\right|  \geq  t}\right)  \leq  \frac{\operatorname{Var}\left\lbrack  X\right\rbrack  }{{t}^{2}}.\]
+
+### 8.4 霍夫丁不等式, Hoeffding, 1963
+
+设 \( {X}_{1},{X}_{2},\cdots ,{X}_{n} \) 是独立的随机变量,且 \( {X}_{i} \in  \left\lbrack  {{a}_{i},{b}_{i}}\right\rbrack  ,1 \leq  i \leq  n \) . 记 \( \bar{X} = \) \( \frac{1}{n}\mathop{\sum }\limits_{{i = 1}}^{n}{X}_{i} \) ,则对任意正实数 \( t \) ,
+
+\[P\left( {\bar{X} - \mathbb{E}\left\lbrack  \bar{X}\right\rbrack   \geq  t}\right)  \leq  {e}^{-\frac{2{n}^{2}{t}^{2}}{\mathop{\sum }\limits_{{i = 1}}^{n}{\left( {b}_{i} - {a}_{i}\right) }^{2}}}.\]
+
+<!-- Meanless: 51-->
+
+
+### 8.5 Lovász 局部引理, 1975
+
+设 \( {A}_{1},{A}_{2},\cdots ,{A}_{n} \) 是 “坏事件”,满足对每个 \( i \) ,存在 \( N\left( i\right)  \subseteq  \{ 1,2,\cdots ,n\} \) ,使得 \( {A}_{i} \) 与 \( \left\{  {{A}_{j} : j \notin  N\left( i\right) \cup \{ i\} }\right\} \) 独立. 这里称 \( {A}_{0} \) 与 \( \left\{  {{A}_{1},\cdots ,{A}_{m}}\right\} \) 独立是指 \( {A}_{0} \) 与形如 \( {B}_{1} \land  \cdots  \land  {B}_{m} \) 的事件都独立,其中 \( {B}_{i} \) 为 \( {A}_{i} \) 或 \( \overline{{A}_{i}} \) .
+
+一般形式: 设 \( {x}_{1},{x}_{2},\cdots ,{x}_{n} \in  \lbrack 0,1) \) 满足
+
+\[P\left( {A}_{i}\right)  \leq  {x}_{i}\mathop{\prod }\limits_{{j \in  N\left( i\right) }}\left( {1 - {x}_{j}}\right) ,\;\forall 1 \leq  i \leq  n,\]
+
+则 \( {A}_{1},{A}_{2},\cdots ,{A}_{n} \) 都不发生的概率不小于 \( \mathop{\prod }\limits_{{i = 1}}^{n}\left( {1 - {x}_{i}}\right) \) .
+
+对称形式: 已知对每个 \( {A}_{i},P\left( {A}_{i}\right)  \leq  p \) ,且 \( {A}_{i} \) 与其余 \( {A}_{j} \) 中除了至多 \( d \) 个以外的事件构成的集合独立. 若 \( \operatorname{ep}\left( {d + 1}\right)  \leq  1 \) ,则 \( {A}_{1},{A}_{2},\cdots ,{A}_{n} \) 都不发生的概率大于 0 .
+
+<!-- Meanless: 52-->
+
+
+
+
+## 9 其他
+
+### 9.1 离散介值定理
+
+设 \( {a}_{1},{a}_{2},\cdots ,{a}_{n} \) 是实数, \( d \) 是正实数,满足 \( \left| {{a}_{i + 1} - {a}_{i}}\right|  \leq  {2d},1 \leq  i \leq  n - 1 \) , 且 \( {a}_{1} \) 与 \( {a}_{n} \) 异号,则存在 \( 1 \leq  k \leq  n \) 使 \( \left| {a}_{k}\right|  \leq  d \) .
+
+### 9.2 欧拉四平方和恒等式, Euler, 1749
+
+\[\left( {{a}_{1}^{2} + {a}_{2}^{2} + {a}_{3}^{2} + {a}_{4}^{2}}\right) \left( {{b}_{1}^{2} + {b}_{2}^{2} + {b}_{3}^{2} + {b}_{4}^{2}}\right) \]
+
+\[ = {\left( {a}_{1}{b}_{1} + {a}_{2}{b}_{2} + {a}_{3}{b}_{3} + {a}_{4}{b}_{4}\right) }^{2}\]
+
+\[ + {\left( {a}_{1}{b}_{2} - {a}_{2}{b}_{1} + {a}_{3}{b}_{4} - {a}_{4}{b}_{3}\right) }^{2}\]
+
+\[ + {\left( {a}_{1}{b}_{3} - {a}_{2}{b}_{4} - {a}_{3}{b}_{1} + {a}_{4}{b}_{2}\right) }^{2}\]
+
+\[ + {\left( {a}_{1}{b}_{4} + {a}_{2}{b}_{3} - {a}_{3}{b}_{2} - {a}_{4}{b}_{1}\right) }^{2}.\]
+
+### 9.3 齐肯多夫定理, Zeckendorf, 1939
+
+每个正整数都能唯一地表示为若干不同且互不相邻的斐波那契数之和, 即形如 \( {F}_{{i}_{1}} + {F}_{{i}_{2}} + \cdots  + {F}_{{i}_{t}} \) ,其中 \( {i}_{1} > {i}_{2} > \cdots  > {i}_{t} \geq  2 \) 且互不相邻.
+
+### 9.4 西格尔引理, Siegel, 1929
+
+设整数 \( 1 \leq  m < n,A = {\left( {a}_{ij}\right) }_{1 \leq  i \leq  m,1 \leq  j \leq  n} \) 是一个整数矩阵,满足对任意 \( 1 \leq \) \( i \leq  m,1 \leq  j \leq  n \) ,有 \( \left| {a}_{ij}\right|  \leq  N \) . 则方程组
+
+\[\left\{  \begin{array}{l} {a}_{11}{x}_{1} + {a}_{12}{x}_{2} + \cdots  + {a}_{1n}{x}_{n} = 0 \\  {a}_{21}{x}_{1} + {a}_{22}{x}_{2} + \cdots  + {a}_{2n}{x}_{n} = 0 \\  \cdots \cdots \\  {a}_{m1}{x}_{1} + {a}_{m2}{x}_{2} + \cdots  + {a}_{mn}{x}_{n} = 0 \end{array}\right. \]
+
+有不全为 0 的整数解 \( {x}_{1},{x}_{2},\cdots ,{x}_{n} \) ,且每个 \( {x}_{i} \) 的绝对值都不超过 \( {\left( nN\right) }^{\frac{m}{n - m}} \) .
+
+<!-- Meanless: 53-->
+
+

@@ -1,0 +1,13 @@
+2025-08-01 14:21:10,005 - RaptorRAG - INFO - Running RAPTOR query: ''$(1+5 \\mathrm{i}) \\mathrm{i}$ 的虚部为
+A．-1
+B． 0
+C． 1
+D． 6'' (mode: collapsed, top_k: 3)
+2025-08-01 14:21:10,862 - RaptorRAG - INFO - Found 3 relevant nodes for query: ''$(1+5 \\mathrm{i}) \\mathrm{i}$ 的虚部为
+A．-1
+B． 0
+C． 1
+D． 6''
+2025-08-01 14:21:10,862 - RaptorRAG - INFO - Retrieved node with hash: 1694ae14069a54fe485d4feeec9c59ed and score: 1.3972158118378936e-35
+2025-08-01 14:21:10,862 - RaptorRAG - INFO - Retrieved node with hash: 49bf27b128bcb328fef3cdbd5fc3dd75 and score: 2.6897301517801483e-240
+2025-08-01 14:21:10,863 - RaptorRAG - INFO - Retrieved node with hash: 01ac06832567cab93c796f4ce55b47d4 and score: 3.5197930910410877e-243

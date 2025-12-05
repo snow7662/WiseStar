@@ -1,0 +1,224 @@
+id,problem,answer,truth,final,
+1,"$(1+5 \mathrm{i}) \mathrm{i}$ 的虚部为
+A．-1
+B． 0
+C． 1
+D． 6","""""",C,不一致,
+2,"设全集 $U=\{x \mid x$ 是小于 9 的正整数 $\}$ ，集合 $A=\{1,3,5\}$ ，则 $\complement_{U} A$ 中元素个数为
+A． 2
+B． 3
+C． 5
+D． 8",C,C,一致,
+3,"若双曲线 $C$ 的虚轴长为实轴长的 $\sqrt{7}$ 倍，则 $C$ 的离心率为
+A．$\sqrt{2}$
+B． 2
+C．$\sqrt{7}$
+D． $2 \sqrt{2}$",D,D,一致,
+4,"若点 $(a, 0)(a>0)$ 是函数 $y=2 \tan \left(x-\frac{\pi}{3}\right)$ 的图象的一个对称中心，则 $a$ 的最小值为
+A．$\frac{\pi}{4}$
+B．$\frac{\pi}{2}$
+C．$\frac{\pi}{3}$
+D．$\frac{4 \pi}{3}$",C,C,一致,
+5,"设 $f(x)$ 是定义在 $R$ 上且周期为 2 的偶函数，当 $2 \leqslant x \leqslant 3$ 时，$f(x)=5-2 x$ ，则 $f\left(-\frac{3}{4}\right)=$
+A．$-\frac{1}{2}$
+B．$-\frac{1}{4}$
+C．$\frac{1}{4}$
+D．$\frac{1}{2}$",A,A,一致,
+6,"若圆 $x^{2}+(y+2)^{2}=r^{2}(r>0)$ 上到直线 $y=\sqrt{3} x+2$ 的距离为 1 的点有且仅有 2 个，则 $r$ 的取值范围是
+
+A．$(0,1)$
+B．$(1,3)$
+C．$(3,+\infty)$
+D．$(0,+\infty)$",B,B,一致,
+7,"若实数 $x, y, z$ 满足 $2+\log _{2} x=3+\log _{3} y=5+\log _{5} z$ ，则 $x, y, z$ 的大小关系不可能是 
+A．$x>y>z$
+B．$x>z>y$
+C．$y>x>z$
+D．$y>z>x$",B,B,一致,
+8,若直线 $y=2 x+5$ 是曲线 $y=\mathrm{e}^{x}+x+a$ 的切线，则 $a=$ $\qquad$。,$\boxed{4}$,4,一致,
+9,若一个等比数列的前 4 项和为 4 ，前 8 项和为 68 ，则该等比数列的公比为 $\qquad$。,-2或2,2，-2,一致,
+10,一个箱子里有 5 个相同的球，分别以 $1 \sim 5$ 标号，从中有放回地取三次，记至少取出一次的球的个数 $X$ ，则数学期望 $E(X)=$ $\qquad$。,2.44,61/25,一致,
+11,"为研究某乘病与超声波检查结果的关系，从做过超声波检查的人群中随机调查了 1000 人，得到如下列联表：
+\begin{tabular}{|l|l|l|l|}
+\hline \backslashbox{组别}{超声波检查结果} & 正常 & 不正常 & 合计 \\
+\hline 患该疾病 & 20 & 180 & 200 \\
+\hline 未患该疾病 & 780 & 20 & 800 \\
+\hline 合计 & 800 & 200 & 1000 \\
+\hline
+\end{tabular}
+（1）记超声波检查结果不正常者患该疾病的概率为 $P$ ，求 $P$ 的估计值；
+（2）根据小概率值 $\alpha=0.001$ 的独立性检验，分析超声波检查结果是否与患该疾病有关。
+
+附：$\chi^{2}=\frac{n(a d-b c)^{2}}{(a+b)(c+d)(a+c)(b+d)}$ ，
+\begin{tabular}{|c|l|c|c|}
+\hline$P\left(\chi^{2} \geqslant k\right)$ & 0.005 & 0.010 & 0.001 \\
+\hline$k$ & 3.841 & 6.635 & 10.828 \\
+\hline
+\end{tabular}","（1）$\boxed{0.9}$；  
+（2）超声波检查结果与患该疾病有关。",（1）P = 0.9 （2）765.625 > 10.828，有关,一致,
+12,"设数列 $\left\{a_{n}\right\}$ 满足 $a_{1}=3, \frac{a_{n+1}}{n}=\frac{a_{n}}{n+1}+\frac{1}{n(n+1)}$ ．
+（1）证明：$\left\{n a_{n}\right\}$ 为等差数列；
+（2）设 $f(x)=a_{1} x+a_{2} x^{2}+\cdots+a_{m} x^{m}$ ，求 $f^{\prime}(-2)$ ．","$$
+\boxed{\frac{7 - (3m + 7)(-2)^m}{9}}
+$$",（1）na_n = n+2 （2）7/9 - (1/2 + (m+2)/3)*(-2)^m,不一致,
+13,"如图所示的四棱雉 $P-A B C D$ 中，$P A \perp$ 平面 $A B C D, B C / / A D, A B \perp A D$ ．
+（1）证明：平面 $P A B \perp$ 平面 $P A D$ ；
+（2）若 $P A=A B=\sqrt{2}, A D=\sqrt{3}+1, B C=2, P, B, C, D$ 在同一个球面上，设该球面的球心为 $O$ ．
+（i）证明：$O$ 在平面 $A B C D$ 上；
+（ii）求直线 $A C$ 与直线 $P O$ 所成角的余弦值．",$\boxed{\dfrac{\sqrt{2}}{3}}$,(2)\sqrt{2}/3,一致,
+14,"设椭圆 $C: \frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}=1(a>b>0)$ 的离心率为 $\frac{2 \sqrt{2}}{3}$ ，下顶点为 $A$ ，右顶点为 $B,|A B|=\sqrt{10}$ ．
+（1）求椭圆的标准方程；
+（2）已知动点 $P$ 不在 $y$ 轴上，点 $R$ 在射线 $A P$ 上，且满足 $|A R| \cdot|A P|=3$ ．
+（i）设 $P(m, n)$ ，求点 $R$ 的坐标（用 $m, n$ 表示）；
+（ii）设 $O$ 为坐标原点，$Q$ 是 $C$ 上的动点，直线 $O R$ 的斜率为直线 $O P$ 的斜率的 3 倍，求 $|P Q|$ 的最大值．",-3(1+\sqrt{2}),"（1）x^2/9 + y^2 = 1 （2）（i）R(3m/(m^2 + (n+1)^2) , 3(n+1)/(m^2 + (n+1)^2) - 1) （ii）3\sqrt{3} + 3\sqrt{2}",不一致,
+15,"设函数 $f(x)=5 \cos x-\cos 5 x$ ．
+（1）求 $f(x)$ 在 $\left[0, \frac{\pi}{4}\right]$ 的最大值；
+（2）给定 $\theta \in(0, \pi)$ ，设 $a$ 为实数，证明：存在 $y \in[a-\theta, a+\theta]$ ，使得 $\cos y \leqslant \cos \theta$ ；
+（3）若存在 $\varphi$ 使得对任意 $x$ ，都有 $5 \cos x-\cos (5 x+\varphi) \leqslant b$ ，求 $b$ 的最小值．","3√3  
+3√3",（1）3\sqrt{3} （3）3\sqrt{3},一致,
+16,"样本数据 $2, 8, 14, 16, 20$ 的平均数为 ( )
+    \begin{multicols}{4}
+        A. 8 \quad B. 9 \quad C. 12 \quad D. 18
+    \end{multicols}",C. 12,C,一致,
+17,"已知 $z = 1 + i$，$\frac{1}{z - 1} = ( )$
+    \begin{multicols}{4}
+        A. $-i$ \quad B. $i$ \quad C. $-1$ \quad D. $1$
+    \end{multicols}",A. $-i$,A,一致,
+18,"已知 $A = \{-4, 0, 1, 2, 8\}, B = \{x \mid x^3 = x\}$，则 $A \cap B = ( )$
+    \begin{multicols}{4}
+        A. $\{0, 1, 2\}$ \quad B. $\{1, 2, 8\}$ \quad C. $\{2, 8\}$ \quad D. $\{0, 1\}$
+    \end{multicols}",D,D,一致,
+19,"不等式 $\frac{x - 4}{x - 1} \geq 2$ 的解集是 ( )\\
+
+        A. $\{x \mid -2 \leq x \leq 1\}$ \\ 
+        B. $\{x \mid x \leq -2\}$ \\
+        C. $\{x \mid -2 \leq x < 1\}$ \\ 
+        D. $\{x \mid x > 1\}$",C,C,一致,
+20,"在 $\triangle ABC$ 中，$BC = 2$, $AC = 1 + \sqrt{3}$, $AB = \sqrt{6}$，则角 $A = ( )$
+    \begin{multicols}{4}
+        A. $45^\circ$ \quad B. $60^\circ$ \quad C. $120^\circ$ \quad D. $135^\circ$
+    \end{multicols}",A,A,一致,
+21,"设抛物线 $C: y^2 = 2px$ ($p > 0$) 的焦点为 $F$，点 $A$ 在 $C$ 上，过 $A$ 作 $C$ 准线的垂线，垂足为 $B$。若直线 $BF$ 的方程为 $y = -2x + 2$，则 $|AF| = ( )$
+    \begin{multicols}{4}
+        A. 3 \quad B. 4 \quad C. 5 \quad D. 6
+    \end{multicols}",C,C,一致,
+22,"记 $S_n$ 为等差数列 $\{a_n\}$ 的前 $n$ 项和，若 $S_3 = 6$, $S_5 = -5$，则 $S_6 = ( )$
+    \begin{multicols}{4}
+        A. $-20$ \quad B. $-15$ \quad C. $-10$ \quad D. $-5$
+    \end{multicols}",B,B,一致,
+23,"已知 $0 < \alpha < \pi$, $\cos \frac{\alpha}{2} = \frac{\sqrt{5}}{5}$，则 $\sin \left(\alpha - \frac{\pi}{4}\right) = ( )$
+    \begin{multicols}{4}
+        A. $\frac{\sqrt{2}}{10}$ \quad B. $\frac{\sqrt{2}}{5}$ \quad C. $\frac{3\sqrt{2}}{10}$ \quad D. $\frac{7\sqrt{2}}{10}$
+    \end{multicols}
+\end{enumerate}",D. $\frac{7\sqrt{2}}{10}$,D,一致,
+24,"记 $S_n$ 为等比数列 $\{a_n\}$ 的前 $n$ 项和，$q$ 为 $\{a_n\}$ 的公比，$q > 0$。若 $S_3 = 7$, $a_3 = 1$，则 ( )
+    \begin{multicols}{4}
+        A. $q = \frac{1}{2}$ \quad B. $a_5 = \frac{1}{9}$ \quad C. $S_3 = 8$ \quad D. $a_n + S_n = 8$
+    \end{multicols}",A和D,AD,一致,
+25,"已知 $f(x)$ 是定义在 $\mathbb{R}$ 上的奇函数，且当 $x > 0$ 时，$f(x) = (x^2 - 3)e^x + 2$，则 ( )\\
+
+        A. $f(0) = 0$ \\
+        B. 当 $x < 0$ 时，$f(x) = -x^2 - 3e^{-x} - 2$ \\
+        C. $f(x) \geq 2$，当且仅当 $x \geq \sqrt{3}$ \\
+        D. $x = -1$ 是 $f(x)$ 的极大值点",A、C、D,ABD,不一致,
+26,"双曲线 $C: \frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$ ($a > 0$, $b > 0$) 的左、右焦点为 $F_1, F_2$，左、右顶点分别为 $A_1, A_2$，以 $F_1F_2$ 为直径的圆与曲线 $C$ 的一条渐近线交于 $M, N$ 两点，且 $\angle NA_1M = \frac{5\pi}{6}$，则 ( )\\
+
+        A. $\angle A_1MA_2 = \frac{\pi}{6}$ \\
+        B. $|MA_1| = 2|MA_2|$ \\
+        C. $C$ 的离心率为 $\sqrt{13}$ \\
+        D. 当 $a = \sqrt{2}$ 时，四边形 $NA_1MA_2$ 的面积为 $8\sqrt{3}$
+
+\end{enumerate}",A、C、D,ACD,一致,
+27,"已知平面向量 $\vec{a} = (x, 1), \vec{b} = (x - 1, 2x)$，若 $\vec{a} \perp (\vec{a} - \vec{b})$，则 $|\vec{a}| = $ \rule{2cm}{0.15mm}.",$\boxed{\sqrt{2}}$,\sqrt{2},一致,
+28,若 $x = 2$ 是函数 $f(x) = (x - 1)(x - 2)(x - a)$ 的极值点，则 $f(0) = $ \rule{2cm}{0.15mm}.,$\boxed{-4}$,-4,一致,
+29,一个底面半径为 4 cm，高为 9 cm 的封闭柱形容器（容器壁厚度忽略不计）内有两个半径相等的铁球，铁球半径的最大值为 \rule{2cm}{0.15mm} cm.,$\boxed{\dfrac{9}{4}}$,5月2日,不一致,
+30,"已知函数 $f(x) = \cos(2x + \varphi)$ ($0 \leq \varphi < \pi$)，$f(0) = \frac{1}{2}$.
+    \begin{enumerate}[label=\arabic*\intertext{.}]
+        1. 求 $\varphi$；\\
+        2. 设函数 $g(x) = f(x) + f\left(x - \frac{\pi}{6}\right)$，求 $g(x)$ 的值域及单调区间。\\
+    \end{enumerate}","1. $\boxed{\dfrac{\pi}{3}}$  
+2. 值域为 $\boxed{\left[-\sqrt{3}, \sqrt{3}\right]}$，单调递增区间为 $\left(\dfrac{5\pi}{12} + k\pi, \dfrac{11\pi}{12} + k\pi\right)$，单调递减区间为 $\left(-\dfrac{\pi}{12} + k\pi, \dfrac{5\pi}{12} + k\pi\right)$（$k \in \mathbb{Z}$）","1.$\varphi = \frac{\pi}{3}$
+2. - 单调递减区间：$\boxed{\left(-\dfrac{\pi}{12}, \dfrac{5\pi}{12}\right)}$
+   - 单调递增区间：$\boxed{\left(\dfrac{5\pi}{12}, \dfrac{11\pi}{12}\right)}$",不一致,
+31,"已知椭圆 $C: \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ ($a > b > 0$) 的离心率为 $\frac{\sqrt{2}}{2}$，长轴长为 4，\\
+
+        1. 求椭圆 $C$ 的方程；\\
+        2. 过点 $(0, -2)$ 的直线 $l$ 与 $C$ 交于 $A$、$B$ 两点，$O$ 为坐标原点。若 $\triangle OAB$ 的面积为 $\sqrt{2}$，求 $|AB|$。","$$
+\boxed{\sqrt{5}}
+$$","1.$\frac{x^2}{4} + \frac{y^2}{2} = 1$
+2.\sqrt{5}",一致,
+32,"如图，四边形 $ABCD$ 中，$AB \parallel CD$, $\angle DAB = 90^\circ$，$F$ 为 $CD$ 中点，$E$ 在 $AB$ 上，$EF \parallel AD$，$AB = 3AD$, $CD = 2AD$，将四边形 $EFDA$ 沿 $EF$ 翻折至四边形 $EFD'A'$，使得 $EFD'A'$ 与 $EFCB$ 所成的二面角为 $60^\circ$。\\
+        1. 证明：$A'B \perp CD'F$；\\
+        2. 求 $BCD'$ 与 $EFD'A'$ 所成二面角的正弦值。\\","1. $A'B \perp$ 平面 $CD'F$  
+2. $\boxed{\dfrac{\sqrt{42}}{7}}$",2.$\frac{\sqrt{42}}{7}$,不一致,
+33,"已知函数 $f(x) = \ln(1 + x) - x + \frac{1}{2}x^2 - kx^3$，其中 $0 < k < \frac{1}{3}$。\\
+        1. 证明：$f(x)$ 在区间 $(0, +\infty)$ 存在唯一的极值点和唯一的零点；\\
+        2. 设 $x_1, x_2$ 为 $f(x)$ 在区间 $(0, +\infty)$ 的极值点和零点。\\
+            i. 设函数 $g(t) = f(x_1 + t) - f(x_1 - t)$，证明：$g(t)$ 在区间 $(0, x_1)$ 上单调递减；\\
+            ii. 比较 $2x_1$ 与 $x_2$ 的大小，并证明你的结论。",2x₁ > x₂,3.$$2x_1 > x_2$$,一致,
+34,"甲、乙两人进行乒乓球练习，每个球胜者得 1 分，负者得 0 分。设每个球甲胜的概率为 $p$ ($\frac{1}{2} < p < 1$)，乙胜的概率为 $q$，$p + q = 1$，且各球胜负相互独立。对正整数 $k \geq 2$，记 $p_k$ 为打完 $k$ 个球后甲比乙至少多得 2 分的概率，$q_k$ 为打完 $k$ 个球后乙比甲至少多得 2 分的概率。\\
+        1. 求 $p_3, p_4$（用 $p$ 表示）；\\
+        2.若 $\frac{p_4 - p_3}{q_4 - q_3} = 4$，求 $p$；\\
+        3. 证明：对任意正整数 $m, p_{2 m+1}-q_{2 m+1}<p_{2 m}-q_{2 m}<p_{2 m+2}-q_{2 m+2}$  ","p₃ = p³, p₄ = 4p³(1−p) + p⁴  
+p = 2/3  
+不等式对任意正整数m成立","1.$p_4 = p^4 + 4p^3q$
+2.$\frac{2}{3}$",一致,
+35,"集合 $U=1,2,3,4,5 A=1,3 B=2,3,5$ ，则 $C_{U}(A \cup B)=$
+A．$\{1,2,3,4\}$
+B．$\{2,3,4\}$
+C．$\{2,4\}$
+D．$\{4\}$",D．$\{4\}$,D,一致,
+36,"＂$x=0$＂是＂ $\sin 2 x=0$＂的
+A．充分不必要条件
+B．必要不充分条件
+C．充要条件
+D．既不充分也不必要条件",A,A,一致,
+37,"已知函数 $y=f(x)$ 的图像如下，则 $f(x)$ 的解析式可能为
+A．$f(x)=\frac{x}{1-|x|}$
+B．$f(x)=\frac{x}{|x|-1}$
+C．$f(x)=\frac{|x|}{1-x^{2}}$
+D．$f(x)=\frac{|x|}{x^{2}-1}$",C,D,不一致,
+38,"若 $ m $ 为直线，$ \alpha, \beta $ 为两个平面，则下列结论中正确的是（）
+A. 若 $ m \parallel \alpha $，$ n \subseteq \alpha $，则 $ m \parallel n $
+B. 若 $ m \perp \alpha $，$ m \perp \beta $，则 $ \alpha \perp \beta $
+C. 若 $ m \parallel \alpha $，$ m \perp \beta $，则 $ \alpha \perp \beta $
+D. 若 $ m \subseteq \alpha $，$ \alpha \perp \beta $，则 $ m \perp \beta $",C,C,一致,
+39,"下列说法错误的是
+A．$X \sim N\left(\mu, \sigma^{2}\right)$ ，若 $P(X \leqslant \mu-\sigma)=P(X \geqslant \mu+\sigma)$
+B．$X \sim N\left(1,2^{2}\right), Y \sim N\left(2,2^{2}\right)$ ，则 $P(X<1)<P(Y<2)$
+C．$|r|$ 越接近于 1 ，线性相关程度越强
+D．$|r|$ 越接近于 0 ，线性相关程度越弱",B,B,一致,
+40,"$S_{n}=-n^{2}+8 n$ ．则 $\left|a_{n}\right|$ 前 12 项和
+A. 112
+B. 48
+C. 80
+D. 64",C,C,一致,
+41,"$f(x)=0.3^{x}-\sqrt{x}$ 的零点在
+A．$(0,0.3)$
+B．$(0.3,0.5)$
+C．$(0.5,1)$
+D．$(1,2)$","""",B,不一致,
+42,"$f(x)=\sin (\omega x+\varphi)(\omega>0,-\pi<\varphi<\pi)$ ，在 $\left[-\frac{\pi}{12}, \frac{\pi}{12}\right]$ 上单调递增，且 $x=\frac{\pi}{12}$ 为它的一条对称轴， $\left(\frac{\pi}{3}, 0\right)$ 是它的一个对称中心，当 $x \in\left[0, \frac{\pi}{2}\right]$ 时，$f(x)$ 的最小值为
+A．$-\frac{\sqrt{3}}{2}$
+B．$-\frac{1}{2}$
+C． 1
+D． 0",A,A,一致,
+43,"双曲线 $\frac{x^{2}}{a^{2}}-\frac{y^{2}}{b^{2}}=1(a>0, b>0)$ 的左、右焦点分别为 $F_{1}, F_{2}$ ，以右焦点 $F_{2}$ 为焦点的抛物线 $y^{2}=2 p x(p>$ $0)$ 与双曲线在第一象限的交点为 $P$ ，若 $\left|P F_{1}\right|+\left|P F_{2}\right|=3\left|F_{1} F_{2}\right|$ ，则双曲线的离心率 $e=$
+A． 2
+B． 5
+C．$\frac{\sqrt{2}+1}{2}$
+D．$\frac{\sqrt{5}+1}{2}$",A．2,A,一致,
+44,已知 $i$ 是虚数单位，则 $\left|\frac{3+i}{i}\right|=$ $\qquad$。,$\boxed{\sqrt{10}}$,\sqrt{10},一致,
+45,在 $(x-1)^{6}$ 的展开式中，$x^{3}$ 项的系数为 $\qquad$。,-20,-20,一致,
+46,"$l_{1}: x-y+6=0$ 与 $x$ 轴交于点 $A$ ，与 $y$ 轴交于点 $B$ ，与圆 $(x+1)^{2}+(y-3)^{2}=r^{2}$ 交于 $C, D$ 两点，$|A B|=$ $3|C D|$ ，则 $r=$ $\qquad$。",B,2,不一致,
+47,"小桐操场跑圈，一周 2 次，一次 5 圈或 6 圈．第一次跑 5 圈或 6 圈的概率均为 0.5 ，若第一次跑 5 圈，则第二次跑 5 圈的概率为 $0.4,6$ 圈的概率为 0.6 ；若第一次跑 6 圈，则第二次跑 5 圈的概率为 $0.6,4$ 圈子的概率为 0.4 ．小桐一周跑 11 圈的概率为 $\qquad$ ；若一周至少跑 11 圈为动量达标，则连结跑 4 财，记合格周数为 $X$ ，则期望 $E(X)=$ $\qquad$。",0.6和3.2,0.6；3.2,一致,
+48,"$\triangle A B C$ 中，$D$ 为 $A B$ 边中点， $\overrightarrow{C E}=\frac{1}{3} \overrightarrow{C D}, \overrightarrow{A B}=a, \overrightarrow{A C}=b$ ，则 $\overrightarrow{A E}=$ $\qquad$ ；若 $|\overrightarrow{A E}|=5, A E \perp C B$ ，则 $\overrightarrow{A E} \cdot \overrightarrow{C D}=$ $\qquad$。",$\boxed{-15}$,$\frac{1}{6}a + \frac{2}{3}b$; $-15$,一致,
+49,"若 $a, b \in \mathbb{R}$ ，对 $\forall x \in[-2,2]$ ，均有 $(2 a+b) x^{2}+b x-a-1 \leqslant 0$ 恒成立，则 $2 a+b$ 的最小值为 $\qquad$ ．",-4,-4,一致,
+50,"在 $\triangle A B C$ 中，$a \sin B=\sqrt{3} b \cos A, c-2 b=1, a=\sqrt{7}$ ．
+（1）求角 $A$ ；
+（2）求边 $c$ ；
+（3）求 $\sin (A+2 B)$ ．","（1）$\boxed{\dfrac{\pi}{3}}$  
+（2）$\boxed{3}$  
+（3）$\boxed{\dfrac{4\sqrt{3}}{7}}$","(1) \ A = \frac{\pi}{3} \\
+(2) \ c=3 \\
+(3) \ \sin(A + 2B) = \frac{4\sqrt{3}}{7}",一致,

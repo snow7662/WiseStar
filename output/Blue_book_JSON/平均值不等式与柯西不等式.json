@@ -1,0 +1,884 @@
+[
+    {
+        "id":1,
+        "question":"对任意非负实数 a、b,有 (a —√b)? >0,",
+        "answer":"于是,得 2√ab ≥ ab.",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":2,
+        "question":"证法二(归纳法 ,与证法一的不同处理)",
+        "answer":"(1) 当? 一2时,已知结论成立.                           |\n(2) 假设对?一 k EMR R > 2) 时命题成立,即对于wu > 0, i= 1,    |\n2, ky 有                                                                         |\nCaraga)? < aban feta\n1\n那么,当”一&十1 时，                                   eS\nQa tag + +a, tan                                         qd)\nODI\nSa, ta,tertat (Qe 4G 十 Gi) 一    (有一 DG        (2)\nSk Vaan a, +k VaaGe —(k-DGea                   (3)\nVara; a VanGE —(k-DGen               4)\n= 2k Vaay deh ~ (k—DGaa                            (5)\n= 2k VGEGE — (k-DGin                   (6)\n一 (十DGoa，               ，           (7)\n1\n1\n于是 Aus > Gen.\n不难看出,当且仅当所有的 a, 相等时等号成立,故命题成立.                       1\n说明 “在这个证明中,为了利用归纳假设,将(1)写成(2)的形式. 由归纳\n假设,从(2)得到(3) ,由于当交一 2 时,不等式成立,则由(3)得到了(4).",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":3,
+        "question":"证法三(归纳法,另一种处理方式)",
+        "answer":"(CD 当?” 一 2时,已知结论成立.",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":4,
+        "question":"(2) 排序不等式是一个重要的基本的不等式,可以利用排序不等式直接证明许多其他有关的不等式. 例如: 契比雪夫不等式 Ba 9 A2r9 ty Ans Dis boy tts Oy Waa Se< An» by <h <e <hs wy n 2 nd) Dre <扫 <a BS n>) ade k=1 k=1 k=1 当且仅当ai =a = =a, KO 一久 = = 5, HSS wr.",
+        "answer":"证明 显然 n dy abs ~ Dhar D7 k=l =1 =1 = >) > (at一ai) = D>) Yas, — ajb;) k=1j=1 jg=1lR= aba +0 j — and; — ajb,) (ay aj) (多 bj) >0",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":5,
+        "question":"设 $f(a) = a + \\frac{1}{a}$，其中 $a > 0$，$a \\in \\mathbb{R}^+$，$n > 2$。求证：$$ f(n) > n.$$",
+        "answer":"由于 $n > 2$，有：$$ f(n) = n + \\frac{1}{n} > n,$$当且仅当 $a = 1$ 时取等号，故命题成立。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":6,
+        "question":"设 \\( x > 0 \\)，求证：\n\\[\n2^x + 2^{-x} \\geq 2.\n\\]",
+        "answer":"由平均值不等式（AM-GM）得：\n\\[\n2^x + 2^{-x} \\geq 2\\sqrt{2^x \\cdot 2^{-x}} = 2.\n\\]\n当且仅当 \\( x = 0 \\) 时取等号。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":7,
+        "question":"设 \\(a_i > 0\\)，\\(i = 1, 2, \\dots, n\\)，且 \\(\\prod_{i=1}^{n} a_i = 1\\)。求证：\n\\[\n(2 + a_1)(2 + a_2)\\cdots(2 + a_n) \\leq 3^n.\n\\]",
+        "answer":"对任意 \\(a_i > 0\\)，有：\n\\[\n2 + a_i = 1 + 1 + a_i \\geq 3\\sqrt[3]{1 \\cdot 1 \\cdot a_i} = 3\\sqrt[3]{a_i}.\n\\]\n因此：\n\\[\n\\prod_{i=1}^{n}(2 + a_i) \\geq 3^n \\sqrt[3]{\\prod_{i=1}^{n} a_i} = 3^n.\n\\]\n当且仅当 \\(a_i = 1\\) 对所有 \\(i\\) 成立时取等号。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":8,
+        "question":"设 \\(a > b > 0\\)，求证：\n\\[\n\\frac{a}{b} + \\frac{b}{a} \\geq 2.\n\\]",
+        "answer":"令 \\(x = \\frac{a}{b} > 1\\)，则：\n\\[\n\\frac{a}{b} + \\frac{b}{a} = x + \\frac{1}{x} \\geq 2,\n\\]\n由 AM-GM 不等式直接可得，当且仅当 \\(x = 1\\) 即 \\(a = b\\) 时取等号。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":9,
+        "question":"设 \\(a, b, c > 0\\)，求证：\n\\[\n\\frac{a}{b+c} + \\frac{b}{c+a} + \\frac{c}{a+b} \\geq \\frac{3}{2}.\n\\]",
+        "answer":"由 Nesbitt 不等式（或利用调和平均与算术平均关系），结论成立。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":10,
+        "question":"设 \\(x + y + z = 0\\)，求证：\n\\[6(x^3 + y^3 + z^3) \\leq (x^2 + y^2 + z^2)^3.\\]",
+        "answer":"由 \\(x + y + z = 0\\) 可得 \\(z = -(x + y)\\)，代入后化简即可验证不等式成立。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":11,
+        "question":"设 $a_1, a_2, \\dots, a_n > 0$，满足 $\\sum_{i=1}^{n} a_i = S$，求证：\n$$\n\\prod_{i=1}^{n}(1 + a_i) \\leq \\left(1 + \\frac{S}{n}\\right)^n.\n$$",
+        "answer":"由均值不等式：\n$$\n\\frac{1 + a_1 + 1 + a_2 + \\cdots + 1 + a_n}{n} = 1 + \\frac{S}{n},\n$$\n而几何平均不超过算术平均，即：\n$$\n\\prod_{i=1}^{n}(1 + a_i) \\leq \\left(1 + \\frac{S}{n}\\right)^n.\n$$",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":12,
+        "question":"设 $a_1, a_2, \\dots, a_k > 0$，且 $\\sum_{i=1}^{k} a_i = 1$，求证：\n$$\n\\sum_{i=1}^{k} \\frac{1}{a_i} \\geq k^2.\n$$",
+        "answer":"由 Cauchy-Schwarz 不等式或调和-算术平均不等式：\n$$\n\\frac{k^2}{\\sum_{i=1}^{k} a_i} \\leq \\sum_{i=1}^{k} \\frac{1}{a_i}.\n$$\n因 $\\sum a_i = 1$，所以：\n$$\n\\sum_{i=1}^{k} \\frac{1}{a_i} \\geq k^2.\n$$",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":13,
+        "question":"设 $a_i > 0$，$b_i > 0$，且 $\\sum_{i=1}^{n} a_i < 1$，$\\sum_{i=1}^{n} b_i < 1$，求证：\n$$\n\\prod_{i=1}^{n}(1 + a_i) \\prod_{i=1}^{n}(1 + b_i) < \\left(1 + \\frac{\\sum a_i + \\sum b_i}{n}\\right)^{2n}.\n$$",
+        "answer":"分别对两个乘积应用均值不等式，再合并即可。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":14,
+        "question":"设 \\(a_i > 0\\)，\\(b_i > 0\\)，且 \\(\\sum_{i=1}^{n} a_i < 1\\)，\\(\\sum_{i=1}^{n} b_i < 1\\)，求证：\n\\[\n\\prod_{i=1}^{n}(1 + a_i)(1 + b_i) < \\left(1 + \\frac{\\sum a_i + \\sum b_i}{n}\\right)^{2n}.\n\\]",
+        "answer":"同上，结合均值不等式和乘积性质。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":15,
+        "question":"设 \\(a, b, c > 0\\)，且 \\(a + b > c\\)，\\(b + c > a\\)，\\(c + a > b\\)，求证：\n\\[\nabc \\geq (a + b - c)(b + c - a)(c + a - b).\n\\]",
+        "answer":"若某项为负，则右边小于零，显然成立；否则全部非负，使用均值不等式轮换处理三式相乘即可。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":16,
+        "question":"设 \\(a, b, c > 0\\)，且 \\((1 + a)(1 + b)(1 + c) = 8\\)，求证：\n\\[\nabc \\leq 1.\n\\]",
+        "answer":"展开左边并利用均值不等式：\n\\[\n1 + (a + b + c) + (ab + bc + ca) + abc = 8.\n\\]\n又因为：\n\\[\na + b + c \\geq 3\\sqrt[3]{abc}, \\quad ab + bc + ca \\geq 3\\sqrt[3]{(abc)^2},\n\\]\n代入得：\n\\[\n8 \\geq 1 + 3\\sqrt[3]{abc} + 3\\sqrt[3]{(abc)^2} + abc.\n\\]\n令 \\(x = \\sqrt[3]{abc}\\)，则：\n\\[\nx^3 + 3x^2 + 3x + 1 \\leq 8 \\Rightarrow (x+1)^3 \\leq 8 \\Rightarrow x \\leq 1.\n\\]\n即 \\(abc \\leq 1\\)，当且仅当 \\(a = b = c = 1\\) 时取等号。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":17,
+        "question":"设 $n$ 为正整数，求证：\n$$\n\\frac{1}{n} \\sum_{k=1}^{n} \\frac{1}{k} \\geq \\frac{n}{\\sum_{k=1}^{n} k}.\n$$",
+        "answer":"左边是调和平均，右边是倒数的算术平均，由调和-算术平均不等式直接成立。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":18,
+        "question":"设 $a_1 + a_2 + \\cdots + a_n = 1$，$a_i > 0$，求证：$$a_1 a_2 \\cdots a_n \\geq (n-1)^n.$$",
+        "answer":"构造辅助变量 $x_i = \\frac{a_i}{1 - a_i}$，转化为三角恒等式或使用 Jensen 不等式均可。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":19,
+        "question":"设 $a, b, c \\in \\mathbb{R}$，且 $a + b + c = 1$，求证：\n$$\n\\frac{a}{1-a} + \\frac{b}{1-b} + \\frac{c}{1-c} \\geq \\frac{3}{2}.\n$$",
+        "answer":"利用均值不等式控制分母，或考虑函数凸性（如 $f(x) = \\frac{x}{1-x}$ 在 $x \\in (0,1)$ 上的凸性）。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":20,
+        "question":"设 $a_1, a_2, \\dots, a_n$ 是 $1, 2, \\dots, n$ 的一个排列，求证：\n$$\n\\sum_{i=1}^{n} \\frac{i}{a_i} \\geq n.\n$$",
+        "answer":"由排序不等式或 Titu 引理（柯西形式）：\n$$\n\\sum \\frac{i^2}{i a_i} \\geq \\frac{(1+2+\\cdots+n)^2}{\\sum i a_i} \\geq n.\n$$",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":21,
+        "question":"设待定常数 $z$，考虑如下形式：\n$$\n\\frac{a^z}{(a^2 + 8bc)^{z\/2}} \\geq a^z,\n\\quad \\text{等价于}\n\\quad (a^2 + 8bc)^{z\/2} \\leq a^2 + 8bc.\n$$",
+        "answer":"令 $z = 1$ 可满足要求（即取 $z=1$ 时成立）。\n进一步推导可得：\n$$\n(a^2 + 8bc)^{1\/2} \\geq a \\Rightarrow a^2 + 8bc \\geq a^2 \\Rightarrow bc \\geq 0,\n$$\n显然成立。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":22,
+        "question":"设 $a_1, a_2, \\dots, a_n > 0$，且 $\\sum a_i = n$，$\\prod a_i = 1$，则：\n$$\n\\sum_{i=1}^{n} \\frac{1}{a_i} \\geq n.\n$$",
+        "answer":"由 AM-GM 不等式：\n$$\n\\frac{1}{a_1} + \\frac{1}{a_2} + \\cdots + \\frac{1}{a_n} \\geq n \\cdot \\sqrt[n]{\\frac{1}{a_1 a_2 \\cdots a_n}} = n.\n$$",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":23,
+        "question":"当 $n=2$ 时，给定 $a_1 + a_2 = b_1 + b_2$，且 $a_1 a_2 = b_1 b_2$，则：\n$$\n(a_1 - a_2)^2 = (b_1 - b_2)^2.\n$$",
+        "answer":"此为二次方程根的关系，若两组数和与积相同，则它们的平方差也相等。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":24,
+        "question":"设 $a_1 \\leq a_2 \\leq \\cdots \\leq a_n$，且 $\\sum a_i = S$，$\\prod a_i = P$，则：\n$$\n\\sum_{1 \\leq i < j \\leq n} (a_i - a_j)^2 \\geq 0,\n$$",
+        "answer":"等号成立当且仅当所有 $a_i$ 相等。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":25,
+        "question":"设 \\(x, y, z > 0\\)，且 \\(x + y + z = 2\\)，证明：\n\\[\nxy + yz + zx \\leq 1,\n\\]\n并求等号成立条件。",
+        "answer":"由 \\((x+y+z)^2 = x^2 + y^2 + z^2 + 2(xy + yz + zx)\\)，代入 \\(x+y+z=2\\) 得：\n\\[\n4 = x^2 + y^2 + z^2 + 2(xy + yz + zx) \\Rightarrow xy + yz + zx = \\frac{4 - (x^2 + y^2 + z^2)}{2}.\n\\]\n\n又因 \\(x^2 + y^2 + z^2 \\geq \\frac{(x+y+z)^2}{3} = \\frac{4}{3}\\)，所以：\n\\[\nxy + yz + zx \\leq \\frac{4 - \\frac{4}{3}}{2} = \\frac{2}{3} < 1.\n\\]\n\n但题目要求证明 \\(\\leq 1\\)，实际上更强的结果是：\n\\[\nxy + yz + zx \\leq \\frac{(x+y+z)^2}{3} = \\frac{4}{3},\n\\]\n而 \\(1 < \\frac{4}{3}\\)，故原命题成立。\n\n**等号成立条件**：当两个变量为 0，一个为 2 时（如 \\((2,0,0)\\)），此时 \\(xy + yz + zx = 0\\)；若要求最大值为 1，则需调整题设。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":26,
+        "question":"设 $a,b,c > 0$，且 $a + b + c = 1$，证明：\n$$\n\\frac{a}{b+c} + \\frac{b}{c+a} + \\frac{c}{a+b} \\geq \\frac{3}{2}.\n$$",
+        "answer":"使用 Nesbitt 不等式直接得出结论。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":27,
+        "question":"设 $x, y, z \\in (0,1)$，且 $xyz = \\frac{1}{8}$，求：\n$$\nf(x,y,z) = \\frac{x}{1-y} + \\frac{y}{1-z} + \\frac{z}{1-x}\n$$\n的最大值。",
+        "answer":"令 $u = xyz = \\frac{1}{8}$，通过均值不等式或拉格朗日乘数法可得最大值为 2，在 $x=y=z=\\frac{1}{2}$ 时取得。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":28,
+        "question":"设 $x, y, z$ 为非负实数，且 $x + y + z = 1$，求证：\n$$\n\\frac{x^2y}{z} + \\frac{y^2z}{x} + \\frac{z^2x}{y} \\leq \\frac{4}{9}\n$$",
+        "answer":"设 $x \\geq y \\geq z$，定义函数：\n$$\nf(x, y, z) = \\frac{x^2y}{z} + \\frac{y^2z}{x} + \\frac{z^2x}{y}\n$$\n考虑调整 $x, y, z$ 的顺序。若 $x > y$，则有：\n$$\nf(x, y, z) - f(y, x, z) = \\frac{(x-y)(x+y)(x^2 - y^2)}{xyz} \\geq 0\n$$\n因为 $x \\geq y \\geq z > 0$，所以 $f(x, y, z) \\geq f(y, x, z)$。同理可得，当变量按大小排序时，表达式最大。\n\n令 $x = y = z = \\frac{1}{3}$，代入原式得：\n$$\n\\frac{\\left(\\frac{1}{3}\\right)^2 \\cdot \\frac{1}{3}}{\\frac{1}{3}} + \\cdots = 3 \\cdot \\frac{1}{9} = \\frac{1}{3} < \\frac{4}{9}\n$$\n但更严格的分析表明，最大值在边界处取得，如 $x=1, y=z=0$，此时原式为 0；而在 $x=y=\\frac{1}{2}, z=0$ 时也趋于 0。\n\n实际上，通过拉格朗日乘数法或对称性优化可得最大值为 $\\frac{4}{9}$，当 $x=1, y=0, z=0$ 或其轮换时不成立（因分母为零），需进一步约束正实数条件。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":29,
+        "question":"设 $a,b,c,d$ 为非负实数，满足 $a+b+c+d=1$，求：\n$$\n\\frac{a}{b+c+d} + \\frac{b}{c+d+a} + \\frac{c}{d+a+b} + \\frac{d}{a+b+c}\n$$\n的最小值。",
+        "answer":"由对称性和平均值不等式，设 $a=b=c=d=\\frac{1}{4}$，则每项为：\n$$\n\\frac{\\frac{1}{4}}{\\frac{3}{4}} = \\frac{1}{3}\n$$\n总和为 $4 \\times \\frac{1}{3} = \\frac{4}{3}$。\n\n进一步利用 Titu 引理（柯西-施瓦茨不等式的推论）：\n$$\n\\sum \\frac{a_i^2}{b_i} \\geq \\frac{(\\sum a_i)^2}{\\sum b_i}\n$$\n此处取 $a_i = \\sqrt{a}, b_i = b+c+d$ 等，最终仍得最小值为 $\\frac{4}{3}$，当 $a=b=c=d$ 时取等。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":30,
+        "question":"### 例3：已知 $2x > 3y > 0$，求：\n$$\n\\frac{2x}{3y} + \\frac{3y}{2x}\n$$\n的最小值。",
+        "answer":"令 $t = \\frac{2x}{3y} > 1$，则原式变为：\n$$\nt + \\frac{1}{t}\n$$\n由均值不等式：\n$$\nt + \\frac{1}{t} \\geq 2\n$$\n等号成立当且仅当 $t=1$，即 $2x = 3y$，但题目要求 $2x > 3y$，故不能取等。\n\n因此最小值趋近于 2，但从下方无法达到，说明无最小值（下确界为 2）。\n\n但若允许 $2x \\to 3y^+$，则极限为 2。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":31,
+        "question":"设 \\(x, y > 0\\)，且 \\(xy = 1\\)，求：\n\\[\n\\frac{x^2 + y^2}{x + y}\n\\]\n的最小值。",
+        "answer":"由 \\(xy=1\\) 得 \\(y = \\frac{1}{x}\\)，代入：\n\\[\nf(x) = \\frac{x^2 + \\frac{1}{x^2}}{x + \\frac{1}{x}}\n\\]\n令 \\(t = x + \\frac{1}{x} \\geq 2\\)，则：\n\\[\nx^2 + \\frac{1}{x^2} = t^2 - 2\n\\]\n所以：\n\\[\nf(t) = \\frac{t^2 - 2}{t} = t - \\frac{2}{t}\n\\]\n导数 \\(f'(t) = 1 + \\frac{2}{t^2} > 0\\)，单调递增，最小值在 \\(t=2\\) 取得：\n\\[\nf(2) = 2 - 1 = 1\n\\]\n等号成立当 \\(x = y = 1\\)。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":32,
+        "question":"设 $a, b, c$ 是正实数，且 $a + b + c = 1$，求：\n$$\n\\frac{a}{b+c} + \\frac{b}{c+a} + \\frac{c}{a+b}\n$$\n的最小值。",
+        "answer":"这是经典的 Nesbitt 不等式，标准形式为：\n$$\n\\frac{a}{b+c} + \\frac{b}{c+a} + \\frac{c}{a+b} \\geq \\frac{3}{2}\n$$\n等号成立当且仅当 $a = b = c = \\frac{1}{3}$。\n\n**证明：**\n用调和-算术平均不等式或 Jensen 不等式均可。例如，设 $S = a + b + c = 1$，则：\n$$\n\\sum \\frac{a}{1-a} \\geq \\frac{3}{2}\n$$\n构造辅助函数 $f(x) = \\frac{x}{1-x}$，在 $(0,1)$ 上凸，可用 Jensen：\n$$\n\\frac{1}{3} \\sum f(a) \\geq f\\left(\\frac{1}{3}\\right)\n\\Rightarrow \\sum \\frac{a}{1-a} \\geq 3 \\cdot \\frac{\\frac{1}{3}}{\\frac{2}{3}} = \\frac{3}{2}\n$$",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":33,
+        "question":"设 $a, b, c$ 是正实数，且 $abc = 1$，求：\n$$\n(a+1)(b+1)(c+1)\n$$\n的最小值。",
+        "answer":"展开：\n$$\n(a+1)(b+1)(c+1) = abc + ab + bc + ca + a + b + c + 1\n$$\n由于 $abc=1$，只需最小化：\n$$\nab + bc + ca + a + b + c\n$$\n由 AM-GM：\n$$\na + b + c \\geq 3\\sqrt[3]{abc} = 3,\\quad ab + bc + ca \\geq 3\\sqrt[3]{(abc)^2} = 3\n$$\n所以：\n$$\n(a+1)(b+1)(c+1) \\geq 1 + 3 + 3 + 1 = 8\n$$\n等号成立当 $a = b = c = 1$。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":34,
+        "question":"$$\n\\frac{a}{x} + \\frac{b}{y} + \\frac{c}{z} \\geq a + b + c\n$$",
+        "answer":"$$\n\\frac{u + v + w}{3} \\geq \\sqrt[3]{uvw}\n$$\n进一步推导可得：\n$$\nf(a, b, c) = a + b + c + 3\\sqrt[3]{abc} - 2(\\sqrt{ab} + \\sqrt{bc} + \\sqrt{ca}) \\geq 0\n$$\n当且仅当 $a = b = c$ 时取等号。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":35,
+        "question":"对任意正实数 \\(a, b, c\\)，求表达式：\n\\[\n\\frac{(a+b)^2 + (a+b+4c)^2}{abc}\n\\]\n的最小值。",
+        "answer":"由均值不等式：\n\\[\n(a+b)^2 + (a+b+4c)^2 \\geq 8ab + 8ac + 8bc + 16c\\sqrt{ab}\n\\]\n于是：\n\\[\n\\frac{(a+b)^2 + (a+b+4c)^2}{abc} \\geq \\frac{8ab + 8ac + 8bc + 16c\\sqrt{ab}}{abc}\n\\]\n当 \\(a = b = 2c > 0\\) 时取等号，此时最小值为：\n\\[\n\\boxed{100}\n\\]",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":36,
+        "question":"设 $\\triangle ABC$ 的边长分别为 $a, b, c$，其内切圆分别切边 $BC, CA, AB$ 于点 $P, Q, R$。记 $s = \\frac{a+b+c}{2}$，则有：\n$$\n\\left( \\frac{QR}{a} \\right)^2 + \\left( \\frac{RP}{b} \\right)^2 + \\left( \\frac{PQ}{c} \\right)^2 \\geq \\frac{3}{4}\n$$",
+        "answer":"利用余弦定理和海伦公式化简后，结合切比雪夫不等式与均值不等式即可完成。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":37,
+        "question":"若 $a, b, c$ 是一个三角形的三边，满足 $a + b + c = 1$，则：\n$$\n(a + b + c)(ab + bc + ca) - abc \\leq \\frac{1}{27}\n$$",
+        "answer":"构造函数：\n$$\nf(x) = (x - a)(x - b)(x - c)\n$$\n展开并比较系数，结合约束条件 $0 < a, b, c < \\frac{1}{2}$，可得结论成立。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":38,
+        "question":"点到三角形三边距离的最大值\n设 $P$ 是 $\\triangle ABC$ 内或边界上一点，$PD, PE, PF$ 分别为其到边 $BC, CA, AB$ 的垂线段长度，则：\n$$\nPA + PB + PC \\geq 2(PD + PE + PF)\n$$\n等号成立当且仅当 $\\triangle ABC$ 为正三角形且 $P$ 为其重心。",
+        "answer":"利用向量投影法或坐标法得到：\n$$\nPA \\geq PD \\cdot \\sin A + PE \\cdot \\sin B,\\quad \\text{同理其他两式}\n$$\n相加后利用角度和恒等式即可得证。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":39,
+        "question":"设三角形三边为 $a, b, c$，半周长 $s = \\frac{a+b+c}{2}$，面积为 $S$，则：\n$$\n\\sqrt{3}(a + b + c)^2 \\geq 12S\n$$\n当且仅当 $a = b = c$（即正三角形）时取等号。",
+        "answer":"由海伦公式：\n$$\nS = \\sqrt{s(s-a)(s-b)(s-c)}\n$$\n利用均值不等式：\n$$\n(s-a)(s-b)(s-c) \\leq \\left( \\frac{s}{3} \\right)^3\n$$\n代入即得结果。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":40,
+        "question":"设 $t_a, t_b, t_c$ 为 $\\triangle ABC$ 的角平分线延长线与外接圆的交点长度，则：\n$$\nabc \\leq 3r r_a r_b r_c\n$$\n其中 $r$ 为内切圆半径，$r_a, r_b, r_c$ 为旁切圆半径。",
+        "answer":"利用余弦定理表示各线段长度，再结合均值不等式处理乘积项，最终得出：\n$$\n\\cos^2 \\frac{A}{2} \\cos^2 \\frac{B}{2} \\cos^2 \\frac{C}{2} \\leq \\frac{1}{8}\n$$",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":41,
+        "question":"设凸六边形 $ABCDEF$ 满足 $AB \\parallel ED$, $BC \\parallel FE$, $CD \\parallel AF$，记各三角形外接圆半径为 $R_A, R_B, R_C$，则：\n$$\nR_A + R_B + R_C \\geq \\frac{1}{2}(AB + BC + CD + DE + EF + FA)\n$$",
+        "answer":"通过平行线夹角关系建立边长与外接圆直径的关系，再用均值不等式组合各项，分情况讨论（平行四边形情形和一般情形），最终统一得到下界。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":42,
+        "question":"设 $a, b, c$ 是正实数，且满足 $a + b + c = 3$，证明：\n$$\n\\frac{1}{1 + 2ab} + \\frac{1}{1 + 2bc} + \\frac{1}{1 + 2ca} \\geq 1.\n$$",
+        "answer":"由算术平均值大于等于几何平均值（AM ≥ GM）及调和平均值小于等于算术平均值（HM ≤ AM），可得：\n$$\n\\frac{1}{1 + 2ab} + \\frac{1}{1 + 2bc} + \\frac{1}{1 + 2ca} \\geq \\frac{9}{3 + 2(ab + bc + ca)}.\n$$\n由于 $a + b + c = 3$，根据基本不等式有：\n$$\nab + bc + ca \\leq \\frac{(a + b + c)^2}{3} = 3,\n$$\n因此：\n$$\n\\frac{9}{3 + 2(ab + bc + ca)} \\geq \\frac{9}{3 + 6} = 1.\n$$\n故原不等式成立。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":43,
+        "question":"设 $a, b, c > 0$，且 $ab + bc + ca < 8abc$，证明：\n$$\n\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c} > 3.\n$$",
+        "answer":"由已知条件 $ab + bc + ca < 8abc$，两边同除以 $abc$ 得：\n$$\n\\frac{1}{c} + \\frac{1}{a} + \\frac{1}{b} < 8.\n$$\n但这不足以直接得出结论。考虑使用反证法或构造辅助函数更有效。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":44,
+        "question":"设正实数 \\(x, y, z\\) 满足 \\(x^2 + y^2 + z^2 = 1\\)，证明：\n\\[\n\\frac{1}{yz + zx + xy} \\geq 3.\n\\]",
+        "answer":"由柯西不等式：\n\\[\n(x + y + z)^2 \\leq 3(x^2 + y^2 + z^2) = 3,\n\\]\n所以 \\(x + y + z \\leq \\sqrt{3}\\)。又因：\n\\[\nxy + yz + zx \\leq \\frac{(x + y + z)^2}{3} \\leq 1,\n\\]\n从而：\n\\[\n\\frac{1}{xy + yz + zx} \\geq 1.\n\\]\n但需进一步处理才能得到 \\(\\geq 3\\)，建议引入对称性和约束优化方法。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":45,
+        "question":"设 $x, y, z > 0$，且 $x + y + z = 1$，求最小值：\n$$\n\\frac{x}{y+z} + \\frac{y}{z+x} + \\frac{z}{x+y}.\n$$",
+        "answer":"利用 Nesbitt 不等式：\n$$\n\\frac{x}{y+z} + \\frac{y}{z+x} + \\frac{z}{x+y} \\geq \\frac{3}{2},\n$$\n等号成立当 $x = y = z = \\frac{1}{3}$。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":46,
+        "question":"设 $a, b, c \\in \\mathbb{R}^+$，证明：\n$$\n\\frac{(2a + b + c)^2}{2a^2 + (b + c)^2} + \\frac{(2b + c + a)^2}{2b^2 + (c + a)^2} + \\frac{(2c + a + b)^2}{2c^2 + (a + b)^2} \\leq 8.\n$$",
+        "answer":"**证明一（变形法）：**\n不妨设 $a + b + c = 1$，则原式等价于：\n$$\n\\sum_{\\text{cyc}} \\frac{(2a + b + c)^2}{2a^2 + (b + c)^2} = \\sum_{\\text{cyc}} \\frac{(a + 1)^2}{2a^2 + (1 - a)^2}.\n$$\n化简后分析单调性即可。\n\n**证明二（对称和与 Schur 不等式）：**\n定义对称和：\n$$\n\\sum_{\\text{sym}} f(a,b,c) = f(a,b,c) + f(b,c,a) + f(c,a,b),\n$$\n并利用加权 AM-GM 和 Schur 不等式：\n$$\n\\sum_{\\text{sym}} a(a-b)(a-c) \\geq 0,\n$$\n可完成证明。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":47,
+        "question":"设 $a, b, c, d$ 是不全为 0 的实数，求表达式：\n$$\nab + 2bc + cd\n$$\n的最大值。",
+        "answer":"假设该最大值为 $M$，则有不等式：\n$$\nab + 2bc + cd \\leq M(a^2 + b^2 + c^2 + d^2)\n$$\n要建立上述形式的不等式，并找到一组 $(a,b,c,d)$ 使得等号成立。\n\n令 $\\alpha, \\beta, \\gamma > 0$，则：\n$$\n2ab \\leq \\alpha a^2 + \\frac{1}{\\alpha}b^2,\\quad 2bc \\leq \\beta b^2 + \\frac{1}{\\beta}c^2,\\quad 2cd \\leq \\gamma c^2 + \\frac{1}{\\gamma}d^2\n$$\n将三式相加得：\n$$\n2(ab + bc + cd) \\leq \\left(\\alpha a^2 + \\beta b^2 + \\gamma c^2\\right) + \\left(\\frac{1}{\\alpha}b^2 + \\frac{1}{\\beta}c^2 + \\frac{1}{\\gamma}d^2\\right)\n$$\n选择合适的 $\\alpha, \\beta, \\gamma$ 使系数匹配。设：\n$$\n\\alpha = \\beta = \\gamma = \\sqrt{2},\\quad a = d = 1,\\quad b = c = \\sqrt{2} + 1\n$$\n此时可验证等号成立，从而得到最大值：\n$$\n\\max(ab + 2bc + cd) = \\frac{\\sqrt{2} + 1}{2}\n$$",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":48,
+        "question":"求最大的正数 $\\lambda$，使得对任意满足 $x^2 + y^2 + z^2 = 1$ 的实数 $x, y, z$，都有：\n$$\n|xy + yz| \\leq \\lambda (x^2 + y^2 + z^2)\n$$",
+        "answer":"利用柯西不等式或平均值不等式处理。当 $y = x = z = \\frac{1}{\\sqrt{3}}$ 时，左边为：\n$$\n|xy + yz| = \\left|\\frac{1}{3} + \\frac{1}{3}\\right| = \\frac{2}{3}\n$$\n右边为 $\\lambda \\cdot 1$，故 $\\lambda \\geq \\frac{2}{3}$。进一步分析可知最大值为：\n$$\n\\lambda_{\\text{max}} = \\frac{2}{\\sqrt{3}}\n$$",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":49,
+        "question":"设 $a, b, c > 0$，求函数：\n$$\nf(x, y, z) = \\frac{xy + yz + zx}{x + y + z}\n$$\n的最大值。",
+        "answer":"由对称性和均值不等式，考虑极端情况（如 $x=y=z$）：\n$$\nf(x,x,x) = \\frac{3x^2}{3x} = x\n$$\n但需在约束 $x+y+z=1$ 下最大化。使用拉格朗日乘数法或直接代入，得最大值为：\n$$\n\\max f(x,y,z) = \\frac{1}{2}\n$$\n当且仅当两个变量趋于 0，一个趋于 1 时取到。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":50,
+        "question":"设 $f(x) = |\\sin x (a \\cos x + b \\sin x)|$，求其最大值。",
+        "answer":"令 $t = \\tan x$，化简后得：\n$$\nf(x) \\leq \\frac{1}{2}(a^2 + b^2)\n$$\n等号成立当且仅当 $\\sin x = \\pm \\frac{a}{\\sqrt{a^2 + b^2}}, \\cos x = \\pm \\frac{b}{\\sqrt{a^2 + b^2}}$。\n\n因此最大值为：\n$$\n\\max f(x) = \\frac{\\sqrt{a^2 + b^2}}{2}\n$$",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":51,
+        "question":"设 $x, y, z > 0$，且 $x + y + z = 1$，求：\n$$\nf(x, y, z) = \\frac{x}{1 - x} + \\frac{y}{1 - y} + \\frac{z}{1 - z}\n$$\n的最小值。",
+        "answer":"利用凸函数性质（Jensen 不等式），由于函数 $g(t) = \\frac{t}{1-t}$ 在 $(0,1)$ 上是凸的，故：\n$$\nf(x,y,z) \\geq 3 \\cdot \\frac{\\frac{1}{3}}{1 - \\frac{1}{3}} = \\frac{3}{2}\n$$\n等号成立当 $x = y = z = \\frac{1}{3}$，所以最小值为：\n$$\n\\min f(x,y,z) = \\frac{3}{2}\n$$",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":52,
+        "question":"设 $0 < a < 1$, $0 < b < 1$, $a + b = 2$，求：\n$$\nu = \\frac{a}{1 - a} + \\frac{b}{1 - b}\n$$\n的最小值。",
+        "answer":"利用对称性与均值不等式，答案为：\n$$\n\\min u = 4\n$$",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":53,
+        "question":null,
+        "answer":"证法六（二次函数判别式法）\n\n构造函数：\n$$\nf(x) = \\sum_{i=1}^{n} (a_i x + b_i)^2 = A x^2 + 2B x + C\n$$\n其中 $A = \\sum a_i^2 > 0$，$B = \\sum a_i b_i$，$C = \\sum b_i^2$。\n由于 $f(x) \\geq 0$，其判别式满足：\n$$\n\\Delta = 4(B^2 - AC) \\leq 0 \\Rightarrow B^2 \\leq AC\n$$\n即柯西不等式成立。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":54,
+        "question":"$$\n\\left( \\sum_{i=1}^{n} a_i \\right)^2 \\leq n \\sum_{i=1}^{n} a_i^2\n$$\n等号成立当且仅当 $a_1 = a_2 = \\cdots = a_n$。",
+        "answer":"等号成立当且仅当 $a_1 = a_2 = \\cdots = a_n$。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":55,
+        "question":"$$\n\\left( \\sum \\frac{a_i^2}{b_i} \\right) \\left( \\sum b_i \\right) \\geq \\left( \\sum a_i \\right)^2\n$$\n这是 Titu 引理的特例。",
+        "answer":"这是 Titu 引理的特例。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":56,
+        "question":"$$\n\\sum_{i=1}^{n} \\frac{a_i}{b_i + (m+1)} \\geq \\frac{\\left(\\sum_{i=1}^{n} a_i\\right)^2}{\\sum_{i=1}^{n} b_i + (m+1)n}\n$$\n等号成立当且仅当 $\\frac{a_1}{b_1} = \\frac{a_2}{b_2} = \\cdots = \\frac{a_n}{b_n}$。",
+        "answer":"由赫尔德不等式可推出闵可夫斯基不等式：对 $k > 1$ 和正实数 $a_i, b_i$，有：\n$$\n\\left( \\sum_{i=1}^{n} (a_i + b_i)^k \\right)^{1\/k} \\leq \\left( \\sum_{i=1}^{n} a_i^k \\right)^{1\/k} + \\left( \\sum_{i=1}^{n} b_i^k \\right)^{1\/k}\n$$\n等号成立当且仅当 $\\frac{a_i}{b_i}$ 为常数。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":57,
+        "question":"设 \\(a, b, c > 0\\)，且 \\(a + b + c = 1\\)，求证：\n\\[\n\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c} \\geq 9\n\\]",
+        "answer":"由柯西不等式，\n\\[\n(a + b + c)\\left(\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c}\\right) \\geq (1 + 1 + 1)^2 = 9\n\\]\n因 \\(a + b + c = 1\\)，故原不等式成立。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":58,
+        "question":"设 $a, b, c \\in \\mathbb{R}$，且 $a \\cos^2 \\theta + b \\sin^2 \\theta \\leq c$，证明：\n$$\n\\sqrt{a} \\cos \\theta + \\sqrt{b} \\sin \\theta \\leq \\sqrt{c}\n$$",
+        "answer":"由柯西不等式，\n$$\n\\sqrt{a} \\cos \\theta + \\sqrt{b} \\sin \\theta \\leq \\sqrt{a \\cos^2 \\theta + b \\sin^2 \\theta} \\leq \\sqrt{c}\n$$\n命题得证。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":59,
+        "question":"设 $a_i > 0$，且 $\\sum_{i=1}^{n} a_i = 1$，证明：\n$$\n\\sum_{i=1}^{n} \\frac{a_i}{a_i + a_{i+1}} \\geq \\frac{n}{2}\n$$\n其中 $a_{n+1} = a_1$。",
+        "answer":"令 $x_i = a_i + a_{i+1}$，则利用柯西不等式：\n$$\n\\sum_{i=1}^{n} \\frac{a_i}{a_i + a_{i+1}} = \\sum_{i=1}^{n} \\frac{a_i^2}{a_i(a_i + a_{i+1})} \\geq \\frac{\\left(\\sum a_i\\right)^2}{\\sum a_i(a_i + a_{i+1})}\n$$\n由于 $\\sum a_i = 1$，且分母不超过 $\\frac{1}{2}$，故不等式成立。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":60,
+        "question":"设 \\(a, b, c > 0\\)，且 \\(a + b + c = 1\\)，证明：\n\\[\n\\frac{a - bc}{a + bc} + \\frac{b - ca}{b + ca} + \\frac{c - ab}{c + ab} \\geq \\frac{3}{2}\n\\]",
+        "answer":"注意到：\n\\[\n\\frac{a - bc}{a + bc} = 1 - \\frac{2bc}{a + bc}\n\\]\n因此原式等价于：\n\\[\n3 - 2\\left( \\frac{bc}{a + bc} + \\frac{ca}{b + ca} + \\frac{ab}{c + ab} \\right) \\geq \\frac{3}{2}\n\\Rightarrow \\sum \\frac{bc}{a + bc} \\leq \\frac{3}{4}\n\\]\n利用均值不等式和条件 \\(a + b + c = 1\\) 可证。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":61,
+        "question":"设 $x_i, y_i, z_i \\in \\mathbb{R}$，求证：\n$$\n\\sum_{i=1}^{n} (x_i + y_i + z_i)^2 \\geq \\frac{1}{3} \\left( \\sum x_i \\right)^2 + \\frac{1}{3} \\left( \\sum y_i \\right)^2 + \\frac{1}{3} \\left( \\sum z_i \\right)^2\n$$",
+        "answer":"考虑向量 $(x_1, \\dots, x_n), (y_1, \\dots, y_n), (z_1, \\dots, z_n)$，用向量模长平方展开即可。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":62,
+        "question":"设整数序列 $(a_1, a_2, \\dots, a_n)$ 满足：\n$$\n\\sum_{i=1}^{n} a_i = n^2 + 1,\n\\quad\n\\sum_{i=1}^{n} a_i^2 = n^3 + n.\n$$\n证明：唯一满足条件的整数解为 $(a_1, a_2, \\dots, a_n) = (n, n, \\dots, n, n+1)$。",
+        "answer":"由柯西不等式：\n$$\n\\left( \\sum_{i=1}^{n} a_i \\right)^2 \\leq n \\sum_{i=1}^{n} a_i^2,\n$$\n代入已知条件得：\n$$\n(n^2 + 1)^2 \\leq n(n^3 + n) = n^4 + n^2.\n$$\n左边展开：\n$$\nn^4 + 2n^2 + 1 \\leq n^4 + n^2 \\Rightarrow 2n^2 + 1 \\leq n^2,\n$$\n矛盾，除非等号成立。此时所有 $a_i$ 相等或仅一个不同。进一步分析可知唯一解为：\n$$\n(a_1, a_2, \\dots, a_n) = (\\underbrace{n, \\dots, n}_{n-1}, n+1).\n$$",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":63,
+        "question":"设两个三角形边长分别为 $a, b, c$ 和 $a', b', c'$，面积分别为 $S, S'$，则有：\n$$\na^2(b'^2 + c'^2 - a'^2) + b^2(c'^2 + a'^2 - b'^2) + c^2(a'^2 + b'^2 - c'^2) \\leq 16SS'.\n$$",
+        "answer":"利用向量形式或柯西不等式变形可证。关键步骤是：\n$$\n\\text{左边} \\leq (a^2 + b^2 + c^2)(b'^2 + c'^2 - a'^2 + \\cdots),\n$$\n结合三角形恒等式即可完成。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":64,
+        "question":"设 $a, b, c$ 是三角形三边，求证：\n$$\nab(a - b) + bc(b - c) + ca(c - a) > 0.\n$$",
+        "answer":"令 $a = y+z$, $b = z+x$, $c = x+y$（其中 $x,y,z > 0$），代入后化简得：\n$$\nab(a - b) + bc(b - c) + ca(c - a) = 2xyz(x + y + z) > 0.\n$$",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":65,
+        "question":"设 $a_i > 0$，且 $\\sum_{i=1}^{n} a_i = 1$，则：\n$$\n\\sum_{i=1}^{n} \\frac{a_i}{1 - a_i} \\geq \\frac{n}{n - 1}.\n$$",
+        "answer":"用柯西不等式：\n$$\n\\left( \\sum_{i=1}^{n} \\frac{a_i}{1 - a_i} \\right) \\left( \\sum_{i=1}^{n} (1 - a_i) \\right) \\geq \\left( \\sum_{i=1}^{n} \\sqrt{a_i} \\right)^2.\n$$\n由于 $\\sum (1 - a_i) = n - 1$，再结合均值不等式即得结论。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":66,
+        "question":"设 $a_i, b_i \\in \\mathbb{R}$，且 $\\sum_{i=1}^{n} a_i^2 = \\sum_{i=1}^{n} b_i^2 = 1$，则：\n$$\n\\left| \\sum_{i=1}^{n} a_i b_i \\right| \\leq 1.\n$$",
+        "answer":"直接由柯西不等式：\n$$\n\\left( \\sum_{i=1}^{n} a_i b_i \\right)^2 \\leq \\left( \\sum_{i=1}^{n} a_i^2 \\right)\\left( \\sum_{i=1}^{n} b_i^2 \\right) = 1.\n$$",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":67,
+        "question":"设 $t_a, t_b, t_c$ 分别为 $\\triangle ABC$ 中角 $A, B, C$ 的内角平分线长度，则：\n$$\n\\frac{1}{t_a^2} + \\frac{1}{t_b^2} + \\frac{1}{t_c^2} \\geq \\frac{4}{r^2},\n$$\n其中 $r$ 为内切圆半径。",
+        "answer":"使用公式 $t_a = \\frac{2bc}{b+c} \\cos \\frac{A}{2}$，并结合三角恒等式和柯西不等式推导。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":68,
+        "question":"设 \\(a,b,c,d > 0\\)，且 \\(ab + cd = 1\\)，又 \\(P_1, P_2, P_3, P_4\\) 是单位圆上四点，坐标为 \\((x_i, y_i)\\)，满足 \\(\\sum x_i^2 = \\sum y_i^2 = 1\\)，则：\n\\[\n(ax_1 + by_2 + cz_3 + dw_4)^2 + (ax_2 + by_3 + cz_4 + dw_1)^2 \\leq \\frac{1}{ab + cd} = 1.\n\\]",
+        "answer":"构造向量 \\((a,b,c,d)\\) 和 \\((x_1, y_2, z_3, w_4)\\)，应用柯西不等式即可。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":69,
+        "question":"设正整数列 $a_1 < a_2 < \\cdots < a_n$，满足：\n$$\n\\sum_{i=1}^{n} \\frac{1}{a_i} < 1,\n\\quad\n\\sum_{i=1}^{n} \\frac{1}{a_i^2} \\geq \\frac{1}{2}.\n$$\n则对任意实数 $x$，有：\n$$\n\\sum_{i=1}^{n} \\frac{1}{(x - a_i)^2} \\geq \\frac{1}{2}.\n$$",
+        "answer":"利用柯西不等式：\n$$\n\\left( \\sum_{i=1}^{n} \\frac{1}{(x - a_i)^2} \\right) \\left( \\sum_{i=1}^{n} 1 \\right) \\geq \\left( \\sum_{i=1}^{n} \\frac{1}{|x - a_i|} \\right)^2.\n$$\n再结合已知条件得出结果。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":70,
+        "question":"设 $x \\in (0, \\frac{\\pi}{2})$，则：\n$$\n\\left( \\frac{1 - \\sin^n x}{\\sin^n x} \\right) \\left( \\frac{1 - \\cos^n x}{\\cos^n x} \\right) \\geq \\left( \\frac{2}{\\sin x \\cos x} \\right)^2.\n$$",
+        "answer":"利用：\n$$\n1 - \\sin^n x = (1 - \\sin x)(1 + \\sin x + \\cdots + \\sin^{n-1} x),\n$$\n同理对余弦处理，再用柯西不等式估计乘积项。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":71,
+        "question":"设实数列 $\\{a_k\\}$ 满足 $0 < a_k \\leq M$，且对任意 $k$，存在 $n$ 使得：\n$$\n|a_k - a_{k+n}| \\leq \\frac{1}{n^\\alpha}, \\quad \\alpha > 1.\n$$\n若 $\\sigma$ 是 $\\{1, 2, \\dots, n\\}$ 的一个排列，则：\n$$\n\\sum_{k=1}^{n} \\frac{1}{a_{\\sigma(k)} + a_{\\sigma(k+1)}} \\geq \\frac{n}{2M}.\n$$",
+        "answer":"利用柯西不等式：\n$$\n\\sum_{k=1}^{n} \\frac{1}{a_{\\sigma(k)} + a_{\\sigma(k+1)}} \\geq \\frac{n^2}{2 \\sum a_i}.\n$$\n结合 $\\sum a_i \\leq nM$ 即得。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":72,
+        "question":"设 $a, b, c > 0$，则：\n$$\n\\frac{(2a + b + c)^2}{2a^2 + (b + c)^2} + \\frac{(a + 2b + c)^2}{2b^2 + (a + c)^2} + \\frac{(a + b + 2c)^2}{2c^2 + (a + b)^2} \\geq 8.\n$$",
+        "answer":"用柯西不等式逐项估计，或设 $a = b = c$ 验证等号成立情况。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":73,
+        "question":"设 $a_i > 0$，$\\sum_{i=1}^{n} a_i = k$，则：\n$$\n\\sum_{i=1}^{n} \\frac{a_i + 1}{a_i} \\geq n + \\frac{n}{k}.\n$$",
+        "answer":"拆分为：\n$$\n\\sum \\frac{a_i + 1}{a_i} = n + \\sum \\frac{1}{a_i},\n$$\n再用柯西不等式：\n$$\n\\sum \\frac{1}{a_i} \\geq \\frac{n^2}{\\sum a_i} = \\frac{n^2}{k}.\n$$",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":74,
+        "question":"设 \\(a, b, c > 0\\)，则：\n\\[\n\\frac{a}{a^2 + 8bc} + \\frac{b}{b^2 + 8ac} + \\frac{c}{c^2 + 8ab} \\geq 1.\n\\]",
+        "answer":"用柯西不等式：\n\\[\n\\left( \\sum \\frac{a}{a^2 + 8bc} \\right) \\left( \\sum a(a^2 + 8bc) \\right) \\geq (a + b + c)^2.\n\\]\n只需验证：\n\\[\n\\sum a(a^2 + 8bc) \\leq (a + b + c)^2,\n\\]\n即可推出原不等式。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":75,
+        "question":"已知：\n$$\n\\begin{cases}\na + b = 0 \\\\\nb + c = 0 \\\\\nc + d = 0 \\\\\nd + a = 0\n\\end{cases}\n$$",
+        "answer":"由第一个等式得 $a = -b$，代入第二个得 $c = b$，第三个得 $d = -c = -b$，第四个得 $a = -d = b$。\n于是 $a = b$，又 $a = -b$，所以 $a = b = 0$，进而 $c = d = 0$。\n但这会导致分母为零，矛盾！\n因此原假设不成立，说明该系统无非零实数解。\n\n此外，注意到 $\\sqrt{bc}, \\sqrt{cd}, \\sqrt{da}, \\sqrt{ab}$ 存在，则 $a, b, c, d$ 同号。若均为负，则右边为负，但左边是平方根（非负），矛盾。故四者皆为正。\n\n由 AM-GM 不等式：\n$$\n\\frac{b + c + d}{3} \\geq \\sqrt[3]{bcd}\n\\Rightarrow b + c + d \\geq 3\\sqrt[3]{bcd}\n$$\n类似可得：\n$$\n(a + b + c) \\geq 3\\sqrt[3]{abc},\\quad (b + c + d) \\geq 3\\sqrt[3]{bcd},\\quad \\text{etc.}\n$$\n乘积后得到：\n$$\n(a+b)(b+c)(c+d)(d+a) \\leq 1\n$$\n当且仅当所有变量相等时取等号，即唯一解为：\n$$\na = b = c = d = 1\n$$",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":76,
+        "question":"设 \\(x, y, z > 3\\)，满足：\n\\[\n\\frac{x+2}{y+z-2} + \\frac{y+4}{z+x-4} + \\frac{z+6}{x+y-6} = 1\n\\]\n令 \\(S = x + y + z\\)，求解 \\(x, y, z\\) 的值。",
+        "answer":"利用柯西不等式：\n\\[\n\\left( \\frac{(x+2)^2}{y+z-2} + \\frac{(y+4)^2}{z+x-4} + \\frac{(z+6)^2}{x+y-6} \\right)\n\\geq \\frac{(x+y+z+12)^2}{2(x+y+z)-6}\n\\]\n结合题设等式，化简得：\n\\[\n\\frac{(x+y+z+12)^2}{2(x+y+z)-6} = 72\n\\]\n令 \\(w = x + y + z\\)，则：\n\\[\n\\frac{(w+12)^2}{2w - 6} = 72 \\Rightarrow (w+12)^2 = 72(2w - 6)\n\\]\n展开并整理：\n\\[\nw^2 + 24w + 144 = 144w - 432 \\Rightarrow w^2 - 120w + 576 = 0\n\\]\n解得：\n\\[\nw = 36 \\quad (\\text{舍去其他根})\n\\]\n代回原方程组：\n\\[\n\\begin{cases}\nx + y - z = 4 \\\\\ny + z - x = 8 \\\\\nz + x - y = 12\n\\end{cases}\n\\Rightarrow (x, y, z) = (10, 8, 6)\n\\]",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":77,
+        "question":"设 $a_1, a_2, ..., a_n > 0$，且：\n$$\na_1 + a_2 + \\cdots + a_n = 1,\\quad b_1 + b_2 + \\cdots + b_n = 1\n$$\n求：\n$$\n\\sum_{i=1}^{n} \\frac{a_i^2}{b_i} \\quad \\text{的最小值}\n$$",
+        "answer":"由柯西不等式：\n$$\n\\left( \\sum_{i=1}^{n} \\frac{a_i^2}{b_i} \\right) \\left( \\sum_{i=1}^{n} b_i \\right) \\geq \\left( \\sum_{i=1}^{n} a_i \\right)^2 = 1\n$$\n因为 $\\sum b_i = 1$，所以：\n$$\n\\sum_{i=1}^{n} \\frac{a_i^2}{b_i} \\geq 1\n$$\n当 $a_i = b_i$ 对所有 $i$ 成立时取等号，最小值为 $1$。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":78,
+        "question":"设 \\( x, y, z \\in \\mathbb{R} \\)，且满足：\n\\[\nx + y + z = xyz\n\\]\n求：\n\\[\n\\frac{x}{x^2 + 1} + \\frac{y}{y^2 + 1} + \\frac{z}{z^2 + 1}\n\\]\n的最小值。",
+        "answer":"猜想最小值为 \\(\\frac{3}{2}\\)，当 \\(x = y = z = 1\\) 时达到。进一步证明可用柯西不等式或构造法验证。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":79,
+        "question":"设实数 $a, b, c, x, y, z$ 满足：\n$$\na^2 + b^2 + c^2 = 25,\\quad x^2 + y^2 + z^2 = 36,\\quad ax + by + cz = 30\n$$",
+        "answer":"由柯西不等式：\n$$\n(ax + by + cz)^2 \\leq (a^2 + b^2 + c^2)(x^2 + y^2 + z^2) = 900\n$$\n而 $30^2 = 900$，说明等号成立，此时：\n$$\n\\frac{a}{x} = \\frac{b}{y} = \\frac{c}{z} = k\n$$\n解得 $k = \\frac{5}{6}$，即：\n$$\na = \\frac{5}{6}x,\\quad b = \\frac{5}{6}y,\\quad c = \\frac{5}{6}z\n$$",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":80,
+        "question":"设 $a + b + c + d + e = 8$，且 $a^2 + b^2 + c^2 + d^2 + e^2 = 16$，求 $e$ 的最大值。",
+        "answer":"将前四项视为一个整体，设 $s = a + b + c + d = 8 - e$，则：\n$$\na^2 + b^2 + c^2 + d^2 = 16 - e^2\n$$\n由柯西不等式：\n$$\n(a + b + c + d)^2 \\leq 4(a^2 + b^2 + c^2 + d^2)\n\\Rightarrow (8 - e)^2 \\leq 4(16 - e^2)\n$$\n展开：\n$$\n64 - 16e + e^2 \\leq 64 - 4e^2 \\Rightarrow 5e^2 - 16e \\leq 0 \\Rightarrow e(5e - 16) \\leq 0\n$$\n解得：\n$$\n0 \\leq e \\leq \\frac{16}{5}\n$$\n最大值为 $\\frac{16}{5}$，当 $a = b = c = d = \\frac{2}{5}$ 时取到。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":81,
+        "question":"设 $a_1, a_2, ..., a_n$ 是实数，满足：\n$$\n\\sum_{i=1}^{n} (a_i - a_{i+1})^2 = 1 \\quad (a_{n+1} = a_1)\n$$\n求：\n$$\n(a_1 + a_2 + \\cdots + a_n)^2 - (a_1^2 + a_2^2 + \\cdots + a_n^2)\n$$\n的最大值。",
+        "answer":"通过变形和柯西不等式，最终可得最大值为：\n$$\n\\sqrt{\\frac{n(n-1)}{2}}\n$$",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":82,
+        "question":"设 $x_1, x_2, ..., x_n > 0$，满足：\n$$\n\\sum_{i=1}^{n} x_i = 1,\\quad \\sum_{1 \\leq i < j \\leq n} x_i x_j = 1\n$$\n求 $\\sum x_i^2$ 的最小值。",
+        "answer":"利用恒等式：\n$$\n\\left(\\sum x_i\\right)^2 = \\sum x_i^2 + 2\\sum_{i<j} x_i x_j\n\\Rightarrow 1 = \\sum x_i^2 + 2 \\cdot 1 \\Rightarrow \\sum x_i^2 = -1\n$$\n不可能！说明题目条件有误或需重新理解。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":83,
+        "question":"设 \\( x, y, z > 0 \\)，满足：\n\\[\n\\frac{1}{x} + \\frac{1}{y} + \\frac{1}{z} = 1\n\\]\n求：\n\\[\n\\frac{x}{x+1} + \\frac{y}{y+1} + \\frac{z}{z+1}\n\\]\n的最小值。",
+        "answer":"由均值不等式或函数凸性分析，最小值为 \\(\\frac{3}{2}\\)，当 \\(x = y = z = 3\\) 时取到。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":84,
+        "question":"设 \\( n \\geq 3 \\) 为给定的正整数，实数 \\( x_1, x_2, \\dots, x_n \\) 满足：\n\\[\n\\sum_{i=1}^{n} x_i = 0,\n\\quad\n\\sum_{j=1}^{n+1} y_j = 1,\n\\quad\ny_j > 0.\n\\]\n求表达式：\n\\[\n\\sum_{i=1}^{n} \\sum_{j=1}^{n+1} \\frac{x_i^2}{y_j}\n\\]\n的最小值，并讨论等号成立条件。",
+        "answer":"令 \\( a_i = x_i \\)（其中 \\( 1 \\leq i \\leq n \\)），则原式可写为：\n\\[\n\\sum_{i=1}^{n} \\sum_{j=1}^{n+1} \\frac{a_i^2}{y_j}.\n\\]\n由柯西不等式（Cauchy-Schwarz Inequality）得：\n\\[\n\\left( \\sum_{i=1}^{n} a_i^2 \\right) \\left( \\sum_{j=1}^{n+1} \\frac{1}{y_j} \\right)\n\\geq \\left( \\sum_{i=1}^{n} |a_i| \\cdot \\sqrt{\\frac{1}{y_j}} \\right)^2,\n\\]\n但更直接的方法是利用标准形式：\n\\[\n\\sum_{i=1}^{n} \\sum_{j=1}^{n+1} \\frac{a_i^2}{y_j}\n= \\sum_{i=1}^{n} a_i^2 \\cdot \\sum_{j=1}^{n+1} \\frac{1}{y_j}\n\\geq \\frac{\\left( \\sum_{i=1}^{n} a_i \\right)^2}{\\sum_{j=1}^{n+1} y_j}\n= \\frac{0}{1} = 0.\n\\]\n不过此下界无法达到。正确方法应使用加权柯西不等式或考虑变量替换。\n\n进一步分析后可知，当：\n\\[\n\\frac{a_i}{\\sqrt{y_j}} = c \\quad (\\text{常数}),\n\\quad\n\\forall i,j,\n\\]\n且满足约束时取得最小值。最终得出：\n\\[\n\\min \\sum_{i=1}^{n} \\sum_{j=1}^{n+1} \\frac{x_i^2}{y_j} = \\frac{n}{n+1}.\n\\]\n等号成立当且仅当所有 \\( x_i \\) 相等（即 \\( x_1 = x_2 = \\cdots = x_n = 0 \\)），且 \\( y_j = \\frac{1}{n+1} \\) 对所有 \\( j \\) 成立。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":85,
+        "question":"设 $a_1, a_2, \\dots, a_n > 0$，求证：\n$$\n\\frac{a_1^2}{a_2} + \\frac{a_2^2}{a_3} + \\cdots + \\frac{a_n^2}{a_1} \\geq a_1 + a_2 + \\cdots + a_n.\n$$",
+        "answer":"由柯西不等式：\n$$\n\\left( \\frac{a_1^2}{a_2} + \\frac{a_2^2}{a_3} + \\cdots + \\frac{a_n^2}{a_1} \\right)(a_2 + a_3 + \\cdots + a_1) \\geq (a_1 + a_2 + \\cdots + a_n)^2,\n$$\n而 $a_2 + a_3 + \\cdots + a_1 = a_1 + a_2 + \\cdots + a_n$，故：\n$$\n\\sum_{i=1}^{n} \\frac{a_i^2}{a_{i+1}} \\geq \\sum_{i=1}^{n} a_i.\n$$",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":86,
+        "question":"设 \\(a_1 + a_2 + \\cdots + a_n = 1\\)，求证：\n\\[\n\\sum_{i=1}^{n} \\frac{1}{a_i} \\geq n^2.\n\\]",
+        "answer":"由柯西不等式：\n\\[\n\\left( \\sum_{i=1}^{n} \\frac{1}{a_i} \\right)\\left( \\sum_{i=1}^{n} a_i \\right) \\geq n^2,\n\\]\n因 \\(\\sum a_i = 1\\)，所以：\n\\[\n\\sum_{i=1}^{n} \\frac{1}{a_i} \\geq n^2.\n\\]",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":87,
+        "question":"设 \\(a_1 + a_2 + \\cdots + a_n = 1\\)，且 \\(a_i > 0\\)，求证：\n\\[\n\\sum_{i=1}^{n} \\frac{a_i^2}{b_i} \\geq \\frac{1}{\\sum_{i=1}^{n} b_i},\n\\]\n其中 \\(b_i > 0\\)。",
+        "answer":"直接应用柯西不等式：\n\\[\n\\left( \\sum_{i=1}^{n} \\frac{a_i^2}{b_i} \\right)\\left( \\sum_{i=1}^{n} b_i \\right) \\geq \\left( \\sum_{i=1}^{n} a_i \\right)^2 = 1,\n\\]\n因此：\n\\[\n\\sum_{i=1}^{n} \\frac{a_i^2}{b_i} \\geq \\frac{1}{\\sum b_i}.\n\\]",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":88,
+        "question":"设 $p_1, p_2, \\dots, p_n$ 是 $1, 2, \\dots, n$ 的任意排列，求证：\n$$\n\\frac{1}{p_1 + p_2} + \\frac{1}{p_2 + p_3} + \\cdots + \\frac{1}{p_n + p_1} \\geq \\frac{n-1}{n(n+1)}.\n$$",
+        "answer":"使用柯西不等式：\n$$\n\\sum_{i=1}^{n} \\frac{1}{p_i + p_{i+1}} \\cdot \\sum_{i=1}^{n} (p_i + p_{i+1}) \\geq n^2,\n$$\n注意到 $\\sum (p_i + p_{i+1}) = 2 \\sum p_i = n(n+1)$，所以：\n$$\n\\sum_{i=1}^{n} \\frac{1}{p_i + p_{i+1}} \\geq \\frac{n^2}{n(n+1)} = \\frac{n}{n+1}.\n$$\n但题目要求的是 $\\frac{n-1}{n(n+1)}$，说明需重新审视题意或修正目标。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":89,
+        "question":"设 \\(x_1, x_2, \\dots, x_n > 0\\)，且 \\(\\sum x_i = 1\\)，求证：\n\\[\n\\sum_{i=1}^{n} \\frac{x_i}{1 - x_i} \\geq \\frac{n}{n-1}.\n\\]",
+        "answer":"利用调和平均不等式或柯西不等式变形：\n\\[\n\\sum_{i=1}^{n} \\frac{x_i}{1 - x_i} = \\sum_{i=1}^{n} \\left( \\frac{1}{1 - x_i} - 1 \\right)\n= \\sum_{i=1}^{n} \\frac{1}{1 - x_i} - n.\n\\]\n由 Jensen 不等式（函数 \\(f(x) = \\frac{1}{1-x}\\) 在 \\((0,1)\\) 上凸）得：\n\\[\n\\sum_{i=1}^{n} \\frac{1}{1 - x_i} \\geq \\frac{n^2}{\\sum (1 - x_i)} = \\frac{n^2}{n - 1},\n\\]\n所以：\n\\[\n\\sum_{i=1}^{n} \\frac{x_i}{1 - x_i} \\geq \\frac{n^2}{n-1} - n = \\frac{n}{n-1}.\n\\]",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":90,
+        "question":"设 $ f(x, y, z) = \\frac{2y - x}{1 + z + 3y} + \\frac{2z - y}{1 + x + 3z} + \\frac{2x - z}{1 + y + 3x} $，其中 $ x, y, z > 0 $，且 $ x + y + z = 1 $。",
+        "answer":"由柯西不等式：\n$$\n\\left( \\sum_{\\text{cyc}} \\frac{(2y - x)^2}{1 + z + 3y} \\right) \\left( \\sum_{\\text{cyc}} (1 + z + 3y) \\right) \\geq \\left( \\sum_{\\text{cyc}} |2y - x| \\right)^2\n$$\n注意到 $\\sum_{\\text{cyc}} (1 + z + 3y) = 3 + 4(x + y + z) = 7$，且当 $x = y = z = \\frac{1}{3}$ 时等号成立。\n进一步可得：\n$$\nf(x, y, z) < 1 - \\frac{2}{3} = \\frac{1}{3}\n$$\n等号在 $x = y = z = \\frac{1}{3}$ 时成立。\n\n再证 $f(x, y, z) > 0$。当 $x = 1, y = z = 0$ 时，有：\n$$\nf(1, 0, 0) = \\frac{-1}{1} + \\frac{0}{1} + \\frac{2}{1} = 1 > 0\n$$\n故原不等式成立。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":91,
+        "question":"设 \\( x, y, z \\in \\mathbb{R}^+ \\)，且 \\( x + y + z = 1 \\)，证明：\n\\[\n\\frac{x^2}{y + z} + \\frac{y^2}{z + x} + \\frac{z^2}{x + y} \\geq \\frac{1}{2}\n\\]",
+        "answer":"由柯西不等式：\n\\[\n\\left( \\frac{x^2}{y+z} + \\frac{y^2}{z+x} + \\frac{z^2}{x+y} \\right)( (y+z)+(z+x)+(x+y) ) \\geq (x + y + z)^2 = 1\n\\]\n而 \\( (y+z)+(z+x)+(x+y) = 2(x+y+z) = 2 \\)，所以：\n\\[\n\\frac{x^2}{y+z} + \\frac{y^2}{z+x} + \\frac{z^2}{x+y} \\geq \\frac{1}{2}\n\\]\n等号当且仅当 \\( x = y = z = \\frac{1}{3} \\) 时成立。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":92,
+        "question":"设 \\(x, y, z, w \\in \\mathbb{R}^+\\)，且 \\(x + y + z + w = 1\\)，证明：\n\\[\n\\frac{x^2}{y + z + w} + \\frac{y^2}{z + w + x} + \\frac{z^2}{w + x + y} + \\frac{w^2}{x + y + z} \\geq \\frac{1}{3}\n\\]",
+        "answer":"同上，利用柯西不等式：\n\\[\n\\left( \\sum \\frac{x^2}{s - x} \\right)(\\sum (s - x)) \\geq (x + y + z + w)^2 = 1\n\\]\n其中 \\(s = x + y + z + w = 1\\)，\\(\\sum (s - x) = 4s - s = 3\\)，故：\n\\[\n\\sum \\frac{x^2}{s - x} \\geq \\frac{1}{3}\n\\]",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":93,
+        "question":"设 $x_1, x_2, \\dots, x_n$ 为任意实数，$a_i > 0$，证明：\n$$\n\\frac{x_1^2}{a_1} + \\frac{x_2^2}{a_2} + \\cdots + \\frac{x_n^2}{a_n} \\geq \\frac{(x_1 + x_2 + \\cdots + x_n)^2}{a_1 + a_2 + \\cdots + a_n}\n$$",
+        "answer":"此即柯西不等式的标准形式（Titu's Lemma）：\n$$\n\\sum \\frac{x_i^2}{a_i} \\geq \\frac{\\left(\\sum x_i\\right)^2}{\\sum a_i}\n$$\n等号当且仅当 $\\frac{x_1}{a_1} = \\frac{x_2}{a_2} = \\cdots = \\frac{x_n}{a_n}$ 时成立。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":94,
+        "question":"设 \\( x_i \\in (0, 1) \\)，\\( i = 1, 2, \\dots, n \\)，证明：\n\\[\n\\prod_{i=1}^{n} \\left(1 - x_i\\right) \\leq \\exp\\left(-\\sum_{i=1}^{n} x_i\\right)\n\\]",
+        "answer":"利用不等式 \\( 1 - x \\leq e^{-x} \\) 对所有 \\( x \\in (0, 1) \\) 成立，取对数后即可得证。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":95,
+        "question":"将1650个学生排成22行、75列的方阵，已知任意两列中性别相同的学生不超过11对。求男生人数的最大值。",
+        "answer":"设第 $i$ 行男生数为 $x_i$，则女生数为 $75 - x_i$。\n由条件：\n$$\n\\sum_{i=1}^{22} \\binom{x_i}{2} + \\binom{75 - x_i}{2} \\leq 11 \\times \\binom{75}{2}\n$$\n化简得：\n$$\n\\sum_{i=1}^{22} (2x_i - 75)^2 \\leq 1650\n$$\n由柯西不等式：\n$$\n\\left(\\sum (2x_i - 75)\\right)^2 \\leq 22 \\cdot \\sum (2x_i - 75)^2 \\leq 36300\n\\Rightarrow \\sum (2x_i - 75) \\leq 191\n\\Rightarrow \\sum x_i \\leq 921\n$$\n因此男生人数不超过 $928$。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":96,
+        "question":"在一个朋友关系图中，证明存在一个数学家，其朋友的平均度数不小于群体平均度数。",
+        "answer":"**证明（反证法）：**\n假设不存在这样的数学家，则对每个 $m$，有：\n$$\n\\frac{1}{|F(m)|} \\sum_{n \\in F(m)} d(n) < \\frac{1}{n} \\sum_{k=1}^{n} d(k)\n$$\n两边乘以 $|F(m)|$ 并求和，得到矛盾（与柯西不等式冲突），故命题成立。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":97,
+        "question":"空间中有 $2n$ 个点（无四点共面），连接 $N$ 条线段，且至少构成一个三角形。求最小 $N$。",
+        "answer":"若 $N \\leq n^2$，则无法形成三角形（如将点分为两组，每组内部无边）。\n设从各点引出的边数为 $a_1, \\dots, a_{2n}$，满足：\n$$\n\\sum a_i = 2N,\\quad \\sum a_i^2 \\geq \\frac{(2N)^2}{2n}\n$$\n若 $N \\leq n^2$，则总和不足，矛盾。故最小 $N = n^2 + 1$。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":98,
+        "question":"在 $m \\times m$ 方格纸上，最少挑出多少个小方格才能保证存在四个小方格中心构成矩形？",
+        "answer":"设第 $i$ 行挑出 $a_i$ 个方格，且 $\\sum a_i = k$。\n若无矩形，则任意两列不能同时选中同一行的两个点。\n最多组合数为 $\\sum \\binom{a_i}{2} \\leq \\binom{m}{2}$。\n由柯西不等式：\n$$\n\\sum a_i^2 \\geq \\frac{k^2}{m},\\quad \\Rightarrow \\sum \\binom{a_i}{2} \\geq \\frac{k^2}{2m} - \\frac{k}{2}\n$$\n令其 $\\leq \\binom{m}{2}$，解得：\n$$\nk \\geq \\frac{m(m+1)}{2}\n$$\n故最少挑出 $\\frac{m(m+1)}{2}$ 个小方格。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":99,
+        "question":"给定集合 $A_1, A_2, \\dots, A_{30} \\subseteq \\{1, 2, \\dots, 2003\\}$，每个 $|A_i| = 660$，证明存在 $i < j$ 使得 $|A_i \\cap A_j| \\geq 2003$。",
+        "answer":"设元素 $j$ 出现在 $m_j$ 个集合中，则：\n$$\n\\sum_{j=1}^{2003} m_j = 30 \\times 660 = 19800\n$$\n又：\n$$\n\\sum_{i<j} |A_i \\cap A_j| = \\frac{1}{2} \\sum_{j=1}^{2003} m_j(m_j - 1)\n$$\n由柯西不等式：\n$$\n\\sum m_j^2 \\geq \\frac{(\\sum m_j)^2}{2003} = \\frac{19800^2}{2003}\n\\Rightarrow \\sum |A_i \\cap A_j| \\geq \\frac{19800 \\cdot (19800 - 2003)}{2 \\cdot 2003} > 2002\n$$\n故必存在 $i, j$ 使得 $|A_i \\cap A_j| \\geq 2003$。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":100,
+        "question":"平面上有 $n$ 个点，距离为单位长度的点对数少于 $2\\sqrt{n}$。",
+        "answer":"设 $d_i$ 是与第 $i$ 点距离为1的点数。\n考虑以每个点为圆心、半径为1的圆，最多交点数为 $2 \\binom{n}{2} = n(n-1)$。\n每个点被计算 $d_i$ 次，故：\n$$\n\\sum d_i \\leq n(n-1),\\quad \\sum d_i^2 \\leq n(n-1)\n$$\n由柯西不等式：\n$$\n\\left(\\sum d_i\\right)^2 \\leq n \\sum d_i^2 \\leq n^2(n-1) \\Rightarrow \\sum d_i \\leq n\\sqrt{n-1} < 2n\n$$\n从而单位距离点对数 $< 2\\sqrt{n}$。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":101,
+        "question":"三维空间中有限线段总长为1988，证明存在一个平面到原点的距离不超过574。",
+        "answer":"设线段投影到坐标轴分别为 $x_i, y_i, z_i$，则：\n$$\n\\sum (x_i^2 + y_i^2 + z_i^2) = 1988\n$$\n由柯西不等式：\n$$\n(x + y + z)^2 \\leq 3(x^2 + y^2 + z^2) \\Rightarrow x + y + z \\leq \\sqrt{3 \\cdot 1988} \\approx 77.3\n$$\n设 $x = \\min(x, y, z)$，则：\n$$\nx \\leq \\frac{x + y + z}{3} \\leq \\frac{\\sqrt{3 \\cdot 1988}}{3} < 574\n$$\n过原点作垂直于 $x$ 轴的平面，距离不超过574。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":102,
+        "question":"设 $S$ 是空间中有限点集，$S_x, S_y, S_z$ 分别为其在 $yz, zx, xy$ 平面上的投影，证明：\n$$\n|S| \\leq \\sqrt{|S_x||S_y||S_z|}\n$$",
+        "answer":"设 $S$ 中点在平行于 $x$ 轴的平面上有 $n$ 层，每层有 $a_i$ 个点，投影分别记为 $a_i, b_i, c_i$。\n则：\n$$\n|S| = \\sum a_i,\\quad |S_x| = \\sum b_i,\\quad |S_y| = \\sum c_i\n$$\n由柯西不等式：\n$$\n\\left(\\sum a_i\\right)^2 \\leq \\left(\\sum b_i\\right)\\left(\\sum c_i\\right) \\Rightarrow |S|^2 \\leq |S_x||S_y|\n$$\n类似处理其他方向，最终得：\n$$\n|S| \\leq \\sqrt{|S_x||S_y||S_z|}\n$$",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":103,
+        "question":"已知正实数 \\(a, b, c, d\\) 满足：\n\\[\na(c - 1) - bd + c(d + 1) = 0,\\quad ad = 1.\n\\]\n求证：\n\\[\na \\sqrt{1 - d} + b \\sqrt{1 + d} < \\sqrt{a^2 + b^2}.\n\\]",
+        "answer":"设参数 \\(d > 1\\)，由柯西不等式得：\n\\[\na \\sqrt{1 - d} + b \\sqrt{1 + d} < \\sqrt{a^2 + b^2} \\cdot \\sqrt{(1 - d) + (1 + d)} = \\sqrt{a^2 + b^2}.\n\\]\n由已知条件 \\(ad = 1\\) 可得 \\(d = \\frac{1}{a}\\)，代入上式即可验证成立。\n\n因此命题得证。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":104,
+        "question":"设 $m, n > 0$，求函数：\n$$\nf(x) = m \\sqrt{\\sin x} + n \\sqrt{\\cos x}, \\quad x \\in (0, \\frac{\\pi}{2})\n$$\n的最小值。",
+        "answer":"由柯西不等式得：\n$$\n(m \\sqrt{\\sin x} + n \\sqrt{\\cos x})^2 \\leq (m^2 + n^2)(\\sin x + \\cos x).\n$$\n当且仅当 $\\frac{m}{\\sqrt{\\sin x}} = \\frac{n}{\\sqrt{\\cos x}}$，即 $\\tan x = \\frac{m}{n}$ 时取等号。\n\n此时：\n$$\n\\sin x = \\frac{m^2}{m^2 + n^2},\\quad \\cos x = \\frac{n^2}{m^2 + n^2},\n$$\n代入原式得：\n$$\nf(x)_{\\min} = \\sqrt{m^2 + n^2}.\n$$",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":105,
+        "question":"(1) 设三个正实数 \\(a, b, c\\) 满足：\n\\[\n(a + b + c)^2 \\geq 2(a^2 + b^2 + c^2),\n\\]\n求证：\\(a, b, c\\) 是某个三角形的三条边长。",
+        "answer":"证明：展开不等式并整理得：\n\\[\nab + bc + ca \\geq a^2 + b^2 + c^2.\n\\]\n移项后分解因式：\n\\[\n(a + b - c)(a + c - b)(b + c - a) \\geq 0,\n\\]\n由于 \\(a, b, c > 0\\)，故每项均为正，即满足三角形三边关系。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":106,
+        "question":"(2) 设 \\(a_1, a_2, \\dots, a_n > 0\\)，满足：\n\\[\n(a_1 + a_2 + \\cdots + a_n)^2 \\geq n \\sum_{i=1}^n a_i^2,\n\\]\n求证：任意三个数 \\(a_i, a_j, a_k\\) 构成三角形。",
+        "answer":"证明：对任意三元组 \\(a_i, a_j, a_k\\)，考虑：\n\\[\n(a_i + a_j + a_k)^2 \\geq 2(a_i^2 + a_j^2 + a_k^2),\n\\]\n同理可得其构成三角形。此不等式由带参数柯西不等式推出。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":107,
+        "question":"设两个不成比例的实数序列 $\\{a_i\\}, \\{b_i\\}$，且存在序列 $\\{x_i\\}$ 满足：\n$$\n\\sum_{i=1}^n a_i x_i = 0,\\quad \\sum_{i=1}^n b_i x_i = 1,\n$$\n求证：\n$$\n\\sum_{i=1}^n x_i^2 \\geq \\frac{1}{\\sum_{i=1}^n a_i^2}.\n$$",
+        "answer":"令 $A = \\sum a_i^2$, $B = \\sum b_i^2$, $C = \\sum a_i b_i$。\n构造辅助序列：\n$$\ny_i = \\frac{A b_i - C a_i}{AB - C^2},\n$$\n验证其满足约束条件，并计算：\n$$\n\\sum y_i^2 = \\frac{1}{AB - C^2} \\geq \\frac{1}{A B}.\n$$\n从而原命题成立。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":108,
+        "question":"若实数 $a, b, c$ 满足 $a + 3b + 3c = 3$，求证：\n$$\na^2 + 9b^2 + 9c^2 \\geq 1.\n$$",
+        "answer":"由均值不等式：\n$$\na^2 + 9b^2 + 9c^2 \\geq \\frac{(a + 3b + 3c)^2}{1 + 9 + 9} = \\frac{9}{19} > 1.\n$$\n再由柯西不等式：\n$$\n(a + 3b + 3c)^2 \\leq (1^2 + 2^2 + 3^2)(a^2 + b^2 + c^2) = 14(a^2 + b^2 + c^2),\n$$\n结合条件即可得证。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":109,
+        "question":"求表达式：\n$$\nx \\sqrt{1 - y} + y \\sqrt{1 - x}\n$$\n的最大值，其中 $0 \\leq x, y \\leq 1$。",
+        "answer":"由柯西不等式：\n$$\n(x \\sqrt{1 - y} + y \\sqrt{1 - x})^2 \\leq (x^2 + y^2)((1 - y) + (1 - x)) \\leq (x + y)^2 (2 - x - y).\n$$\n令 $x + y = s$，分析函数最大值得出最大值为 1，当 $x = y = \\frac{1}{2}$ 时达到。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":110,
+        "question":"设 $a, b, c > 0$，且 $abc = 1$，求证：\n$$\n\\frac{1}{ab + a} + \\frac{1}{bc + b} + \\frac{1}{ca + c} \\geq \\frac{3}{2}.\n$$",
+        "answer":"由柯西不等式：\n$$\n\\left(\\sum \\frac{1}{ab + a}\\right)\\left(\\sum ab + a\\right) \\geq 9.\n$$\n又由均值不等式：\n$$\nab + bc + ca \\geq 3\\sqrt[3]{a^2b^2c^2} = 3,\n$$\n最终可得结论。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":111,
+        "question":"设 $x_i > 0$，$\\sum_{i=1}^n x_i = a$，$a > 0$，$m, n \\in \\mathbb{N}, n \\geq 2$，求证：\n$$\n\\sum_{i=1}^n \\frac{x_i^m}{(a - x_i)^{n-1}} \\geq \\frac{a^{m+1}}{(n-1)^{n-1}}.\n$$",
+        "answer":"当 $m = 1$ 时，利用柯西不等式：\n$$\n\\left(\\sum \\frac{x_i}{a - x_i}\\right) \\left(\\sum (a - x_i)\\right) \\geq \\left(\\sum \\sqrt{x_i}\\right)^2,\n$$\n结合均值不等式完成证明。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":112,
+        "question":"设 $|z_i| < 1$，$i = 1, 2, \\dots, n$，$n \\geq 2$，求证：\n$$\n\\sum_{i=1}^n \\frac{1}{1 - |z_i|} \\geq \\frac{n^2}{n - \\sum |z_i|}.\n$$",
+        "answer":"由柯西不等式：\n$$\n\\sum \\frac{1}{1 - |z_i|} \\geq \\frac{n^2}{\\sum (1 - |z_i|)} = \\frac{n^2}{n - \\sum |z_i|}.\n$$\n成立。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":113,
+        "question":"设 $\\sum_{i=1}^n x_i = 1$，$x_i > 0$，求证：\n$$\n\\sum_{1 \\leq i < j \\leq n} \\frac{1}{x_i + x_j} \\geq \\frac{n(n-1)}{2}.\n$$",
+        "answer":"由柯西不等式：\n$$\n\\sum_{i<j} \\frac{1}{x_i + x_j} \\geq \\frac{n(n-1)\/2}{\\sum x_i} = \\frac{n(n-1)}{2}.\n$$",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":114,
+        "question":"设 \\(x, y, z \\geq 0\\)，且 \\(x^2 + y^2 + z^2 = 1\\)，求证：\n\\[\n\\frac{x}{1 - x^2} + \\frac{y}{1 - y^2} + \\frac{z}{1 - z^2} \\geq \\frac{3}{2}.\n\\]",
+        "answer":"令 \\(S = \\sum \\frac{x}{1 - x^2}\\)，使用均值和柯西不等式：\n\\[\nS \\geq \\frac{(x + y + z)^2}{\\sum x(1 - x^2)} \\geq \\frac{3}{2}.\n\\]",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":115,
+        "question":"设 $a, b, c > 0$，求证：\n$$\n\\frac{5a^2 + 8b^2 + 5c^2}{ac} \\geq 4\\sqrt[3]{a^2 b^2 c^2}.\n$$",
+        "answer":"利用柯西不等式：\n$$\n5a^2 + 8b^2 + 5c^2 \\geq 4(ab + bc + ca),\n$$\n再由 AM-GM 不等式：\n$$\nab + bc + ca \\geq 3\\sqrt[3]{a^2b^2c^2},\n$$\n得证。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":116,
+        "question":"设数列 \\(a_n > 0\\)，定义：\n\\[\nQ_n = \\max \\left\\{ \\frac{a_{n+1}}{a_n}, \\frac{a_{n+2}}{a_{n+1}}, \\dots \\right\\},\n\\]\n且 \\(a_n + a_{n+1} + \\cdots + a_{n+k} = S_n\\)，求证：\n\\[\nQ_n \\leq 2M + 4,\n\\]\n其中 \\(M = \\max \\{a_i \/ a_j : i,j \\in \\mathbb{N}\\}\\)。",
+        "answer":"通过构造递推关系和均值不等式逐步放缩，最终得出结论。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":117,
+        "question":"已知正实数 \\(x, y, z\\) 满足 \\(\\sqrt{x} + \\sqrt{y} + \\sqrt{z} = 1\\)，求证：\n\\[\n\\frac{x^2 + yz}{2x^2(y+z)} + \\frac{y^2 + zx}{2y^2(z+x)} + \\frac{z^2 + xy}{2z^2(x+y)} \\geq 1.\n\\]",
+        "answer":"**证法1：**\n注意到：\n\\[\n\\frac{x^2 + yz}{2x^2(y+z)} = \\frac{(x-y)(x-z)}{2x^2(y+z)} + \\frac{1}{2}.\n\\]\n同理可得其余两项。将三式相加得：\n\\[\n\\sum_{\\text{cyc}} \\frac{x^2 + yz}{2x^2(y+z)} = \\frac{1}{2} \\left[ \\frac{(x-y)(x-z)}{x^2(y+z)} + \\frac{(y-z)(y-x)}{y^2(z+x)} + \\frac{(z-x)(z-y)}{z^2(x+y)} \\right] + \\frac{3}{2}.\n\\]\n不失一般性，设 \\(x \\geq y \\geq z\\)，则各项非负，原不等式成立。\n\n**证法2（柯西不等式）：**\n由柯西不等式：\n\\[\n\\left( \\frac{x}{\\sqrt{2(y+z)}} + \\frac{y}{\\sqrt{2(z+x)}} + \\frac{z}{\\sqrt{2(x+y)}} \\right)^2 \\leq (x+y+z)\\left( \\frac{1}{2(y+z)} + \\frac{1}{2(z+x)} + \\frac{1}{2(x+y)} \\right).\n\\]\n结合均值不等式即可完成证明。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":118,
+        "question":"设正整数 $n \\geq 2$，求最大常数 $C(n)$，使得对任意满足条件的正实数 $a_1, a_2, \\dots, a_n > 0$，有：\n$$\n\\sum_{1 \\leq i < j \\leq n} \\frac{a_i a_j}{a_i + a_j} \\geq C(n) \\cdot \\frac{n(n-1)}{2}.\n$$",
+        "answer":"**结论：** $C(n) = \\frac{1}{2}$ 是最大值。\n\n**证明概要：**\n取 $a_i = 1$ 对所有 $i$，左边变为 $\\frac{n(n-1)}{4}$，右边为 $C(n) \\cdot \\frac{n(n-1)}{2}$，故 $C(n) \\leq \\frac{1}{2}$。\n再通过不等式变换验证该常数可达。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":119,
+        "question":"给定整数 $n \\geq 2$ 和正实数 $c > 0$，以及正实数 $x_1, x_2, \\dots, x_n$ 满足 $x_1 x_2 \\cdots x_n = 1$，求最小实数 $M = M(c,n)$，使得：\n$$\n\\sum_{i=1}^{n} \\frac{x_i}{c x_i + 1} \\leq M.\n$$",
+        "answer":"当 $c = 1$ 时，$M = 1$；\n当 $c > 1$ 时，最小值为：\n$$\nM = \\frac{n}{c + 1}.\n$$\n当 $0 < c < 1$ 时，利用函数单调性分析极限情况可得结果。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":120,
+        "question":"求解不等式 x^2 - 5x + 6 > 0",
+        "answer":"解：首先对不等式进行因式分解得到 (x-2)(x-3) > 0，通过数轴分析可知解集为 x < 2 或 x > 3。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":121,
+        "question":"已知 $ a + b + c = 9 $，求证：\n$$\n2\\sqrt{a} + \\sqrt{b} + \\sqrt{c} + a + b + c \\geq 9\n$$",
+        "answer":"由均值不等式得：\n$$\n2\\sqrt{a} + a \\geq 3a,\\quad \\sqrt{b} + b \\geq 3b,\\quad \\sqrt{c} + c \\geq 3c\n$$\n相加得：\n$$\n(2\\sqrt{a} + \\sqrt{b} + \\sqrt{c}) + (a + b + c) \\geq 3(a + b + c) = 27\n$$\n但题设为 $ a + b + c = 9 $，所以：\n$$\n2\\sqrt{a} + \\sqrt{b} + \\sqrt{c} + a + b + c \\geq 9\n$$\n成立。当且仅当 $ a = b = c = 3 $ 时取等号。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":122,
+        "question":"设 $ a, b, c > 0 $，则：\n$$\n\\left(a + \\frac{1}{b}\\right)\\left(b + \\frac{1}{c}\\right)\\left(c + \\frac{1}{a}\\right) \\geq 8\n$$",
+        "answer":"由 AM-GM 不等式：\n$$\na + \\frac{1}{b} \\geq 2\\sqrt{\\frac{a}{b}},\\quad b + \\frac{1}{c} \\geq 2\\sqrt{\\frac{b}{c}},\\quad c + \\frac{1}{a} \\geq 2\\sqrt{\\frac{c}{a}}\n$$\n三式相乘得：\n$$\n\\prod_{\\text{cyc}} \\left(a + \\frac{1}{b}\\right) \\geq 8 \\sqrt{\\frac{a}{b} \\cdot \\frac{b}{c} \\cdot \\frac{c}{a}} = 8\n$$",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":123,
+        "question":"若 $ a + b + c = 1 $，$ a, b, c > 0 $，求证：\n$$\n\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c} \\geq 9\n$$",
+        "answer":"由调和平均 ≤ 算术平均：\n$$\n\\frac{3}{\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c}} \\leq \\frac{a + b + c}{3} = \\frac{1}{3}\n\\Rightarrow \\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c} \\geq 9\n$$\n当且仅当 $ a = b = c = \\frac{1}{3} $ 时取等号。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":124,
+        "question":"对正实数 $ x, y $，有：\n$$\n\\frac{x^2}{y} + \\frac{y^2}{x} \\geq x + y\n$$",
+        "answer":"使用柯西不等式或直接配方：\n$$\n\\frac{x^2}{y} + \\frac{y^2}{x} - (x + y) = \\frac{x^3 + y^3 - xy(x + y)}{xy} = \\frac{(x - y)^2(x + y)}{xy} \\geq 0\n$$\n成立。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":125,
+        "question":"设 $ a_i > 0 $，$ i = 1, 2, ..., n $，且 $ \\sum a_i = 1 $，则：\n$$\n\\sum_{i=1}^{n} \\frac{1}{a_i} \\geq n^2\n$$",
+        "answer":"由柯西不等式：\n$$\n\\left(\\sum a_i\\right)\\left(\\sum \\frac{1}{a_i}\\right) \\geq n^2\n\\Rightarrow \\sum \\frac{1}{a_i} \\geq n^2\n$$",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":126,
+        "question":"对任意 $ x, y > 0 $，有：\n$$\n\\sqrt{x + y} \\leq \\sqrt{x} + \\sqrt{y}\n$$",
+        "answer":"**证明：**\n两边平方后比较即可：\n$$\nx + y \\leq x + y + 2\\sqrt{xy} \\Rightarrow 0 \\leq 2\\sqrt{xy}\n$$\n显然成立。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":127,
+        "question":"若 $ a_1, a_2, ..., a_n > 0 $，且 $ \\sum a_i = 1 $，则：\n$$\n\\prod_{i=1}^{n} (1 - a_i) \\leq \\left(1 - \\frac{1}{n}\\right)^n\n$$",
+        "answer":"利用均值不等式：\n$$\n\\prod (1 - a_i) \\leq \\left( \\frac{\\sum (1 - a_i)}{n} \\right)^n = \\left(1 - \\frac{1}{n}\\right)^n\n$$",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":128,
+        "question":"若 $ abc = ab + bc + ca $，且 $ a, b, c > 0 $，则：\n$$\n\\frac{a}{bc} + \\frac{b}{ca} + \\frac{c}{ab} \\geq 3\n$$",
+        "answer":"由条件可得 $ \\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c} = 1 $，再用均值不等式：\n$$\n\\frac{a}{bc} + \\frac{b}{ca} + \\frac{c}{ab} = \\frac{a^2 + b^2 + c^2}{abc} \\geq 3\n$$\n因为 $ a^2 + b^2 + c^2 \\geq ab + bc + ca $，结合条件即得。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":129,
+        "question":"若 $ a_1 \\leq a_2 \\leq \\cdots \\leq a_n $，$ b_1 \\leq b_2 \\leq \\cdots \\leq b_n $，则：",
+        "answer":"$$\n\\frac{1}{n} \\sum_{i=1}^{n} a_i b_i \\geq \\left(\\frac{1}{n} \\sum a_i\\right)\\left(\\frac{1}{n} \\sum b_i\\right)\n$$",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":130,
+        "question":"设 $ A + B + C = \\pi $，则：\n$$\n\\sin A + \\sin B + \\sin C \\leq \\frac{3\\sqrt{3}}{2}\n$$",
+        "answer":"由 Jensen 不等式（$\\sin x$ 在 $(0, \\pi)$ 上凹），得最大值在 $ A = B = C = \\frac{\\pi}{3} $ 处取得。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":131,
+        "question":"已知四边形 $ABCD$ 中，$S_{\\triangle ABD} + S_{\\triangle CBD} + S_{\\triangle CAD} + S_{\\triangle CAB} = 4F$，其中 $F$ 是某个固定面积单位。",
+        "answer":"若 $AB = a$, $BC = b$, $CD = c$, $DA = d$，则有：\n$$\nS = \\frac{abc}{(a+b)(b+c)(c+a)} \\cdot 4F\n$$\n此式在特定条件下成立（如正方形或对称梯形）。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":132,
+        "question":"给定梯形 $ABCD$，底边 $AD$ 和 $BC$，高为 $h$，且 $AB = CD = 13$，$AD + BC = 2$，面积 $S_{ABCD} = 27$。",
+        "answer":"分析表明：不可能满足 $AD + BC = 2$ 且 $S = 27$；因此必须 $AD = 13$，此时当 $AB = BC = CD = 5$ 时，面积最大值为 27。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":133,
+        "question":"设三角形边长为 $a, b, c$，半周长 $p = \\frac{a+b+c}{2}$，面积为 $S$，内切圆半径为 $r$。求内切圆半径的最大值。",
+        "answer":"由均值不等式：\n$$\nS = r p = \\sqrt{p(p-a)(p-b)(p-c)} < \\frac{(p-a)+(p-b)+(p-c)}{3} = \\frac{p}{3}\n$$\n当且仅当 $a = b = c$（即等边三角形）时，$r$ 取最大值 $\\frac{p}{3\\sqrt{3}}$。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":134,
+        "question":"考虑表达式：\n$$\na^2 + b^2 + 3c^2 + 2ab - 4bc = (a + b - c)^2 + 2c(a + c - b)\n$$",
+        "answer":"通过配方和均值不等式处理后，得到：\n$$\na^2 + b^2 + 3c^2 + 2ab - 4bc \\geq 4 - \\sqrt{2}\n$$\n当 $a = 2, b = \\sqrt{2}, c = 1$ 时取等号。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":135,
+        "question":null,
+        "answer":"$$\n\\sum_{k=1}^{n} (a + 1)^k - 1 = (a + 1)^{n+1} - (a + 1)\n$$\n这是一个标准几何级数求和公式。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":136,
+        "question":"若 $A + B + C = \\pi$，且 $A \\geq 60^\\circ$，则：\n$$\n\\sin 3A + \\sin 3B + \\sin 3C \\leq 3\n$$",
+        "answer":"当 $A = 140^\\circ, B = C = 20^\\circ$ 时取等号。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":137,
+        "question":"设 \\(x + y + z = \\pi\\)，且 \\(x, y, z > 0\\)，则：\n\\[\n\\csc^2 x + \\csc^2 y + \\csc^2 z \\geq 12\n\\]",
+        "answer":"由均值不等式和 \\(\\sin x \\leq 1\\) 推出，当 \\(x = y = z = \\frac{\\pi}{3}\\) 时取等号。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":138,
+        "question":"设 \\( A + B + C = \\pi \\)，且 \\( A, B, C \\in [0, \\pi) \\)，令：\n\\[ x = \\tan \\frac{A}{2},\\quad y = \\tan \\frac{B}{2},\\quad z = \\tan \\frac{C}{2} \\]\n则有：\n\\[ xyz = \\tan \\frac{A}{2} \\tan \\frac{B}{2} \\tan \\frac{C}{2} \\leq \\frac{1}{3\\sqrt{3}} \\]",
+        "answer":"当 \\( A = B = C = \\frac{\\pi}{3} \\) 时取等号。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":139,
+        "question":"已知 $(1 + \\frac{1}{a})(1 + \\frac{1}{b}) < \\frac{4}{ab}$，则：\n$$\na + b + ab > 2\n$$",
+        "answer":"该式可通过展开并利用均值不等式验证。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":140,
+        "question":"对于任意实数 $x_1, x_2, ..., x_n$，记平均值 $\\bar{x} = \\frac{1}{n} \\sum x_i$，则：\n$$\n\\sum_{i=1}^{n} (x_i - \\bar{x})^2 = \\frac{1}{n} \\sum_{i<j} (x_i - x_j)^2\n$$",
+        "answer":"由此推出方差非负性，且当所有 $x_i$ 相等时取零。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":141,
+        "question":null,
+        "answer":"当 $x_i = \\frac{1}{2}$ 时最小，此时：\n$$\nS_{\\min} = 4 \\left(\\frac{1}{2} - 1\\right)^2 = 1\n$$",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":142,
+        "question":"设 $a_i > 0$，则：",
+        "answer":"$$\n\\sum_{i=1}^{n} \\sum_{j=1}^{n} a_i a_j \\geq \\left(\\sum_{i=1}^{n} a_i\\right)^2\n$$",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":143,
+        "question":"设 $a_1, a_2, \\dots, a_n > 0$，满足 $\\sum_{i=1}^{n} a_i = s$，求：$$\\min \\sum_{i=1}^{n} \\frac{1}{a_i}$$",
+        "answer":"由调和-算术平均不等式：$$\\frac{n}{\\sum_{i=1}^{n} \\frac{1}{a_i}} \\leq \\frac{1}{n} \\sum_{i=1}^{n} a_i \\Rightarrow \\sum_{i=1}^{n} \\frac{1}{a_i} \\geq \\frac{n^2}{s}$$当 $a_1 = a_2 = \\cdots = a_n = \\frac{s}{n}$ 时取等号。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":144,
+        "question":"给定正整数 $m, n$，使得：\n$$\n\\sum_{i=1}^{m} 2i + \\sum_{j=1}^{n} (2j-1) = m(m+1) + n^2 = 1987\n$$\n即：\n$$\nm^2 + m + n^2 = 1987\n$$",
+        "answer":"解得 $(m,n) = (27,35)$ 为最优解，最小值为 $3m + 4n = 221$。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":145,
+        "question":"设 $a = \\tan \\alpha$, $b = \\tan \\beta$, $c = \\tan \\gamma$, $d = \\tan \\delta$，若：\n$$\n\\tan(\\alpha + \\beta) + \\tan(\\gamma + \\delta) = 0\n\\Rightarrow \\alpha + \\beta + \\gamma + \\delta = k\\pi \\quad (k \\in \\mathbb{Z})\n$$\n则：",
+        "answer":"$a + b + c + d = abc + abd + acd + bcd$",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":146,
+        "question":"$$\\frac{1}{a+b} + \\frac{1}{b+c} + \\frac{1}{c+d} + \\frac{1}{d+a} \\geq \\frac{4}{a+b+c+d}$$",
+        "answer":"由柯西不等式或排序不等式可证。",
+        "type":"平均值不等式与柯西不等式"
+    },
+    {
+        "id":147,
+        "question":"设 $a, b, c \\geq 0$，且 $a + b + c = 1$，则：\n$$\n\\sqrt{a} + \\sqrt{b} + \\sqrt{c} \\leq \\sqrt{3}\n$$",
+        "answer":"当 $a = b = c = \\frac{1}{3}$ 时取等号。",
+        "type":"平均值不等式与柯西不等式"
+    }
+]
