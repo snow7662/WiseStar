@@ -93,6 +93,25 @@ CONCURRENCY_LIMIT=5
 TIMEOUT=30
 ```
 
+### 启动 Web 界面（前后端）
+
+1. **启动后端 API**（需在 `backend/` 目录下或指定路径运行，否则会提示找不到 `app.py`）：
+   ```bash
+   cd backend
+   pip install -r requirements.txt
+   cp .env.example .env  # 填入 DEEPSEEK_API_KEY 等
+   python app.py         # 或从仓库根目录执行：python backend/app.py
+   ```
+   后端默认监听 `http://localhost:8000`。
+
+2. **启动前端开发服务器**（如果没有 `anpm`，请使用常规的 `npm`/`pnpm`）：
+   ```bash
+   cd frontend
+   npm install           # 或 pnpm install
+   npm run dev           # 或 pnpm dev
+   ```
+   前端默认监听 `http://localhost:3048`，使用 HashRouter 路由，示例：`http://localhost:3048/#/dashboard`。
+
 ### 使用题目生成系统
 
 #### 命令行交互模式

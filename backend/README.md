@@ -30,6 +30,8 @@ LLM_MODEL=deepseek-chat
 python app.py
 ```
 
+> 如果你在仓库根目录执行，可直接运行 `python backend/app.py`；请确保命令的工作目录包含 `app.py` 文件，否则会出现 “can't open file '.../app.py'” 的路径错误。
+
 服务将在 `http://localhost:8000` 启动
 
 ### 4. 查看API文档
