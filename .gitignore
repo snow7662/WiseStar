@@ -13,6 +13,8 @@ __pycache__/
 **/db/
 **/log/
 *.log
+backend/data/memory_records.json
+
 
 # IDE / 本地工具
 .idea/
